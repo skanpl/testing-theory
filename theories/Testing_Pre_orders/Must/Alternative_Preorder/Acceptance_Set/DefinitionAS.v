@@ -77,3 +77,14 @@ Definition bhv_pre `{PreA_countable : Countable PreA} `{
 
 Notation "p ≼ₐₛ q" := (bhv_pre p q) (at level 70).
 
+
+
+
+
+
+
+
+
+
+
+

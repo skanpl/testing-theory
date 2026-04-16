@@ -4,7 +4,7 @@
  (name Must)
  (package must-testing)
  (synopsis "Must testing")
- (theories stdpp Stdlib)
+ (theories stdpp)
  (flags (-w -deprecated-missing-stdlib)
         (-w -deprecated-from-Coq))
 )
