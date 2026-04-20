@@ -1,3 +1,16 @@
+
+(*
+  /!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\
+  /!\                                          /!\
+  /!\    a compiler avec les installations:   /!\
+  /!\         "coq" et "coq-stdpp"            /!\
+  /!\                                         /!\
+  /!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\
+*)
+
+
+
+
 Require Import Must.
 Require Import VACCS_Instance .
 
@@ -12,132 +25,57 @@ Notation tauact q := (t • q).
 
 
 
+Require Import Coq.Program.Equality.
 
-
-Proposition ctx_compose_tau: forall p q, p << q -> 
-  (g (gpr_tau p)) << (g (gpr_tau q)).
-Proof.
-intros p q Hmust.  
-unfold "<<" in *.
-intros e Hmp.
-destruct Hmp.  
-- eauto with mdb. 
-- (*intros q Htest.*) destruct ex as [r trans]. 
-  inversion trans;subst.
-  inversion l; subst.
+Proposition bidouille: forall (p q e:proc),
+(g (tauact p)) must_pass e  -> 
+ (forall e0 : proc, p must_pass e0 -> q must_pass e0) -> 
+   (g (tauact q)) must_pass e.
+Proof.  
+intros p q e Hfoc.
+dependent induction Hfoc; eauto with mdb.
+destruct ex as [r trans].
+inversion trans;subst.
+- intro Hmust.
+  inversion l. subst.
   eapply m_step; eauto with mdb.
-
   * eexists. do 2 constructor.
-  * intros p' Htau. inversion Htau. subst.
-    eauto with mdb.
-  * intros e' He.
-    clear com. 
-    specialize (et _ He). 
-    specialize (pt _ l).   
-     admit. 
-  * intros p' e' μ1 μ2 pi Htau He.
-    inversion Htau.
-  * 
-    
-   (*
-   (*======  tentative1 =========*)
-   eapply m_step; eauto with mdb. 
-   eexists. do 2 constructor.
-   intros. inversion H. subst.
-   clear com.
-   specialize (pt p).
-   eapply Hmust.
-   eapply pt.
-   constructor.
-
-   intros e' He.
-   clear com.
-   Focus 2. intros. inversion H0. 
-  
-   (*========tentative2==================*)
-   induction q.
+  * intros p' Hq. 
+    inversion Hq. subst. eauto with mdb. 
+  * intros. inversion H3.
+-  intro Hmust.
    eapply m_step; eauto with mdb.
-   ** eexists. constructor. constructor.
-   ** intros.
-      clear com.
-      inversion H. subst.
-      specialize (pt p).
-      eapply Hmust.
-      eapply pt.
-      constructor.
-   ** intros e' He.
-      
- (*=======tentative3=====================*)
-       
-   induction e. 
- (*=======================================*)
-*)
-
-
-  ** clear com.
-  
- 
-   admit.
-  * inversion l1.  
-
-Admitted.
+   * eexists. do 2 constructor.
+   
+   * intros p' Hq.
+     inversion Hq. subst. 
+     clear H1 com. 
+     clear H Hq. (*a priori inutilisable*) 
+     assert (p must_pass e). eapply pt. constructor.
+     eauto with mdb.
+   * intros. inversion H3.
+- inversion l1.
+Qed.
 
 
 
-
-
-
-
-
-(*
 Proposition ctx_compose_tau: forall p q, p << q -> 
   (g (gpr_tau p)) << (g (gpr_tau q)).
 Proof.
-intros p q Hmust.  
-unfold "<<" in *.
-intros e Hmp.
-generalize dependent q. 
-destruct Hmp.  
-- eauto with mdb. 
-- (*intros q Htest.*) destruct ex as [r trans]. 
-  inversion trans;subst; intros.
-  + inversion l; subst. intros.
-    eapply m_step; eauto with mdb.
-   *eexists. do 2 constructor.
-   *intros p' Htau. inversion Htau. subst.
-    eauto with mdb.
-  * intros e' He.
-    clear com. 
-    specialize (et _ He). 
-    specialize (pt _ l).
-    (*             
-            τ.a2  MP  e'
-             ↓
-             a2
-
-     ==>   
-             τ.a2  MP  e'
-             ↓    MP
-             a2
- 
-   thus:       ...
-            —————————— 
-             a2 MP e' 
-           ————————————Hmust
-            q MP e'
+intros.
+set (lem:= bidouille p q).
+unfold "<<".
+intros.
+unfold "<<" in H.
+specialize (lem _ H0 H).
+auto.
+Qed.
 
 
-*)   
- 
-    assert (q must_pass e'). admit.
-    admit.
- 
-  * admit. 
 
-+ clear com.
-  specialize (et _ l).
-  tau.q MP
-p MP e          tau.p MP b2
-*)
+
+
+
+
 
 
