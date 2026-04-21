@@ -27,111 +27,74 @@ Notation sub t1 x1 := (t1 ^ x1).
 
 Require Import Coq.Program.Equality.
 
+(* Tactic that looks for lts/lts_step assumptions and inverts them to
+  learn about the shape of the conclusion *)
+Ltac lts_inversion :=
+try match goal with
+| H : lts_step ?p ?a ?q |- _ =>
+  solve[inversion H; subst; discriminate || tauto]
+| H : lts ?p ?a ?q |- _ => inversion H; subst; discriminate || tauto
+ end;
+match goal with
+| H : lts_step ?p ?a ?q |- _ => inversion H; subst; clear H
+| H : lts ?p ?a ?q |- _ => inversion H; subst; clear H
+ end.
 
 
 (*================= tau ==============================*)
-Lemma reinforce_tau: forall (p q e:proc),
-(g (tauact p)) must_pass e  -> 
- (forall e0 : proc, p must_pass e0 -> q must_pass e0) -> 
-   (g (tauact q)) must_pass e.
-Proof.  
-intros p q e Hfoc.
-dependent induction Hfoc; eauto with mdb.
-destruct ex as [r trans].
-inversion trans;subst.
-- intro Hmust.
-  inversion l. subst.
-  eapply m_step; eauto with mdb.
-  * eexists. do 2 constructor.
-  * intros p' Hq. 
-    inversion Hq. subst. eauto with mdb. 
-  * intros. inversion H3.
--  intro Hmust.
-   eapply m_step; eauto with mdb.
-   * eexists. do 2 constructor.
-   
-   * intros p' Hq.
-     inversion Hq. subst. 
-     clear H1 com. 
-     clear H Hq. (*a priori inutilisable*) 
-     assert (p must_pass e). eapply pt. constructor.
-     eapply Hmust. auto. (*Hmust utilisé ici*)
-   * intros. inversion H3.
-- inversion l1.
-Qed.
-
-
 Proposition ctx_compose_tau: forall p q, p << q -> 
   (g (gpr_tau p)) << (g (gpr_tau q)).
 Proof.
-intros.
-set (lem:= reinforce_tau p q).
-unfold "<<".
-intros.
-unfold "<<" in H.
-specialize (lem _ H0 H).
-auto.
+unfold ctx_pre.
+Proof.
+intros p q Hmust e Hfoc.
+dependent induction Hfoc; eauto with mdb.
+destruct ex as [r trans].
+inversion trans;subst.
+- inversion l. subst.
+  apply m_step; eauto with mdb.
+  * eexists. do 2 constructor.
+  * intros p' Hq. lts_inversion. eauto with mdb. 
+  * intros. lts_inversion.
+- eapply m_step; eauto with mdb.
+  * eexists. do 2 constructor.
+  * intros p' Hq. lts_inversion.
+    clear H1 com H.
+    assert (p must_pass e). eapply pt. constructor.
+    eapply Hmust. auto. (* Hmust utilisé ici*)
+  * intros. lts_inversion.
+- lts_inversion. 
 Qed.
+
 (*================ input ==========================*)
 
-Lemma reinforce_inp: forall  c (p q e:proc),
-(g (gpr_input c p)) must_pass e  -> 
- (forall e0 : proc, p must_pass e0 -> q must_pass e0) -> 
-   (g (gpr_input c q)) must_pass e.
-Proof.  
-intros c p q e Hfoc.
+Proposition ctx_compose_inp: forall c p q,
+  (forall v, sub p v << sub q v) ->
+  g (gpr_input c p)  << g (gpr_input c q).
+Proof.
+unfold ctx_pre.
+intros c p q Hmust e Hfoc.
 dependent induction Hfoc; eauto with mdb.
 destruct ex as [r trans].
 inversion trans;subst.
 - inversion l.
-- intros Hmust.
-  eapply m_step; eauto with mdb.
+- eapply m_step; eauto with mdb.
   * eexists. eapply ParRight. apply l.
   * intros p' Hq. inversion Hq.
-  * intros p' e' μ1 μ2 Hpi Hq He. 
-    clear H pt.  
+  * intros p' e' μ1 μ2 Hpi Hq He.
     inversion Hq. subst.
-   
     specialize (com (sub p v) e'(ActIn (c ⋉ v)) μ2 Hpi) .
-    assert (sub p v must_pass e'). eapply com. constructor. auto.
-    clear com.
-    clear H1. (*a priori impossible a utiliser*)
-    
-    specialize (et _ l).
-    specialize (H0 _ l _ _ eq_refl Hmust).
-    (*need a renaming lemma?*)
-    admit.   
- 
-- intro Hmust. 
-  inversion l1. subst.
+    apply Hmust.
+    eapply com; [constructor | auto].
+- inversion l1; subst. destruct μ2 as [|c']; inversion eq. subst c'.
   eapply m_step; eauto with mdb.
   * exists (sub q v, b2). eapply ParSync. eauto. constructor. auto.
   * intros. inversion H2.
-  * intros p' e' μ1 μ0 Hpi Hq He.
-    clear pt H H0 et. 
-    inversion Hq. subst.
-    clear H1. (*a priori impossible a utiliser*)   
-    (*need a renaming lemma?*)
-    admit.    
-
-Admitted.
-
-
-
-Proposition ctx_compose_inp: forall c p q,
-  p << q -> 
-  g (gpr_input c p)  << g (gpr_input c q).
-Proof.
-intros.
-set (lem:= reinforce_inp c p q).
-unfold "<<".
-intros. 
-unfold "<<" in H. 
-specialize (lem _ H0 H).
-auto.
+  * intros q' e' μ1 μ0 Hpi Hq He.
+    clear H pt et H0.
+    inversion Hq; subst. destruct μ0 as [|c']; inversion Hpi. subst c'.
+    clear eq. apply Hmust. eapply com; eauto. constructor.
 Qed.
-
-
 
 
 (*
