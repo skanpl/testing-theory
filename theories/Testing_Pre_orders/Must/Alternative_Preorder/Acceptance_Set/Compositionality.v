@@ -9,18 +9,21 @@ Require Import WeakTransitions.
 
 Hint Constructors proc gproc cnv terminate lts:db.
 
-
+Notation sub p v := (p^v).
 
 Lemma term_input: forall p  c, 
   terminate p -> terminate (g (gpr_input c p)) .
 Proof.
 intros.   
-inversion H.   
+inversion H.    
 eapply tstep.  
-intros. 
+intros.  
 inversion H1.
 Qed.
 
+
+
+(*
 Lemma term_input_rev: forall p  c, 
   terminate (g (gpr_input c p)) ->terminate p .
 Proof.
@@ -28,24 +31,10 @@ intros.
 inversion H.   
 eapply tstep.  
 intros. 
+clear H0.
 
-Qed.
 
 
-(*Print HintDb bla.*)
-
-(*
-Lemma term_input_rev: forall p  c, 
-  terminate (g (gpr_input c p)) -> terminate p .
-Proof.
-intros.
-inversion H. 
-eapply tstep.
-intros. 
-inversion H1;subst .
-eapply tstep.
-intros.
-*)
 
 
 
@@ -57,6 +46,7 @@ induction s; intros.
 - eapply cnv_nil.
   inversion H. subst.
   set (H1:= term_input (gpr_input c p)). 
+*)
   
 
 
@@ -68,35 +58,23 @@ intros.
 unfold bhv_pre in *.
 split.
 unfold "≼₁".
-induction s. 
-- intro. (*case s=ε*)
-  eapply Convergence.cnv_nil.
-  eapply tstep.
-  intros.
-  inversion H1.
-- intro. (*case s=a.s*) 
-  eapply cnv_act.
-  * destruct H as [G1 G2].
-    unfold "≼₁" in G1.
-    inversion H0. subst.
++ induction s. 
+  - intro. (*case s=ε*)
+    eapply Convergence.cnv_nil.
     eapply tstep.
-    intros.  
-    inversion H.
-  * intros.
-    inversion H0. subst.
-    specialize (H6 q0).
-    apply H6.
-    eapply wt_act.
-    inversion H1. subst. inversion l.
-    subst. 
-    destruct H as [G1 G2].
-    unfold "≼₁" in G1.
+    intros.
+    inversion H1. 
+  - intro. (*case s=a.s*)  
+    eapply cnv_act.
+    * constructor. intros. inversion H1.
+    * intros. inversion H0. subst.
+      
+      assert (exists v, q0= sub p v).
+      inversion H1. subst.inversion l.
+      inversion l. subst.
+      assert (sub q v = q0). 
+      inversion w. auto. subst.
+      
 
-
-
-
-    
-
-Print cnv.
-
- H : gLts.lts_step (gpr_input c q) ActTau.τ q0
+Admitted.
+ 
