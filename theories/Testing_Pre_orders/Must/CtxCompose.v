@@ -71,7 +71,7 @@ Qed.
 Proposition ctx_compose_inp: forall c p q,
   (forall v, sub p v << sub q v) ->
   g (gpr_input c p)  << g (gpr_input c q).
-Proof.
+Proof. 
 unfold ctx_pre.
 intros c p q Hmust e Hfoc.
 dependent induction Hfoc; eauto with mdb.
@@ -97,17 +97,93 @@ inversion trans;subst.
 Qed.
 
 
+Proposition ctx_compose_new: forall (p q :proc),
+  (p << q) -> (exists q0, q ⟶ q0) ->
+   (ν p) << (ν q).
+Proof.
+unfold ctx_pre.
+intros p q  Hmust Hqex e Hfoc.
+dependent induction Hfoc; eauto with mdb.
+destruct ex as [r trans].
+inversion trans; subst.
+
+- eapply m_step; eauto with mdb.
+  * inversion l. subst. destruct Hqex as [q0 Hqex].
+    eexists. do 2 econstructor; eauto. 
+
+  * intros q' Hq.
+    clear et H0 com H1. 
+    inversion Hq; subst.
+    inversion l; subst.
+    specialize (pt _ l).
+    clear H. (*too strong*)
+    (*have to edit "p<<q" like for input...*)
+    (*stuck for sure...*)
+    
 (*
-Lemma reinforce_sub: forall v (p q e:proc),
-(sub p v) must_pass e  -> 
- (forall e0 : proc, p must_pass e0 -> q must_pass e0) -> 
-   (sub q v) must_pass e.
-Proof.  
-Print subst_in_proc.
+MP preserves τ-trans so
+in quote:
+----------
+ν q  MP e
+ ↓   MP
+ν p'
+---------
+hence it suffices to show 
+   ν q  MP e
+
+the only way to get it here is i guess H.
+but H is too strong...
+
+*)
+    admit.
+  * intros p' e' μ1 μ2 Hpi Hq He.
+    clear et H0.
+    inversion Hq; subst.
+    clear H H1. (*too strong*)
+   admit.
+- admit.
+- admit.
+Admitted.
+    
+
+
+
+
+
+
+(*
+observation: in all the things we've done so far one of the "generated IH" each time called "H" requires a way too strong precond to be used which renders it unusable.
 *)
 
-
-
+(*------------- bidouille--------------------*)
+Lemma invert_mp: forall (p e: proc),
+  p must_pass e -> (ν p) must_pass e.
+Proof.
+intros.
+dependent induction H; eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans].
+  inversion trans; subst.
+  + eexists. do 2 constructor. eauto.
+  + eexists. eapply ParRight. eauto.
+  + eexists. eapply ParSync.
+    assert (parallel_inter (VarC_action_add 1 μ1) μ2).
+    admit. admit. admit. admit.
+- intros ? Hp; inversion Hp; eapply H; eauto.
+- intros P e' μ1 μ2 Hpi Hp He.
+  destruct ex as [r trans].
+  inversion trans; subst.
+  + inversion Hp; subst.
+    clear et H0.
+    eapply H1.
+    admit. admit. admit.
+  + inversion Hp; subst.
+    eapply com.
+    admit. admit. admit.
+  +  admit.
+Admitted.
+(*-----------------------------------------*)
+ 
 
 
 
