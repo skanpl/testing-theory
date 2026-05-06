@@ -99,6 +99,23 @@ Qed.
 
 (*=================  attempts ==============================*)
 
+
+
+
+Proposition mp_new: forall (p e :proc),
+  p must_pass e -> ν p must_pass e.
+Proof.
+intros.
+dependent induction H; eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst.
+  * eexists. do 2 constructor. apply l.
+  * eexists. apply ParRight; apply l.
+  * eexists. eapply ParSync; eauto. 
+    cbn in *. constructor.
+    (*need renaming lemma on lts*)
+Admitted.
+ 
 Proposition ctx_compose_new: forall (p q :proc),
   (p << q) -> (exists q0, q ⟶ q0) ->
    (ν p) << (ν q).
@@ -119,8 +136,8 @@ inversion trans; subst.
     inversion l; subst.
     specialize (pt _ l).
     clear H. (*too strong*)
-    (*have to edit "p<<q" like for input...*)
-    (*stuck for sure...*)
+
+    (*stuck*)
     admit.
   * intros p' e' μ1 μ2 Hpi Hq He.
     clear et H0.
