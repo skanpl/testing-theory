@@ -96,6 +96,9 @@ inversion trans;subst.
 Qed.
 
 
+
+(*=================  attempts ==============================*)
+
 Proposition ctx_compose_new: forall (p q :proc),
   (p << q) -> (exists q0, q ⟶ q0) ->
    (ν p) << (ν q).
@@ -118,22 +121,6 @@ inversion trans; subst.
     clear H. (*too strong*)
     (*have to edit "p<<q" like for input...*)
     (*stuck for sure...*)
-    
-(*
-MP preserves τ-trans so
-in quote:
-----------
-ν q  MP e
- ↓   MP
-ν p'
----------
-hence it suffices to show 
-   ν q  MP e
-
-the only way to get it here is i guess H.
-but H is too strong...
-
-*)
     admit.
   * intros p' e' μ1 μ2 Hpi Hq He.
     clear et H0.
@@ -162,16 +149,43 @@ eapply lts_choiceR. auto.
 Qed.
 
 
+
+Proposition mp_sum: forall (p q: gproc) (e:proc),
+  (g p) must_pass e -> (g q) must_pass e -> 
+  (g (p+q)) must_pass e.
+Proof.
+intros p q e Hmpp.
+dependent induction Hmpp; intros; eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst; eexists.
+  * do 2 constructor; eauto.
+  * eapply ParRight; eauto.
+  * eapply ParSync; try constructor; eauto.
+- intros P Hpq.
+  inversion Hpq; subst.
+  * apply pt; auto.
+  * inversion H2; eauto with mdb.
+- intros E He.
+  apply H0; eauto. 
+  inversion H2; eauto with mdb.
+  exfalso; auto. 
+- intros P E ? ? Hpi Hpq He.
+  inversion Hpq; subst.
+  * eapply com; eauto with mdb.
+  * inversion H2; eauto with mdb.
+    exfalso; auto. 
+Qed.
+
+ 
 Proposition ctx_compose_sum: forall (p1 p2 q :gproc),
   g p1 << g p2 -> (exists p0, g p2 ⟶ p0) ->  forced p1 p2  -> 
   g (p1 + q) << g (p2 + q).
 Proof.
-unfold ctx_pre.
+unfold ctx_pre. 
 intros p1 p2 q Hmust Hex Hforce e Hfoc.
 
 dependent induction Hfoc; eauto with mdb.
-destruct ex as [r trans].
-inversion trans;subst.
+destruct ex as [r trans]; inversion trans;subst.
 - eapply m_step; eauto with mdb.
   * destruct Hex; eexists; do 2 constructor; eauto.
   * intros ? Hp2q.
@@ -226,179 +240,9 @@ Qed.
 
 
 
-
-
-
-(*   meh...
-
-
-
-eapply m_step; eauto with mdb.
-- destruct Hex; eexists; do 2 econstructor; eauto.
-- intros P Hp2q.
-  destruct ex as [r trans].
-  inversion trans; subst.
-  * clear H. 
-    clear et H0 H1 com.
-    inversion Hp2q;subst.
-
-- intros ? ? ? ? Hpi Hp2q He.
-  admit.
-
-
-
-Proposition ctx_compose_sum: forall (p1 p2 q1 q2 :gproc),
-  g p1 << g p2 ->  g q1 << g q2 ->
-  g (p1 + q1) << g (p2 + q2).
-Proof.
-unfold ctx_pre.
-intros p1 p2 q1 q2 Hmustp Hmustq e Hfoc.
-dependent induction Hfoc; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans].
-  inversion trans; subst.
-  * inversion l; subst.
-
-
-Proposition ctx_compose_sum: forall (p1 p2 q :gproc),
-  g p1 << g p2 ->
-  g (p1 + q) << g (p2 + q).
-Proof.
-unfold ctx_pre.
-intros p1 p2 q Hmust e Hfoc.
-dependent induction Hfoc; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans].
-  inversion trans; subst.
-  * inversion l; subst.
-
-*)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (*
-observation: in all the things we've done so far one of the "generated IH" each time called "H" requires a way too strong precond to be used which renders it unusable.
+observation: in all the things we've done so far one of the "generated IH" each time called "H" requires a way too strong precond to be used which makes it unusable.
 *)
-
-(*------------- bidouille--------------------*)
-Lemma invert_mp: forall (p e: proc),
-  p must_pass e -> (ν p) must_pass e.
-Proof.
-intros.
-dependent induction H; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans].
-  inversion trans; subst.
-  + eexists. do 2 constructor. eauto.
-  + eexists. eapply ParRight. eauto.
-  + eexists. eapply ParSync.
-    assert (parallel_inter (VarC_action_add 1 μ1) μ2).
-    admit. admit. admit. admit.
-- intros ? Hp; inversion Hp; eapply H; eauto.
-- intros P e' μ1 μ2 Hpi Hp He.
-  destruct ex as [r trans].
-  inversion trans; subst.
-  + inversion Hp; subst.
-    clear et H0.
-    eapply H1.
-    admit. admit. admit.
-  + inversion Hp; subst.
-    eapply com.
-    admit. admit. admit.
-  +  admit.
-Admitted.
-
-
-
-
-Lemma reinforce_inp: forall  c (p q e:proc),
-(g (gpr_input c p)) must_pass e  -> 
- (forall e0 : proc, p must_pass e0 -> q must_pass e0) -> 
-   (g (gpr_input c q)) must_pass e.
-Proof.  
-intros c p q e Hfoc.
-dependent induction Hfoc; eauto with mdb.
-destruct ex as [r trans].
-inversion trans;subst.
-- inversion l.
-- intros Hmust.
-  eapply m_step; eauto with mdb.
-  * eexists. eapply ParRight. apply l.
-  * intros p' Hq. inversion Hq.
-  * intros p' e' μ1 μ2 Hpi Hq He. 
-    clear H pt.  
-    inversion Hq. subst.
-   
-    specialize (com (sub p v) e'(ActIn (c ⋉ v)) μ2 Hpi) .
-    assert (sub p v must_pass e'). eapply com. constructor. auto.
-    clear com.
-    clear H1. (*a priori impossible a utiliser*)
-    
-    specialize (et _ l).
-    specialize (H0 _ l _ _ eq_refl Hmust).
-    (*need a renaming lemma?*)
-    admit.   
- 
-- intro Hmust. 
-  inversion l1. subst.
-  eapply m_step; eauto with mdb.
-  * exists (sub q v, b2). eapply ParSync. eauto. constructor. auto.
-  * intros. inversion H2.
-  * intros p' e' μ1 μ0 Hpi Hq He.
-    clear pt H H0 et. 
-    inversion Hq. subst.
-    clear H1. (*a priori impossible a utiliser*)   
-    (*need a renaming lemma?*)
-    admit.    
-
-Admitted.
-
-
-
-
-(*-----------------------------------------*)
  
 
 
