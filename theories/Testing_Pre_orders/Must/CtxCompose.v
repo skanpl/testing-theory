@@ -97,24 +97,79 @@ Qed.
 
 
 
-(*=================  attempts ==============================*)
+(*================= new   ==============================*)
+
+Fixpoint shift (p:proc) : proc. Admitted.
+
+Lemma lts_shift: forall (p q:proc) (mu:ExtAct TypeOfActions),
+  lts p (ActExt mu) q -> lts (shift p) (ActExt (VarC_action_add 1 mu)) (shift q).
+Proof. Admitted.
+ 
+Lemma lts_shift_inv: forall (p q:proc), lts (shift p) τ q -> 
+  exists p', lts p τ p' /\ q = shift p'.
+Proof. Admitted.
 
 
+Lemma dual_shift: forall (mu1 mu2:ExtAct TypeOfActions),
+  parallel_inter mu1 mu2 ->
+  parallel_inter (VarC_action_add 1 mu1) (VarC_action_add 1 mu2).
+Proof. Admitted.
+	Print lts.
+
+(*
+Lemma invert_sblts_rcv: forall P Q sigma x y, lts P[sigma] (Lrcv x y[sigma]) Q  -> 
+  exists P' x', Q = P'[sigma] /\ x = x'[sigma] /\  lts P (Lrcv x' y) P'. 
+Proof.
+Lemma lts_shift_inv: forall (p q:proc), lts (shift p) (ActIn (c ⋉ v)) q -> 
+  exists p', lts p τ p' /\ q = shift p'.
+Proof. Admitted.
+*)
 
 
 Proposition mp_new: forall (p e :proc),
-  p must_pass e -> ν p must_pass e.
+   shift p must_pass e -> ν p must_pass e.
 Proof.
 intros.
 dependent induction H; eauto with mdb.
 eapply m_step; eauto with mdb.
 - destruct ex as [r trans]; inversion trans; subst.
-  * eexists. do 2 constructor. apply l.
+  * set (lem:= lts_shift_inv _ _ l).
+    destruct lem as [p' [Hp Hsh]].  
+    eexists; do 2 constructor; eauto with mdb.
   * eexists. apply ParRight; apply l.
-  * eexists. eapply ParSync; eauto. 
-    cbn in *. constructor.
-    (*need renaming lemma on lts*)
+  * eexists. eapply ParSync.
+    apply eq. constructor.
+    (*
+    eapply dual_shift; apply eq.
+    eapply lts_res_tau.
+- intros P Hp.
+  inversion Hp; subst.
+  apply H; auto.
+- intros P e' ? ? Hpi Hp He.
+  inversion Hp; subst.
+  set (lem := lts_shift  _ _ _ He).
+  eapply H1. eapply dual_shift; apply Hpi.
+  eauto. eauto.
+Qed.
+*)
 Admitted.
+
+Proposition mp_new_rev: forall (p e :proc),
+  ν p must_pass e ->  p must_pass e.
+Proof.
+intros.
+dependent induction H. eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst.
+  * inversion l; subst.
+    eexists; constructor; eauto.
+  * eexists. apply ParRight; apply l.
+  * inversion l1; subst. 
+    eexists. eapply ParSync.
+Admitted.
+    
+
+
  
 Proposition ctx_compose_new: forall (p q :proc),
   (p << q) -> (exists q0, q ⟶ q0) ->
@@ -149,8 +204,7 @@ inversion trans; subst.
 Admitted.
     
 
-
-
+(*=================================================*)
 
 
 Definition forced (p q: proc) :=
