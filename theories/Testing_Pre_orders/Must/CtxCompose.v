@@ -192,6 +192,48 @@ Admitted.
 *)  
 
 
+Lemma good_shift: forall (e:proc), 
+  good_VACCS e -> good_VACCS (shift e).
+Proof. Admitted.
+Lemma notgood_shift: forall (e:proc), 
+  (~ good_VACCS e) -> ~ good_VACCS (shift e).
+Proof. Admitted.
+
+Lemma dual_shift_inv: forall mu1 mu2, parallel_inter mu1 (ash mu2) ->
+  exists mu0, mu1 = ash mu0 /\ parallel_inter mu0 mu2.
+Proof. Admitted.
+
+
+
+Proposition mp_new_bis: forall (p e :proc),
+   ν p must_pass e -> p must_pass shift e .
+Proof.
+intros.
+dependent induction H.
+- eapply m_now; eapply good_shift; eauto.
+- eapply m_step.
+  * apply notgood_shift; auto.
+  * destruct ex as [r trans]; inversion trans; subst.
+    + inversion l; subst; eexists; constructor; eauto.
+    + eexists; apply ParRight; eapply lts_shift_tau; eauto.
+    + inversion l1; subst.
+      set (lem:= lts_shift_mu _ _ _ l2).
+      set (lemdual:= dual_shift _ _ eq).
+      eexists; eapply ParSync; try eapply lemdual; eauto. 
+  * intros ? Hp. admit.
+  * intros ? Hse.
+    set (lem:= lts_shift_inv_tau _ _ Hse).
+    destruct lem as [e1 [He Hseq]]; subst.
+    eapply H0; eauto.
+  * intros ? ? ? ? Hpi Hp Hse.
+    set (lem:= lts_shift_inv_mu _ _ _ Hse).
+    destruct lem as [e1 [mu0 [He [Hseq Hmueq]]]]; subst.
+    set (lem:= dual_shift_inv _ _ Hpi).
+    destruct lem as [mu1 [Hsmu1 Hpi2]]; subst.       
+ eapply com. apply Hpi2. 
+Admitted.
+
+
 Proposition mp_new_rev: forall (p e :proc),
   ν p must_pass e ->  shift p must_pass e.
 Proof.
@@ -207,8 +249,7 @@ eapply m_step; eauto with mdb.
     set (lem:= lts_shift_mu _ _ _ H4).
     eexists. eapply ParSync.
     Focus 2. eauto.
-(**)
-    
+Admitted.    
   
 
 (*
