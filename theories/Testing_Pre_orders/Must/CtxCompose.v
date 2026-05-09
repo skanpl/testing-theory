@@ -98,111 +98,144 @@ Qed.
 
 
 (*================= new   ==============================*)
-
+ 
 Fixpoint shift (p:proc) : proc. Admitted.
 
-Lemma lts_shift: forall (p q:proc) (mu:ExtAct TypeOfActions),
-  lts p (ActExt mu) q -> lts (shift p) (ActExt (VarC_action_add 1 mu)) (shift q).
-Proof. Admitted.
- 
-Lemma lts_shift_inv: forall (p q:proc), lts (shift p) τ q -> 
-  exists p', lts p τ p' /\ q = shift p'.
+
+Notation ash mu :=  (VarC_action_add 1 mu).
+
+
+Lemma lts_shift_mu: forall (p q:proc) (mu:ExtAct TypeOfActions),
+  lts p (ActExt mu) q -> lts (shift p) (ActExt ( ash mu)) (shift q).
 Proof. Admitted.
 
+Lemma lts_shift_tau: forall (p q:proc),
+  lts p τ q -> lts (shift p) τ (shift q).
+Proof. Admitted.
+
+Lemma lts_shift_inv_tau: forall (p q:proc), lts (shift p) τ q -> 
+  exists p', lts p τ p' /\ q = shift p'.
+Proof. Admitted.
+ 
+Lemma lts_shift_inv_mu: forall (p q:proc) (mu:ExtAct TypeOfActions), 
+  lts (shift p) (ActExt mu) q -> 
+  exists p' mu0, lts p (ActExt mu0) p' /\ q = shift p' /\ mu= ash mu0.
+Proof. Admitted.
 
 Lemma dual_shift: forall (mu1 mu2:ExtAct TypeOfActions),
   parallel_inter mu1 mu2 ->
-  parallel_inter (VarC_action_add 1 mu1) (VarC_action_add 1 mu2).
+  parallel_inter (ash mu1) (ash mu2).
 Proof. Admitted.
-	Print lts.
-
-(*
-Lemma invert_sblts_rcv: forall P Q sigma x y, lts P[sigma] (Lrcv x y[sigma]) Q  -> 
-  exists P' x', Q = P'[sigma] /\ x = x'[sigma] /\  lts P (Lrcv x' y) P'. 
-Proof.
-Lemma lts_shift_inv: forall (p q:proc), lts (shift p) (ActIn (c ⋉ v)) q -> 
-  exists p', lts p τ p' /\ q = shift p'.
+	
+Lemma ash_inj: forall (mu1 mu2:ExtAct TypeOfActions), 
+  ash mu1 = ash mu2 -> mu1=mu2.
 Proof. Admitted.
-*)
-
 
 Proposition mp_new: forall (p e :proc),
-   shift p must_pass e -> ν p must_pass e.
+   p must_pass e -> ν (shift p) must_pass e.
 Proof.
 intros.
 dependent induction H; eauto with mdb.
 eapply m_step; eauto with mdb.
 - destruct ex as [r trans]; inversion trans; subst.
-  * set (lem:= lts_shift_inv _ _ l).
-    destruct lem as [p' [Hp Hsh]].  
-    eexists; do 2 constructor; eauto with mdb.
-  * eexists. apply ParRight; apply l.
-  * eexists. eapply ParSync.
-    apply eq. constructor.
-    (*
-    eapply dual_shift; apply eq.
-    eapply lts_res_tau.
-- intros P Hp.
-  inversion Hp; subst.
-  apply H; auto.
-- intros P e' ? ? Hpi Hp He.
-  inversion Hp; subst.
-  set (lem := lts_shift  _ _ _ He).
-  eapply H1. eapply dual_shift; apply Hpi.
+  * eexists; do 2 constructor.
+    set (lem:= lts_shift_tau _ _ l); eauto.
+  * eexists. eapply ParRight. apply l.
+  * eexists. 
+    eapply ParSync; eauto.
+    constructor.
+    set (lem:= lts_shift_mu _ _ _ l1). eauto.
+- intros P Hsp.
+  inversion Hsp; subst. 
+  set (lem:= lts_shift_inv_tau _ _ H3).
+  destruct lem as [p1 [Hp Hs]]; subst.
+  eapply H; auto.
+- intros P ? ? ? Hpi Hsp He.
+  inversion Hsp; subst.  
+  set (lem:= lts_shift_inv_mu _ _ _ H4).
+  destruct lem as [p1 [mu [Hp [Hspeq Hsmu]]]]; subst.
+  eapply H1. 
+  Focus 2. eauto.
+  set (leminj:= ash_inj _ _ Hsmu). 
+  symmetry in leminj. rewrite leminj.
   eauto. eauto.
-Qed.
-*)
-Admitted.
+Qed. 
+  
 
+(*
 Proposition mp_new_rev: forall (p e :proc),
-  ν p must_pass e ->  p must_pass e.
+  ν (shift p) must_pass e ->  p must_pass e.
 Proof.
 intros.
 dependent induction H. eauto with mdb.
 eapply m_step; eauto with mdb.
 - destruct ex as [r trans]; inversion trans; subst.
   * inversion l; subst.
-    eexists; constructor; eauto.
+    set (lem:= lts_shift_inv_tau _ _ H3).
+    destruct lem as [p1 [Hp Hs]]; subst.
+    eexists. constructor. eauto.
   * eexists. apply ParRight; apply l.
   * inversion l1; subst. 
-    eexists. eapply ParSync.
-Admitted.
+    set (lem:= lts_shift_inv_mu _ _ _ H4).
+    destruct lem as [p1 [mu [Hp [Hspeq Hsmu]]]]; subst.
     
+    eexists. eapply ParSync.
+    Focus 2. eauto. 
+    set (leminj:= ash_inj _ _ Hsmu). 
+    symmetry in leminj. rewrite leminj.
+    eauto. eauto.
+- intros ? Hp.
+  specialize (pt (ν shift p')). 
+  admit.
+- intros.
+Admitted.
+*)  
 
 
- 
+Proposition mp_new_rev: forall (p e :proc),
+  ν p must_pass e ->  shift p must_pass e.
+Proof.
+intros.
+dependent induction H. eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst.
+  * inversion l; subst.
+    set (lem:= lts_shift_tau _ _ H3).
+    eexists; constructor; eauto.
+  * eexists; apply ParRight; apply l.
+  * inversion l1; subst.
+    set (lem:= lts_shift_mu _ _ _ H4).
+    eexists. eapply ParSync.
+    Focus 2. eauto.
+(**)
+    
+  
+
+(*
 Proposition ctx_compose_new: forall (p q :proc),
-  (p << q) -> (exists q0, q ⟶ q0) ->
+  ( p << q)  ->
    (ν p) << (ν q).
 Proof.
 unfold ctx_pre.
-intros p q  Hmust Hqex e Hfoc.
-dependent induction Hfoc; eauto with mdb.
-destruct ex as [r trans].
-inversion trans; subst.
-
-- eapply m_step; eauto with mdb.
-  * inversion l. subst. destruct Hqex as [q0 Hqex].
-    eexists. do 2 econstructor; eauto. 
-
-  * intros q' Hq.
-    clear et H0 com H1. 
-    inversion Hq; subst.
-    inversion l; subst.
+intros p q  Hmust e Hmustnu.
+inversion Hmustnu; eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst.
+  * inversion l; subst.
     specialize (pt _ l).
-    clear H. (*too strong*)
-
-    (*stuck*)
-    admit.
-  * intros p' e' μ1 μ2 Hpi Hq He.
-    clear et H0.
-    inversion Hq; subst.
-    clear H H1. (*too strong*)
-   admit.
-- admit.
-- admit.
-Admitted.
     
+
+    set (lem:= mp_new_rev _ _ Hmustnu).
+    set (lem2:= mp_shift _ _ lem).
+    specialize (Hmust _ lem2).
+    admit.
+   * eexists. apply ParRight; eauto.
+   * admit.
+- intros Q Hq.
+  inversion Hq; subst.
+  inversion Hmustnu; eauto with mdb.
+*)  
+
 
 (*=================================================*)
 
