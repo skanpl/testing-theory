@@ -20,7 +20,7 @@ gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB GeneralizeLtsOutputs ParallelLTSCons
 InteractionBetweenLts Testing_Predicate.
 
 Notation "p << q" := (@ctx_pre _ _ _ _ _ _ proc _ _ _ _ _ _ _ p q) (at level 40).
-Notation tauact q := (t • q).
+Notation tau q := (t • q).
 Notation sub t1 x1 := (t1 ^ x1).
 
 
@@ -278,24 +278,24 @@ eapply m_step; eauto with mdb.
 *)  
 
 
-(*=================================================*)
+(*================ isum =================================*)
 
 
-Definition forced (p q: proc) :=
-  forall a r, lts q a r -> lts p a r.  
+Definition isum (p q: proc) := (tau p) + (tau q).
 
-Proposition forced_sum: forall (p1 p2 q r:gproc) a,
-  forced p1 p2 -> lts (p2+q) a r -> lts (p1+q) a r .
+Lemma mp_tau: forall (p e: proc),
+  p must_pass e ->  g (tau p) must_pass e.
 Proof.
-intros ? ? ? ? ? Hforce Hlts.
-inversion Hlts; subst.
-constructor. eapply Hforce. auto.
-eapply lts_choiceR. auto.
+intros p e Hmust.
+induction Hmust; eauto with mdb.
+eapply m_step; eauto with mdb.
+- eexists; do 2 constructor.
+- intros p' Htau; inversion Htau; subst; eauto with mdb.
+- intros ? ? ? ? ? Htau; inversion Htau.
 Qed.
 
 
-
-Proposition mp_sum: forall (p q: gproc) (e:proc),
+Lemma mp_sum: forall (p q: gproc) (e:proc),
   (g p) must_pass e -> (g q) must_pass e -> 
   (g (p+q)) must_pass e.
 Proof.
@@ -320,6 +320,89 @@ eapply m_step; eauto with mdb.
   * inversion H2; eauto with mdb.
     exfalso; auto. 
 Qed.
+
+
+
+Lemma mp_isum: forall (p q e: proc),
+  p must_pass e -> q must_pass e -> 
+  g (isum p q) must_pass e.
+Proof.
+intros ? ? ? Hp Hq.
+set (lemp:= mp_tau _ _ Hp).
+set (lemq:= mp_tau _ _ Hq).
+set (lemsum:= mp_sum _ _ _ lemp lemq).
+auto.
+Qed.
+
+
+
+Lemma isuml: forall (p q:proc),  g (isum p q)  ⟶  p.
+Proof.
+intros; unfold isum. 
+constructor; eauto with ccs.
+Qed.
+
+Lemma isumr: forall (p q:proc),  g (isum p q)  ⟶  q.
+Proof.
+intros; unfold isum. 
+eapply lts_choiceR; eauto with ccs.
+Qed.
+
+
+
+Lemma mp_isum_rev: forall (p q e: proc),
+ g (isum p q) must_pass e -> 
+ p must_pass e  /\ q must_pass e.
+Proof.
+intros ? ? ? Hisum.
+dependent induction Hisum; eauto with mdb.
+destruct ex as [r trans]; inversion trans; subst; 
+try inversion l; subst; split; apply pt; eauto using isuml, isumr.
+Qed.
+
+
+Lemma isum_invert: forall (p q r: proc), g (isum p q)  ⟶  r -> 
+  r= p \/ r=q.
+Proof.
+intros ? ? ? Hisum.
+inversion Hisum; subst; inversion H3; subst.
+- left; auto.
+- right; auto.
+Qed.
+
+Proposition ctx_compose_isum: forall (p1 p2 q:proc),
+  p1 << p2  -> g (isum p1 q) << g (isum p2 q).
+Proof.
+unfold ctx_pre. 
+intros ? ? ? Hmust ? Hfoc.
+dependent induction Hfoc; eauto with mdb.
+eapply m_step; eauto with mdb.
+- eexists; constructor; eauto using isuml.
+- intros P Hisum. set (invlem:= isum_invert _ _ _ Hisum).
+  destruct invlem; subst; try eapply Hmust; eapply pt;
+   eauto using isuml, isumr.
+- intros ? ? ? ? ? Hisum; unfold isum in *; inversion Hisum; subst.
+  inversion H7; subst. inversion H7.
+Qed.
+
+
+
+
+
+(*================ sum =================================*)
+Definition forced (p q: proc) :=
+  forall a r, lts q a r -> lts p a r.  
+
+Proposition forced_sum: forall (p1 p2 q r:gproc) a,
+  forced p1 p2 -> lts (p2+q) a r -> lts (p1+q) a r .
+Proof.
+intros ? ? ? ? ? Hforce Hlts.
+inversion Hlts; subst.
+constructor. eapply Hforce. auto.
+eapply lts_choiceR. auto.
+Qed.
+
+
 
  
 Proposition ctx_compose_sum: forall (p1 p2 q :gproc),
