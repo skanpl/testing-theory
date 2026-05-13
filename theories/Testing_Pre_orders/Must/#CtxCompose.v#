@@ -572,63 +572,6 @@ Admitted.
 
 
 
-(*============== ~(0 <<c!v) =============*)
-Lemma cep1: forall (c : ChannelData),
-  (g 𝟘) must_pass g ((tau ①)+ (gpr_input c 𝟘)). 
-Proof.
-intro.
-eapply m_step.
-intro.
-inversion H; subst.
-- destruct H1; inversion H0.
-- eexists. eapply ParRight;  eapply lts_choiceL; eauto with ccs.
-- intros; inversion H.
-- intros; inversion H; subst; inversion H4; subst; 
-  apply m_now; eauto with ccs.
-- intros; inversion H0.
-Qed.
-
-
-
-Lemma cep2: forall (c : ChannelData) (v:Data),
-  ~ (pr_output c v) must_pass g ((tau ①)+ (gpr_input c 𝟘)). 
-Proof.
-intros. intro.
-inversion H.
-- inversion H0; subst; inversion H2; inversion H1.
-- specialize (com 𝟘 𝟘). 
-  assert (g 𝟘 must_pass g 𝟘).
-  eapply com. 
-  Focus 2. 
-  eapply lts_output.
-  Focus 2. 
-  eapply lts_choiceR.         
-  assert (forall v, lts (gpr_input c 𝟘) ((c ⋉ v) ?) (sub  (g 𝟘) v) ).
-  intros; cbv; eauto with ccs.
-  eapply H0.
-  unfold parallel_inter, dual; simpl; eauto.
-  inversion H0; try inversion H1.
-  destruct ex0 as [r trans]; inversion trans; subst; 
-  try inversion l; try inversion l1.
-Qed.
-
-
-Proposition ce: forall (c : ChannelData) (v:Data),
-  ~ (g 𝟘) << pr_output c v.
-Proof.
-intros. intro.
-unfold "<<" in H.
-specialize (H _ (cep1 c)).
-eapply cep2; eauto.
-Qed.
-
-
-
-
-
-(*==================================================*)  
-
-Print good_VACCS.
 
 
 
