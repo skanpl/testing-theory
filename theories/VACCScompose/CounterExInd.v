@@ -73,7 +73,7 @@ specialize (H _ (cep1 c)).
 eapply cep2; eauto.
 Qed.
 
-(*=================  ~(0 << c?(_).𝟘)  =================================*)  
+(*=================  ~(0 << c?(x).𝟘)  =================================*)  
 Lemma ce2p1: forall (c : ChannelData) v,
   (g 𝟘) must_pass pr_output c v‖ g (gpr_input c ①). 
 Proof.
@@ -114,4 +114,47 @@ unfold "<<" in H.
 specialize (H _ (ce2p1 c v)).
 eapply ce2p2; eauto.
 Qed.
+
+(*===============   p+q << p not true in general   ==========================*)
+
+
+Lemma ce3p1: forall (c : ChannelData) v,
+  g (𝟘+ tau (pr_output c v) ) must_pass g (gpr_input c ①). 
+Proof.
+intros.
+apply m_step.
+- intro; inversion H.
+- eexists; constructor. 
+  eapply lts_choiceR; eauto with ccs.
+- intros; inversion H; inversion H4; subst; eapply m_step.
+  * intro; inversion H0.
+  * eexists; eapply ParSync; try econstructor; cbv; eauto.
+  * intros; inversion H0.
+  * intros; inversion H0.
+  * intros. inversion H2; subst; cbn; eapply m_now; constructor. 
+- intros; inversion H.
+- intros ? ? ? ? Hpi Hsum Hinp. 
+  inversion Hsum; subst; inversion H3.
+Qed.
+
+Lemma ce3p2: forall (c : ChannelData),
+  ~ (g 𝟘) must_pass g (gpr_input c ①). 
+Proof.
+repeat intro. 
+inversion H.
+- inversion H0.
+- destruct ex as [r trans]; inversion trans; subst; 
+  try inversion l; try inversion l1.
+Qed.
+
+Lemma ce3: forall c v, 
+  ~ g (𝟘+ tau (pr_output c v) ) << g 𝟘 .
+Proof.
+unfold "<<"; repeat intro.
+specialize (H _ (ce3p1 c v)).
+eapply ce3p2; eauto.
+Qed.
+
+
+
 
