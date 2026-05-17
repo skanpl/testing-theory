@@ -93,41 +93,6 @@ Admitted.
 
 (*=========== new compose tentatives   ====================*)
  
-Proposition mp_new: forall (p e :proc),
-   p must_pass e -> ν (shift p) must_pass e.
-Proof.
-intros.
-dependent induction H; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans]; inversion trans; subst.
-  * eexists; do 2 constructor.
-    set (lem:= lts_shift_tau _ _ l); eauto.
-  * eexists. eapply ParRight. apply l.
-  * eexists. 
-    eapply ParSync; eauto.
-    constructor.
-    set (lem:= lts_shift_mu _ _ _ l1). eauto.
-- intros P Hsp.
-  inversion Hsp; subst. 
-  set (lem:= lts_shift_inv_tau _ _ H3).
-  destruct lem as [p1 [Hp Hs]]; subst.
-  eapply H; auto.
-- intros P ? ? ? Hpi Hsp He.
-  inversion Hsp; subst.  
-  set (lem:= lts_shift_inv_mu _ _ _ H4).
-  destruct lem as [p1 [mu [Hp [Hspeq Hsmu]]]]; subst.
-  eapply H1. 
-  Focus 2. eauto.
-  set (leminj:= ash_inj _ _ Hsmu). 
-  symmetry in leminj. rewrite leminj.
-  eauto. eauto.
-Qed. 
-  
-
-
- 
-(*=============================================*)
- 
 
 
 Lemma mp_tonu: forall (p e: proc),
@@ -148,23 +113,22 @@ dependent induction H; eauto with mdb.
       destruct lem as [mu1 [mu1eq Hpi12]]; subst.
       eexists; eapply ParSync; eauto.
       constructor; eauto.
-  * intros P Hnup.    (*observe the hypo H *)
+  * intros P Hnup.    
     inversion Hnup; subst; eauto.
-  * intros e' He. (*observe the hypo H0 *)
-    admit.
+  * intros e' He.
+    eapply H0; try eapply lts_shift_tau; eauto.
   * intros P e' ? ? Hpi Hnup He.
     set (lem:= dual_shift _ _ Hpi). 
     inversion Hnup; subst.
     eapply H1; try apply lem; try eapply lts_shift_mu ; eauto.
-Admitted.
+Qed.
 
 
 
- 
 
- 
-
-
+(*the only thing left to show in the following lemma is to show that
+ a synchro between p and (shift e) preserve the must predicate.
+*)
 Lemma mp_fromnu: forall (p e: proc),
   ν p must_pass e -> p must_pass shift e.
 Proof.
@@ -179,33 +143,127 @@ dependent induction H; eauto with mdb.
     + inversion l1; subst. set (lem:= lts_shift_mu _ _ _ l2);
       eexists; eapply ParSync; try eapply dual_shift; eauto.
   * intros p' Hp.
-    admit.
+    (*je m'étais fait avoir par le parsing de Rocq,je pensais que H se lisait:
+       H : forall p' : proc, (ν p) ⟶ p' -> 
+          (forall p : proc, p' = ν p) ->  p must_pass shift e   
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    mais enfaite ca se lit:
+       H : forall p' : proc, (ν p) ⟶ p' -> 
+          (forall p : proc, p' = ν p -> p must_pass shift e )
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      du coup je pensait etre coincé mais enfaite non, my bad *)
+
+    eapply H; try constructor; eauto.
   * intros e' Hse.
     set (lem:= lts_shift_inv_tau _ _ Hse).
     destruct lem as [e1 [He Heeq]]; subst; eauto.
-  * intros p' E ? ? Hpi Hp Hse.
-    cbv in Hpi. 
-    admit.
-Admitted.   
 
+  * intros p' E ? ? Hpi Hp Hse. (*here, the goal is to show that a synchro*)
+    cbv in Hpi.                 (*between p and (shift e) preserves must*)
+    destruct μ1,μ2,a0; subst; try (exfalso; apply Hpi).
+    + destruct c.  
+      
+      Print ChannelData. (*why is a channel either a cstC or bvarC  ??? *)
+      (*wouldn't it be more reasonable to have 
+        the type channel to be a 1-constructor ADT:
+        Inductive channel := 
+        | ch (n: nat) .  
+        where n is a De Bruijn index ?
+      *) 
+   
+
+
+      (* let's  say that we have
+         Inductive channel := 
+         | ch (n: nat) .  
+         now to proceed in the proof we do a case analysis on n.
+         [if n=0]: we would have 
+           Hse: (shift e) ⟶[ActOut ((ch 0) ⋉ d)] E
+           so by lts_shift_inv_mu (modulo some details), we have
+               e ⟶[bla] _     /\    (ch 0) ⋉ d = ash bla   
+           ("ash" means "action shift")
+           in particular ch 0 = ch (... +1). impossible.
+        
+         [if n=k+1]: we would have
+            Hp : p ⟶[ActIn (ch (k+1) ⋉ d)] p'
+            Hse: (shift e) ⟶[ActOut ((ch (k+1)) ⋉ d)] E
+           hence
+             Hp : p ⟶[ash (ActIn ((ch k) ⋉ d)) ] p' 
+             Hse: (shift e) ⟶[ ash (ActOut ((ch k) ⋉ d)) ] E
+           now, 
+             with Hp, we get: 
+                 (ν p) ⟶[ActIn ((ch k) ⋉ d)]  (ν p')
+
+             and with  lts_shift_in_mu, we get:
+                 e ⟶[bla] e'   /\ E= shift e' /\ ash (ActOut ((ch k) ⋉ d)) = ash bla.
+             so we also have by ash_inj:
+                  ActOut ((ch k) ⋉ d)=bla
+             hence we get the following fully dual transitions:
+                   e ⟶[ActOut ((ch k) ⋉ d)] e'
+                   (ν p) ⟶[ActIn ((ch k) ⋉ d)]  (ν p')
+             Hence by H1 we get as desired:   
+               p' must_pass shift e'             
+               
+          -------------
+          so basically the idea behind the argument is that:
+          p and e communicate along a channel c and we distinguish two case:  
+            (1)   c is the restricted channel 
+                        or 
+            (2)   c is not the restricted channel.
+         in case (1): 
+            by definition of ((ν c) p)⟶[μ] _ , 
+            the communication between p and e along c is 
+            impossible so we conclude by exfalso.
+         in case (2):
+            p and e communicate along c which is not the restricted channel so
+            everything is ok and we can conclude by induction hypo.
+      *) 
+      admit.  
+Admitted.       
+
+
+
+
+Ltac restore_must :=  
+match goal with
+|[pt:?a, et:?b, com:?c,trans:?d, nh:?e|- _ must_pass _ ] =>
+  eapply m_step; try apply pt; try apply et; try apply com; 
+   try apply trans; try apply nh; eauto
+end.
 
 Proposition  ctx_compose_nu: forall (p q: proc),
-  p << q -> (ν shift p) << (ν shift q). 
+  p << q -> (ν p) << (ν q). 
 Proof.
 unfold "<<"; intros ? ? Hmust ? Hfoc.
-dependent induction Hfoc; eauto with mdb.
+generalize dependent q.
+dependent induction Hfoc; intros; eauto with mdb.
 eapply m_step; eauto with mdb.
-- admit. 
+- destruct ex as [r trans]; inversion trans; subst.
+  * inversion l; subst.
+    (*if we know p⟶ _  how can we deduce q⟶_  ??? *)
+    admit.
+  * eexists; eapply ParRight; eauto.
+  * inversion l1; subst.
+    (*if we know p⟶[μ..] _  how can we deduce q⟶[μ..]_  ??? *)
+    admit.
 - intros Q Hnsq.
-  inversion Hnsq; subst. 
-  set (lem:= lts_shift_inv_tau _ _ H3).
-  destruct lem as [q' [Hq Hsheq]]; subst.
-  admit.
+  inversion Hnsq; subst; rename p' into q'. 
+  assert (ν p must_pass e) by restore_must.
+  set (lem:= mp_fromnu _ _ H2).
+  set (lem2:= Hmust _ lem).
+  set (lem3:= mp_tonu _ _ lem2).
+  inversion lem3; eauto with mdb.
 - intros Q e' ? ? Hpi Hsq He.
-  admit.
+  assert (ν p must_pass e) by restore_must.
+  set (lem:= mp_fromnu _ _ H2).
+  set (lem2:= Hmust _ lem).
+  set (lem3:= mp_tonu _ _ lem2).
+  inversion lem3; eauto with mdb.
+  exfalso; apply (nh H3).
 Admitted.
 
 
+ 
 
 
 
@@ -214,16 +272,6 @@ Admitted.
 
 
 
-(*  bidouillage
 
-Print good_VACCS.
-Print lts.
 
-Definition lift (sigma:proc-> proc) (p:proc) :proc. Admitted.
-
-Lemma sbsimpl: forall (p:proc) (sigma:proc ->proc),
-  sigma (ν p) =  ν ((lift sigma) p) .
-Proof. Admitted.
-
-*)
 
