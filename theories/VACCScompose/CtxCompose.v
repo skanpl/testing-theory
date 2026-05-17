@@ -209,7 +209,7 @@ Qed.
 
 
 
-(*================ sum =================================*)
+(*================ patched sum =================================*)
 Definition forced (p q: proc) :=
   forall a r, lts q a r -> lts p a r.  
 
@@ -225,7 +225,7 @@ Qed.
 
 
  
-Proposition ctx_compose_sum: forall (p1 p2 q :gproc),
+Proposition ctx_compose_patchedsum: forall (p1 p2 q :gproc),
   g p1 << g p2 -> (exists p0, g p2 ⟶ p0) ->  forced p1 p2  -> 
   g (p1 + q) << g (p2 + q).
 Proof.
@@ -352,7 +352,7 @@ Qed.
 
 
 
-
+(*
 Proposition ctx_compose_iffalse: forall (p1 p2 q:proc) E, 
   p1 << p2  -> Eval_Eq E = Some false ->
   (If E Then p1 Else q)  << (If E Then p2 Else q).
@@ -371,8 +371,7 @@ eapply m_step; eauto with mdb.
   clear H1 com et H0 H.
   inversion Hif; subst; rewrite Hbool in *; try inversion H4.
 Admitted.
-
-
+*)
 
 (*=============================================================*)
 
@@ -394,14 +393,4 @@ Admitted.
 
 
 
-
-
-
-
-(*
-observation: in all the things we've done so far one of the "generated IH" each time called "H" requires a way too strong precond to be used which makes it unusable.
-*)
  
-
-
-

@@ -226,10 +226,12 @@ Admitted.
 
 Ltac restore_must :=  
 match goal with
-|[pt:?a, et:?b, com:?c,trans:?d, nh:?e|- _ must_pass _ ] =>
-  eapply m_step; try apply pt; try apply et; try apply com; 
-   try apply trans; try apply nh; eauto
+| [pt:_, et:_, com:_,trans:_, nh:_|- _ must_pass _ ] =>
+  eapply m_step; 
+  try first [ apply pt | apply et|  apply com| 
+            apply trans| apply nh]; eauto
 end.
+
 
 
 Proposition  ctx_compose_nu: forall (p q: proc),
@@ -244,8 +246,8 @@ try first [set (lem:= mp_fromnu _ _ H2) |
            set (lem:= mp_fromnu _ _ H5) ] ;
 try (set (lem2:= Hmust _ lem);
 set (lem3:= mp_tonu _ _ lem2);
-inversion lem3; eauto with mdb); 
-exfalso; try eapply nh; auto.
+inversion lem3; eauto); 
+exfalso; apply nh; auto.
 Qed.
 
 
