@@ -231,45 +231,22 @@ match goal with
    try apply trans; try apply nh; eauto
 end.
 
+
 Proposition  ctx_compose_nu: forall (p q: proc),
   p << q -> (ν p) << (ν q). 
 Proof.
 unfold "<<"; intros ? ? Hmust ? Hfoc.
 generalize dependent q.
-dependent induction Hfoc; intros; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans]; inversion trans; subst.
-  * inversion l; subst.
-    (*if we know p⟶ _  how can we deduce q⟶_  ??? *)
-    admit.
-  * eexists; eapply ParRight; eauto.
-  * inversion l1; subst.
-    (*if we know p⟶[μ..] _  how can we deduce q⟶[μ..]_  ??? *)
-    admit.
-- intros Q Hnsq.
-  inversion Hnsq; subst; rename p' into q'. 
-  assert (ν p must_pass e) by restore_must.
-  set (lem:= mp_fromnu _ _ H2).
-  set (lem2:= Hmust _ lem).
-  set (lem3:= mp_tonu _ _ lem2).
-  inversion lem3; eauto with mdb.
-- intros Q e' ? ? Hpi Hsq He.
-  assert (ν p must_pass e) by restore_must.
-  set (lem:= mp_fromnu _ _ H2).
-  set (lem2:= Hmust _ lem).
-  set (lem3:= mp_tonu _ _ lem2).
-  inversion lem3; eauto with mdb.
-  exfalso; apply (nh H3).
-Admitted.
-
-
- 
-
-
-
-
-
-
+dependent induction Hfoc; intros; eauto with mdb; eapply m_step; intros; 
+assert (ν p must_pass e) by restore_must;
+try first [set (lem:= mp_fromnu _ _ H2) |  
+           set (lem:= mp_fromnu _ _ H3) | 
+           set (lem:= mp_fromnu _ _ H5) ] ;
+try (set (lem2:= Hmust _ lem);
+set (lem3:= mp_tonu _ _ lem2);
+inversion lem3; eauto with mdb); 
+exfalso; try eapply nh; auto.
+Qed.
 
 
 
