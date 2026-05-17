@@ -224,30 +224,14 @@ Admitted.
 
 
 
-Ltac restore_must :=  
-match goal with
-| [pt:_, et:_, com:_,trans:_, nh:_|- _ must_pass _ ] =>
-  eapply m_step; 
-  try first [ apply pt | apply et|  apply com| 
-            apply trans| apply nh]; eauto
-end.
-
-
 
 Proposition  ctx_compose_nu: forall (p q: proc),
   p << q -> (ν p) << (ν q). 
 Proof.
-unfold "<<"; intros ? ? Hmust ? Hfoc.
-generalize dependent q.
-dependent induction Hfoc; intros; eauto with mdb; eapply m_step; intros; 
-assert (ν p must_pass e) by restore_must;
-try first [set (lem:= mp_fromnu _ _ H2) |  
-           set (lem:= mp_fromnu _ _ H3) | 
-           set (lem:= mp_fromnu _ _ H5) ] ;
-try (set (lem2:= Hmust _ lem);
-set (lem3:= mp_tonu _ _ lem2);
-inversion lem3; eauto); 
-exfalso; apply nh; auto.
+unfold "<<"; intros.
+set (lem:= mp_fromnu _ _ H0); 
+set (lem2:= H _ lem);
+set (lem3:= mp_tonu _ _ lem2); auto.
 Qed.
 
 
