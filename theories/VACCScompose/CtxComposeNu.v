@@ -228,10 +228,8 @@ Admitted.
 Proposition  ctx_compose_nu: forall (p q: proc),
   p << q -> (ν p) << (ν q). 
 Proof.
-unfold "<<"; intros.
-set (lem:= mp_fromnu _ _ H0); 
-set (lem2:= H _ lem);
-set (lem3:= mp_tonu _ _ lem2); auto.
+unfold "<<"; intros; 
+apply (mp_tonu _ _ (H _ (mp_fromnu _ _ H0))).
 Qed.
 
 
