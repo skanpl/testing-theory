@@ -95,12 +95,7 @@ inversion trans;subst.
     clear eq. apply Hmust. eapply com; eauto. constructor.
 Qed.
 
-
-
-
 (*================ isum =================================*)
-
-
 Definition isum (p q: proc) := (tau p) + (tau q).
 
 Lemma mp_tau: forall (p e: proc),
@@ -204,11 +199,212 @@ eapply m_step; eauto with mdb.
 - intros ? ? ? ? ? Hisum; unfold isum in *; inversion Hisum; subst.
   inversion H7; subst. inversion H7.
 Qed.
+(*================== ifthenelse  =============================*)
+
+(*---------   mp  to ifthenelse   --------------*)
+Lemma mp_iftrue: forall (p q e: proc) E, 
+  p must_pass e -> Eval_Eq E = Some true ->
+  (If E Then p Else q) must_pass e.
+Proof.
+intros ? ? ? ? Hmp Hbool.
+dependent induction Hmp; eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst.
+  * eexists; do 2 constructor; eauto.
+  * eexists; eapply ParRight; eauto.
+  * eexists; eapply ParSync; try constructor; eauto.
+- intros P Hif.
+  inversion Hif; subst; eauto with mdb.
+  rewrite Hbool in *; inversion H7. 
+- intros P e' ? ? Hpi Hif He.
+  inversion Hif; subst; eauto with mdb.
+  rewrite Hbool in *; inversion H7.
+Qed.
+
+Lemma mp_iffalse: forall (p q e: proc) E, 
+  q must_pass e -> Eval_Eq E = Some false ->
+  (If E Then p Else q) must_pass e.
+Proof.
+intros ? ? ? ? Hmp Hbool.
+dependent induction Hmp; eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst.
+  * eexists; constructor; eapply lts_ifZero; eauto.
+  * eexists; eapply ParRight; eauto.
+  * eexists; eapply ParSync; try eapply lts_ifZero; eauto.
+- intros P Hif.
+  inversion Hif; subst; eauto with mdb.
+  rewrite Hbool in *; inversion H7. 
+- intros P e' ? ? Hpi Hif He.
+  inversion Hif; subst; eauto with mdb.
+  rewrite Hbool in *; inversion H7.
+Qed.
+
+(*-----------   mp from ifthenelse   -------------*)
+Lemma mp_iftrue_rev: forall (p q e: proc) E, 
+  Eval_Eq E = Some true -> (If E Then p Else q) must_pass e -> 
+  p must_pass e.
+Proof.
+intros ? ? ? ? Hbool Hmp.
+dependent induction Hmp; eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst.
+  * inversion l; subst; eexists; constructor; eauto.
+    rewrite Hbool in *; inversion H7.
+  * eexists; eapply ParRight; eauto.
+  * eexists; eapply ParSync; eauto.
+    inversion l1; subst; eauto.
+    rewrite Hbool in *; inversion H7.
+- clear H1 com et H0.
+  intros ? Hp.
+  eapply pt; constructor; eauto.
+- intros ? ? ? ? Hpi Hp He.
+  eapply com; try constructor; eauto.
+Unshelve. apply (g 𝟘).
+Qed. 
+
+
+Lemma mp_iffalse_rev: forall (p q e: proc) E, 
+  Eval_Eq E = Some false -> (If E Then p Else q) must_pass e -> 
+  q must_pass e.
+Proof.
+intros ? ? ? ? Hbool Hmp.
+dependent induction Hmp; eauto with mdb.
+eapply m_step; eauto with mdb.
+- destruct ex as [r trans]; inversion trans; subst.
+  * inversion l; subst; eexists; constructor; eauto.
+    rewrite Hbool in *; inversion H7.
+  * eexists; eapply ParRight; eauto.
+  * eexists; eapply ParSync; eauto.
+    inversion l1; subst; eauto.
+    rewrite Hbool in *; inversion H7.
+- clear H1 com et H0.
+  intros ? Hp.  
+  eapply pt; eapply lts_ifZero; eauto.
+- intros ? ? ? ? Hpi Hp He.
+  eapply com; try eapply lts_ifZero; eauto.
+Unshelve. apply (g 𝟘).
+Qed. 
+(*------------    composition    -------------------------*)
+Proposition ctx_compose_iftrue: forall (p1 p2 q:proc) E,  
+  p1 << p2 -> Eval_Eq E = Some true ->
+  (If E Then p1 Else q) << (If E Then p2 Else q).
+Proof.
+repeat intro.
+apply mp_iftrue; try apply H; auto.
+eapply (mp_iftrue_rev _ _ _ _ H0 H1).
+Qed.
+
+Proposition ctx_compose_iffalse: forall (p q1 q2:proc) E,  
+  q1 << q2 -> Eval_Eq E = Some false ->
+  (If E Then p Else q1) << (If E Then p Else q2).
+Proof.
+repeat intro.
+apply mp_iffalse; try apply H; auto.
+eapply (mp_iffalse_rev _ _ _ _ H0 H1).
+Qed.
+
+(*=================    paralel  =====================================*)
+
+Lemma tau_on_3par: forall p q e:proc, 
+ (exists r, (p‖q, e) ⟶ r) -> exists r, (p, q‖e) ⟶ r.
+Proof.
+intros ? ? ? ex.
+destruct ex as [r trans]; inversion trans; subst.
+- inversion l; subst; eexists.
+  *  eapply ParSync; try constructor; eauto; cbv; auto.
+  *  eapply ParSync; try eapply lts_parL; eauto; cbv; auto.
+  *  constructor; eauto.
+  *  eapply ParRight; eapply lts_parL; eauto.
+- eexists; eapply ParRight; eapply lts_parR; eauto.
+- inversion l1; subst.
+  * eexists; eapply ParSync; eauto; eapply lts_parR; eauto.
+  * cbv in eq; destruct μ1,μ2,a0; try (exfalso; apply eq); subst;
+    eexists; eapply ParRight; eauto. 
+    + eapply lts_comR; eauto.
+    + eapply lts_comL; eauto.
+Qed.
+
+
+Lemma mp_frompar: forall (p q r: proc),
+  p‖q must_pass r ->  p must_pass q‖r .  
+Proof.
+intros.
+dependent induction H; eauto with mdb.
+- apply m_now; constructor; auto.
+- set (lem:= good_decidable (q‖ e)); destruct lem.
+  * apply m_now; auto.
+  * eapply m_step; eauto with mdb.
+   + eauto using tau_on_3par.
+   + intros; eapply H; try constructor; eauto with ccs.
+   + intros E Hqe.
+     inversion Hqe; subst.
+     ++ eapply H1; eauto. 
+        assert (parallel_inter (ActOut (c ⋉ v)) (ActIn (c ⋉ v))). 
+        cbv; auto. eauto.        
+        eapply lts_parR; eauto.
+     ++ eapply H1; eauto. 
+        assert (parallel_inter (ActIn (c ⋉ v)) (ActOut (c ⋉ v))). 
+        cbv; auto. eauto.        
+        eapply lts_parR; eauto.
+     ++ eapply H; try eapply lts_parR; eauto.
+     ++ eapply H0; eauto.
+  + intros ? E ? ? Hpi Hp Hqe.
+    inversion Hqe; subst.
+    ++ assert (Hpi2:= Hpi).
+       destruct μ1,μ2,a0; 
+       cbv in Hpi; try (exfalso; apply Hpi); subst.
+       +++  eapply H; try eapply lts_comR; eauto.
+       +++ eapply H; try eapply lts_comL; eauto.
+    ++ eapply H1; try (eapply lts_parL; apply Hp); eauto. 
+Qed.
+ 
+
+ 
+
+Lemma ce_mppar:  
+  (  (g 𝟘) must_pass (g ①) ‖(g 𝟘)   ) /\
+  ~ ((g 𝟘)‖ (g ①) must_pass  (g 𝟘)) .
+Proof.
+split; try (eapply m_now; do 3 constructor); intro.
+destruct H; try inversion H.
+destruct ex as [r trans]; inversion trans; subst.
+* inversion l; try inversion H1; try inversion H3.
+* inversion l.
+* inversion l2.
+Qed.
+
+
+ 
+
+(*
+Proposition ctx_compose_par: forall (p1 p2 q:proc), 
+  p1 << p2  -> (p1 ‖ q)  << (p2 ‖ q).
+Proof.
+*)
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 (*================ patched sum =================================*)
 Definition forced (p q: proc) :=
   forall a r, lts q a r -> lts p a r.  
@@ -281,175 +477,3 @@ destruct ex as [r trans]; inversion trans;subst.
      + constructor. eapply Hforce. auto.       
      + eapply lts_choiceR. auto.
 Qed.
-
-
-
-
-
-
-(*================== ifthenelse  =============================*)
-
-Lemma mp_iftrue: forall (p q e: proc) E, 
-  p must_pass e -> Eval_Eq E = Some true ->
-  (If E Then p Else q) must_pass e.
-Proof.
-intros ? ? ? ? Hmp Hbool.
-dependent induction Hmp; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans]; inversion trans; subst.
-  * eexists; do 2 constructor; eauto.
-  * eexists; eapply ParRight; eauto.
-  * eexists; eapply ParSync; try constructor; eauto.
-- intros P Hif.
-  inversion Hif; subst; eauto with mdb.
-  rewrite Hbool in *; inversion H7. 
-- intros P e' ? ? Hpi Hif He.
-  inversion Hif; subst; eauto with mdb.
-  rewrite Hbool in *; inversion H7.
-Qed.
-
-Lemma mp_iffalse: forall (p q e: proc) E, 
-  q must_pass e -> Eval_Eq E = Some false ->
-  (If E Then p Else q) must_pass e.
-Proof.
-intros ? ? ? ? Hmp Hbool.
-dependent induction Hmp; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans]; inversion trans; subst.
-  * eexists; constructor; eapply lts_ifZero; eauto.
-  * eexists; eapply ParRight; eauto.
-  * eexists; eapply ParSync; try eapply lts_ifZero; eauto.
-- intros P Hif.
-  inversion Hif; subst; eauto with mdb.
-  rewrite Hbool in *; inversion H7. 
-- intros P e' ? ? Hpi Hif He.
-  inversion Hif; subst; eauto with mdb.
-  rewrite Hbool in *; inversion H7.
-Qed.
-
-
-Lemma mp_iftrue_rev: forall (p q e: proc) E, 
-  Eval_Eq E = Some true -> (If E Then p Else q) must_pass e -> 
-  p must_pass e.
-Proof.
-intros ? ? ? ? Hbool Hmp.
-dependent induction Hmp; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans]; inversion trans; subst.
-  * inversion l; subst; eexists; constructor; eauto.
-    rewrite Hbool in *; inversion H7.
-  * eexists; eapply ParRight; eauto.
-  * eexists; eapply ParSync; eauto.
-    inversion l1; subst; eauto.
-    rewrite Hbool in *; inversion H7.
-- clear H1 com et H0.
-  intros ? Hp.
-  eapply pt; constructor; eauto.
-- intros ? ? ? ? Hpi Hp He.
-  eapply com; try constructor; eauto.
-Unshelve. apply (g 𝟘).
-Qed. 
-
-
-
-(*
-Proposition ctx_compose_iffalse: forall (p1 p2 q:proc) E, 
-  p1 << p2  -> Eval_Eq E = Some false ->
-  (If E Then p1 Else q)  << (If E Then p2 Else q).
-Proof.
-unfold ctx_pre. 
-intros ? ? ? ? Hmust Hbool ? Hfoc.
-dependent induction Hfoc; eauto with mdb.
-eapply m_step; eauto with mdb.
-- destruct ex as [r trans]; inversion trans; subst.
-  * inversion l; rewrite Hbool in *; inversion H7; subst.
-    eexists; constructor; eapply lts_ifZero; eauto.
-  * eexists; eapply ParRight; eauto.
-  * inversion l1; subst; rewrite Hbool in *; try inversion H7.
-    eexists; eapply ParSync; try eapply lts_ifZero; eauto.
-- intros P Hif.
-  clear H1 com et H0 H.
-  inversion Hif; subst; rewrite Hbool in *; try inversion H4.
-Admitted.
-*)
-
-(*=================    paralel  =====================================*)
-
-Lemma tau_on_3par: forall p q e:proc, 
- (exists r, (p‖q, e) ⟶ r) -> exists r, (p, q‖e) ⟶ r.
-Proof.
-intros ? ? ? ex.
-destruct ex as [r trans]; inversion trans; subst.
-- inversion l; subst; eexists.
-  *  eapply ParSync; try constructor; eauto; cbv; auto.
-  *  eapply ParSync; try eapply lts_parL; eauto; cbv; auto.
-  *  constructor; eauto.
-  *  eapply ParRight; eapply lts_parL; eauto.
-- eexists; eapply ParRight; eapply lts_parR; eauto.
-- inversion l1; subst.
-  * eexists; eapply ParSync; eauto; eapply lts_parR; eauto.
-  * cbv in eq; destruct μ1,μ2,a0; try (exfalso; apply eq); subst;
-    eexists; eapply ParRight; eauto. 
-    + eapply lts_comR; eauto.
-    + eapply lts_comL; eauto.
-Qed.
-
-
-Lemma mp_frompar: forall (p q r: proc),
-  p‖q must_pass r ->  p must_pass q‖r .  
-Proof.
-intros.
-dependent induction H; eauto with mdb.
-- apply m_now; constructor; auto.
-- set (lem:= good_decidable (q‖ e)); destruct lem.
-  * apply m_now; auto.
-  * eapply m_step; eauto with mdb.
-   + eauto using tau_on_3par.
-   + intros; eapply H; try constructor; eauto with ccs.
-   + intros E Hqe.
-     inversion Hqe; subst.
-     ++ eapply H1; eauto. 
-        assert (parallel_inter (ActOut (c ⋉ v)) (ActIn (c ⋉ v))). 
-        cbv; auto. eauto.        
-        eapply lts_parR; eauto.
-     ++ eapply H1; eauto. 
-        assert (parallel_inter (ActIn (c ⋉ v)) (ActOut (c ⋉ v))). 
-        cbv; auto. eauto.        
-        eapply lts_parR; eauto.
-     ++ eapply H; try eapply lts_parR; eauto.
-     ++ eapply H0; eauto.
-  + intros ? E ? ? Hpi Hp Hqe.
-    inversion Hqe; subst.
-    ++ assert (Hpi2:= Hpi).
-       destruct μ1,μ2,a0; 
-       cbv in Hpi; try (exfalso; apply Hpi); subst.
-       +++  eapply H; try eapply lts_comR; eauto.
-       +++ eapply H; try eapply lts_comL; eauto.
-    ++ eapply H1; try (eapply lts_parL; apply Hp); eauto. 
-Qed.
-
-
-(*
-Proposition ctx_compose_par: forall (p1 p2 q:proc), 
-  p1 << p2  -> (p1 ‖ q)  << (p2 ‖ q).
-Proof.
-*)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
