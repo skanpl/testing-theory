@@ -24,7 +24,6 @@ Notation tau q := (t • q).
 Notation sub t1 x1 := (t1 ^ x1).
 
 
-
 Require Import Coq.Program.Equality.
 
 (* Tactic that looks for lts/lts_step assumptions and inverts them to
@@ -39,6 +38,11 @@ match goal with
 | H : lts_step ?p ?a ?q |- _ => inversion H; subst; clear H
 | H : lts ?p ?a ?q |- _ => inversion H; subst; clear H
  end.
+
+
+
+
+
 
 
 (*================= tau ==============================*)
@@ -304,85 +308,6 @@ apply mp_iffalse; try apply H; auto.
 eapply (mp_iffalse_rev _ _ _ _ H0 H1).
 Qed.
 
-(*=================    paralel  =====================================*)
-
-Lemma tau_on_3par: forall p q e:proc, 
- (exists r, (p‖q, e) ⟶ r) -> exists r, (p, q‖e) ⟶ r.
-Proof.
-intros ? ? ? ex.
-destruct ex as [r trans]; inversion trans; subst.
-- inversion l; subst; eexists.
-  *  eapply ParSync; try constructor; eauto; cbv; auto.
-  *  eapply ParSync; try eapply lts_parL; eauto; cbv; auto.
-  *  constructor; eauto.
-  *  eapply ParRight; eapply lts_parL; eauto.
-- eexists; eapply ParRight; eapply lts_parR; eauto.
-- inversion l1; subst.
-  * eexists; eapply ParSync; eauto; eapply lts_parR; eauto.
-  * cbv in eq; destruct μ1,μ2,a0; try (exfalso; apply eq); subst;
-    eexists; eapply ParRight; eauto. 
-    + eapply lts_comR; eauto.
-    + eapply lts_comL; eauto.
-Qed.
-
-
-Lemma mp_frompar: forall (p q r: proc),
-  p‖q must_pass r ->  p must_pass q‖r .  
-Proof.
-intros.
-dependent induction H; eauto with mdb.
-- apply m_now; constructor; auto.
-- set (lem:= good_decidable (q‖ e)); destruct lem.
-  * apply m_now; auto.
-  * eapply m_step; eauto with mdb.
-   + eauto using tau_on_3par.
-   + intros; eapply H; try constructor; eauto with ccs.
-   + intros E Hqe.
-     inversion Hqe; subst.
-     ++ eapply H1; eauto. 
-        assert (parallel_inter (ActOut (c ⋉ v)) (ActIn (c ⋉ v))). 
-        cbv; auto. eauto.        
-        eapply lts_parR; eauto.
-     ++ eapply H1; eauto. 
-        assert (parallel_inter (ActIn (c ⋉ v)) (ActOut (c ⋉ v))). 
-        cbv; auto. eauto.        
-        eapply lts_parR; eauto.
-     ++ eapply H; try eapply lts_parR; eauto.
-     ++ eapply H0; eauto.
-  + intros ? E ? ? Hpi Hp Hqe.
-    inversion Hqe; subst.
-    ++ assert (Hpi2:= Hpi).
-       destruct μ1,μ2,a0; 
-       cbv in Hpi; try (exfalso; apply Hpi); subst.
-       +++  eapply H; try eapply lts_comR; eauto.
-       +++ eapply H; try eapply lts_comL; eauto.
-    ++ eapply H1; try (eapply lts_parL; apply Hp); eauto. 
-Qed.
- 
-
- 
-
-Lemma ce_mppar:  
-  (  (g 𝟘) must_pass (g ①) ‖(g 𝟘)   ) /\
-  ~ ((g 𝟘)‖ (g ①) must_pass  (g 𝟘)) .
-Proof.
-split; try (eapply m_now; do 3 constructor); intro.
-destruct H; try inversion H.
-destruct ex as [r trans]; inversion trans; subst.
-* inversion l; try inversion H1; try inversion H3.
-* inversion l.
-* inversion l2.
-Qed.
-
-
- 
-
-(*
-Proposition ctx_compose_par: forall (p1 p2 q:proc), 
-  p1 << p2  -> (p1 ‖ q)  << (p2 ‖ q).
-Proof.
-*)
-
 
 
 
@@ -405,75 +330,3 @@ Proof.
 
 
  
-(*================ patched sum =================================*)
-Definition forced (p q: proc) :=
-  forall a r, lts q a r -> lts p a r.  
-
-Proposition forced_sum: forall (p1 p2 q r:gproc) a,
-  forced p1 p2 -> lts (p2+q) a r -> lts (p1+q) a r .
-Proof.
-intros ? ? ? ? ? Hforce Hlts.
-inversion Hlts; subst.
-constructor. eapply Hforce. auto.
-eapply lts_choiceR. auto.
-Qed.
-
-
-
- 
-Proposition ctx_compose_patchedsum: forall (p1 p2 q :gproc),
-  g p1 << g p2 -> (exists p0, g p2 ⟶ p0) ->  forced p1 p2  -> 
-  g (p1 + q) << g (p2 + q).
-Proof.
-unfold ctx_pre. 
-intros p1 p2 q Hmust Hex Hforce e Hfoc.
-
-dependent induction Hfoc; eauto with mdb.
-destruct ex as [r trans]; inversion trans;subst.
-- eapply m_step; eauto with mdb.
-  * destruct Hex; eexists; do 2 constructor; eauto.
-  * intros ? Hp2q.
-    eapply pt.
-    inversion Hp2q; subst.
-    + constructor; eapply Hforce; auto.
-    + eapply lts_choiceR; auto.
-  * intros ? ? ? ? Hpi Hp2q He.
-    eapply com; eauto with mdb.
-    inversion Hp2q; subst.
-    + constructor; eapply Hforce; auto.
-    + eapply lts_choiceR; auto.
-- eapply m_step; eauto with mdb.
-  * eexists; eapply ParRight; eauto.
-  * intros P Hp2q.
-    clear H.
-    clear com H1.
-    
-    clear et H0.
-  
-    inversion Hp2q; subst;eapply pt.
-    + constructor; eapply Hforce; auto.
-    + eapply lts_choiceR; auto.
-  *  intros ? ? ? ? Hpi Hp2q He.
-     clear H H1.
-     
-     inversion Hp2q; subst.
-     + eapply com. eapply Hpi.
-       constructor. eapply Hforce. auto. auto.      
-     + eapply com. eapply Hpi.
-       eapply lts_choiceR. auto. auto.
-
-- eapply m_step; eauto with mdb.    
-  * destruct Hex as [p0 p2step].
-    eexists. do 2 constructor.
-    eauto.
-  * intros ? Hp2q. 
-    eapply pt. 
-    inversion Hp2q; subst.
-    + constructor; eapply Hforce; auto.
-    + eapply lts_choiceR; auto.
-  * intros ? ? ? ? Hpi Hp2q He.
-    eapply com; eauto.
-     inversion Hp2q; subst.
-     + constructor. eapply Hforce. auto.       
-     + eapply lts_choiceR. auto.
-Qed.
