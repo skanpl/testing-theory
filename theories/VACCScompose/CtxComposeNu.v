@@ -1,19 +1,5 @@
 
-(*---------- very temporary don't pay attention to this -------------------*)
-Require Import Must.
-Require Import VACCS_Instance .
-From Must Require Import InputOutputActions ActTau OldTransitionSystems Must VACCS_Instance VACCS_Good
-gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB GeneralizeLtsOutputs ParallelLTSConstruction ForwarderConstruction
-InteractionBetweenLts Testing_Predicate.
-Notation "p << q" := (@ctx_pre _ _ _ _ _ _ proc _ _ _ _ _ _ _ p q) (at level 40).
-Notation tau q := (t • q).
-Notation sub t1 x1 := (t1 ^ x1).
-Require Import Coq.Program.Equality.
-(*-----------------------------------------------------------------------*)
-
-
-
-
+Require Import CtxGenerality.
 
 
 

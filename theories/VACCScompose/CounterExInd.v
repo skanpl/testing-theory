@@ -1,20 +1,7 @@
 
 
 
-Require Import Must.
-Require Import VACCS_Instance .
-
-
-From Must Require Import InputOutputActions ActTau OldTransitionSystems Must VACCS_Instance VACCS_Good
-gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB GeneralizeLtsOutputs ParallelLTSConstruction ForwarderConstruction
-InteractionBetweenLts Testing_Predicate.
-
-Notation "p << q" := (@ctx_pre _ _ _ _ _ _ proc _ _ _ _ _ _ _ p q) (at level 40).
-Notation tau q := (t • q).
-Notation sub t1 x1 := (t1 ^ x1).
-
-
-
+Require Import CtxGenerality.
 
 
 Lemma inp_nil: forall c v, lts (gpr_input c 𝟘) ((c ⋉ v) ?) (sub  (g 𝟘) v) .

@@ -11,33 +11,11 @@
 
 
 
-Require Import Must.
-Require Import VACCS_Instance .
+Require Export CtxGenerality.
 
 
-From Must Require Import InputOutputActions ActTau OldTransitionSystems Must VACCS_Instance VACCS_Good
-gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB GeneralizeLtsOutputs ParallelLTSConstruction ForwarderConstruction
-InteractionBetweenLts Testing_Predicate.
-
-Notation "p << q" := (@ctx_pre _ _ _ _ _ _ proc _ _ _ _ _ _ _ p q) (at level 40).
-Notation tau q := (t • q).
-Notation sub t1 x1 := (t1 ^ x1).
 
 
-Require Import Coq.Program.Equality.
-
-(* Tactic that looks for lts/lts_step assumptions and inverts them to
-  learn about the shape of the conclusion *)
-Ltac lts_inversion :=
-try match goal with
-| H : lts_step ?p ?a ?q |- _ =>
-  solve[inversion H; subst; discriminate || tauto]
-| H : lts ?p ?a ?q |- _ => inversion H; subst; discriminate || tauto
- end;
-match goal with
-| H : lts_step ?p ?a ?q |- _ => inversion H; subst; clear H
-| H : lts ?p ?a ?q |- _ => inversion H; subst; clear H
- end.
 
 
 

@@ -1,18 +1,7 @@
 
-(*---------- very temporary don't pay attention to this -------------------*)
-Require Import Must.
-Require Import VACCS_Instance .
-From Must Require Import InputOutputActions ActTau OldTransitionSystems Must VACCS_Instance VACCS_Good
-gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB GeneralizeLtsOutputs ParallelLTSConstruction ForwarderConstruction
-InteractionBetweenLts Testing_Predicate.
-Notation "p << q" := (@ctx_pre _ _ _ _ _ _ proc _ _ _ _ _ _ _ p q) (at level 40).
-Notation tau q := (t • q).
-Notation sub t1 x1 := (t1 ^ x1).
-Require Import Coq.Program.Equality.
-(*-----------------------------------------------------------------------*)
 
 
-
+Require Import CtxGenerality.
 
 (* no p =  No One(①) in p    *)
 Inductive no: proc -> Prop :=
@@ -173,12 +162,33 @@ dependent induction Hfoc.
 Qed.
 (*===============  composition  ===================*)
 
+Lemma  congs_parcom: forall p q, congs (p ‖ q) (q ‖ p).
+Proof.
+do 2 constructor.
+Qed.
 
 Proposition ctx_compose_par: forall (p1 p2 q:proc),  no q -> 
   p1 << p2  -> (p1 ‖ q)  << (p2 ‖ q).
 Proof.
-repeat intro. Check mp_topar.
+repeat intro. 
 apply (mp_topar _ _ _ H (H0 _ (mp_frompar _ _ _ H1))).
+Qed.
+
+
+
+Proposition ctx_compose_par_full: forall (p1 p2 q1 q2:proc),
+  no q1 ->  no p2 ->   
+  p1 << p2  ->  q1 << q2 ->
+  (p1 ‖ q1) << (p2 ‖ q2).
+Proof.
+intros ? ? ? ? Hnoq1 Hnop2 Hps Hqs.
+set (lem1:= ctx_compose_par _ _ q1 Hnoq1 Hps).
+set (Hcgs:= congs_parcom p2 q1).
+set (lem2:= mpless_congs _ _ _ lem1 Hcgs).
+eapply mpless_trans; try eapply lem2.
+eapply mpless_congs.
+eapply ctx_compose_par; eauto.
+eapply congs_parcom.
 Qed.
 
 
@@ -187,26 +197,4 @@ Qed.
 
 
 
-
-
-
-
-
-
-
-(*
-Lemma sub_preserve_nobla: forall G v k, no (g G) -> 
-  no (subst_in_proc k v (g G)) /\ no_g (subst_in_gproc k v G).
-Proof. 
-intro; induction G; intros; cbn; inversion H; inversion H1; subst; eauto with bla.
-- split.
-  do 2 constructor. 
-  destruct v. simpl. 
-
-Lemma sub_preserve_nog: forall G v, no_g G -> no_g (subst_in_gproc 0 v G).
-Proof.
-intros ? ? Hnog.
-induction Hnog; subst; cbn; eauto with bla.
-- admit.
-- constructor.
-*)
+ 
