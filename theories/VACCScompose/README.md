@@ -1,4 +1,5 @@
 
+# /!\ Warning /!\
 
 This directory uses coq-stdpp.
 
