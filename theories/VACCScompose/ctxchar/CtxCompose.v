@@ -1,15 +1,4 @@
-
-(*
-  /!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\
-  /!\                                          /!\
-  /!\    a compiler avec les installations:   /!\
-  /!\         "coq" et "coq-stdpp"            /!\
-  /!\                                         /!\
-  /!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\
-*)
-
-
-
+ 
 
 Require Export CtxGenerality.
 
