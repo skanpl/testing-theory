@@ -36,11 +36,15 @@ Notation wt := WeakTransitions.wt.
 
 
 
+Print States.
 
  
+Print ltsM.
+
+
  (* HERE:  /!\ what can i do make rocq stop complaining ?   /!\ *) 
- Lemma what_should_i_do : forall p q:proc,
-  (p,empty) ≼ (q,empty) -> True.
+ Lemma what_should_i_do : forall s:States,
+  s ≼ s -> True.
 
 
 
