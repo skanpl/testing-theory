@@ -28,7 +28,6 @@ Require Import MVACCS.
 (*------------------------------------------------------*)
 
 
-Notation "p ≼ q" := (bhv_pre p q)  (at level 40).
 Notation wt := WeakTransitions.wt.
 
 
@@ -44,7 +43,7 @@ Print ltsM.
 
  (* HERE:  /!\ what can i do make rocq stop complaining ?   /!\ *) 
  Lemma what_should_i_do : forall s:States,
-  s ≼ s -> True.
+  s ≼ₐₛ s -> True.
 
 
 
