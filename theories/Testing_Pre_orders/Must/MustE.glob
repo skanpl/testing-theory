@@ -1,0 +1,404 @@
+DIGEST 83a25a3673c6b8e739907ddd1498d926
+FTestingTheory.Testing_Pre_orders.Must.MustE
+R1326:1329 stdpp.base <> <> lib
+R1331:1339 stdpp.decidable <> <> lib
+R1341:1344 stdpp.gmap <> <> lib
+R1346:1351 stdpp.finite <> <> lib
+R1381:1389 Stdlib.ssr.ssreflect <> <> lib
+R1427:1434 Stdlib.Program.Equality <> <> lib
+R1471:1474 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1476:1487 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> <> lib
+R1489:1495 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> <> lib
+R1497:1502 TestingTheory.Labelled_Transition_System.Definitions.Lts_FW <> <> lib
+R1504:1513 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> <> lib
+R1515:1536 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> <> lib
+R1538:1548 TestingTheory.Labelled_Transition_System.Definitions.Termination <> <> lib
+R1554:1557 TestingTheory.Testing_Pre_orders.Must.Must <> <> lib
+R1559:1561 TestingTheory.Bar_Induction.Bar <> <> lib
+R1563:1566 TestingTheory.Testing_Pre_orders.Must.Lift <> <> lib
+R1568:1577 TestingTheory.Labelled_Transition_System.Actions.Definitions.Subset_Act <> <> lib
+R1579:1592 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> <> lib
+R1594:1608 TestingTheory.Labelled_Transition_System.Definitions.WeakTransitions <> <> lib
+R1610:1620 TestingTheory.Labelled_Transition_System.Definitions.Convergence <> <> lib
+R1626:1646 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> <> lib
+R1648:1670 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> <> lib
+R1672:1692 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ForwarderConstruction <> <> lib
+R1694:1716 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ParallelLTSConstruction <> <> lib
+R1718:1723 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> <> lib
+R1729:1745 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> <> lib
+R1747:1758 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> <> lib
+R1760:1763 TestingTheory.Testing_Pre_orders.Must.Must <> <> lib
+sec 1775:1782 <> preorder
+def 1866:1881 <> must_extensional
+binder 1884:1884 <> P:1
+R1901:1903 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R1907:1909 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1906:1906 TestingTheory.Testing_Pre_orders.Must.MustE <> P:1 var
+binder 1910:1910 <> T:2
+binder 1900:1911 <> Sts0:3
+R1926:1929 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1925:1925 TestingTheory.Testing_Pre_orders.Must.MustE <> T:2 var
+binder 1915:1921 <> outcome:4
+R1945:1945 TestingTheory.Testing_Pre_orders.Must.MustE <> P:1 var
+binder 1941:1941 <> p:5
+R1953:1953 TestingTheory.Testing_Pre_orders.Must.MustE <> T:2 var
+binder 1949:1949 <> t:6
+R1970:1976 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2002:2003 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1982:1994 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> max_exec_from coind
+R1996:1996 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1998:1999 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2001:2001 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1997:1997 TestingTheory.Testing_Pre_orders.Must.MustE <> p:5 var
+R2000:2000 TestingTheory.Testing_Pre_orders.Must.MustE <> t:6 var
+binder 1977:1978 <> η:7
+R2004:2010 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2016:2017 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2011:2011 <> n:8
+binder 2013:2015 <> fex:9
+R2047:2061 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2036:2038 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2018:2030 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> mex_take_from def
+R2034:2035 TestingTheory.Testing_Pre_orders.Must.MustE <> η:7 var
+R2032:2032 TestingTheory.Testing_Pre_orders.Must.MustE <> n:8 var
+R2039:2042 Corelib.Init.Datatypes <> Some constr
+R2044:2046 TestingTheory.Testing_Pre_orders.Must.MustE <> fex:9 var
+R2062:2068 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:4 var
+R2070:2070 stdpp.base <> :::x_'.2' not
+R2088:2090 stdpp.base <> :::x_'.2' not
+R2071:2083 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R2085:2087 TestingTheory.Testing_Pre_orders.Must.MustE <> fex:9 var
+def 2108:2121 <> outcome_client
+binder 2124:2124 <> P:10
+R2136:2138 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R2142:2144 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2141:2141 TestingTheory.Testing_Pre_orders.Must.MustE <> P:10 var
+binder 2145:2145 <> T:11
+binder 2136:2146 <> H:12
+R2160:2163 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2159:2159 TestingTheory.Testing_Pre_orders.Must.MustE <> T:11 var
+binder 2149:2155 <> outcome:13
+R2177:2179 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2176:2176 TestingTheory.Testing_Pre_orders.Must.MustE <> P:10 var
+R2180:2180 TestingTheory.Testing_Pre_orders.Must.MustE <> T:11 var
+binder 2171:2171 <> s:14
+R2187:2193 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:13 var
+R2196:2197 stdpp.base <> :::x_'.2' not
+R2195:2195 TestingTheory.Testing_Pre_orders.Must.MustE <> s:14 var
+inst 2230:2237 <> must_bar
+binder 2240:2240 <> P:15
+binder 2251:2251 <> T:16
+R2263:2265 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R2269:2271 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2268:2268 TestingTheory.Testing_Pre_orders.Must.MustE <> P:15 var
+R2272:2272 TestingTheory.Testing_Pre_orders.Must.MustE <> T:16 var
+binder 2263:2273 <> H:17
+R2288:2291 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2287:2287 TestingTheory.Testing_Pre_orders.Must.MustE <> T:16 var
+binder 2277:2283 <> outcome:18
+R2324:2330 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2332:2333 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 2331:2331 <> t:19
+R2334:2341 stdpp.base <> Decision class
+R2344:2350 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:18 var
+R2352:2352 TestingTheory.Testing_Pre_orders.Must.MustE <> t:19 var
+binder 2304:2320 <> outcome_decidable:20
+R2357:2359 TestingTheory.Bar_Induction.Bar <> Bar class
+R2363:2365 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2362:2362 TestingTheory.Testing_Pre_orders.Must.MustE <> P:15 var
+R2366:2366 TestingTheory.Testing_Pre_orders.Must.MustE <> T:16 var
+R2379:2386 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2379:2386 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2379:2386 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2389:2389 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2391:2392 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2394:2394 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+binder 2393:2393 <> t:21
+binder 2390:2390 <> p:22
+binder 2389:2394 <> pat:23
+R2407:2407 TestingTheory.Testing_Pre_orders.Must.MustE <> t:21 var
+prf 2494:2518 <> must_intensional_coincide
+binder 2521:2521 <> P:24
+R2537:2539 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R2543:2545 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2542:2542 TestingTheory.Testing_Pre_orders.Must.MustE <> P:24 var
+binder 2546:2546 <> T:25
+binder 2537:2547 <> H:26
+R2561:2564 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2560:2560 TestingTheory.Testing_Pre_orders.Must.MustE <> T:25 var
+binder 2550:2556 <> outcome:27
+R2596:2603 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2609:2611 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2608:2608 TestingTheory.Testing_Pre_orders.Must.MustE <> T:25 var
+binder 2604:2604 <> t:28
+R2612:2619 stdpp.base <> Decision class
+R2622:2628 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:27 var
+R2630:2630 TestingTheory.Testing_Pre_orders.Must.MustE <> t:28 var
+binder 2571:2587 <> outcome_decidable:29
+R2643:2643 TestingTheory.Testing_Pre_orders.Must.MustE <> P:24 var
+binder 2639:2639 <> p:30
+R2651:2651 TestingTheory.Testing_Pre_orders.Must.MustE <> T:25 var
+binder 2647:2647 <> t:31
+R2709:2718 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'↔'_x not
+R2657:2672 TestingTheory.Bar_Induction.Bar <> intensional_pred ind
+R2676:2678 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2675:2675 TestingTheory.Testing_Pre_orders.Must.MustE <> P:24 var
+R2679:2679 TestingTheory.Testing_Pre_orders.Must.MustE <> T:25 var
+R2685:2692 TestingTheory.Testing_Pre_orders.Must.MustE <> must_bar inst
+R2694:2700 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:27 var
+R2703:2703 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2705:2706 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2708:2708 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2704:2704 TestingTheory.Testing_Pre_orders.Must.MustE <> p:30 var
+R2707:2707 TestingTheory.Testing_Pre_orders.Must.MustE <> t:31 var
+R2720:2727 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts ind
+R2729:2729 TestingTheory.Testing_Pre_orders.Must.MustE <> P:24 var
+R2731:2731 TestingTheory.Testing_Pre_orders.Must.MustE <> T:25 var
+R2735:2741 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:27 var
+R2743:2743 TestingTheory.Testing_Pre_orders.Must.MustE <> p:30 var
+R2745:2745 TestingTheory.Testing_Pre_orders.Must.MustE <> t:31 var
+R2833:2840 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2833:2840 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2833:2840 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2863:2871 TestingTheory.Testing_Pre_orders.Must.Must <> m_sts_now constr
+R2863:2871 TestingTheory.Testing_Pre_orders.Must.Must <> m_sts_now constr
+R2931:2938 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2931:2938 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2931:2938 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R2969:2977 TestingTheory.Testing_Pre_orders.Must.Must <> m_sts_now constr
+R2969:2977 TestingTheory.Testing_Pre_orders.Must.Must <> m_sts_now constr
+R2987:2996 TestingTheory.Testing_Pre_orders.Must.Must <> m_sts_step constr
+R2987:2996 TestingTheory.Testing_Pre_orders.Must.Must <> m_sts_step constr
+R3088:3095 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R3088:3095 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+R3088:3095 TestingTheory.Bar_Induction.Bar <> bar_pred meth
+prf 3212:3245 <> must_ext_pred_iff_must_extensional
+binder 3248:3248 <> P:32
+R3272:3274 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R3278:3280 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3277:3277 TestingTheory.Testing_Pre_orders.Must.MustE <> P:32 var
+binder 3281:3281 <> T:33
+binder 3264:3268 <> StsPT:34
+R3296:3299 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3295:3295 TestingTheory.Testing_Pre_orders.Must.MustE <> T:33 var
+binder 3285:3291 <> outcome:35
+R3326:3333 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R3339:3341 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R3338:3338 TestingTheory.Testing_Pre_orders.Must.MustE <> T:33 var
+binder 3334:3334 <> t:36
+R3342:3349 stdpp.base <> Decision class
+R3352:3358 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:35 var
+R3360:3360 TestingTheory.Testing_Pre_orders.Must.MustE <> t:36 var
+binder 3306:3322 <> outcome_decidable:37
+R3373:3373 TestingTheory.Testing_Pre_orders.Must.MustE <> P:32 var
+binder 3369:3369 <> p:38
+R3381:3381 TestingTheory.Testing_Pre_orders.Must.MustE <> T:33 var
+binder 3377:3377 <> t:39
+R3433:3442 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3387:3402 TestingTheory.Bar_Induction.Bar <> extensional_pred def
+R3409:3416 TestingTheory.Testing_Pre_orders.Must.MustE <> must_bar inst
+R3418:3424 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:35 var
+R3427:3427 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3429:3430 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3432:3432 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3428:3428 TestingTheory.Testing_Pre_orders.Must.MustE <> p:38 var
+R3431:3431 TestingTheory.Testing_Pre_orders.Must.MustE <> t:39 var
+R3444:3459 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional def
+R3461:3461 TestingTheory.Testing_Pre_orders.Must.MustE <> P:32 var
+R3463:3463 TestingTheory.Testing_Pre_orders.Must.MustE <> T:33 var
+R3467:3473 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:35 var
+R3475:3475 TestingTheory.Testing_Pre_orders.Must.MustE <> p:38 var
+R3477:3477 TestingTheory.Testing_Pre_orders.Must.MustE <> t:39 var
+R3603:3615 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R3603:3615 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R3696:3708 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R3696:3708 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+def 3750:3764 <> pre_extensional
+binder 3771:3771 <> P:40
+binder 3773:3773 <> Q:41
+binder 3775:3775 <> T:42
+R3796:3799 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3795:3795 TestingTheory.Testing_Pre_orders.Must.MustE <> T:42 var
+binder 3785:3791 <> outcome:43
+R3812:3814 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R3818:3820 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3817:3817 TestingTheory.Testing_Pre_orders.Must.MustE <> P:40 var
+R3821:3821 TestingTheory.Testing_Pre_orders.Must.MustE <> T:42 var
+binder 3812:3822 <> H:44
+R3825:3827 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R3831:3833 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3830:3830 TestingTheory.Testing_Pre_orders.Must.MustE <> Q:41 var
+R3834:3834 TestingTheory.Testing_Pre_orders.Must.MustE <> T:42 var
+binder 3825:3835 <> H0:45
+R3858:3865 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R3871:3878 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R3870:3870 TestingTheory.Testing_Pre_orders.Must.MustE <> T:42 var
+binder 3866:3866 <> t:46
+R3879:3886 stdpp.base <> Decision class
+R3889:3895 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:43 var
+R3897:3897 TestingTheory.Testing_Pre_orders.Must.MustE <> t:46 var
+binder 3838:3854 <> outcome_decidable:47
+R3910:3910 TestingTheory.Testing_Pre_orders.Must.MustE <> P:40 var
+binder 3906:3906 <> p:48
+R3918:3918 TestingTheory.Testing_Pre_orders.Must.MustE <> Q:41 var
+binder 3914:3914 <> q:49
+R3935:3942 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R3948:3950 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R3947:3947 TestingTheory.Testing_Pre_orders.Must.MustE <> T:42 var
+binder 3943:3943 <> t:50
+R3986:3989 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3952:3967 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional def
+R3969:3969 TestingTheory.Testing_Pre_orders.Must.MustE <> P:40 var
+R3971:3971 TestingTheory.Testing_Pre_orders.Must.MustE <> T:42 var
+R3975:3981 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:43 var
+R3983:3983 TestingTheory.Testing_Pre_orders.Must.MustE <> p:48 var
+R3985:3985 TestingTheory.Testing_Pre_orders.Must.MustE <> t:50 var
+R3991:4006 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional def
+R4008:4008 TestingTheory.Testing_Pre_orders.Must.MustE <> Q:41 var
+R4010:4010 TestingTheory.Testing_Pre_orders.Must.MustE <> T:42 var
+R4014:4020 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:43 var
+R4022:4022 TestingTheory.Testing_Pre_orders.Must.MustE <> q:49 var
+R4024:4024 TestingTheory.Testing_Pre_orders.Must.MustE <> t:50 var
+prf 4111:4139 <> must_extensional_iff_must_sts
+binder 4146:4146 <> P:51
+R4173:4176 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4172:4172 <> T:52
+binder 4162:4168 <> outcome:53
+R4203:4210 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R4216:4218 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R4215:4215 TestingTheory.Testing_Pre_orders.Must.MustE <> T:52 var
+binder 4211:4211 <> t:54
+R4219:4226 stdpp.base <> Decision class
+R4229:4235 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:53 var
+R4237:4237 TestingTheory.Testing_Pre_orders.Must.MustE <> t:54 var
+binder 4183:4199 <> outcome_decidable:55
+R4256:4259 TestingTheory.Labelled_Transition_System.Definitions.gLts <> gLts class
+R4261:4261 TestingTheory.Testing_Pre_orders.Must.MustE <> P:51 var
+binder 4263:4263 <> A:56
+binder 4265:4265 <> H:57
+binder 4247:4251 <> gLtsP:58
+R4269:4283 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R4287:4287 TestingTheory.Testing_Pre_orders.Must.MustE <> A:56 var
+R4285:4285 TestingTheory.Testing_Pre_orders.Must.MustE <> P:51 var
+binder 4268:4287 <> FiniteImagegLts0:59
+R4305:4310 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> gLtsEq class
+R4314:4314 TestingTheory.Testing_Pre_orders.Must.MustE <> H:57 var
+R4312:4312 TestingTheory.Testing_Pre_orders.Must.MustE <> T:52 var
+binder 4296:4300 <> gLtsT:60
+R4318:4332 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R4336:4336 TestingTheory.Testing_Pre_orders.Must.MustE <> A:56 var
+R4334:4334 TestingTheory.Testing_Pre_orders.Must.MustE <> T:52 var
+binder 4317:4336 <> FiniteImagegLts1:61
+R4341:4357 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> Testing_Predicate class
+R4359:4365 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:53 var
+binder 4340:4367 <> Testing_Predicate0:62
+R4377:4389 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R4397:4400 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R4395:4395 TestingTheory.Testing_Pre_orders.Must.MustE <> A:56 var
+R4393:4393 TestingTheory.Testing_Pre_orders.Must.MustE <> T:52 var
+R4391:4391 TestingTheory.Testing_Pre_orders.Must.MustE <> P:51 var
+binder 4376:4400 <> Prop_of_Inter0:63
+R4412:4412 TestingTheory.Testing_Pre_orders.Must.MustE <> P:51 var
+binder 4408:4408 <> p:64
+R4420:4420 TestingTheory.Testing_Pre_orders.Must.MustE <> T:52 var
+binder 4416:4416 <> t:65
+R4458:4462 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R4430:4445 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional def
+R4457:4457 TestingTheory.Testing_Pre_orders.Must.MustE <> t:65 var
+R4455:4455 TestingTheory.Testing_Pre_orders.Must.MustE <> p:64 var
+R4447:4453 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:53 var
+R4463:4470 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts ind
+R4482:4482 TestingTheory.Testing_Pre_orders.Must.MustE <> t:65 var
+R4480:4480 TestingTheory.Testing_Pre_orders.Must.MustE <> p:64 var
+R4472:4478 TestingTheory.Testing_Pre_orders.Must.MustE <> outcome:53 var
+R4564:4597 TestingTheory.Testing_Pre_orders.Must.MustE <> must_ext_pred_iff_must_extensional thm
+R4564:4597 TestingTheory.Testing_Pre_orders.Must.MustE <> must_ext_pred_iff_must_extensional thm
+R4623:4647 TestingTheory.Testing_Pre_orders.Must.MustE <> must_intensional_coincide thm
+R4650:4680 TestingTheory.Bar_Induction.Bar <> extensional_implies_intensional thm
+R4623:4647 TestingTheory.Testing_Pre_orders.Must.MustE <> must_intensional_coincide thm
+R4650:4680 TestingTheory.Bar_Induction.Bar <> extensional_implies_intensional thm
+R4742:4766 TestingTheory.Testing_Pre_orders.Must.MustE <> must_intensional_coincide thm
+R4742:4766 TestingTheory.Testing_Pre_orders.Must.MustE <> must_intensional_coincide thm
+R4792:4825 TestingTheory.Testing_Pre_orders.Must.MustE <> must_ext_pred_iff_must_extensional thm
+R4792:4825 TestingTheory.Testing_Pre_orders.Must.MustE <> must_ext_pred_iff_must_extensional thm
+R4792:4825 TestingTheory.Testing_Pre_orders.Must.MustE <> must_ext_pred_iff_must_extensional thm
+R4841:4871 TestingTheory.Bar_Induction.Bar <> intensional_implies_extensional thm
+R4841:4871 TestingTheory.Bar_Induction.Bar <> intensional_implies_extensional thm
+var  4905:4911 preorder outcome
+R4916:4919 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+var  4939:4949 preorder outcome_dec
+R4953:4959 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R4961:4962 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 4960:4960 <> t:68
+R4963:4970 stdpp.base <> Decision class
+R4973:4979 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.outcome var
+R4981:4981 TestingTheory.Testing_Pre_orders.Must.MustE <> t:68 var
+var  4998:4998 preorder P
+var  5021:5021 preorder Q
+var  5044:5044 preorder H
+R5049:5057 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+var  5075:5079 preorder gLtsP
+R5084:5087 TestingTheory.Labelled_Transition_System.Definitions.gLts <> gLts class
+R5091:5091 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.H var
+R5089:5089 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.P var
+R5095:5109 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R5113:5113 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.A var
+R5111:5111 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.P var
+var  5129:5133 preorder gLtsQ
+R5138:5141 TestingTheory.Labelled_Transition_System.Definitions.gLts <> gLts class
+R5145:5145 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.H var
+R5143:5143 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.Q var
+R5149:5163 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R5167:5167 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.A var
+R5165:5165 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.Q var
+var  5183:5189 preorder gLtsEqT
+R5193:5198 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> gLtsEq class
+R5202:5202 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.H var
+R5200:5200 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.T var
+R5206:5220 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R5224:5224 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.A var
+R5222:5222 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.T var
+R5228:5244 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> Testing_Predicate class
+R5246:5252 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.outcome var
+R5271:5283 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R5291:5294 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R5289:5289 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.A var
+R5287:5287 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.T var
+R5285:5285 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.P var
+R5311:5323 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R5331:5334 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R5329:5329 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.A var
+R5327:5327 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.T var
+R5325:5325 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.Q var
+R5376:5390 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional def
+R5392:5398 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.outcome var
+not 5350:5350 preorder :::x_'⊑ₘᵤₛₜ'_x
+prf 5489:5506 <> pre_extensional_eq
+R5513:5513 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.P var
+binder 5509:5509 <> p:83
+R5521:5521 TestingTheory.Testing_Pre_orders.Must.MustE <> preorder.Q var
+binder 5517:5517 <> q:84
+R5550:5554 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R5532:5548 TestingTheory.Testing_Pre_orders.Must.MustE preorder :::x_'⊑ₘᵤₛₜ'_x not
+R5531:5531 TestingTheory.Testing_Pre_orders.Must.MustE <> p:83 var
+R5549:5549 TestingTheory.Testing_Pre_orders.Must.MustE <> q:84 var
+R5556:5575 TestingTheory.Testing_Pre_orders.Must.Must <> :::x_'⊑ₘᵤₛₜᵢ'_x not
+R5555:5555 TestingTheory.Testing_Pre_orders.Must.MustE <> p:83 var
+R5576:5576 TestingTheory.Testing_Pre_orders.Must.MustE <> q:84 var
+R5633:5649 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts_iff_must thm
+R5657:5685 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional_iff_must_sts thm
+R5633:5649 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts_iff_must thm
+R5633:5649 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts_iff_must thm
+R5633:5649 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts_iff_must thm
+R5657:5685 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional_iff_must_sts thm
+R5657:5685 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional_iff_must_sts thm
+R5657:5685 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional_iff_must_sts thm
+R5715:5743 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional_iff_must_sts thm
+R5751:5767 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts_iff_must thm
+R5715:5743 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional_iff_must_sts thm
+R5715:5743 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional_iff_must_sts thm
+R5715:5743 TestingTheory.Testing_Pre_orders.Must.MustE <> must_extensional_iff_must_sts thm
+R5751:5767 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts_iff_must thm
+R5751:5767 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts_iff_must thm
+R5751:5767 TestingTheory.Testing_Pre_orders.Must.Must <> must_sts_iff_must thm
+R5789:5796 TestingTheory.Testing_Pre_orders.Must.MustE preorder <> sec

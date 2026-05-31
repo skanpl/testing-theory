@@ -1,0 +1,40 @@
+DIGEST da14c13217901a3fb193a10b3cc2b916
+FTestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB
+R1334:1337 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1339:1345 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> <> lib
+R1347:1358 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> <> lib
+rec 1416:1424 <> gLtsObaFB
+proj 1478:1496 <> lts_oba_fb_feedback
+binder 1427:1427 <> P:1
+binder 1429:1429 <> A:2
+R1440:1446 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+R1448:1448 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> P:1 var
+R1450:1450 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> A:2 var
+binder 1440:1450 <> H0:5
+binder 1499:1500 <> p1:7
+binder 1502:1503 <> p2:8
+binder 1505:1506 <> p3:9
+binder 1508:1509 <> η:10
+binder 1511:1512 <> β:11
+R1538:1541 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1523:1534 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R1536:1537 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> η:10 var
+R1552:1555 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1542:1545 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R1550:1551 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> η:10 var
+R1547:1548 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> β:11 var
+R1571:1574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1558:1563 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1566:1568 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1556:1557 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> p1:7 var
+R1564:1565 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> η:10 var
+R1569:1570 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> p2:8 var
+R1590:1602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1577:1582 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1585:1587 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1575:1576 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> p2:8 var
+R1583:1584 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> β:11 var
+R1588:1589 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> p3:9 var
+R1605:1612 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍'_x not
+R1603:1604 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> p1:7 var
+R1613:1614 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> p3:9 var

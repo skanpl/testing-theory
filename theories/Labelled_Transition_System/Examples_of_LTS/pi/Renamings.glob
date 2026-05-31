@@ -1,0 +1,1213 @@
+DIGEST cf5bc6544b587f16cd617a0013574ecb
+FTestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings
+R15:27 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi <> <> lib
+R45:63 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> <> lib
+R93:101 Stdlib.Relations.Relations <> <> lib
+R103:111 Stdlib.Classes.Morphisms <> <> lib
+R124:135 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.core <> funcomp def
+R207:208 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Or constr
+not 193:193 <> :::x_'∨'_x
+R253:262 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Inequality constr
+not 239:239 <> :::x_'⩽'_x
+R308:310 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core act constr
+not 294:294 <> :::x_'⋉'_x
+def 343:344 <> τ
+R349:358 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core tau_action constr
+R381:391 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gpr_success constr
+not 371:371 <> :::'①'
+R415:421 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gpr_nil constr
+not 404:404 <> :::'𝟘'
+R446:455 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gpr_choice constr
+not 434:434 <> :::x_'+'_x
+R490:499 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gpr_output constr
+not 472:472 <> :::x_'!'_x_'•'_x
+R544:552 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gpr_input constr
+not 532:532 <> :::x_'?'_x
+R599:605 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gpr_tau constr
+not 583:583 <> :::'t'_'•'_x
+R648:653 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core pr_rec constr
+not 634:634 <> :::'rec'_x
+R696:701 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core pr_par constr
+not 682:682 <> :::x_'‖'_x
+R745:750 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core pr_res constr
+not 732:732 <> :::'ν'_x
+R810:824 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core pr_if_then_else constr
+not 779:779 <> :::'If'_x_'Then'_x_'Else'_x
+R946:972 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core g constr
+def 987:989 <> νs
+binder 991:991 <> n:1
+R996:1003 Corelib.Init.Nat <> iter def
+binder 1012:1012 <> p:2
+R1017:1019 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'ν'_x not
+R1020:1020 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:2 var
+R1005:1005 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:1 var
+R1106:1111 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> subst2 def
+not 1083:1083 <> ::subst_scope:x_'['_x_';'_x_']'
+R1199:1204 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> subst1 def
+not 1182:1182 <> ::subst_scope:x_'['_x_']'
+R1284:1288 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> scons def
+R1292:1294 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+not 1271:1271 <> ::subst_scope:x_'..'
+binder 1366:1366 <> x:3
+R1376:1376 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:3 var
+not 1349:1349 <> ::subst_scope:x_'>>'_x
+R1435:1439 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> scons def
+not 1418:1418 <> ::subst_scope:x_'.:'_x
+R1563:1565 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+not 1554:1554 <> :::'⋅'
+R1596:1599 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren2 def
+R1601:1603 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+not 1577:1577 <> :::x_'⟨'_x_'⟩'
+R1627:1655 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core cst constr
+R1658:1689 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core var_Data constr
+R1692:1723 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core var_proc constr
+def 1832:1838 <> ren_Act
+R1849:1852 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1846:1848 Corelib.Init.Datatypes <> nat ind
+R1853:1855 Corelib.Init.Datatypes <> nat ind
+binder 1841:1842 <> xi:4
+R1863:1865 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Act ind
+binder 1859:1859 <> a:5
+R1870:1872 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Act ind
+R1885:1885 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> a:5 var
+R1896:1900 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ActIn constr
+R1903:1905 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core act constr
+R1917:1921 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ActIn constr
+R1924:1926 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core act constr
+R1929:1936 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ren_Data def
+R1938:1939 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:4 var
+R1946:1953 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ren_Data def
+R1955:1956 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:4 var
+R1967:1973 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core FreeOut constr
+R1976:1978 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core act constr
+R1990:1996 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core FreeOut constr
+R1999:2001 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core act constr
+R2004:2011 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ren_Data def
+R2013:2014 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:4 var
+R2021:2028 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ren_Data def
+R2030:2031 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:4 var
+R2042:2049 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core BoundOut constr
+R2057:2064 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core BoundOut constr
+R2067:2074 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ren_Data def
+R2076:2077 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:4 var
+R2087:2096 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core tau_action constr
+R2101:2110 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core tau_action constr
+prf 2125:2138 <> compRenRen_Act
+R2149:2152 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2146:2148 Corelib.Init.Datatypes <> nat ind
+R2153:2155 Corelib.Init.Datatypes <> nat ind
+binder 2141:2142 <> xi:7
+R2169:2172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2166:2168 Corelib.Init.Datatypes <> nat ind
+R2173:2175 Corelib.Init.Datatypes <> nat ind
+binder 2159:2162 <> zeta:8
+R2190:2193 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2187:2189 Corelib.Init.Datatypes <> nat ind
+R2194:2196 Corelib.Init.Datatypes <> nat ind
+binder 2181:2183 <> rho:9
+binder 2218:2218 <> x:10
+R2243:2245 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2221:2232 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.core <> funcomp def
+R2242:2242 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:10 var
+R2239:2240 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:7 var
+R2234:2237 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> zeta:8 var
+R2246:2248 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> rho:9 var
+R2250:2250 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:10 var
+binder 2202:2207 <> Eq_Act:11
+R2258:2260 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Act ind
+binder 2254:2254 <> s:12
+R2294:2296 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2267:2273 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ren_Act def
+R2275:2278 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> zeta:8 var
+R2281:2287 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ren_Act def
+R2289:2290 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:7 var
+R2292:2292 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:12 var
+R2297:2303 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ren_Act def
+R2305:2307 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> rho:9 var
+R2309:2309 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:12 var
+R2390:2404 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core compRenRen_Data def
+R2390:2404 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core compRenRen_Data def
+R2390:2404 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core compRenRen_Data def
+R2446:2460 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core compRenRen_Data def
+R2446:2460 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core compRenRen_Data def
+R2446:2460 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core compRenRen_Data def
+R2493:2507 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core compRenRen_Data def
+R2493:2507 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core compRenRen_Data def
+prf 2539:2548 <> renRen_Act
+R2559:2562 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2556:2558 Corelib.Init.Datatypes <> nat ind
+R2563:2565 Corelib.Init.Datatypes <> nat ind
+binder 2551:2552 <> xi:13
+R2579:2582 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2576:2578 Corelib.Init.Datatypes <> nat ind
+R2583:2585 Corelib.Init.Datatypes <> nat ind
+binder 2569:2572 <> zeta:14
+R2593:2595 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Act ind
+binder 2589:2589 <> a:15
+R2631:2635 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2604:2610 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ren_Act def
+R2612:2615 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> zeta:14 var
+R2618:2624 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ren_Act def
+R2626:2627 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:13 var
+R2629:2629 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> a:15 var
+R2636:2642 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ren_Act def
+R2645:2656 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.core <> funcomp def
+R2663:2664 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> xi:13 var
+R2658:2661 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> zeta:14 var
+R2667:2667 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> a:15 var
+R2684:2697 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> compRenRen_Act thm
+binder 2714:2714 <> n:16
+R2719:2725 Corelib.Init.Logic <> eq_refl constr
+R2684:2697 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> compRenRen_Act thm
+binder 2714:2714 <> n:17
+R2719:2725 Corelib.Init.Logic <> eq_refl constr
+inst 2757:2763 <> Ren_Act
+R2768:2771 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> Ren1 class
+R2784:2790 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ren_Act def
+def 2866:2869 <> swap
+R2876:2879 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2873:2875 Corelib.Init.Datatypes <> nat ind
+R2880:2882 Corelib.Init.Datatypes <> nat ind
+R2888:2892 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R2921:2921 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R2894:2898 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R2920:2920 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R2913:2916 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'>>'_x not
+R2904:2907 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'>>'_x not
+R2899:2903 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R2908:2912 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R2917:2919 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+prf 2931:2945 <> swap_involutive
+R2950:2967 Corelib.Classes.Morphisms <> pointwise_relation def
+R2971:2972 Corelib.Init.Logic <> eq ind
+R2980:2983 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'>>'_x not
+R2976:2979 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R2984:2987 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R2990:2992 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+def 3050:3058 <> injective
+R3069:3072 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3066:3068 Corelib.Init.Datatypes <> nat ind
+R3073:3075 Corelib.Init.Datatypes <> nat ind
+binder 3061:3062 <> σ:18
+binder 3090:3090 <> x:19
+binder 3092:3092 <> y:20
+R3106:3109 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3099:3101 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3095:3096 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:18 var
+R3098:3098 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:19 var
+R3102:3103 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:18 var
+R3105:3105 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> y:20 var
+R3111:3113 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3110:3110 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:19 var
+R3114:3114 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> y:20 var
+prf 3124:3138 <> Injective_UpRen
+R3158:3161 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3155:3157 Corelib.Init.Datatypes <> nat ind
+R3162:3164 Corelib.Init.Datatypes <> nat ind
+binder 3150:3151 <> σ:21
+R3182:3185 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3170:3178 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R3180:3181 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:21 var
+R3186:3194 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R3197:3202 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R3204:3205 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:21 var
+prf 3322:3339 <> Injective_Ren_Data
+R3359:3362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3356:3358 Corelib.Init.Datatypes <> nat ind
+R3363:3365 Corelib.Init.Datatypes <> nat ind
+binder 3351:3352 <> σ:22
+R3383:3386 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3371:3379 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R3381:3382 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:22 var
+R3402:3405 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 3394:3395 <> d1:23
+binder 3397:3398 <> d2:24
+R3431:3434 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3418:3420 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3408:3411 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R3416:3417 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d1:23 var
+R3413:3414 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:22 var
+R3421:3424 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R3429:3430 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d2:24 var
+R3426:3427 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:22 var
+R3437:3439 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3435:3436 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d1:23 var
+R3440:3441 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d2:24 var
+prf 3563:3584 <> Injective_Ren_Equation
+R3604:3607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3601:3603 Corelib.Init.Datatypes <> nat ind
+R3608:3610 Corelib.Init.Datatypes <> nat ind
+binder 3596:3597 <> σ:25
+R3628:3631 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3616:3624 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R3626:3627 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:25 var
+R3647:3654 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Equation ind
+binder 3639:3640 <> e1:26
+binder 3642:3643 <> e2:27
+R3696:3699 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3675:3677 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3657:3668 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ren_Equation def
+R3670:3671 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:25 var
+R3673:3674 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> e1:26 var
+R3678:3689 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ren_Equation def
+R3691:3692 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:25 var
+R3694:3695 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> e2:27 var
+R3702:3704 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3700:3701 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> e1:26 var
+R3705:3706 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> e2:27 var
+R3848:3865 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Data thm
+R3848:3865 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Data thm
+R3848:3865 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Data thm
+prf 4065:4082 <> Injective_Ren_Proc
+prf 4194:4212 <> Injective_Ren_GProc
+R4101:4104 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core proc ind
+binder 4093:4094 <> p1:28
+binder 4096:4097 <> p2:29
+R4126:4129 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4123:4125 Corelib.Init.Datatypes <> nat ind
+R4130:4132 Corelib.Init.Datatypes <> nat ind
+binder 4118:4119 <> σ:30
+R4148:4151 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4136:4144 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R4146:4147 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:30 var
+R4177:4180 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4163:4165 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4154:4157 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R4160:4162 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R4158:4159 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:30 var
+R4152:4153 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p1:28 var
+R4168:4171 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R4174:4176 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R4172:4173 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:30 var
+R4166:4167 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p2:29 var
+R4183:4185 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4181:4182 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p1:28 var
+R4186:4187 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p2:29 var
+R4231:4235 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gproc ind
+binder 4223:4224 <> g1:31
+binder 4226:4227 <> g2:32
+R4257:4260 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4254:4256 Corelib.Init.Datatypes <> nat ind
+R4261:4263 Corelib.Init.Datatypes <> nat ind
+binder 4249:4250 <> σ:33
+R4279:4282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4267:4275 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R4277:4278 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:33 var
+R4308:4311 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4294:4296 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4285:4288 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R4291:4293 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R4289:4290 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:33 var
+R4283:4284 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> g1:31 var
+R4299:4302 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R4305:4307 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R4303:4304 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:33 var
+R4297:4298 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> g2:32 var
+R4314:4316 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4312:4313 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> g1:31 var
+R4317:4318 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> g2:32 var
+R4419:4433 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_proc_proc thm
+R4436:4450 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_proc_Data thm
+R4475:4492 Corelib.Classes.Morphisms <> pointwise_relation def
+R4512:4514 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+R4500:4505 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R4507:4509 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⋅' not
+R4496:4497 Corelib.Init.Logic <> eq ind
+R4475:4492 Corelib.Classes.Morphisms <> pointwise_relation def
+R4512:4514 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+R4500:4505 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R4507:4509 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⋅' not
+R4496:4497 Corelib.Init.Logic <> eq ind
+R4692:4706 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_Data_proc thm
+R4709:4723 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_Data_Data thm
+R4753:4767 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_UpRen thm
+R4753:4767 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_UpRen thm
+R4814:4835 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Equation thm
+R4814:4835 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Equation thm
+R5077:5094 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Data thm
+R5077:5094 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Data thm
+R5077:5094 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Data thm
+R5187:5204 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Data thm
+R5187:5204 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_Ren_Data thm
+R5220:5234 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_Data_Data thm
+R5296:5310 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_UpRen thm
+R5296:5310 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Injective_UpRen thm
+prf 5477:5491 <> Shift_Injective
+R5495:5503 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R5505:5509 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+prf 5564:5577 <> Swap_Injective
+R5581:5589 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R5591:5594 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+binder 5626:5626 <> y:36
+R5630:5634 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5682:5682 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5635:5635 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5637:5641 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5678:5681 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5650:5652 Corelib.Init.Datatypes <> nat ind
+binder 5646:5646 <> x:37
+R5657:5677 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⋅' not
+R5662:5666 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R5669:5673 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R5675:5675 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:37 var
+R5681:5681 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> y:36 var
+binder 5626:5626 <> y:38
+R5630:5634 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5682:5682 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5635:5635 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5637:5641 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5678:5681 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5650:5652 Corelib.Init.Datatypes <> nat ind
+binder 5646:5646 <> x:39
+R5657:5677 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⋅' not
+R5662:5666 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R5669:5673 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R5675:5675 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:39 var
+R5681:5681 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> y:38 var
+R5759:5767 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R5771:5775 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5814:5814 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5785:5787 Corelib.Init.Datatypes <> nat ind
+binder 5780:5781 <> x0:40
+R5792:5813 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⋅' not
+R5797:5801 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R5804:5808 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R5810:5811 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x0:40 var
+R5759:5767 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> injective def
+R5771:5775 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5814:5814 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'.:'_x not
+R5785:5787 Corelib.Init.Datatypes <> nat ind
+binder 5780:5781 <> x0:41
+R5792:5813 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⋅' not
+R5797:5801 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R5804:5808 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R5810:5811 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x0:41 var
+R5992:5997 Corelib.Init.Logic <> eq_sym thm
+R5992:5997 Corelib.Init.Logic <> eq_sym thm
+prf 6151:6170 <> Swap_Proc_Involutive
+binder 6181:6181 <> p:42
+R6207:6209 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6196:6199 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R6204:6206 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R6200:6203 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R6185:6188 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R6193:6195 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R6189:6192 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R6184:6184 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:42 var
+R6210:6210 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:42 var
+R6245:6259 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap_involutive thm
+R6245:6259 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap_involutive thm
+R6245:6259 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap_involutive thm
+ind 6286:6294 <> Shiftable
+constr 6310:6317 <> shift_op
+rec 6286:6294 <> Shiftable
+proj 6310:6317 <> shift_op
+binder 6297:6297 <> A:43
+R6322:6325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6321:6321 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:43 var
+R6326:6326 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:43 var
+inst 6338:6347 <> Shift_proc
+R6351:6359 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shiftable class
+R6361:6364 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core proc ind
+R6369:6372 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren2 def
+R6378:6382 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R6374:6376 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+inst 6394:6404 <> Shift_gproc
+R6408:6416 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shiftable class
+R6418:6422 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gproc ind
+R6427:6430 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren2 def
+R6436:6440 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R6432:6434 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ids def
+inst 6452:6461 <> Shift_Data
+R6465:6473 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shiftable class
+R6475:6478 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+R6483:6486 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R6488:6492 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+inst 6504:6512 <> Shift_Act
+R6517:6525 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shiftable class
+R6527:6529 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Act ind
+R6534:6537 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R6539:6543 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R6564:6571 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_op def
+not 6555:6555 <> :::'⇑'
+def 6586:6590 <> nvars
+binder 6593:6593 <> A:46
+R6608:6616 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shiftable class
+R6618:6618 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:46 var
+binder 6604:6604 <> H:47
+R6626:6628 Corelib.Init.Datatypes <> nat ind
+binder 6622:6622 <> n:48
+R6634:6637 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6633:6633 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:46 var
+R6638:6638 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:46 var
+R6645:6652 Corelib.Init.Nat <> iter def
+R6657:6659 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R6654:6654 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:48 var
+prf 6670:6681 <> Shift_to_Ren
+R6695:6698 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core proc ind
+binder 6693:6693 <> p:49
+binder 6701:6701 <> n:50
+R6713:6715 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6704:6708 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R6712:6712 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:49 var
+R6710:6710 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:50 var
+R6717:6720 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R6737:6739 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R6721:6728 Corelib.Init.Nat <> iter def
+R6732:6736 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R6730:6730 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:50 var
+R6716:6716 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:49 var
+prf 6834:6850 <> Shift_to_Ren_Data
+R6864:6867 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 6862:6862 <> d:51
+binder 6870:6870 <> n:52
+R6882:6884 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6873:6877 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R6881:6881 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:51 var
+R6879:6879 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:52 var
+R6885:6888 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R6909:6909 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:51 var
+R6891:6898 Corelib.Init.Nat <> iter def
+R6902:6906 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R6900:6900 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:52 var
+prf 7004:7012 <> nvars_sum
+binder 7023:7023 <> n:53
+binder 7025:7025 <> m:54
+binder 7028:7028 <> A:55
+R7043:7051 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shiftable class
+R7053:7053 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:55 var
+binder 7039:7039 <> H:56
+R7059:7059 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:55 var
+binder 7057:7057 <> q:57
+R7084:7086 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7065:7069 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7074:7078 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7082:7082 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> q:57 var
+R7080:7080 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:54 var
+R7071:7071 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:53 var
+R7087:7091 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7101:7101 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> q:57 var
+R7095:7097 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7094:7094 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:53 var
+R7098:7098 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:54 var
+prf 7200:7216 <> Push_nvars_output
+binder 7226:7226 <> n:58
+binder 7228:7228 <> c:59
+binder 7230:7230 <> v:60
+binder 7232:7232 <> P:61
+R7258:7260 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7237:7241 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7247:7249 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'!'_x_'•'_x not
+R7251:7255 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'!'_x_'•'_x not
+R7246:7246 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:59 var
+R7250:7250 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:60 var
+R7256:7256 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:61 var
+R7243:7243 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:58 var
+R7261:7261 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'!'_x_'•'_x not
+R7271:7275 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'!'_x_'•'_x not
+R7285:7291 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'!'_x_'•'_x not
+R7301:7301 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'!'_x_'•'_x not
+R7262:7266 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7270:7270 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:59 var
+R7268:7268 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:58 var
+R7276:7280 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7284:7284 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:60 var
+R7282:7282 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:58 var
+R7292:7296 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7300:7300 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:61 var
+R7298:7298 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:58 var
+prf 7383:7396 <> Push_nvars_par
+binder 7406:7406 <> n:62
+binder 7408:7408 <> P:63
+binder 7410:7410 <> Q:64
+R7432:7434 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7415:7419 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7425:7429 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'‖'_x not
+R7424:7424 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:63 var
+R7430:7430 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:64 var
+R7421:7421 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:62 var
+R7435:7435 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'‖'_x not
+R7445:7451 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'‖'_x not
+R7461:7461 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'‖'_x not
+R7436:7440 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7444:7444 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:63 var
+R7442:7442 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:62 var
+R7452:7456 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7460:7460 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:64 var
+R7458:7458 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:62 var
+prf 7537:7553 <> Push_nvars_choice
+binder 7563:7563 <> n:65
+binder 7565:7565 <> P:66
+binder 7567:7567 <> Q:67
+R7591:7593 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7572:7576 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7581:7581 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core g constr
+R7585:7587 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'+'_x not
+R7584:7584 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:66 var
+R7588:7588 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:67 var
+R7578:7578 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:65 var
+R7594:7594 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'+'_x not
+R7605:7609 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'+'_x not
+R7619:7619 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'+'_x not
+R7595:7599 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7604:7604 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:66 var
+R7601:7601 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:65 var
+R7610:7614 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7618:7618 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:67 var
+R7616:7616 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:65 var
+prf 7695:7712 <> Push_nvars_FreeOut
+binder 7723:7723 <> n:68
+binder 7725:7725 <> c:69
+binder 7727:7727 <> v:70
+R7757:7759 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7730:7734 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7739:7745 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core FreeOut constr
+R7749:7753 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⋉'_x not
+R7748:7748 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:69 var
+R7754:7754 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:70 var
+R7736:7736 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:68 var
+R7760:7766 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core FreeOut constr
+R7778:7782 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⋉'_x not
+R7769:7773 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7777:7777 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:69 var
+R7775:7775 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:68 var
+R7783:7787 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7791:7791 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:70 var
+R7789:7789 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:68 var
+prf 7891:7906 <> Push_nvars_ActIn
+binder 7917:7917 <> n:71
+binder 7919:7919 <> c:72
+binder 7921:7921 <> v:73
+R7949:7951 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7924:7928 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7933:7937 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ActIn constr
+R7941:7945 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⋉'_x not
+R7940:7940 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:72 var
+R7946:7946 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:73 var
+R7930:7930 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:71 var
+R7952:7956 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core ActIn constr
+R7968:7972 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⋉'_x not
+R7959:7963 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7967:7967 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:72 var
+R7965:7965 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:71 var
+R7973:7977 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R7981:7981 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:73 var
+R7979:7979 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:71 var
+prf 8081:8099 <> Push_nvars_BoundOut
+binder 8110:8110 <> n:74
+binder 8112:8112 <> v:75
+R8136:8138 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8115:8119 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R8124:8131 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core BoundOut constr
+R8134:8134 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:75 var
+R8121:8121 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:74 var
+R8139:8146 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core BoundOut constr
+R8149:8153 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R8157:8157 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:75 var
+R8155:8155 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:74 var
+prf 8255:8268 <> shift_in_nvars
+binder 8271:8271 <> A:76
+R8283:8291 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shiftable class
+R8293:8293 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:76 var
+binder 8283:8293 <> H:77
+binder 8306:8306 <> n:78
+R8311:8311 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> A:76 var
+binder 8309:8309 <> q:79
+R8330:8332 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8315:8329 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8320:8324 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R8328:8328 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> q:79 var
+R8326:8326 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:78 var
+R8333:8337 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R8342:8346 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8346:8346 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> q:79 var
+R8339:8339 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:78 var
+prf 8429:8447 <> Shift_Permute_Subst
+binder 8458:8459 <> sp:80
+binder 8461:8461 <> s:81
+binder 8463:8463 <> Q:82
+R8513:8519 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8468:8468 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R8474:8477 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R8493:8496 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R8511:8512 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R8478:8489 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_proc thm
+R8491:8492 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sp:80 var
+R8497:8508 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_Data thm
+R8510:8510 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:81 var
+R8469:8473 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8473:8473 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:82 var
+R8520:8534 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8526:8527 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R8530:8531 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R8533:8533 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R8528:8529 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sp:80 var
+R8532:8532 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:81 var
+R8525:8525 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:82 var
+prf 8568:8578 <> permute_ren
+binder 8589:8590 <> sp:83
+binder 8592:8592 <> s:84
+binder 8594:8594 <> Q:85
+R8652:8658 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8599:8602 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren2 def
+R8646:8650 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8650:8650 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:85 var
+R8626:8640 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_Data_Data thm
+R8642:8642 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:84 var
+R8605:8619 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_Data_proc thm
+R8621:8622 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sp:83 var
+R8659:8675 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8664:8667 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren2 def
+R8674:8674 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:85 var
+R8672:8672 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:84 var
+R8669:8670 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sp:83 var
+prf 8709:8725 <> permute_ren_guard
+R8752:8755 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8749:8751 Corelib.Init.Datatypes <> nat ind
+R8756:8758 Corelib.Init.Datatypes <> nat ind
+binder 8742:8743 <> sp:86
+binder 8745:8745 <> s:87
+R8766:8770 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core gproc ind
+binder 8762:8762 <> Q:88
+R8834:8836 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8781:8784 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren2 def
+R8828:8832 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8832:8832 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:88 var
+R8808:8822 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_Data_Data thm
+R8824:8824 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:87 var
+R8787:8801 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core upRen_Data_proc thm
+R8803:8804 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sp:86 var
+R8837:8853 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8842:8845 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren2 def
+R8852:8852 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Q:88 var
+R8850:8850 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:87 var
+R8847:8848 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sp:86 var
+prf 8887:8898 <> permute_ren1
+binder 8909:8909 <> s:89
+R8914:8917 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 8912:8912 <> d:90
+R8946:8948 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8923:8926 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R8940:8944 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8944:8944 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:90 var
+R8929:8934 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R8936:8936 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:89 var
+R8949:8962 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R8954:8957 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R8961:8961 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:90 var
+R8959:8959 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> s:89 var
+prf 8996:9008 <> shift_permute
+binder 9019:9019 <> p:91
+binder 9021:9022 <> σ:92
+R9049:9051 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9037:9040 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9046:9048 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9041:9045 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R9028:9031 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9034:9036 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9032:9033 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:92 var
+R9027:9027 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:91 var
+R9065:9068 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9078:9080 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9069:9074 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R9076:9077 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:92 var
+R9053:9056 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9062:9064 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9057:9061 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R9052:9052 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:91 var
+prf 9114:9131 <> shift_permute_Data
+R9145:9148 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 9143:9143 <> v:93
+binder 9151:9152 <> σ:94
+R9179:9181 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9157:9160 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9169:9172 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9177:9177 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:93 var
+R9174:9175 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:94 var
+R9162:9166 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R9182:9185 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9200:9203 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9211:9211 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> v:93 var
+R9205:9209 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R9188:9193 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R9195:9196 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:94 var
+prf 9282:9301 <> shift_permute_Action
+R9315:9317 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Act ind
+binder 9313:9313 <> a:95
+binder 9320:9321 <> σ:96
+R9348:9350 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9326:9329 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9338:9341 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9346:9346 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> a:95 var
+R9343:9344 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:96 var
+R9331:9335 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R9351:9354 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9369:9372 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9380:9380 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> a:95 var
+R9374:9378 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R9357:9362 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R9364:9365 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:96 var
+R9406:9409 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9412:9418 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Ren_Act inst
+R9440:9449 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> renRen_Act thm
+R9440:9449 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> renRen_Act thm
+R9440:9449 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> renRen_Act thm
+R9440:9449 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> renRen_Act thm
+R9440:9449 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> renRen_Act thm
+R9440:9449 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> renRen_Act thm
+prf 9464:9482 <> Shift_Shift_Swap_pr
+binder 9493:9493 <> p:97
+R9520:9522 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9496:9496 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9508:9512 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9517:9519 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R9513:9516 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R9497:9507 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9502:9506 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9506:9506 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:97 var
+R9523:9533 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9528:9532 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9532:9532 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:97 var
+prf 9567:9587 <> Shift_Shift_Swap_Data
+R9602:9605 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 9599:9599 <> d:98
+R9632:9634 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9609:9612 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9620:9630 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9625:9629 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9629:9629 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:98 var
+R9614:9617 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R9635:9645 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9640:9644 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9644:9644 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:98 var
+prf 9679:9698 <> Shift_Shift_Swap_Act
+binder 9709:9709 <> x:99
+R9735:9737 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9712:9715 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R9723:9733 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9728:9732 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9732:9732 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:99 var
+R9717:9720 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R9738:9748 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9743:9747 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R9747:9747 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:99 var
+R9775:9781 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Ren_Act inst
+R9784:9790 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ren_Act def
+R9793:9800 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_op def
+R9803:9811 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_Act inst
+prf 10024:10033 <> Shift_Swap
+R10047:10050 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core proc ind
+binder 10045:10045 <> p:100
+R10072:10074 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10054:10054 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10060:10064 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10069:10071 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10065:10068 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R10055:10059 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R10059:10059 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:100 var
+R10076:10079 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10092:10094 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10080:10085 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R10087:10091 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R10075:10075 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:100 var
+R10119:10130 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.core <> funcomp def
+prf 10164:10175 <> Invert_Shift
+R10190:10193 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 10187:10187 <> c:101
+binder 10196:10197 <> c':102
+binder 10199:10200 <> σ:103
+R10232:10235 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10210:10212 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10205:10209 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R10209:10209 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:101 var
+R10213:10216 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R10230:10231 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c':102 var
+R10219:10224 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R10226:10227 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:103 var
+R10236:10242 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10246:10247 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10243:10245 <> c'':104
+R10250:10252 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10248:10249 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c':102 var
+R10253:10259 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R10257:10259 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c'':104 var
+R10307:10310 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10302:10306 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R10307:10310 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10302:10306 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R10392:10395 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10392:10395 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+prf 10554:10569 <> Invert_Bound_Out
+R10584:10586 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Act ind
+binder 10581:10582 <> α:105
+binder 10589:10589 <> c:106
+R10614:10617 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10605:10607 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10595:10602 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core BoundOut constr
+R10604:10604 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:106 var
+R10608:10613 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R10612:10613 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> α:105 var
+R10618:10624 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10626:10627 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10625:10625 <> d:107
+R10637:10640 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10629:10631 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10628:10628 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> c:106 var
+R10632:10636 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R10636:10636 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:107 var
+R10643:10645 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10641:10642 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> α:105 var
+R10646:10653 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core BoundOut constr
+R10655:10655 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:107 var
+prf 10741:10750 <> Up_Up_Swap
+R10765:10768 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core proc ind
+binder 10762:10762 <> p:108
+binder 10771:10772 <> σ:109
+R10814:10816 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10789:10792 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10811:10813 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10793:10798 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R10801:10806 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R10808:10809 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:109 var
+R10778:10781 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10786:10788 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10782:10785 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R10777:10777 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:108 var
+R10843:10846 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10851:10853 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10847:10850 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R10818:10821 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10840:10842 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10822:10827 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R10830:10835 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R10837:10838 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ:109 var
+R10817:10817 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:108 var
+prf 10902:10917 <> Up_Up_Subst_Swap
+R10932:10935 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core proc ind
+binder 10929:10929 <> p:110
+binder 10938:10940 <> σ1:111
+binder 10942:10944 <> σ2:112
+R10949:10949 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11035:11043 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11127:11127 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10950:10950 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R10963:10966 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R10998:11001 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R11033:11034 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R10967:10978 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_proc thm
+R10981:10992 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_proc thm
+R10994:10996 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ1:111 var
+R11002:11013 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_Data thm
+R11016:11027 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_Data thm
+R11029:11031 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ2:112 var
+R10952:10955 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10960:10962 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R10956:10959 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R10951:10951 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:110 var
+R11116:11119 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R11124:11126 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R11120:11123 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R11045:11047 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R11079:11082 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R11114:11115 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> ::subst_scope:x_'['_x_';'_x_']' not
+R11048:11059 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_proc thm
+R11062:11073 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_proc thm
+R11075:11077 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ1:111 var
+R11083:11094 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_Data thm
+R11097:11108 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core up_Data_Data thm
+R11110:11112 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> σ2:112 var
+R11044:11044 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> p:110 var
+R11166:11184 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core subst_proc_morphism inst
+R11166:11184 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core subst_proc_morphism inst
+def 11275:11277 <> upn
+binder 11279:11279 <> n:113
+binder 11281:11285 <> sigma:114
+R11290:11297 Corelib.Init.Nat <> iter def
+R11329:11333 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sigma:114 var
+binder 11306:11310 <> sigma:115
+R11315:11320 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R11322:11326 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sigma:115 var
+R11299:11299 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:113 var
+prf 11343:11359 <> shift_upn_permute
+R11372:11375 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 11370:11370 <> d:116
+binder 11378:11378 <> n:117
+R11416:11418 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11382:11385 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R11410:11414 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R11414:11414 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:116 var
+R11388:11393 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R11396:11398 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R11400:11400 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:117 var
+R11402:11405 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R11419:11443 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R11424:11427 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R11442:11442 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:116 var
+R11430:11432 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R11434:11434 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:117 var
+R11436:11439 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R11477:11488 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> permute_ren1 thm
+R11477:11488 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> permute_ren1 thm
+R11477:11488 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> permute_ren1 thm
+R11477:11488 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> permute_ren1 thm
+R11477:11488 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> permute_ren1 thm
+prf 11503:11516 <> shiftn_permute
+R11529:11532 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 11527:11527 <> d:118
+binder 11535:11535 <> n:119
+binder 11537:11541 <> sigma:120
+R11577:11579 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11547:11550 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R11567:11571 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R11575:11575 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:118 var
+R11573:11573 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:119 var
+R11553:11555 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R11557:11557 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:119 var
+R11559:11563 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sigma:120 var
+R11580:11584 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R11589:11592 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R11600:11600 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:118 var
+R11594:11598 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sigma:120 var
+R11586:11586 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:119 var
+R11661:11665 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R11695:11702 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_op def
+R11705:11714 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_Data inst
+R11733:11750 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_permute_Data thm
+R11733:11750 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_permute_Data thm
+R11733:11750 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_permute_Data thm
+prf 11765:11776 <> upnswap_neut
+binder 11786:11786 <> n:121
+R11791:11794 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core Data ind
+binder 11789:11789 <> d:122
+R11801:11801 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11843:11847 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11869:11869 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11802:11805 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R11821:11841 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R11826:11840 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R11831:11835 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R11839:11839 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:122 var
+R11837:11837 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:121 var
+R11808:11810 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R11812:11812 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:121 var
+R11814:11817 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R11848:11868 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R11853:11867 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R11858:11862 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R11866:11866 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> d:122 var
+R11864:11864 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:121 var
+R11925:11945 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_Shift_Swap_Data thm
+R11925:11945 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_Shift_Swap_Data thm
+R11925:11945 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_Shift_Swap_Data thm
+R11958:11962 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R11971:11973 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R11984:12000 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_upn_permute thm
+R11984:12000 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_upn_permute thm
+R11984:12000 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_upn_permute thm
+R12013:12017 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+prf 12056:12068 <> var0_shiftupn
+binder 12078:12078 <> n:123
+R12129:12134 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12083:12128 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R12088:12091 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R12107:12111 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R12116:12123 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core var_Data constr
+R12113:12113 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:123 var
+R12094:12096 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R12098:12098 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:123 var
+R12100:12103 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R12135:12138 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R12158:12161 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R12177:12181 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R12186:12193 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core var_Data constr
+R12183:12183 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:123 var
+R12164:12166 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R12168:12168 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:123 var
+R12170:12173 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R12141:12143 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R12146:12146 Corelib.Init.Datatypes <> S constr
+R12148:12148 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:123 var
+R12151:12154 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R12259:12263 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R12272:12274 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R12289:12305 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_upn_permute thm
+R12289:12305 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_upn_permute thm
+R12289:12305 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_upn_permute thm
+R12341:12348 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_op def
+R12351:12360 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_Data inst
+R12379:12396 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_permute_Data thm
+R12379:12396 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_permute_Data thm
+R12379:12396 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_permute_Data thm
+prf 12411:12424 <> var0_shiftupn2
+binder 12434:12434 <> n:124
+R12465:12467 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12439:12464 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R12444:12448 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R12453:12460 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core var_Data constr
+R12450:12450 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:124 var
+R12468:12471 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> ren1 def
+R12487:12491 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R12496:12503 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.pi Core var_Data constr
+R12493:12493 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:124 var
+R12474:12476 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R12478:12478 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:124 var
+R12480:12483 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> swap def
+R12570:12574 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R12608:12620 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> var0_shiftupn thm
+R12608:12620 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> var0_shiftupn thm
+R12608:12620 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> var0_shiftupn thm
+prf 12635:12640 <> upn_up
+binder 12650:12650 <> n:125
+binder 12652:12656 <> sigma:126
+R12682:12684 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12662:12664 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R12666:12666 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:125 var
+R12669:12674 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R12676:12680 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sigma:126 var
+R12685:12690 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> up_ren def
+R12693:12695 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R12697:12697 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:125 var
+R12699:12703 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sigma:126 var
+R12766:12768 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+prf 12800:12806 <> upn_νs
+binder 12816:12816 <> n:127
+binder 12818:12818 <> P:128
+binder 12820:12824 <> sigma:129
+R12850:12852 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12830:12830 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R12838:12841 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R12847:12849 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R12842:12846 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sigma:129 var
+R12831:12833 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> νs def
+R12835:12835 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:127 var
+R12837:12837 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:128 var
+R12853:12855 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> νs def
+R12857:12857 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:127 var
+R12861:12863 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R12875:12877 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R12864:12866 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R12868:12868 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:127 var
+R12870:12874 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> sigma:129 var
+R12860:12860 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:128 var
+R13003:13008 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn_up thm
+R13003:13008 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn_up thm
+R13003:13008 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn_up thm
+prf 13029:13037 <> nvars_νs
+binder 13047:13047 <> n:130
+binder 13049:13049 <> m:131
+binder 13051:13051 <> P:132
+R13071:13073 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13054:13058 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> nvars def
+R13063:13065 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> νs def
+R13067:13067 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:130 var
+R13069:13069 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:132 var
+R13060:13060 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:131 var
+R13074:13076 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> νs def
+R13078:13078 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:130 var
+R13082:13085 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R13110:13113 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R13086:13088 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R13090:13090 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:130 var
+R13093:13100 Corelib.Init.Nat <> iter def
+R13104:13108 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R13102:13102 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:131 var
+R13081:13081 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:132 var
+R13146:13157 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_to_Ren thm
+R13146:13157 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_to_Ren thm
+R13146:13157 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_to_Ren thm
+R13166:13172 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn_νs thm
+R13166:13172 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn_νs thm
+prf 13187:13195 <> shift_νs
+binder 13205:13205 <> n:133
+binder 13207:13207 <> P:134
+R13226:13228 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13213:13225 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::'⇑' not
+R13218:13220 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> νs def
+R13222:13222 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:133 var
+R13224:13224 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:134 var
+R13229:13231 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> νs def
+R13233:13233 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:133 var
+R13237:13239 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R13251:13253 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> :::x_'⟨'_x_'⟩' not
+R13240:13242 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R13244:13244 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:133 var
+R13246:13250 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R13236:13236 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> P:134 var
+R13272:13279 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> shift_op def
+R13282:13291 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_proc inst
+R13310:13316 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn_νs thm
+R13310:13316 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn_νs thm
+prf 13331:13342 <> Shift_of_nat
+binder 13352:13352 <> n:135
+binder 13354:13354 <> m:136
+R13375:13377 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13357:13364 Corelib.Init.Nat <> iter def
+R13374:13374 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:136 var
+R13368:13372 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R13366:13366 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:135 var
+R13378:13384 Corelib.Init.Nat <> add def
+R13386:13386 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:135 var
+R13388:13388 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:136 var
+prf 13472:13483 <> Up_Shift_Sum
+binder 13493:13493 <> n:137
+binder 13495:13495 <> m:138
+binder 13497:13497 <> x:139
+R13500:13500 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13533:13536 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13501:13503 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R13505:13505 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:138 var
+R13508:13515 Corelib.Init.Nat <> iter def
+R13519:13523 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R13517:13517 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:137 var
+R13528:13530 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R13527:13527 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:138 var
+R13531:13531 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:139 var
+R13537:13543 Corelib.Init.Nat <> add def
+R13545:13545 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:137 var
+R13549:13551 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R13548:13548 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:138 var
+R13552:13552 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> x:139 var
+R13605:13616 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R13605:13616 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R13605:13616 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R13653:13675 Stdlib.Arith.PeanoNat Nat add_succ_r thm
+R13653:13675 Stdlib.Arith.PeanoNat Nat add_succ_r thm
+R13653:13675 Stdlib.Arith.PeanoNat Nat add_succ_r thm
+prf 13691:13712 <> Pointwise_Up_Shift_Sum
+binder 13722:13722 <> n:140
+binder 13724:13724 <> m:141
+R13728:13745 Corelib.Classes.Morphisms <> pointwise_relation def
+R13749:13750 Corelib.Init.Logic <> eq ind
+R13755:13766 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.core <> funcomp def
+R13796:13803 Corelib.Init.Nat <> iter def
+R13807:13811 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R13805:13805 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:141 var
+R13769:13771 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> upn def
+R13773:13773 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:141 var
+R13776:13783 Corelib.Init.Nat <> iter def
+R13787:13791 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R13785:13785 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:140 var
+R13818:13825 Corelib.Init.Nat <> iter def
+R13835:13839 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> shift def
+R13829:13831 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R13828:13828 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> n:140 var
+R13832:13832 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> m:141 var
+R13888:13907 Stdlib.Arith.PeanoNat Nat add_0_r thm
+R13888:13907 Stdlib.Arith.PeanoNat Nat add_0_r thm
+R13888:13907 Stdlib.Arith.PeanoNat Nat add_0_r thm
+R13939:13950 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.core <> funcomp def
+R13988:13999 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R13988:13999 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R13988:13999 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R13988:13999 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R13988:13999 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R13988:13999 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Shift_of_nat thm
+R14010:14021 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Up_Shift_Sum thm
+R14010:14021 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Up_Shift_Sum thm
+R14010:14021 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.Renamings <> Up_Shift_Sum thm
+R14034:14056 Stdlib.Arith.PeanoNat Nat add_succ_r thm
+R14034:14056 Stdlib.Arith.PeanoNat Nat add_succ_r thm
+R14034:14056 Stdlib.Arith.PeanoNat Nat add_succ_r thm
+R14073:14094 Stdlib.Arith.PeanoNat Nat add_assoc thm
+R14073:14094 Stdlib.Arith.PeanoNat Nat add_assoc thm
+R14073:14094 Stdlib.Arith.PeanoNat Nat add_assoc thm

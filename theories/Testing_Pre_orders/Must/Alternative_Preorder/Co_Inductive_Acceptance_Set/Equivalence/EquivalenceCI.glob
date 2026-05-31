@@ -1,0 +1,403 @@
+DIGEST f7f049996463443f9503b1cbcd5a9cc8
+FTestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI
+R1267:1275 Stdlib.ssr.ssreflect <> <> lib
+R1313:1316 Stdlib.Unicode.Utf8 <> <> lib
+R1352:1355 Stdlib.Lists.List <> <> lib
+R1365:1377 Stdlib.Lists.List ListNotations <> mod
+R1415:1422 Stdlib.Program.Equality <> <> lib
+R1424:1425 Stdlib.Program.Wf <> <> lib
+R1467:1479 Stdlib.Wellfounded.Inverse_Image <> <> lib
+R1509:1514 Stdlib.Setoids.Setoid <> <> lib
+R1551:1566 Stdlib.Logic.ProofIrrelevance <> <> lib
+R1596:1599 stdpp.base <> <> lib
+R1601:1609 stdpp.countable <> <> lib
+R1611:1616 stdpp.finite <> <> lib
+R1618:1621 stdpp.gmap <> <> lib
+R1623:1626 stdpp.list <> <> lib
+R1628:1633 stdpp.finite <> <> lib
+R1635:1638 stdpp.base <> <> lib
+R1640:1648 stdpp.decidable <> <> lib
+R1650:1655 stdpp.finite <> <> lib
+R1657:1660 stdpp.gmap <> <> lib
+R1700:1705 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> <> lib
+R1707:1716 TestingTheory.Labelled_Transition_System.Actions.Definitions.Subset_Act <> <> lib
+R1718:1721 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1723:1734 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> <> lib
+R1736:1742 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> <> lib
+R1744:1766 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> <> lib
+R1768:1777 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> <> lib
+R1779:1784 TestingTheory.Labelled_Transition_System.Definitions.Lts_FW <> <> lib
+R1786:1799 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> <> lib
+R1803:1813 TestingTheory.Labelled_Transition_System.Definitions.Termination <> <> lib
+R1815:1829 TestingTheory.Labelled_Transition_System.Definitions.WeakTransitions <> <> lib
+R1831:1841 TestingTheory.Labelled_Transition_System.Definitions.Convergence <> <> lib
+R1845:1865 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> <> lib
+R1867:1889 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> <> lib
+R1891:1911 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ForwarderConstruction <> <> lib
+R1913:1935 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ParallelLTSConstruction <> <> lib
+R1937:1954 TestingTheory.Labelled_Transition_System.Examples_of_LTS.SET_LTS.SetLTSConstruction <> <> lib
+R1958:1961 TestingTheory.Testing_Pre_orders.Must.Must <> <> lib
+R1963:1967 TestingTheory.Testing_Pre_orders.Must.MustE <> <> lib
+R1969:1972 TestingTheory.Testing_Pre_orders.Must.Lift <> <> lib
+R1974:1990 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> <> lib
+R1992:2013 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> <> lib
+R2017:2028 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> <> lib
+R2030:2038 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> <> lib
+R2040:2051 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> <> lib
+R2053:2063 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> <> lib
+R2067:2078 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> <> lib
+R2080:2090 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.SoundnessCI <> <> lib
+R2092:2105 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.CompletenessCI <> <> lib
+prf 2117:2160 <> equivalence_co_inductive_acc_set_and_acc_set
+R2176:2179 TestingTheory.Labelled_Transition_System.Definitions.gLts <> gLts class
+binder 2181:2181 <> P:1
+binder 2183:2183 <> A:2
+binder 2185:2185 <> H:3
+binder 2167:2171 <> gLtsP:4
+R2189:2203 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R2207:2207 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> A:2 var
+R2205:2205 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> P:1 var
+binder 2188:2207 <> FiniteImagegLts0:5
+R2219:2227 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> AbsAction class
+R2229:2229 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> P:1 var
+R2245:2245 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> A:2 var
+R2247:2247 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> H:3 var
+R2257:2261 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> gLtsP:4 var
+binder 2231:2231 <> T:6
+binder 2233:2236 <> FinA:7
+binder 2238:2243 <> PreAct:8
+binder 2249:2250 <> Φ:9
+binder 2252:2255 <> 𝝳:10
+binder 2263:2267 <> gLtsT:11
+binder 2210:2214 <> AbsPT:12
+R2281:2284 TestingTheory.Labelled_Transition_System.Definitions.gLts <> gLts class
+R2288:2288 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> A:2 var
+R2290:2290 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> H:3 var
+binder 2286:2286 <> Q:13
+binder 2272:2276 <> gLtsQ:14
+R2294:2308 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R2312:2312 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> A:2 var
+R2310:2310 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> Q:13 var
+binder 2293:2312 <> FiniteImagegLts1:15
+R2324:2332 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> AbsAction class
+R2334:2334 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> Q:13 var
+R2336:2336 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> T:6 var
+R2338:2341 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> FinA:7 var
+R2343:2348 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> PreAct:8 var
+R2350:2350 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> A:2 var
+R2352:2352 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> H:3 var
+R2354:2355 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> Φ:9 var
+R2357:2360 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> 𝝳:10 var
+R2362:2366 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> gLtsQ:14 var
+R2368:2372 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> gLtsT:11 var
+binder 2315:2319 <> AbsQT:16
+R2382:2385 stdpp.gmap <> gset def
+R2387:2387 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> P:1 var
+binder 2378:2378 <> X:17
+R2395:2398 stdpp.gmap <> gset def
+R2400:2400 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> Q:13 var
+binder 2391:2391 <> Y:18
+R2430:2434 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2408:2428 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> :::x_'≼ₛₑₜ_ₐₛ'_x not
+R2407:2407 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> X:17 var
+R2429:2429 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> Y:18 var
+R2436:2440 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R2435:2435 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> X:17 var
+R2441:2441 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> Y:18 var
+R2471:2483 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.CompletenessCI <> copre_if_prex thm
+R2471:2483 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.CompletenessCI <> copre_if_prex thm
+R2520:2533 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.SoundnessCI <> prex1_if_copre thm
+R2520:2533 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.SoundnessCI <> prex1_if_copre thm
+R2547:2560 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.SoundnessCI <> prex2_if_copre thm
+R2547:2560 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.SoundnessCI <> prex2_if_copre thm
+sec 2577:2589 <> eq_contextual
+var  2604:2610 eq_contextual outcome
+R2615:2618 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+var  2638:2648 eq_contextual outcome_dec
+R2652:2658 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2660:2661 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 2659:2659 <> t:21
+R2662:2669 stdpp.base <> Decision class
+R2672:2678 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.outcome var
+R2680:2680 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> t:21 var
+var  2697:2697 eq_contextual P
+var  2720:2720 eq_contextual Q
+var  2743:2743 eq_contextual H
+R2748:2756 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+R2776:2782 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+R2784:2784 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R2786:2786 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R2788:2788 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.H var
+R2800:2814 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R2818:2818 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R2816:2816 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R2835:2841 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+R2843:2843 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R2845:2845 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R2847:2847 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.H var
+R2859:2873 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R2877:2877 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R2875:2875 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R2894:2900 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+R2902:2902 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R2904:2904 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R2906:2906 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.H var
+R2918:2932 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R2936:2936 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R2934:2934 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R2940:2956 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> Testing_Predicate class
+R2958:2964 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.outcome var
+R2984:2996 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R3004:3007 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R3002:3002 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3000:3000 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R2998:2998 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R3024:3036 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R3044:3047 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R3042:3042 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3040:3040 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R3038:3038 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R3065:3077 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R3090:3097 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ForwarderConstruction <> fw_inter def
+R3088:3088 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3082:3083 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R3085:3085 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3079:3079 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R3114:3126 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R3143:3146 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R3141:3141 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3139:3139 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R3130:3132 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3129:3129 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R3133:3134 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R3136:3136 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3163:3175 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R3188:3195 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ForwarderConstruction <> fw_inter def
+R3186:3186 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3180:3181 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R3183:3183 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3177:3177 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R3212:3224 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R3241:3244 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R3239:3239 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3237:3237 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R3228:3230 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3227:3227 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R3231:3232 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R3234:3234 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+var  3261:3262 eq_contextual CC
+R3266:3274 stdpp.countable <> Countable class
+R3298:3314 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> FinitaryAbsAction class
+R3316:3316 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R3318:3318 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R3325:3330 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.PreAct var
+R3332:3332 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3334:3334 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.H var
+R3368:3384 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> FinitaryAbsAction class
+R3386:3386 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R3388:3388 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R3390:3393 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.FinA var
+R3395:3400 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.PreAct var
+R3402:3402 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3404:3404 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.H var
+R3406:3407 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Φ var
+R3409:3412 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.𝝳 var
+var  3438:3444 eq_contextual tc_spec
+R3449:3469 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> test_convergence_spec class
+R3471:3471 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R3479:3485 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.outcome var
+var  3510:3516 eq_contextual ta_spec
+R3521:3547 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> test_co_acceptance_set_spec class
+R3549:3554 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.PreAct var
+R3560:3560 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R3568:3574 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.outcome var
+R3576:3593 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Testing_Predicate0 var
+binder 3603:3603 <> x:53
+R3608:3611 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.𝝳 var
+R3614:3615 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Φ var
+R3617:3617 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> x:53 var
+sec 3671:3675 eq_contextual FWⁿ
+R3692:3700 TestingTheory.Labelled_Transition_System.Definitions.Lts_FW <> gLtsObaFW class
+R3704:3704 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3702:3702 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R3721:3729 TestingTheory.Labelled_Transition_System.Definitions.Lts_FW <> gLtsObaFW class
+R3733:3733 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3731:3731 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R3750:3758 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> gLtsObaFB class
+R3762:3762 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R3760:3760 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+prf 3777:3822 <> equivalence_fw_co_inductive_acc_set_and_must_i
+R3829:3829 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+binder 3825:3825 <> p:59
+R3837:3837 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+binder 3833:3833 <> q:60
+R3868:3872 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3847:3866 TestingTheory.Testing_Pre_orders.Must.Must <> :::x_'⊑ₘᵤₛₜᵢ'_x not
+R3846:3846 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> p:59 var
+R3867:3867 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> q:60 var
+R3873:3873 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R3890:3897 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R3914:3914 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R3884:3887 stdpp.gmap <> gset def
+R3889:3889 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R3874:3876 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R3878:3880 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R3877:3877 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> p:59 var
+R3908:3911 stdpp.gmap <> gset def
+R3913:3913 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R3898:3900 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R3902:3904 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R3901:3901 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> q:60 var
+R3963:4006 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_acc_set thm
+R3963:4006 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_acc_set thm
+R4022:4042 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> alt_set_singleton_iff thm
+R4022:4042 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> alt_set_singleton_iff thm
+R4058:4090 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R4058:4090 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R4131:4163 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R4131:4163 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R4179:4199 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> alt_set_singleton_iff thm
+R4179:4199 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> alt_set_singleton_iff thm
+R4209:4252 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_acc_set thm
+R4209:4252 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_acc_set thm
+prf 4396:4439 <> equivalence_fw_co_inductive_acc_set_and_must
+R4446:4446 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+binder 4442:4442 <> p:61
+R4454:4454 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+binder 4450:4450 <> q:62
+R4490:4494 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R4463:4477 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional def
+R4489:4489 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> q:62 var
+R4487:4487 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> p:61 var
+R4479:4485 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.outcome var
+R4495:4495 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R4512:4519 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R4536:4536 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R4506:4509 stdpp.gmap <> gset def
+R4511:4511 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R4496:4498 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R4500:4502 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R4499:4499 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> p:61 var
+R4530:4533 stdpp.gmap <> gset def
+R4535:4535 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R4520:4522 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R4524:4526 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R4523:4523 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> q:62 var
+R4560:4577 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R4560:4577 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R4560:4577 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R4587:4632 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_fw_co_inductive_acc_set_and_must_i thm
+R4587:4632 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_fw_co_inductive_acc_set_and_must_i thm
+R4649:4653 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI eq_contextual.FWⁿ <> sec
+sec 4680:4683 eq_contextual Lⁿ
+R4700:4708 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> gLtsObaFB class
+R4712:4712 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R4710:4710 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R4716:4739 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+R4741:4741 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R4758:4766 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> gLtsObaFB class
+R4770:4770 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R4768:4768 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R4774:4797 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+R4799:4799 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R4816:4824 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> gLtsObaFB class
+R4828:4828 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R4826:4826 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+R4832:4855 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+R4857:4857 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.T var
+prf 4968:5010 <> equivalence_co_inductive_acc_set_and_must_i
+R5017:5017 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+binder 5013:5013 <> p:69
+R5025:5025 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+binder 5021:5021 <> q:70
+R5056:5060 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R5035:5054 TestingTheory.Testing_Pre_orders.Must.Must <> :::x_'⊑ₘᵤₛₜᵢ'_x not
+R5034:5034 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> p:69 var
+R5055:5055 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> q:70 var
+R5061:5061 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R5094:5100 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R5134:5134 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R5079:5082 stdpp.gmap <> gset def
+R5086:5088 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5085:5085 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R5089:5090 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R5092:5092 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R5062:5064 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R5073:5075 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R5065:5065 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5067:5068 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5072:5072 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5066:5066 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> p:69 var
+R5069:5071 stdpp.base <> ::stdpp_scope:'∅' not
+R5119:5122 stdpp.gmap <> gset def
+R5126:5128 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5125:5125 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R5129:5130 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R5132:5132 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R5101:5103 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R5112:5114 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R5104:5104 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5106:5107 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5111:5111 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5105:5105 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> q:70 var
+R5108:5110 stdpp.base <> ::stdpp_scope:'∅' not
+R5183:5226 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_acc_set thm
+R5183:5226 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_acc_set thm
+R5242:5262 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> alt_set_singleton_iff thm
+R5242:5262 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> alt_set_singleton_iff thm
+R5278:5310 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R5278:5310 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R5329:5343 TestingTheory.Testing_Pre_orders.Must.Lift <> lift_fw_ctx_pre thm
+R5329:5343 TestingTheory.Testing_Pre_orders.Must.Lift <> lift_fw_ctx_pre thm
+R5425:5468 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_acc_set thm
+R5425:5468 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_acc_set thm
+R5486:5506 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> alt_set_singleton_iff thm
+R5486:5506 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> alt_set_singleton_iff thm
+R5530:5544 TestingTheory.Testing_Pre_orders.Must.Lift <> lift_fw_ctx_pre thm
+R5530:5544 TestingTheory.Testing_Pre_orders.Must.Lift <> lift_fw_ctx_pre thm
+R5554:5586 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R5554:5586 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+prf 5726:5766 <> equivalence_co_inductive_acc_set_and_must
+R5773:5773 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+binder 5769:5769 <> p:71
+R5781:5781 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+binder 5777:5777 <> q:72
+R5817:5821 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R5790:5804 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional def
+R5816:5816 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> q:72 var
+R5814:5814 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> p:71 var
+R5806:5812 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.outcome var
+R5822:5822 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R5855:5861 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R5895:5895 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.DefinitionCI <> :::x_'⩽'_x not
+R5840:5843 stdpp.gmap <> gset def
+R5847:5849 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5846:5846 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.P var
+R5850:5851 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R5853:5853 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R5823:5825 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R5834:5836 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R5826:5826 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5828:5829 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5833:5833 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5827:5827 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> p:71 var
+R5830:5832 stdpp.base <> ::stdpp_scope:'∅' not
+R5880:5883 stdpp.gmap <> gset def
+R5887:5889 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R5886:5886 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.Q var
+R5890:5891 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R5893:5893 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> eq_contextual.A var
+R5862:5864 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R5873:5875 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R5865:5865 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5867:5868 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5872:5872 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5866:5866 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> q:72 var
+R5869:5871 stdpp.base <> ::stdpp_scope:'∅' not
+R5919:5936 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R5919:5936 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R5919:5936 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R5945:5987 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_must_i thm
+R5945:5987 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI <> equivalence_co_inductive_acc_set_and_must_i thm
+R6004:6007 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI eq_contextual.Lⁿ <> sec
+R6015:6027 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Co_Inductive_Acceptance_Set.Equivalence.EquivalenceCI eq_contextual <> sec

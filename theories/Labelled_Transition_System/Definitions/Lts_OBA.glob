@@ -1,0 +1,438 @@
+DIGEST 9f5ca3f41ab62a90c39b3e0701bee6c3
+FTestingTheory.Labelled_Transition_System.Definitions.Lts_OBA
+R1335:1338 Stdlib.Unicode.Utf8 <> <> lib
+R1367:1370 stdpp.gmap <> <> lib
+R1372:1380 stdpp.gmultiset <> <> lib
+R1417:1428 TestingTheory.Coq_Helpers.ForAllHelper <> <> lib
+R1430:1443 TestingTheory.Coq_Helpers.MultisetHelper <> <> lib
+R1445:1448 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1450:1461 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> <> lib
+rec 1589:1595 <> gLtsOba
+proj 1689:1721 <> lts_oba_non_blocking_action_delay
+proj 1859:1896 <> lts_oba_non_blocking_action_confluence
+proj 2055:2085 <> lts_oba_non_blocking_action_tau
+proj 2265:2297 <> lts_oba_non_blocking_action_deter
+proj 2484:2520 <> lts_oba_non_blocking_action_deter_inv
+binder 1597:1597 <> P:1
+binder 1600:1600 <> A:2
+R1609:1617 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+R1619:1619 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> A:2 var
+binder 1605:1605 <> H:3
+R1629:1634 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> gLtsEq class
+R1638:1638 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> H:3 var
+R1636:1636 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> P:1 var
+binder 1623:1625 <> Rel:4
+binder 1724:1724 <> p:6
+binder 1726:1726 <> q:7
+binder 1728:1728 <> r:8
+binder 1730:1731 <> η:9
+binder 1733:1734 <> α:10
+R1760:1764 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1745:1756 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R1758:1759 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:9 var
+R1778:1782 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1766:1771 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1774:1776 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1765:1765 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:6 var
+R1772:1773 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:9 var
+R1777:1777 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q:7 var
+R1796:1810 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1849:1849 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1784:1789 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R1792:1794 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R1783:1783 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q:7 var
+R1790:1791 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> α:10 var
+R1795:1795 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> r:8 var
+R1811:1814 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R1816:1817 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 1815:1815 <> t:11
+R1829:1832 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1819:1823 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R1826:1827 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R1818:1818 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:6 var
+R1824:1825 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> α:10 var
+R1828:1828 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> t:11 var
+R1834:1842 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R1845:1847 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R1833:1833 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> t:11 var
+R1843:1844 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:9 var
+R1848:1848 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> r:8 var
+binder 1899:1899 <> p:13
+binder 1901:1902 <> q1:14
+binder 1904:1905 <> q2:15
+binder 1907:1908 <> η:16
+binder 1910:1911 <> μ:17
+R1937:1941 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1922:1933 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R1935:1936 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:16 var
+R1951:1955 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1944:1948 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R1942:1943 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> μ:17 var
+R1949:1950 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:16 var
+R1970:1974 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1957:1962 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1965:1967 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1956:1956 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:13 var
+R1963:1964 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:16 var
+R1968:1969 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q1:14 var
+R1989:2002 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1976:1981 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1984:1986 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1975:1975 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:13 var
+R1982:1983 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> μ:17 var
+R1987:1988 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q2:15 var
+R2003:2006 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R2008:2009 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 2007:2007 <> r:18
+R2024:2027 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2012:2017 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2020:2022 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2010:2011 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q1:14 var
+R2018:2019 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> μ:17 var
+R2023:2023 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> r:18 var
+R2030:2038 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2041:2043 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2028:2029 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q2:15 var
+R2039:2040 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:16 var
+R2044:2044 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> r:18 var
+binder 2088:2088 <> p:20
+binder 2090:2091 <> q1:21
+binder 2093:2094 <> q2:22
+binder 2096:2097 <> η:23
+R2123:2127 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2108:2119 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R2121:2122 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:23 var
+R2142:2146 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2129:2134 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2137:2139 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2128:2128 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:20 var
+R2135:2136 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:23 var
+R2140:2141 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q1:21 var
+R2155:2168 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2148:2152 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶'_x not
+R2147:2147 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:20 var
+R2153:2154 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q2:22 var
+R2169:2169 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2206:2211 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2254:2254 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2170:2173 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R2175:2176 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 2174:2174 <> t:24
+R2185:2188 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2179:2183 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶'_x not
+R2177:2178 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q1:21 var
+R2184:2184 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> t:24 var
+R2191:2199 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2202:2204 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2189:2190 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q2:22 var
+R2200:2201 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:23 var
+R2205:2205 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> t:24 var
+R2212:2215 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R2218:2219 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 2216:2217 <> β:25
+R2220:2220 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2231:2235 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2221:2224 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R2229:2230 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:23 var
+R2226:2227 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> β:25 var
+R2238:2246 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2249:2251 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2236:2237 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q1:21 var
+R2247:2248 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> β:25 var
+R2252:2253 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q2:22 var
+binder 2300:2301 <> p1:27
+binder 2303:2304 <> p2:28
+binder 2306:2307 <> p3:29
+binder 2309:2310 <> η:30
+R2336:2340 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2321:2332 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R2334:2335 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:30 var
+R2356:2360 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2343:2348 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2351:2353 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2341:2342 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p1:27 var
+R2349:2350 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:30 var
+R2354:2355 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p2:28 var
+R2376:2389 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2363:2368 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2371:2373 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2361:2362 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p1:27 var
+R2369:2370 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:30 var
+R2374:2375 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p3:29 var
+R2392:2396 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R2390:2391 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p2:28 var
+R2397:2398 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p3:29 var
+binder 2523:2524 <> p1:32
+binder 2526:2527 <> p2:33
+binder 2529:2530 <> q1:34
+binder 2532:2533 <> q2:35
+binder 2536:2537 <> η:36
+R2562:2566 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2547:2558 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R2560:2561 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:36 var
+R2582:2586 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2569:2574 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2577:2579 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2567:2568 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p1:32 var
+R2575:2576 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:36 var
+R2580:2581 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q1:34 var
+R2602:2606 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2589:2594 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2597:2599 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2587:2588 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p2:33 var
+R2595:2596 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:36 var
+R2600:2601 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q2:35 var
+R2616:2629 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2609:2613 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R2607:2608 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q1:34 var
+R2614:2615 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q2:35 var
+R2632:2636 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R2630:2631 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p1:32 var
+R2637:2638 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p2:33 var
+def 2728:2739 <> exist_co_nba
+R2743:2751 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+binder 2753:2753 <> A:38
+binder 2743:2753 <> H:39
+R2762:2762 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> A:38 var
+binder 2757:2758 <> β:40
+R2773:2780 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2787:2790 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2820:2820 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2786:2786 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> A:38 var
+binder 2781:2782 <> η:41
+R2806:2809 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2791:2802 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R2804:2805 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:41 var
+R2810:2813 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R2818:2819 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:41 var
+R2815:2816 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> β:40 var
+prf 2830:2840 <> co_nb_to_nb
+R2844:2852 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+binder 2854:2854 <> A:42
+binder 2844:2854 <> H:43
+binder 2857:2857 <> l:44
+R2890:2893 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2861:2866 Corelib.Lists.ListDef <> Forall ind
+R2882:2887 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::'coₜ'_x not
+R2888:2888 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> l:44 var
+R2868:2879 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R2894:2899 Corelib.Lists.ListDef <> Forall ind
+R2914:2914 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> l:44 var
+R2901:2912 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> exist_co_nba def
+R3028:3030 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::'co'_x not
+R3028:3030 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::'co'_x not
+R3056:3064 Corelib.Init.Specif <> proj2_sig def
+R3067:3077 TestingTheory.Labelled_Transition_System.Definitions.gLts <> exists_dual meth
+R3056:3064 Corelib.Init.Specif <> proj2_sig def
+R3067:3077 TestingTheory.Labelled_Transition_System.Definitions.gLts <> exists_dual meth
+prf 3152:3164 <> EquivDef_inv1
+R3168:3176 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+binder 3178:3178 <> A:45
+binder 3168:3178 <> H:46
+R3187:3190 Corelib.Init.Datatypes <> list ind
+R3192:3192 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> A:45 var
+binder 3182:3183 <> s1:47
+R3221:3231 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R3287:3287 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R3199:3204 Corelib.Lists.ListDef <> Forall ind
+R3219:3220 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s1:47 var
+R3206:3217 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> exist_co_nba def
+R3232:3238 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3241:3242 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3239:3240 <> s3:48
+R3265:3268 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3243:3248 Corelib.Lists.ListDef <> Forall ind
+R3263:3264 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s3:48 var
+R3250:3261 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R3269:3275 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2 ind
+R3285:3286 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s3:48 var
+R3282:3283 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s1:47 var
+R3277:3280 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R3343:3344 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3343:3344 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R3368:3378 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2_nil constr
+R3368:3378 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2_nil constr
+R3518:3521 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3518:3521 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3546:3556 Corelib.Lists.ListDef <> Forall_cons constr
+R3546:3556 Corelib.Lists.ListDef <> Forall_cons constr
+R3577:3588 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2_cons constr
+R3577:3588 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2_cons constr
+prf 3610:3622 <> EquivDef_inv2
+R3626:3634 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+binder 3636:3636 <> A:49
+binder 3626:3636 <> H:50
+R3645:3648 Corelib.Init.Datatypes <> list ind
+R3650:3650 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> A:49 var
+binder 3640:3641 <> s1:51
+R3657:3657 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R3713:3722 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R3658:3664 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3667:3668 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3665:3666 <> s3:52
+R3691:3694 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3669:3674 Corelib.Lists.ListDef <> Forall ind
+R3689:3690 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s3:52 var
+R3676:3687 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R3695:3701 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2 ind
+R3711:3712 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s3:52 var
+R3708:3709 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s1:51 var
+R3703:3706 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R3723:3728 Corelib.Lists.ListDef <> Forall ind
+R3743:3744 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s1:51 var
+R3730:3741 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> exist_co_nba def
+R3791:3800 Corelib.Lists.ListDef <> Forall_nil constr
+R3791:3800 Corelib.Lists.ListDef <> Forall_nil constr
+R3970:3980 Corelib.Lists.ListDef <> Forall_cons constr
+R3970:3980 Corelib.Lists.ListDef <> Forall_cons constr
+prf 4072:4079 <> EquivDef
+R4083:4091 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+binder 4093:4093 <> A:53
+binder 4083:4093 <> H:54
+R4102:4105 Corelib.Init.Datatypes <> list ind
+R4107:4107 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> A:53 var
+binder 4097:4098 <> s1:55
+R4115:4115 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'↔'_x not
+R4171:4176 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'↔'_x not
+R4116:4122 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4125:4126 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4123:4124 <> s3:56
+R4149:4152 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4127:4132 Corelib.Lists.ListDef <> Forall ind
+R4147:4148 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s3:56 var
+R4134:4145 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R4153:4159 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2 ind
+R4169:4170 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s3:56 var
+R4166:4167 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s1:55 var
+R4161:4164 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R4177:4182 Corelib.Lists.ListDef <> Forall ind
+R4197:4198 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> s1:55 var
+R4184:4195 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> exist_co_nba def
+R4228:4240 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> EquivDef_inv2 thm
+R4228:4240 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> EquivDef_inv2 thm
+R4253:4265 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> EquivDef_inv1 thm
+R4253:4265 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> EquivDef_inv1 thm
+prf 4314:4361 <> refuses_tau_preserved_by_lts_non_blocking_action
+R4365:4371 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 4373:4373 <> P:57
+binder 4375:4375 <> A:58
+binder 4365:4375 <> H0:61
+binder 4378:4378 <> p:62
+binder 4380:4380 <> q:63
+binder 4382:4383 <> η:64
+R4405:4409 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4390:4401 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R4403:4404 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:64 var
+R4415:4419 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4411:4414 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛' not
+R4410:4410 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:62 var
+R4433:4437 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4421:4426 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R4429:4431 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R4420:4420 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:62 var
+R4427:4428 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:64 var
+R4432:4432 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q:63 var
+R4439:4442 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛' not
+R4438:4438 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q:63 var
+R4482:4487 stdpp.base <> decide def
+R4491:4494 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛' not
+R4482:4487 stdpp.base <> decide def
+R4491:4494 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛' not
+R4556:4572 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec1 meth
+R4556:4572 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec1 meth
+R4612:4644 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R4612:4644 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R4685:4687 Stdlib.Unicode.Utf8_core <> ::type_scope:'¬'_x not
+R4689:4692 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛' not
+R4685:4687 Stdlib.Unicode.Utf8_core <> ::type_scope:'¬'_x not
+R4689:4692 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛' not
+R4709:4725 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec2 meth
+R4709:4725 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec2 meth
+prf 4769:4825 <> lts_different_action_preserved_by_lts_non_blocking_action
+R4829:4835 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 4837:4837 <> P:65
+binder 4839:4839 <> A:66
+binder 4829:4839 <> H0:69
+binder 4842:4842 <> p:70
+binder 4844:4844 <> q:71
+binder 4846:4847 <> η:72
+binder 4849:4850 <> μ:73
+R4871:4875 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4856:4867 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R4869:4870 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:72 var
+R4885:4891 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4878:4882 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R4876:4877 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> μ:73 var
+R4883:4884 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:72 var
+R4892:4892 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4914:4919 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4893:4899 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4901:4902 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4900:4900 <> t:74
+R4904:4908 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R4911:4912 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R4903:4903 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:70 var
+R4909:4910 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> μ:73 var
+R4913:4913 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> t:74 var
+R4931:4936 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4958:4958 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R4921:4925 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R4928:4929 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R4920:4920 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:70 var
+R4926:4927 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:72 var
+R4930:4930 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q:71 var
+R4937:4943 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4945:4946 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4944:4944 <> t:75
+R4948:4952 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R4955:4956 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R4947:4947 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q:71 var
+R4953:4954 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> μ:73 var
+R4957:4957 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> t:75 var
+R5012:5049 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R5012:5049 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+prf 5104:5154 <> refuses_action_preserved_by_lts_non_blocking_action
+R5158:5164 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 5166:5166 <> P:76
+binder 5168:5168 <> A:77
+binder 5158:5168 <> H0:80
+binder 5171:5171 <> p:81
+binder 5173:5173 <> q:82
+binder 5175:5176 <> η:83
+binder 5178:5179 <> μ:84
+R5200:5206 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R5185:5196 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R5198:5199 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:83 var
+R5216:5220 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R5208:5212 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5215:5215 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5207:5207 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:81 var
+R5213:5214 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> μ:84 var
+R5232:5236 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R5222:5226 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R5229:5230 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R5221:5221 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> p:81 var
+R5227:5228 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> η:83 var
+R5231:5231 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q:82 var
+R5238:5242 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5245:5245 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5237:5237 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> q:82 var
+R5243:5244 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> μ:84 var
+R5286:5291 stdpp.base <> decide def
+R5295:5299 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5302:5302 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5286:5291 stdpp.base <> decide def
+R5295:5299 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5302:5302 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5363:5379 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec1 meth
+R5363:5379 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec1 meth
+R5419:5451 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R5419:5451 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R5492:5494 Stdlib.Unicode.Utf8_core <> ::type_scope:'¬'_x not
+R5496:5500 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5503:5503 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5492:5494 Stdlib.Unicode.Utf8_core <> ::type_scope:'¬'_x not
+R5496:5500 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5503:5503 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R5520:5536 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec2 meth
+R5520:5536 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec2 meth

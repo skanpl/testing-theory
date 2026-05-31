@@ -1,0 +1,445 @@
+DIGEST 240785163e503cd42f65ba92f542b36a
+FTestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good
+R1335:1342 Stdlib.Program.Equality <> <> lib
+R1384:1396 Stdlib.Wellfounded.Inverse_Image <> <> lib
+R1425:1433 stdpp.countable <> <> lib
+R1435:1443 stdpp.decidable <> <> lib
+R1480:1483 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1485:1502 TestingTheory.Labelled_Transition_System.Actions.Exemples_of_Actions.InputOutputActions <> <> lib
+R1538:1541 TestingTheory.Testing_Pre_orders.Must.Must <> <> lib
+R1543:1556 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS_Instance <> <> lib
+R1558:1574 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> <> lib
+modtype 1591:1603 <> VACCS_Testing
+R1614:1622 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS_Instance VACCS_lts <> mod
+ind 1674:1683 VACCS_Testing good_VACCS
+constr 1705:1716 VACCS_Testing good_success
+constr 1737:1744 VACCS_Testing good_par
+constr 1815:1825 VACCS_Testing good_choice
+constr 1902:1913 VACCS_Testing good_if_true
+constr 2010:2022 VACCS_Testing good_if_false
+constr 2120:2127 VACCS_Testing good_res
+R1691:1694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1687:1690 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing proc ind
+R1720:1729 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1731:1733 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::'①' not
+R1748:1754 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1758:1759 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1755:1755 <> p:3
+binder 1757:1757 <> q:4
+R1788:1791 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1772:1775 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1760:1769 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1771:1771 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:3 var
+R1776:1785 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1787:1787 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:4 var
+R1792:1801 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1805:1809 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'‖'_x not
+R1804:1804 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:3 var
+R1810:1810 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:4 var
+R1829:1835 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1839:1840 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1836:1836 <> p:5
+binder 1838:1838 <> q:6
+R1877:1880 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1857:1860 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1841:1850 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1853:1853 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R1855:1855 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:5 var
+R1861:1870 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1873:1873 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R1875:1875 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:6 var
+R1881:1890 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1894:1896 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'+'_x not
+R1893:1893 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:5 var
+R1897:1897 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:6 var
+R1917:1923 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1929:1930 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1924:1924 <> E:7
+binder 1926:1926 <> p:8
+binder 1928:1928 <> q:9
+R1943:1950 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1931:1940 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1942:1942 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:8 var
+R1972:1975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1960:1962 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1951:1957 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing Eval_Eq def
+R1959:1959 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> E:7 var
+R1963:1966 Corelib.Init.Datatypes <> Some constr
+R1968:1971 Corelib.Init.Datatypes <> true constr
+R1976:1985 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R1988:1990 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::'If'_x_'Then'_x_'Else'_x not
+R1992:1997 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::'If'_x_'Then'_x_'Else'_x not
+R1999:2004 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::'If'_x_'Then'_x_'Else'_x not
+R1991:1991 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> E:7 var
+R1998:1998 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:8 var
+R2005:2005 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:9 var
+R2026:2032 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2038:2039 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 2033:2033 <> E:10
+binder 2035:2035 <> p:11
+binder 2037:2037 <> q:12
+R2052:2059 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2040:2049 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R2051:2051 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:12 var
+R2082:2085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2069:2071 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2060:2066 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing Eval_Eq def
+R2068:2068 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> E:10 var
+R2072:2075 Corelib.Init.Datatypes <> Some constr
+R2077:2081 Corelib.Init.Datatypes <> false constr
+R2086:2095 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R2098:2100 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::'If'_x_'Then'_x_'Else'_x not
+R2102:2107 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::'If'_x_'Then'_x_'Else'_x not
+R2109:2114 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::'If'_x_'Then'_x_'Else'_x not
+R2101:2101 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> E:10 var
+R2108:2108 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:11 var
+R2115:2115 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:12 var
+R2131:2137 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2139:2140 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 2138:2138 <> p:13
+R2153:2156 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2141:2150 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R2152:2152 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:13 var
+R2157:2166 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS:1 ind
+R2169:2171 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::'ν'_x not
+R2172:2172 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:13 var
+scheme 1674:1683 VACCS_Testing good_VACCS_ind
+scheme 1674:1683 VACCS_Testing good_VACCS_sind
+R2205:2214 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> good_VACCS ind
+inst 2241:2254 VACCS_Testing good_decidable
+binder 2256:2256 <> e:14
+R2268:2270 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R2271:2280 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R2282:2282 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> e:14 var
+R2260:2267 stdpp.base <> Decision class
+R2464:2470 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing Eval_Eq def
+R2464:2470 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing Eval_Eq def
+R2889:2896 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R2889:2896 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+prf 3162:3182 VACCS_Testing VarSwap_respects_good
+binder 3184:3184 <> k:15
+binder 3186:3186 <> p:16
+R3202:3206 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3190:3199 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R3201:3201 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:16 var
+R3207:3216 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R3219:3233 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_in_proc def
+R3235:3235 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> k:15 var
+R3237:3237 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:16 var
+R3306:3327 Corelib.Init.Wf <> well_founded_induction thm
+R3330:3345 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R3360:3370 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R3355:3358 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing size def
+R3349:3351 Corelib.Init.Datatypes <> nat ind
+R3306:3327 Corelib.Init.Wf <> well_founded_induction thm
+R3330:3345 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R3360:3370 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R3355:3358 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing size def
+R3349:3351 Corelib.Init.Datatypes <> nat ind
+R3480:3487 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R3480:3487 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R3544:3551 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R3544:3551 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R3656:3667 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R3656:3667 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R3725:3737 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R3725:3737 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R3836:3843 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R3836:3843 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R4006:4016 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R4006:4016 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R4044:4053 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R4056:4070 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_in_proc def
+R4075:4075 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R4044:4053 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R4056:4070 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_in_proc def
+R4075:4075 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R4186:4196 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R4186:4196 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R4225:4234 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R4237:4251 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_in_proc def
+R4256:4256 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R4225:4234 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R4237:4251 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_in_proc def
+R4256:4256 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R4398:4419 Corelib.Init.Wf <> well_founded_induction thm
+R4422:4437 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R4452:4462 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R4447:4450 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing size def
+R4441:4443 Corelib.Init.Datatypes <> nat ind
+R4398:4419 Corelib.Init.Wf <> well_founded_induction thm
+R4422:4437 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R4452:4462 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R4447:4450 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing size def
+R4441:4443 Corelib.Init.Datatypes <> nat ind
+R4572:4579 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R4572:4579 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R4636:4643 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R4636:4643 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R4748:4759 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R4748:4759 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R4817:4829 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R4817:4829 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R4940:4947 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R4940:4947 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R5110:5120 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R5110:5120 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R5177:5187 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R5177:5187 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+prf 5239:5259 VACCS_Testing NewVarC_respects_good
+binder 5261:5261 <> k:17
+binder 5263:5263 <> p:18
+R5279:5283 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R5267:5276 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R5278:5278 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:18 var
+R5284:5293 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R5296:5302 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC def
+R5304:5304 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> k:17 var
+R5306:5306 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:18 var
+R5375:5396 Corelib.Init.Wf <> well_founded_induction thm
+R5399:5414 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R5429:5439 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R5424:5427 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing size def
+R5418:5420 Corelib.Init.Datatypes <> nat ind
+R5375:5396 Corelib.Init.Wf <> well_founded_induction thm
+R5399:5414 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R5429:5439 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R5424:5427 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing size def
+R5418:5420 Corelib.Init.Datatypes <> nat ind
+R5549:5556 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R5549:5556 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R5613:5620 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R5613:5620 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R5725:5736 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R5725:5736 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R5794:5806 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R5794:5806 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R5905:5912 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R5905:5912 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R6075:6085 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R6075:6085 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R6113:6122 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R6125:6131 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC def
+R6136:6136 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R6113:6122 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R6125:6131 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC def
+R6136:6136 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R6247:6257 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R6247:6257 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R6286:6295 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R6298:6304 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC def
+R6309:6309 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R6286:6295 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R6298:6304 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC def
+R6309:6309 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing g constr
+R6451:6472 Corelib.Init.Wf <> well_founded_induction thm
+R6475:6490 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R6505:6515 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R6500:6503 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing size def
+R6494:6496 Corelib.Init.Datatypes <> nat ind
+R6451:6472 Corelib.Init.Wf <> well_founded_induction thm
+R6475:6490 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R6505:6515 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R6500:6503 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing size def
+R6494:6496 Corelib.Init.Datatypes <> nat ind
+R6625:6632 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R6625:6632 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R6689:6696 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R6689:6696 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R6801:6812 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R6801:6812 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R6870:6882 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R6870:6882 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R6981:6988 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R6981:6988 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R7151:7161 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R7151:7161 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R7218:7228 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R7218:7228 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+prf 7280:7305 VACCS_Testing good_preserved_by_cgr_step
+binder 7307:7307 <> p:19
+binder 7309:7309 <> q:20
+R7325:7328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7313:7322 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R7324:7324 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:19 var
+R7336:7339 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7330:7334 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.Congruence VACCS_congruence :::x_'≡'_x not
+R7329:7329 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:19 var
+R7335:7335 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:20 var
+R7340:7349 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R7351:7351 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:20 var
+R7542:7553 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R7542:7553 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R7652:7664 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R7652:7664 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R7765:7772 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R7765:7772 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R7828:7835 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R7828:7835 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R7952:7959 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R7952:7959 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R7995:8002 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R7995:8002 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8023:8030 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8023:8030 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8047:8054 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8047:8054 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8133:8140 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8133:8140 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8163:8170 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8163:8170 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8216:8223 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8216:8223 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8258:8265 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8258:8265 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8286:8293 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8286:8293 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8303:8310 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8303:8310 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8369:8389 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_respects_good thm
+R8369:8389 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_respects_good thm
+R8416:8423 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8416:8423 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8433:8440 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8433:8440 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8499:8519 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_respects_good thm
+R8499:8519 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VarSwap_respects_good thm
+R8610:8617 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8610:8617 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8633:8640 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8633:8640 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8664:8671 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8664:8671 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8688:8708 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC_respects_good thm
+R8688:8708 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC_respects_good thm
+R8729:8736 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8729:8736 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R8746:8753 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8746:8753 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R8861:8881 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC_respects_good thm
+R8861:8881 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing NewVarC_respects_good thm
+R8979:8989 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R8979:8989 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9052:9062 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9052:9062 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9199:9209 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9199:9209 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9255:9265 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9255:9265 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9282:9292 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9282:9292 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9316:9326 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9316:9326 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9419:9429 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9419:9429 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9452:9462 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9452:9462 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9515:9525 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9515:9525 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9570:9580 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9570:9580 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R9642:9649 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R9642:9649 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R9676:9683 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R9676:9683 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R9711:9718 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R9711:9718 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R9800:9811 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R9800:9811 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R9832:9844 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R9832:9844 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R9894:9905 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R9894:9905 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_true constr
+R9926:9938 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R9926:9938 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_if_false constr
+R10000:10010 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R10000:10010 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R10037:10047 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+R10037:10047 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_choice constr
+prf 10076:10096 VACCS_Testing good_preserved_by_cgr
+binder 10098:10098 <> p:21
+binder 10100:10100 <> q:22
+R10116:10119 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10104:10113 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R10115:10115 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:21 var
+R10128:10131 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10121:10126 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.Congruence VACCS_congruence :::x_'≡*'_x not
+R10120:10120 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:21 var
+R10127:10127 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:22 var
+R10132:10141 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R10143:10143 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:22 var
+R10207:10232 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_cgr_step thm
+R10207:10232 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_cgr_step thm
+prf 10256:10271 VACCS_Testing good_VACCS_res_n
+binder 10273:10273 <> n:23
+binder 10275:10275 <> p:24
+R10291:10295 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R10279:10288 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R10290:10290 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:24 var
+R10296:10305 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R10308:10309 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing Ѵ def
+R10311:10311 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> n:23 var
+R10313:10313 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:24 var
+R10415:10422 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+R10415:10422 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_res constr
+prf 10546:10582 VACCS_Testing good_preserved_by_non_bloking_actions
+binder 10584:10584 <> p:25
+binder 10586:10586 <> q:26
+binder 10588:10588 <> a:27
+R10604:10607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10592:10601 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R10603:10603 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:25 var
+R10621:10624 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10608:10610 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing lts ind
+R10612:10612 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:25 var
+R10616:10617 TestingTheory.Labelled_Transition_System.Actions.Exemples_of_Actions.InputOutputActions <> :::x_'!' not
+R10615:10615 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> a:27 var
+R10620:10620 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:26 var
+R10625:10634 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R10636:10636 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:26 var
+R10684:10717 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing TransitionShapeForOutputSimplified thm
+R10684:10717 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing TransitionShapeForOutputSimplified thm
+R10736:10756 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_cgr thm
+R10761:10761 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'‖'_x not
+R10776:10781 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'‖'_x not
+R10763:10765 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'!'_x_'•'_'𝟘' not
+R10767:10775 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'!'_x_'•'_'𝟘' not
+R10736:10756 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_cgr thm
+R10761:10761 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'‖'_x not
+R10776:10781 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'‖'_x not
+R10763:10765 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'!'_x_'•'_'𝟘' not
+R10767:10775 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VACCS.VACCS VACCS_proc :::x_'!'_x_'•'_'𝟘' not
+prf 10888:10933 VACCS_Testing good_preserved_by_non_bloking_actions_converse
+binder 10935:10935 <> p:28
+binder 10937:10937 <> q:29
+binder 10939:10939 <> a:30
+R10956:10959 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10943:10945 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing lts ind
+R10947:10947 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:28 var
+R10951:10952 TestingTheory.Labelled_Transition_System.Actions.Exemples_of_Actions.InputOutputActions <> :::x_'!' not
+R10950:10950 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> a:30 var
+R10955:10955 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:29 var
+R10972:10975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10960:10969 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R10971:10971 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> q:29 var
+R10976:10985 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R10987:10987 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good <> p:28 var
+R11035:11068 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing TransitionShapeForOutputSimplified thm
+R11035:11068 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing TransitionShapeForOutputSimplified thm
+R11086:11106 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_cgr thm
+R11086:11106 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_cgr thm
+R11118:11125 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+R11118:11125 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_par constr
+inst 11212:11220 VACCS_Testing VCCS_Good
+R11224:11240 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> Testing_Predicate class
+R11253:11264 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing VACCS_gLtsEq inst
+R11242:11251 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_VACCS ind
+R11301:11321 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_cgr thm
+R11301:11321 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_cgr thm
+R11375:11386 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R11447:11483 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_non_bloking_actions thm
+R11447:11483 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_non_bloking_actions thm
+R11538:11549 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R11611:11656 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_non_bloking_actions_converse thm
+R11611:11656 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing good_preserved_by_non_bloking_actions_converse thm
+R11682:11694 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VACCS_Good VACCS_Testing <> modtype

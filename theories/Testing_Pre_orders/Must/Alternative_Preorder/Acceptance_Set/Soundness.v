@@ -424,7 +424,8 @@ Proof.
       assert (p' ∈ X').
       eapply lts_tau_set_spec, elem_of_list_to_set in hl; eauto.
       eapply (H X'); eauto.
-      intros p0 mem0%elem_of_list_to_set%lts_tau_set_spec. set_solver. set_solver.
+      intros p0 mem0%elem_of_list_to_set%lts_tau_set_spec. set_solver. 
+      intro; rewrite H3 in H2; set_solver. (*débuggué !*)
     + eauto with mdb.
     + intros p' e' μ μ' duo hlp hle.
       set (X' := list_to_set (
@@ -438,7 +439,9 @@ Proof.
       eapply list_elem_of_fmap in mem0 as ((r & l) & eq & mem'). subst.
       exists p. split; eauto.
       eapply wt_act.
-      eapply bool_decide_unpack. eauto. eapply wt_nil. set_solver. set_solver.
+      eapply bool_decide_unpack. eauto. eapply wt_nil.
+      intro; rewrite H3 in H2; set_solver.  (*débuggué !*)    
+      set_solver.
 Qed.
 
 Lemma must_if_must_set  (p : P) (t : T) :

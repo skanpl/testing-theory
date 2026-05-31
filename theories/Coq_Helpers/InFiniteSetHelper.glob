@@ -1,0 +1,152 @@
+DIGEST 0a7585a18e153119e61d2758ee7e3508
+FTestingTheory.Coq_Helpers.InFiniteSetHelper
+R1326:1329 stdpp.base <> <> lib
+R1331:1339 stdpp.countable <> <> lib
+R1341:1346 stdpp.finite <> <> lib
+R1348:1351 stdpp.gmap <> <> lib
+R1353:1356 stdpp.list <> <> lib
+R1358:1363 stdpp.finite <> <> lib
+R1365:1368 stdpp.base <> <> lib
+R1370:1378 stdpp.decidable <> <> lib
+R1380:1385 stdpp.finite <> <> lib
+R1387:1390 stdpp.gmap <> <> lib
+prf 1401:1407 <> lem_dec
+R1411:1419 stdpp.countable <> Countable class
+binder 1421:1421 <> A:1
+binder 1411:1421 <> H:3
+R1433:1436 stdpp.gmap <> gset def
+R1438:1438 TestingTheory.Coq_Helpers.InFiniteSetHelper <> A:1 var
+binder 1425:1425 <> X:4
+binder 1427:1427 <> Y:5
+binder 1429:1429 <> Z:6
+R1460:1469 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1448:1452 stdpp.base <> ::stdpp_scope:x_'⊆'_x not
+R1447:1447 TestingTheory.Coq_Helpers.InFiniteSetHelper <> X:4 var
+R1454:1458 stdpp.base <> ::stdpp_scope:x_'∪'_x not
+R1453:1453 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Y:5 var
+R1459:1459 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Z:6 var
+R1470:1476 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1482:1483 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1477:1478 <> Y':7
+binder 1480:1481 <> Z':8
+R1492:1495 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1486:1490 stdpp.base <> ::stdpp_scope:x_'⊆'_x not
+R1484:1485 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Y':7 var
+R1491:1491 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Y:5 var
+R1504:1507 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1498:1502 stdpp.base <> ::stdpp_scope:x_'⊆'_x not
+R1496:1497 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Z':8 var
+R1503:1503 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Z:6 var
+R1518:1522 stdpp.base <> ::stdpp_scope:x_'≡'_x not
+R1511:1515 stdpp.base <> ::stdpp_scope:x_'∪'_x not
+R1509:1510 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Y':7 var
+R1516:1517 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Z':8 var
+R1523:1523 TestingTheory.Coq_Helpers.InFiniteSetHelper <> X:4 var
+R1560:1568 stdpp.fin_sets <> set_ind_L thm
+R1560:1568 stdpp.fin_sets <> set_ind_L thm
+R1594:1596 stdpp.base <> ::stdpp_scope:'∅' not
+R1599:1601 stdpp.base <> ::stdpp_scope:'∅' not
+R1594:1596 stdpp.base <> ::stdpp_scope:'∅' not
+R1599:1601 stdpp.base <> ::stdpp_scope:'∅' not
+R1636:1640 stdpp.base <> ::stdpp_scope:x_'⊆'_x not
+R1642:1646 stdpp.base <> ::stdpp_scope:x_'∪'_x not
+R1636:1640 stdpp.base <> ::stdpp_scope:x_'⊆'_x not
+R1642:1646 stdpp.base <> ::stdpp_scope:x_'∪'_x not
+R1751:1754 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1745:1749 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R1756:1760 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R1751:1754 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1745:1749 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R1756:1760 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R1818:1822 stdpp.base <> ::stdpp_scope:x_'∪'_x not
+R1813:1814 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R1816:1817 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R1818:1822 stdpp.base <> ::stdpp_scope:x_'∪'_x not
+R1813:1814 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R1816:1817 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R1867:1871 stdpp.base <> ::stdpp_scope:x_'∪'_x not
+R1862:1863 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R1865:1866 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R1867:1871 stdpp.base <> ::stdpp_scope:x_'∪'_x not
+R1862:1863 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+R1865:1866 stdpp.base <> ::stdpp_scope:'{['_x_']}' not
+prf 1901:1916 <> exists_forall_in
+binder 1919:1919 <> B:9
+R1928:1931 Corelib.Init.Datatypes <> list ind
+R1933:1933 TestingTheory.Coq_Helpers.InFiniteSetHelper <> B:9 var
+binder 1923:1924 <> ps:10
+R1942:1945 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1941:1941 TestingTheory.Coq_Helpers.InFiniteSetHelper <> B:9 var
+binder 1937:1937 <> P:11
+R1958:1961 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1957:1957 TestingTheory.Coq_Helpers.InFiniteSetHelper <> B:9 var
+binder 1953:1953 <> Q:12
+R1975:1981 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1983:1984 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1982:1982 <> p:13
+R1993:1996 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1986:1990 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R1985:1985 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:13 var
+R1991:1992 TestingTheory.Coq_Helpers.InFiniteSetHelper <> ps:10 var
+R2000:2003 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1997:1997 TestingTheory.Coq_Helpers.InFiniteSetHelper <> P:11 var
+R1999:1999 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:13 var
+R2004:2004 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Q:12 var
+R2006:2006 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:13 var
+binder 1971:1971 <> h:14
+R2022:2025 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2011:2016 Stdlib.Lists.List <> Exists ind
+R2020:2021 TestingTheory.Coq_Helpers.InFiniteSetHelper <> ps:10 var
+R2018:2018 TestingTheory.Coq_Helpers.InFiniteSetHelper <> P:11 var
+R2026:2031 Corelib.Lists.ListDef <> Forall ind
+R2035:2036 TestingTheory.Coq_Helpers.InFiniteSetHelper <> ps:10 var
+R2033:2033 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Q:12 var
+prf 2143:2163 <> exists_forall_in_gset
+R2167:2175 stdpp.countable <> Countable class
+binder 2177:2177 <> A:15
+binder 2167:2177 <> H:17
+R2186:2189 stdpp.gmap <> gset def
+R2191:2191 TestingTheory.Coq_Helpers.InFiniteSetHelper <> A:15 var
+binder 2181:2182 <> ps:18
+R2200:2203 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2199:2199 TestingTheory.Coq_Helpers.InFiniteSetHelper <> A:15 var
+binder 2195:2195 <> P:19
+R2216:2219 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2215:2215 TestingTheory.Coq_Helpers.InFiniteSetHelper <> A:15 var
+binder 2211:2211 <> Q:20
+R2233:2239 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2241:2242 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 2240:2240 <> p:21
+R2251:2254 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2244:2248 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R2243:2243 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:21 var
+R2249:2250 TestingTheory.Coq_Helpers.InFiniteSetHelper <> ps:18 var
+R2258:2261 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2255:2255 TestingTheory.Coq_Helpers.InFiniteSetHelper <> P:19 var
+R2257:2257 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:21 var
+R2262:2262 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Q:20 var
+R2264:2264 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:21 var
+binder 2229:2229 <> h:22
+R2269:2269 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2295:2299 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2325:2325 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2270:2276 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2278:2279 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2277:2277 <> p:23
+R2288:2291 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2281:2285 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R2280:2280 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:23 var
+R2286:2287 TestingTheory.Coq_Helpers.InFiniteSetHelper <> ps:18 var
+R2292:2292 TestingTheory.Coq_Helpers.InFiniteSetHelper <> P:19 var
+R2294:2294 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:23 var
+R2300:2306 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2308:2309 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 2307:2307 <> p:24
+R2318:2321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2311:2315 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R2310:2310 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:24 var
+R2316:2317 TestingTheory.Coq_Helpers.InFiniteSetHelper <> ps:18 var
+R2322:2322 TestingTheory.Coq_Helpers.InFiniteSetHelper <> Q:20 var
+R2324:2324 TestingTheory.Coq_Helpers.InFiniteSetHelper <> p:24 var
+R2356:2364 stdpp.fin_sets <> set_ind_L thm
+R2356:2364 stdpp.fin_sets <> set_ind_L thm
