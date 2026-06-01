@@ -9,21 +9,57 @@ Include VACCS_congruence.
 
 
 
-
 (*
 Require Export InputOutputActions ActTau Must VACCS_Instance VACCS_Good
 gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB ParallelLTSConstruction ForwarderConstruction
 InteractionBetweenLts Testing_Predicate.
-Require Export Must.
 *)
 
 
 
 
-Print cgr.
+
+(*================================================================================*)
+(*/!\/!\/!\/!\/!\  How can i make this work???   /!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\*)
+
+Locate proc.  (*what???*)
+Lemma why: forall p e: proc,
+  p must_pass e  -> True.
+Proof.
+(*/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\*)
+(*================================================================================*)
+
 
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 (* Tactic that looks for lts/lts_step assumptions and inverts them to
   learn about the shape of the conclusion *)
@@ -39,6 +75,10 @@ match goal with
 | H : lts ?p ?a ?q |- _ => inversion H; subst; clear H
  end.
 *)
+
+
+
+
 
 (*========= notations =====================*)
 
