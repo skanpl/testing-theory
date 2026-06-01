@@ -1,0 +1,257 @@
+DIGEST e650c9625f166180be467cfef13f040c
+FTestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence
+R1326:1329 stdpp.base <> <> lib
+R1331:1339 stdpp.decidable <> <> lib
+R1341:1344 stdpp.gmap <> <> lib
+R1346:1351 stdpp.finite <> <> lib
+R1381:1389 Stdlib.ssr.ssreflect <> <> lib
+R1427:1434 Stdlib.Program.Equality <> <> lib
+R1471:1474 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1476:1487 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> <> lib
+R1489:1495 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> <> lib
+R1497:1502 TestingTheory.Labelled_Transition_System.Definitions.Lts_FW <> <> lib
+R1504:1513 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> <> lib
+R1515:1536 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> <> lib
+R1538:1548 TestingTheory.Labelled_Transition_System.Definitions.Termination <> <> lib
+R1554:1557 TestingTheory.Testing_Pre_orders.Must.Must <> <> lib
+R1559:1561 TestingTheory.Bar_Induction.Bar <> <> lib
+R1563:1574 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> <> lib
+R1576:1584 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> <> lib
+R1586:1589 TestingTheory.Testing_Pre_orders.Must.Lift <> <> lib
+R1591:1600 TestingTheory.Labelled_Transition_System.Actions.Definitions.Subset_Act <> <> lib
+R1602:1615 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> <> lib
+R1617:1631 TestingTheory.Labelled_Transition_System.Definitions.WeakTransitions <> <> lib
+R1633:1643 TestingTheory.Labelled_Transition_System.Definitions.Convergence <> <> lib
+R1649:1669 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> <> lib
+R1671:1693 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> <> lib
+R1695:1715 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ForwarderConstruction <> <> lib
+R1717:1739 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ParallelLTSConstruction <> <> lib
+R1741:1746 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> <> lib
+R1752:1768 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> <> lib
+R1770:1781 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> <> lib
+R1783:1787 TestingTheory.Testing_Pre_orders.Must.MustE <> <> lib
+R1789:1811 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> <> lib
+sec 1823:1830 <> preorder
+var  1845:1851 preorder outcome
+R1856:1859 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+var  1879:1889 preorder outcome_dec
+R1893:1899 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1901:1902 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1900:1900 <> t:3
+R1903:1910 stdpp.base <> Decision class
+R1913:1919 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.outcome var
+R1921:1921 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> t:3 var
+var  1938:1938 preorder P
+var  1961:1961 preorder Q
+var  1984:1984 preorder H
+R1989:1997 TestingTheory.Labelled_Transition_System.Definitions.gLts <> ExtAction class
+R2017:2023 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+R2025:2025 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R2027:2027 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2029:2029 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.H var
+R2041:2055 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R2059:2059 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2057:2057 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R2076:2082 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+R2084:2084 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R2086:2086 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2088:2088 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.H var
+R2100:2114 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R2118:2118 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2116:2116 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R2135:2141 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+R2143:2143 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2145:2145 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2147:2147 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.H var
+R2159:2173 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> FiniteImagegLts class
+R2177:2177 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2175:2175 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2181:2197 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> Testing_Predicate class
+R2199:2205 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.outcome var
+R2225:2237 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R2245:2248 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R2243:2243 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2241:2241 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2239:2239 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R2265:2277 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R2285:2288 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R2283:2283 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2281:2281 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2279:2279 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R2306:2318 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R2331:2338 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ForwarderConstruction <> fw_inter def
+R2329:2329 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2323:2324 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R2326:2326 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2320:2320 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R2355:2367 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R2384:2387 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R2382:2382 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2380:2380 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2371:2373 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2370:2370 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R2374:2375 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R2377:2377 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2404:2416 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R2429:2436 TestingTheory.Interaction_Between_Lts.Examples_of_Interactions.ForwarderConstruction <> fw_inter def
+R2427:2427 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2421:2422 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R2424:2424 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2418:2418 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R2453:2465 TestingTheory.Interaction_Between_Lts.InteractionBetweenLts <> Prop_of_Inter class
+R2482:2485 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R2480:2480 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2478:2478 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2469:2471 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2468:2468 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R2472:2473 TestingTheory.Labelled_Transition_System.Examples_of_LTS.MULTISET.MultisetLTSConstruction <> mb def
+R2475:2475 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+var  2503:2504 preorder CC
+R2508:2516 stdpp.countable <> Countable class
+R2540:2556 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> FinitaryAbsAction class
+R2558:2558 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R2560:2560 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2567:2572 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.PreAct var
+R2574:2574 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2576:2576 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.H var
+R2610:2626 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> FinitaryAbsAction class
+R2628:2628 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R2630:2630 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2632:2635 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.FinA var
+R2637:2642 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.PreAct var
+R2644:2644 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2646:2646 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.H var
+R2648:2649 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Φ var
+R2651:2654 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.𝝳 var
+var  2680:2686 preorder tc_spec
+R2691:2711 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> test_convergence_spec class
+R2713:2713 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2721:2727 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.outcome var
+var  2752:2758 preorder ta_spec
+R2763:2789 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> test_co_acceptance_set_spec class
+R2791:2796 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.PreAct var
+R2802:2802 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R2810:2816 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.outcome var
+R2818:2835 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Testing_Predicate0 var
+binder 2845:2845 <> x:35
+R2850:2853 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.𝝳 var
+R2856:2857 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Φ var
+R2859:2859 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> x:35 var
+sec 2914:2918 preorder FWⁿ
+R2935:2943 TestingTheory.Labelled_Transition_System.Definitions.Lts_FW <> gLtsObaFW class
+R2947:2947 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2945:2945 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R2964:2972 TestingTheory.Labelled_Transition_System.Definitions.Lts_FW <> gLtsObaFW class
+R2976:2976 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R2974:2974 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R2993:3001 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> gLtsObaFB class
+R3005:3005 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R3003:3003 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+prf 3114:3146 <> equivalence_fw_acc_set_and_must_i
+R3153:3153 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+binder 3149:3149 <> p:41
+R3161:3161 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+binder 3157:3157 <> q:42
+R3192:3196 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3171:3190 TestingTheory.Testing_Pre_orders.Must.Must <> :::x_'⊑ₘᵤₛₜᵢ'_x not
+R3170:3170 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> p:41 var
+R3191:3191 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> q:42 var
+R3198:3208 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> :::x_'≼ₐₛ'_x not
+R3197:3197 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> p:41 var
+R3209:3209 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> q:42 var
+R3262:3276 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> completeness_fw thm
+R3262:3276 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> completeness_fw thm
+R3309:3320 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> soundness_fw thm
+R3309:3320 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> soundness_fw thm
+prf 3452:3477 <> equivalence_fw_bhv_acc_ctx
+R3484:3484 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+binder 3480:3480 <> p:43
+R3492:3492 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+binder 3488:3488 <> q:44
+R3528:3532 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3501:3515 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional def
+R3527:3527 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> q:44 var
+R3525:3525 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> p:43 var
+R3517:3523 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.outcome var
+R3534:3544 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> :::x_'≼ₐₛ'_x not
+R3533:3533 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> p:43 var
+R3545:3545 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> q:44 var
+R3569:3586 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R3569:3586 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R3569:3586 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R3596:3628 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R3596:3628 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_fw_acc_set_and_must_i thm
+R3645:3649 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence preorder.FWⁿ <> sec
+sec 3676:3679 preorder Lⁿ
+R3696:3704 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> gLtsObaFB class
+R3708:3708 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R3706:3706 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R3712:3735 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+R3737:3737 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+R3754:3762 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> gLtsObaFB class
+R3766:3766 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R3764:3764 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R3770:3793 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+R3795:3795 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+R3812:3820 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA_FB <> gLtsObaFB class
+R3824:3824 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.A var
+R3822:3822 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+R3828:3851 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+R3853:3853 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.T var
+prf 3964:3993 <> equivalence_acc_set_and_must_i
+R4000:4000 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+binder 3996:3996 <> p:51
+R4008:4008 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+binder 4004:4004 <> q:52
+R4039:4043 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R4018:4037 TestingTheory.Testing_Pre_orders.Must.Must <> :::x_'⊑ₘᵤₛₜᵢ'_x not
+R4017:4017 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> p:51 var
+R4038:4038 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> q:52 var
+R4052:4062 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> :::x_'≼ₐₛ'_x not
+R4044:4044 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4046:4047 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4051:4051 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4045:4045 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> p:51 var
+R4048:4050 stdpp.base <> ::stdpp_scope:'∅' not
+R4063:4063 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4065:4066 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4070:4070 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4064:4064 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> q:52 var
+R4067:4069 stdpp.base <> ::stdpp_scope:'∅' not
+R4123:4137 TestingTheory.Testing_Pre_orders.Must.Lift <> lift_fw_ctx_pre thm
+R4140:4154 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> completeness_fw thm
+R4123:4137 TestingTheory.Testing_Pre_orders.Must.Lift <> lift_fw_ctx_pre thm
+R4140:4154 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> completeness_fw thm
+R4140:4154 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Completeness <> completeness_fw thm
+R4183:4194 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> soundness_fw thm
+R4183:4194 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Soundness <> soundness_fw thm
+R4214:4228 TestingTheory.Testing_Pre_orders.Must.Lift <> lift_fw_ctx_pre thm
+R4214:4228 TestingTheory.Testing_Pre_orders.Must.Lift <> lift_fw_ctx_pre thm
+prf 4362:4384 <> equivalence_bhv_acc_ctx
+R4391:4391 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.P var
+binder 4387:4387 <> p:53
+R4399:4399 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.Q var
+binder 4395:4395 <> q:54
+R4435:4439 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R4408:4422 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional def
+R4434:4434 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> q:54 var
+R4432:4432 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> p:53 var
+R4424:4430 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> preorder.outcome var
+R4448:4458 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.DefinitionAS <> :::x_'≼ₐₛ'_x not
+R4440:4440 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4442:4443 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4447:4447 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4441:4441 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> p:53 var
+R4444:4446 stdpp.base <> ::stdpp_scope:'∅' not
+R4459:4459 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4461:4462 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4466:4466 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4460:4460 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> q:54 var
+R4463:4465 stdpp.base <> ::stdpp_scope:'∅' not
+R4490:4507 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R4490:4507 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R4490:4507 TestingTheory.Testing_Pre_orders.Must.MustE <> pre_extensional_eq thm
+R4516:4545 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_acc_set_and_must_i thm
+R4516:4545 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence <> equivalence_acc_set_and_must_i thm
+R4562:4565 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence preorder.Lⁿ <> sec
+R4573:4580 TestingTheory.Testing_Pre_orders.Must.Alternative_Preorder.Acceptance_Set.Equivalence preorder <> sec

@@ -1,0 +1,36 @@
+DIGEST 31292c78f827ab52eafb7ff974350102
+FTestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau
+R1335:1338 Stdlib.Unicode.Utf8 <> <> lib
+R1374:1377 Stdlib.Lists.List <> <> lib
+R1387:1399 Stdlib.Lists.List ListNotations <> mod
+R1428:1436 stdpp.decidable <> <> lib
+ind 1541:1543 <> Act
+constr 1586:1591 <> ActExt
+constr 1667:1668 <> τ
+binder 1546:1546 <> A:1
+R1598:1598 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> A:1 var
+binder 1594:1595 <> μ:4
+scheme 1541:1543 <> Act_rect
+scheme 1541:1543 <> Act_ind
+scheme 1541:1543 <> Act_rec
+scheme 1541:1543 <> Act_sind
+R1685:1690 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> ActExt constr
+R1685:1690 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> ActExt constr
+R1709:1710 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> τ constr
+R1709:1710 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> τ constr
+def 1788:1792 <> trace
+binder 1794:1794 <> A:5
+R1799:1802 Corelib.Init.Datatypes <> list ind
+R1804:1804 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> A:5 var
+def 1836:1837 <> ε
+binder 1840:1840 <> A:6
+R1858:1861 Corelib.Init.Datatypes <> list ind
+R1863:1863 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> A:6 var
+R1853:1854 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+inst 1946:1954 <> act_eqdec
+R1958:1967 stdpp.base <> EqDecision abbrev
+binder 1969:1969 <> A:7
+binder 1958:1969 <> EqDecision0:8
+R1974:1983 stdpp.base <> EqDecision abbrev
+R1986:1988 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> Act ind
+R1990:1990 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> A:7 var

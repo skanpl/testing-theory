@@ -1,0 +1,1337 @@
+DIGEST 869a7922b3b4ceab3655850a9799bd5c
+FTestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification
+R1335:1342 Stdlib.Program.Equality <> <> lib
+R1371:1374 stdpp.base <> <> lib
+R1376:1384 stdpp.countable <> <> lib
+R1386:1391 stdpp.finite <> <> lib
+R1393:1396 stdpp.gmap <> <> lib
+R1398:1401 stdpp.list <> <> lib
+R1428:1433 stdpp.finite <> <> lib
+R1435:1438 stdpp.base <> <> lib
+R1440:1448 stdpp.decidable <> <> lib
+R1450:1455 stdpp.finite <> <> lib
+R1457:1460 stdpp.gmap <> <> lib
+R1462:1470 stdpp.gmultiset <> <> lib
+R1507:1520 TestingTheory.Coq_Helpers.MultisetHelper <> <> lib
+R1522:1533 TestingTheory.Coq_Helpers.ForAllHelper <> <> lib
+R1535:1538 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1540:1551 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> <> lib
+R1553:1559 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> <> lib
+R1561:1583 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> <> lib
+ind 1756:1760 <> strip
+constr 1813:1821 <> strip_nil
+constr 1861:1870 <> strip_step
+R1764:1769 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> gLtsEq class
+binder 1771:1771 <> P:1
+binder 1773:1773 <> A:2
+binder 1764:1773 <> H0:4
+R1779:1782 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1794:1797 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1783:1791 stdpp.gmultiset <> gmultiset rec
+R1799:1802 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1996:2000 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip:6 ind
+binder 1823:1823 <> p:7
+binder 1825:1826 <> p':8
+R1834:1838 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R1833:1833 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:7 var
+R1839:1840 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p':8 var
+binder 1828:1829 <> eq:9
+R1846:1850 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R1854:1855 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R1845:1845 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:7 var
+R1851:1853 stdpp.base <> ::stdpp_scope:'∅' not
+R1856:1857 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p':8 var
+binder 1872:1873 <> p1:10
+binder 1875:1876 <> p2:11
+binder 1878:1879 <> p3:12
+binder 1881:1882 <> η:13
+binder 1884:1884 <> m:14
+R1905:1908 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1890:1901 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R1903:1904 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:13 var
+R1922:1925 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1911:1915 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1918:1919 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R1909:1910 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:10 var
+R1916:1917 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:13 var
+R1920:1921 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p2:11 var
+R1938:1941 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1928:1932 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R1934:1935 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R1926:1927 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p2:11 var
+R1933:1933 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:14 var
+R1936:1937 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p3:12 var
+R1944:1948 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R1965:1966 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R1942:1943 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:10 var
+R1959:1963 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R1949:1952 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R1955:1958 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R1953:1954 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:13 var
+R1964:1964 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:14 var
+R1967:1968 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p3:12 var
+scheme 1756:1760 <> strip_ind
+scheme 1756:1760 <> strip_sind
+R1996:2000 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip ind
+not 1977:1977 <> :::x_'⟿{'_x_'}'_x
+R2042:2045 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R2047:2048 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 2046:2046 <> r:15
+R2059:2062 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2050:2054 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R2056:2057 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R2058:2058 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:15 var
+R2064:2068 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R2063:2063 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:15 var
+not 2020:2020 <> :::x_'⟿⋍{'_x_'}'_x
+prf 2128:2135 <> strip_eq
+R2139:2145 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 2147:2147 <> P:16
+binder 2149:2149 <> A:17
+binder 2139:2149 <> H0:20
+binder 2153:2153 <> e:21
+binder 2155:2156 <> e':22
+binder 2158:2158 <> m:23
+R2176:2179 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2166:2170 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R2172:2173 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R2165:2165 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e:21 var
+R2171:2171 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:23 var
+R2174:2175 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e':22 var
+R2180:2183 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R2185:2186 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+binder 2184:2184 <> r:24
+R2194:2201 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2188:2192 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R2187:2187 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:24 var
+R2193:2193 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e:21 var
+R2203:2211 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R2213:2215 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R2202:2202 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:24 var
+R2212:2212 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:23 var
+R2216:2217 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e':22 var
+R2359:2366 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2369:2370 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2359:2366 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2369:2370 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R2409:2415 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R2409:2415 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R2515:2524 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R2515:2524 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 2565:2576 <> strip_mem_ex
+R2580:2586 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 2588:2588 <> P:25
+binder 2590:2590 <> A:26
+binder 2580:2590 <> H0:29
+binder 2594:2595 <> p1:30
+binder 2597:2598 <> p2:31
+binder 2600:2600 <> m:32
+binder 2602:2603 <> η:33
+R2637:2645 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2686:2686 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2612:2616 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R2633:2634 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R2610:2611 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:30 var
+R2627:2631 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R2617:2620 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2623:2626 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2621:2622 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:33 var
+R2632:2632 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:32 var
+R2635:2636 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p2:31 var
+R2646:2649 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R2652:2653 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 2650:2651 <> p':34
+R2667:2670 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2656:2660 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2663:2664 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R2654:2655 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:30 var
+R2661:2662 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:33 var
+R2665:2666 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p':34 var
+R2671:2682 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R2684:2685 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:33 var
+R2776:2780 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R2792:2796 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R2781:2784 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2788:2791 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2776:2780 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R2792:2796 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R2781:2784 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2788:2791 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2841:2868 stdpp.gmultiset <> gmultiset_elem_of_disj_union thm
+R2841:2868 stdpp.gmultiset <> gmultiset_elem_of_disj_union thm
+R2909:2935 stdpp.gmultiset <> gmultiset_elem_of_singleton thm
+R2909:2935 stdpp.gmultiset <> gmultiset_elem_of_singleton thm
+R3028:3059 stdpp.gmultiset <> gmultiset_disj_union_difference' thm
+R3028:3059 stdpp.gmultiset <> gmultiset_disj_union_difference' thm
+R3101:3133 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R3101:3133 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+prf 3191:3203 <> strip_eq_step
+R3207:3213 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 3215:3215 <> P:35
+binder 3217:3217 <> A:36
+binder 3207:3217 <> H0:39
+binder 3221:3221 <> e:40
+binder 3223:3224 <> e':41
+binder 3226:3226 <> m:42
+binder 3228:3229 <> η:43
+R3262:3265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3237:3241 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R3258:3259 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R3236:3236 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e:40 var
+R3252:3256 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R3242:3245 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3248:3251 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3246:3247 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:43 var
+R3257:3257 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:42 var
+R3260:3261 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e':41 var
+R3266:3269 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R3271:3272 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+binder 3270:3270 <> r:44
+R3284:3291 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3274:3278 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R3281:3282 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R3273:3273 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e:40 var
+R3279:3280 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:43 var
+R3283:3283 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:44 var
+R3293:3300 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R3302:3303 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R3292:3292 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:44 var
+R3301:3301 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:42 var
+R3304:3305 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e':41 var
+R3402:3407 stdpp.base <> decide def
+R3412:3414 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3402:3407 stdpp.base <> decide def
+R3412:3414 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3443:3448 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_rel meth
+R3467:3499 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_deter meth
+R3443:3448 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_rel meth
+R3467:3499 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_deter meth
+R3529:3554 stdpp.gmultiset <> gmultiset_disj_union_inj_1 inst
+R3529:3554 stdpp.gmultiset <> gmultiset_disj_union_inj_1 inst
+R3582:3589 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R3582:3589 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R3643:3645 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3656:3660 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R3646:3649 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3652:3655 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3662:3666 stdpp.base <> ::stdpp_scope:x_'∖'_x not
+R3667:3670 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3674:3677 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3643:3645 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3656:3660 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R3646:3649 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3652:3655 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3662:3666 stdpp.base <> ::stdpp_scope:x_'∖'_x not
+R3667:3670 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3674:3677 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R3716:3720 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R3716:3720 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R3758:3795 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R3758:3795 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R3923:3927 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R3923:3927 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R3964:3995 stdpp.gmultiset <> gmultiset_disj_union_difference' thm
+R3964:3995 stdpp.gmultiset <> gmultiset_disj_union_difference' thm
+R4035:4042 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R4035:4042 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R4110:4119 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R4110:4119 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 4200:4212 <> strip_m_deter
+R4216:4222 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 4224:4224 <> P:45
+binder 4226:4226 <> A:46
+binder 4216:4226 <> H0:49
+binder 4230:4230 <> m:50
+binder 4232:4232 <> p:51
+binder 4234:4235 <> p1:52
+binder 4237:4238 <> p2:53
+R4256:4259 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4246:4250 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R4252:4253 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R4245:4245 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:51 var
+R4251:4251 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:50 var
+R4254:4255 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:52 var
+R4271:4278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4261:4265 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R4267:4268 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R4260:4260 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:51 var
+R4266:4266 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:50 var
+R4269:4270 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p2:53 var
+R4281:4285 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R4279:4280 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:52 var
+R4286:4287 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p2:53 var
+R4335:4347 stdpp.gmultiset <> gmultiset_ind thm
+R4335:4347 stdpp.gmultiset <> gmultiset_ind thm
+R4448:4455 Corelib.Classes.RelationClasses <> symmetry def
+R4448:4455 Corelib.Classes.RelationClasses <> symmetry def
+R4500:4511 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_mem_ex thm
+R4500:4511 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_mem_ex thm
+R4575:4586 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_mem_ex thm
+R4575:4586 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_mem_ex thm
+R4647:4659 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R4647:4659 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R4710:4722 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R4710:4722 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+prf 4861:4872 <> strip_eq_sim
+R4876:4882 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 4884:4884 <> P:54
+binder 4886:4886 <> A:55
+binder 4876:4886 <> H0:58
+binder 4890:4890 <> p:59
+binder 4892:4892 <> q:60
+binder 4894:4895 <> p':61
+binder 4897:4898 <> q':62
+binder 4900:4900 <> m:63
+R4914:4917 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4908:4912 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R4907:4907 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:59 var
+R4913:4913 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:60 var
+R4929:4932 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4919:4923 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R4925:4926 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R4918:4918 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:59 var
+R4924:4924 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:63 var
+R4927:4928 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p':61 var
+R4944:4947 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4934:4938 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R4940:4941 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R4933:4933 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:60 var
+R4939:4939 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:63 var
+R4942:4943 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q':62 var
+R4950:4954 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R4948:4949 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p':61 var
+R4955:4956 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q':62 var
+R5001:5008 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R5001:5008 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R5069:5081 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_m_deter thm
+R5069:5081 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_m_deter thm
+prf 5116:5131 <> lts_oba_mo_strip
+R5135:5158 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+binder 5160:5160 <> P:64
+binder 5162:5162 <> A:65
+binder 5135:5162 <> H0:69
+binder 5165:5165 <> p:70
+R5172:5175 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R5177:5179 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 5176:5176 <> q:71
+R5181:5185 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R5198:5199 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R5180:5180 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:70 var
+R5186:5195 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R5197:5197 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:70 var
+R5200:5200 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:71 var
+R5222:5231 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R5222:5231 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R5282:5294 stdpp.gmultiset <> gmultiset_ind thm
+R5282:5294 stdpp.gmultiset <> gmultiset_ind thm
+R5364:5368 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R5369:5378 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R5364:5368 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R5369:5378 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R5415:5421 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5423:5424 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5422:5422 <> q:72
+R5439:5442 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5425:5436 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R5444:5448 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R5450:5451 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R5452:5452 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:72 var
+R5415:5421 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5423:5424 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5422:5422 <> q:73
+R5439:5442 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5425:5436 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R5444:5448 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R5450:5451 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R5452:5452 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:73 var
+R5478:5497 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec_bis2 meth
+R5478:5497 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec_bis2 meth
+R5576:5591 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R5576:5591 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R5627:5629 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5630:5639 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R5627:5629 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5630:5639 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R5749:5758 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R5749:5758 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 5786:5802 <> strip_retract_act
+R5806:5812 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 5814:5814 <> P:74
+binder 5816:5816 <> A:75
+binder 5806:5816 <> H0:78
+binder 5820:5820 <> p:79
+binder 5822:5822 <> q:80
+binder 5824:5824 <> m:81
+binder 5826:5826 <> t:82
+binder 5828:5829 <> α:83
+R5846:5849 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5837:5841 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R5843:5844 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R5836:5836 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:79 var
+R5842:5842 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:81 var
+R5845:5845 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:80 var
+R5861:5864 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5851:5855 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R5858:5859 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R5850:5850 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:80 var
+R5856:5857 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> α:83 var
+R5860:5860 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:82 var
+R5865:5868 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R5870:5871 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 5869:5869 <> r:84
+R5883:5886 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5873:5877 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R5880:5881 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R5872:5872 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:79 var
+R5878:5879 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> α:83 var
+R5882:5882 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:84 var
+R5888:5895 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R5897:5898 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R5887:5887 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:84 var
+R5896:5896 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:81 var
+R5899:5899 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:82 var
+R6022:6028 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R6022:6028 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R6251:6283 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R6251:6283 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R6347:6354 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R6347:6354 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R6459:6468 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R6459:6468 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 6535:6561 <> strip_delay_action_not_in_m
+R6565:6571 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 6573:6573 <> P:85
+binder 6575:6575 <> A:86
+binder 6565:6575 <> H0:89
+binder 6579:6579 <> p:90
+binder 6581:6581 <> q:91
+binder 6583:6583 <> m:92
+binder 6585:6585 <> t:93
+binder 6587:6588 <> μ:94
+R6603:6606 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6597:6601 stdpp.base <> ::stdpp_scope:x_'∉'_x not
+R6595:6596 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:94 var
+R6602:6602 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:92 var
+R6617:6620 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6608:6612 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R6614:6615 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R6607:6607 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:90 var
+R6613:6613 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:92 var
+R6616:6616 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:91 var
+R6632:6639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6622:6626 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R6629:6630 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R6621:6621 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:90 var
+R6627:6628 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:94 var
+R6631:6631 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:93 var
+R6640:6643 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R6645:6646 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 6644:6644 <> r:95
+R6648:6652 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R6655:6656 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R6647:6647 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:91 var
+R6653:6654 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:94 var
+R6657:6657 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:95 var
+R6845:6851 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R6845:6851 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R6969:6972 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6962:6966 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R6975:6979 stdpp.base <> ::stdpp_scope:x_'∉'_x not
+R6969:6972 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6962:6966 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R6975:6979 stdpp.base <> ::stdpp_scope:x_'∉'_x not
+R7052:7089 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R7052:7089 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+prf 7149:7161 <> strip_delay_m
+R7165:7171 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 7173:7173 <> P:96
+binder 7175:7175 <> A:97
+binder 7165:7175 <> H0:100
+binder 7179:7179 <> p:101
+binder 7181:7181 <> q:102
+binder 7183:7183 <> m:103
+binder 7185:7185 <> t:104
+binder 7187:7188 <> μ:105
+R7203:7206 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7197:7201 stdpp.base <> ::stdpp_scope:x_'∉'_x not
+R7195:7196 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:105 var
+R7202:7202 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:103 var
+R7217:7220 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7208:7212 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R7214:7215 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R7207:7207 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:101 var
+R7213:7213 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:103 var
+R7216:7216 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:102 var
+R7232:7239 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7222:7226 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R7229:7230 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R7221:7221 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:101 var
+R7227:7228 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:105 var
+R7231:7231 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:104 var
+R7240:7243 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R7245:7246 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 7244:7244 <> r:106
+R7248:7252 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R7254:7255 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R7247:7247 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:104 var
+R7253:7253 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:103 var
+R7256:7256 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:106 var
+R7337:7349 stdpp.gmultiset <> gmultiset_ind thm
+R7337:7349 stdpp.gmultiset <> gmultiset_ind thm
+R7409:7417 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_nil constr
+R7409:7417 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_nil constr
+R7467:7478 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_mem_ex thm
+R7467:7478 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_mem_ex thm
+R7576:7579 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7570:7574 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R7582:7586 stdpp.base <> ::stdpp_scope:x_'∉'_x not
+R7576:7579 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7570:7574 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R7582:7586 stdpp.base <> ::stdpp_scope:x_'∉'_x not
+R7659:7696 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R7659:7696 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R7780:7792 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R7780:7792 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R7919:7926 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R7919:7926 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R7982:7991 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R7982:7991 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 8014:8024 <> strip_after
+R8028:8051 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+binder 8053:8053 <> P:107
+binder 8055:8055 <> A:108
+binder 8028:8055 <> H0:112
+binder 8059:8059 <> p:113
+binder 8061:8061 <> q:114
+binder 8063:8063 <> m:115
+R8080:8083 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8071:8075 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R8077:8078 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R8070:8070 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:113 var
+R8076:8076 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:115 var
+R8079:8079 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:114 var
+R8096:8098 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8084:8093 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R8095:8095 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:113 var
+R8100:8104 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R8099:8099 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:115 var
+R8105:8114 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R8116:8116 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:114 var
+R8176:8188 stdpp.gmultiset <> gmultiset_ind thm
+R8176:8188 stdpp.gmultiset <> gmultiset_ind thm
+R8261:8263 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8244:8248 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R8241:8243 stdpp.base <> ::stdpp_scope:'∅' not
+R8249:8258 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R8264:8273 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R8261:8263 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8244:8248 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R8241:8243 stdpp.base <> ::stdpp_scope:'∅' not
+R8249:8258 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R8264:8273 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R8332:8344 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_eq thm
+R8332:8344 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_eq thm
+R8389:8400 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_mem_ex thm
+R8389:8400 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_mem_ex thm
+R8483:8495 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R8483:8495 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R8562:8577 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R8562:8577 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R8652:8677 stdpp.gmultiset <> gmultiset_disj_union_assoc inst
+R8652:8677 stdpp.gmultiset <> gmultiset_disj_union_assoc inst
+R8652:8677 stdpp.gmultiset <> gmultiset_disj_union_assoc inst
+R8691:8708 TestingTheory.Coq_Helpers.MultisetHelper <> gmultiset_eq_pop_l thm
+R8691:8708 TestingTheory.Coq_Helpers.MultisetHelper <> gmultiset_eq_pop_l thm
+R8722:8734 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_eq thm
+R8722:8734 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_eq thm
+prf 8775:8784 <> strip_aux2
+R8788:8794 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 8796:8796 <> P:116
+binder 8798:8798 <> A:117
+binder 8788:8798 <> H0:120
+binder 8802:8802 <> p:121
+binder 8804:8804 <> q:122
+binder 8806:8807 <> q':123
+binder 8809:8809 <> m:124
+R8823:8826 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8817:8821 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R8816:8816 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:121 var
+R8822:8822 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:122 var
+R8838:8845 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8828:8832 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R8834:8835 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R8827:8827 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:122 var
+R8833:8833 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:124 var
+R8836:8837 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q':123 var
+R8847:8854 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R8856:8857 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R8846:8846 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:121 var
+R8855:8855 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:124 var
+R8858:8859 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q':123 var
+R9001:9007 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R9001:9007 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+prf 9190:9199 <> strip_aux1
+R9203:9209 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 9211:9211 <> P:125
+binder 9213:9213 <> A:126
+binder 9203:9213 <> H0:129
+binder 9217:9217 <> p:130
+binder 9219:9219 <> q:131
+binder 9221:9221 <> t:132
+binder 9223:9224 <> m1:133
+binder 9226:9227 <> m2:134
+R9245:9248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9235:9239 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R9242:9243 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R9234:9234 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:130 var
+R9240:9241 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m1:133 var
+R9244:9244 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:132 var
+R9267:9274 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9250:9254 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R9264:9265 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R9249:9249 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:130 var
+R9257:9261 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R9255:9256 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m1:133 var
+R9262:9263 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m2:134 var
+R9266:9266 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:131 var
+R9276:9283 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R9286:9287 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R9275:9275 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:132 var
+R9284:9285 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m2:134 var
+R9288:9288 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:131 var
+R9382:9409 stdpp.gmultiset <> gmultiset_disj_union_left_id inst
+R9382:9409 stdpp.gmultiset <> gmultiset_disj_union_left_id inst
+R9382:9409 stdpp.gmultiset <> gmultiset_disj_union_left_id inst
+R9446:9455 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_aux2 thm
+R9446:9455 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_aux2 thm
+R9486:9511 stdpp.gmultiset <> gmultiset_disj_union_assoc inst
+R9486:9511 stdpp.gmultiset <> gmultiset_disj_union_assoc inst
+R9486:9511 stdpp.gmultiset <> gmultiset_disj_union_assoc inst
+R9532:9544 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R9532:9544 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+prf 9707:9722 <> strip_delay_inp4
+R9726:9749 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+binder 9751:9751 <> P:135
+binder 9753:9753 <> A:136
+binder 9726:9753 <> H0:140
+binder 9757:9757 <> p:141
+binder 9759:9759 <> q:142
+binder 9761:9761 <> t:143
+binder 9763:9764 <> β:144
+R9782:9785 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9771:9779 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::'blocking'_x not
+R9780:9781 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> β:144 var
+R9797:9800 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9787:9791 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R9794:9795 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R9786:9786 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:141 var
+R9792:9793 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> β:144 var
+R9796:9796 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:143 var
+R9822:9829 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9802:9806 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R9819:9820 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R9801:9801 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:143 var
+R9807:9816 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R9818:9818 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:141 var
+R9821:9821 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:142 var
+R9830:9833 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R9835:9836 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 9834:9834 <> r:145
+R9858:9861 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9838:9842 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R9855:9856 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R9837:9837 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:141 var
+R9843:9852 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R9854:9854 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:141 var
+R9857:9857 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:145 var
+R9863:9870 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R9873:9874 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R9862:9862 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:145 var
+R9871:9872 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> β:144 var
+R9875:9875 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:142 var
+R9922:9931 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R9922:9931 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R10007:10019 stdpp.gmultiset <> gmultiset_ind thm
+R10007:10019 stdpp.gmultiset <> gmultiset_ind thm
+R10086:10094 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_nil constr
+R10086:10094 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_nil constr
+R10188:10192 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R10193:10202 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R10188:10192 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R10193:10202 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R10238:10257 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec_bis2 meth
+R10238:10257 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec_bis2 meth
+R10330:10334 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R10330:10334 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R10347:10381 TestingTheory.Labelled_Transition_System.Definitions.gLts <> BlockingAction_are_not_non_blocking thm
+R10347:10381 TestingTheory.Labelled_Transition_System.Definitions.gLts <> BlockingAction_are_not_non_blocking thm
+R10406:10443 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R10406:10443 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R10529:10541 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R10529:10541 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq_step thm
+R10612:10619 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R10628:10635 Corelib.Classes.RelationClasses <> symmetry def
+R10612:10619 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R10628:10635 Corelib.Classes.RelationClasses <> symmetry def
+R10678:10693 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R10678:10693 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R10735:10737 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10738:10747 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R10735:10737 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10738:10747 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R10877:10886 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R10877:10886 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 11078:11092 <> strip_delay_tau
+R11096:11102 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 11104:11104 <> P:146
+binder 11106:11106 <> A:147
+binder 11096:11106 <> H0:150
+binder 11110:11110 <> p:151
+binder 11112:11112 <> q:152
+binder 11114:11114 <> m:153
+binder 11116:11116 <> t:154
+R11133:11136 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11124:11128 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R11130:11131 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R11123:11123 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:151 var
+R11129:11129 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:153 var
+R11132:11132 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:152 var
+R11144:11151 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11138:11142 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶'_x not
+R11137:11137 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:151 var
+R11143:11143 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:154 var
+R11152:11152 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R11228:11233 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R11275:11275 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R11153:11156 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R11164:11165 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 11157:11158 <> η:155
+binder 11160:11161 <> μ:156
+binder 11163:11163 <> r:157
+R11176:11179 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11166:11169 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R11174:11175 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:155 var
+R11171:11172 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:156 var
+R11195:11198 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11180:11191 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R11193:11194 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:155 var
+R11210:11213 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11200:11204 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R11207:11208 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R11199:11199 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:151 var
+R11205:11206 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:155 var
+R11209:11209 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:157 var
+R11215:11222 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R11225:11226 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R11214:11214 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:157 var
+R11223:11224 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:156 var
+R11227:11227 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:154 var
+R11234:11237 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R11241:11242 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 11238:11238 <> r:158
+binder 11240:11240 <> w:159
+R11250:11253 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11244:11248 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶'_x not
+R11243:11243 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:152 var
+R11249:11249 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:158 var
+R11264:11267 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11255:11259 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R11261:11262 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R11254:11254 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:154 var
+R11260:11260 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:153 var
+R11263:11263 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> w:159 var
+R11269:11273 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R11268:11268 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> w:159 var
+R11274:11274 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:158 var
+R11389:11395 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R11389:11395 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R11511:11519 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_nil constr
+R11511:11519 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_nil constr
+R11567:11597 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_tau meth
+R11567:11597 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_tau meth
+R11749:11781 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R11749:11781 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R12019:12026 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R12028:12029 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R12019:12026 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R12028:12029 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⟶⋍['_x_']'_x not
+R12077:12083 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R12077:12083 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R12117:12149 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R12117:12149 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R12339:12375 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_deter_inv meth
+R12339:12375 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_deter_inv meth
+R12607:12614 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R12607:12614 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R12710:12719 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R12710:12719 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 12921:12938 <> woutpout_delay_inp
+R12942:12948 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 12950:12950 <> P:160
+binder 12952:12952 <> A:161
+binder 12942:12952 <> H0:164
+binder 12956:12956 <> p:165
+binder 12958:12958 <> q:166
+binder 12960:12960 <> m:167
+binder 12962:12962 <> t:168
+binder 12964:12965 <> μ:169
+R13003:13006 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12973:12978 Corelib.Lists.ListDef <> Forall ind
+R12992:12999 stdpp.base <> elements def
+R13001:13001 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:167 var
+R12981:12985 TestingTheory.Coq_Helpers.ForAllHelper <> NotEq def
+R12987:12988 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:169 var
+R13017:13020 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13008:13012 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R13014:13015 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R13007:13007 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:165 var
+R13013:13013 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:167 var
+R13016:13016 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:166 var
+R13032:13040 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13022:13026 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R13029:13030 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R13021:13021 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:165 var
+R13027:13028 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:169 var
+R13031:13031 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:168 var
+R13041:13044 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R13046:13047 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 13045:13045 <> r:170
+R13049:13053 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R13056:13057 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R13048:13048 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:166 var
+R13054:13055 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:169 var
+R13058:13058 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:170 var
+R13217:13223 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R13217:13223 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R13306:13306 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13318:13323 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13354:13354 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13307:13311 TestingTheory.Coq_Helpers.ForAllHelper <> NotEq def
+R13324:13329 Corelib.Lists.ListDef <> Forall ind
+R13343:13350 stdpp.base <> elements def
+R13332:13336 TestingTheory.Coq_Helpers.ForAllHelper <> NotEq def
+R13306:13306 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13318:13323 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13354:13354 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13307:13311 TestingTheory.Coq_Helpers.ForAllHelper <> NotEq def
+R13324:13329 Corelib.Lists.ListDef <> Forall ind
+R13343:13350 stdpp.base <> elements def
+R13332:13336 TestingTheory.Coq_Helpers.ForAllHelper <> NotEq def
+R13380:13391 TestingTheory.Coq_Helpers.ForAllHelper <> simpl_P_in_l thm
+R13380:13391 TestingTheory.Coq_Helpers.ForAllHelper <> simpl_P_in_l thm
+R13451:13488 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R13451:13488 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+prf 13550:13562 <> nb_with_strip
+R13566:13572 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 13574:13574 <> P:171
+binder 13576:13576 <> A:172
+binder 13566:13576 <> H0:175
+binder 13579:13580 <> p1:176
+binder 13582:13582 <> m:177
+binder 13584:13586 <> p'1:178
+binder 13588:13589 <> η:179
+R13607:13610 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13596:13600 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R13602:13603 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R13594:13595 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:176 var
+R13601:13601 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:177 var
+R13604:13606 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p'1:178 var
+R13619:13627 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13613:13617 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R13611:13612 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:179 var
+R13618:13618 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:177 var
+R13628:13639 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R13641:13642 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:179 var
+R13742:13747 stdpp.base <> decide def
+R13752:13754 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13742:13747 stdpp.base <> decide def
+R13752:13754 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13817:13821 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R13817:13821 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+prf 13888:13908 <> woutpout_preserves_mu
+R13912:13918 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 13920:13920 <> P:180
+binder 13922:13922 <> A:181
+binder 13912:13922 <> H0:184
+binder 13926:13926 <> p:185
+binder 13928:13928 <> q:186
+binder 13930:13930 <> m:187
+binder 13932:13932 <> t:188
+binder 13934:13935 <> α:189
+R13952:13955 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13943:13947 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R13949:13950 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R13942:13942 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:185 var
+R13948:13948 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:187 var
+R13951:13951 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:186 var
+R13967:13975 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13957:13961 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R13964:13965 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R13956:13956 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:186 var
+R13962:13963 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> α:189 var
+R13966:13966 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:188 var
+R13976:13979 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R13984:13985 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 13980:13980 <> r:190
+binder 13982:13983 <> t':191
+R13997:14000 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13987:13991 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R13994:13995 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶{'_x_'}'_x not
+R13986:13986 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:185 var
+R13992:13993 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> α:189 var
+R13996:13996 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:190 var
+R14012:14015 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R14002:14006 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R14008:14009 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R14001:14001 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:190 var
+R14007:14007 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:187 var
+R14010:14011 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t':191 var
+R14017:14021 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R14016:14016 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:188 var
+R14022:14023 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t':191 var
+R14131:14137 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R14131:14137 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R14332:14364 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R14332:14364 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R14430:14437 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R14430:14437 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R14521:14530 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R14521:14530 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 14597:14615 <> not_nb_with_strip_m
+R14619:14625 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 14627:14627 <> P:192
+binder 14629:14629 <> A:193
+binder 14619:14629 <> H0:196
+binder 14632:14633 <> p1:197
+binder 14635:14635 <> m:198
+binder 14637:14639 <> p'1:199
+binder 14641:14642 <> β:200
+R14661:14664 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14650:14654 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R14656:14657 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R14648:14649 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:197 var
+R14655:14655 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:198 var
+R14658:14660 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p'1:199 var
+R14676:14683 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14665:14673 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::'blocking'_x not
+R14674:14675 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> β:200 var
+R14684:14689 Corelib.Lists.ListDef <> Forall ind
+R14703:14710 stdpp.base <> elements def
+R14712:14712 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:198 var
+R14692:14696 TestingTheory.Coq_Helpers.ForAllHelper <> NotEq def
+R14698:14699 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> β:200 var
+R14813:14824 TestingTheory.Coq_Helpers.ForAllHelper <> simpl_P_in_l thm
+R14813:14824 TestingTheory.Coq_Helpers.ForAllHelper <> simpl_P_in_l thm
+R14855:14889 TestingTheory.Labelled_Transition_System.Definitions.gLts <> BlockingAction_are_not_non_blocking thm
+R14855:14889 TestingTheory.Labelled_Transition_System.Definitions.gLts <> BlockingAction_are_not_non_blocking thm
+prf 14911:14928 <> woutpout_delay_tau
+R14932:14938 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 14940:14940 <> P:201
+binder 14942:14942 <> A:202
+binder 14932:14942 <> H0:205
+binder 14946:14946 <> p:206
+binder 14948:14948 <> q:207
+binder 14950:14950 <> m:208
+binder 14952:14952 <> t:209
+R14969:14972 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14960:14964 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R14966:14967 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R14959:14959 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:206 var
+R14965:14965 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:208 var
+R14968:14968 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:207 var
+R14980:14988 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14974:14978 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶'_x not
+R14973:14973 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:206 var
+R14979:14979 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:209 var
+R14989:14989 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R15064:15069 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R15084:15084 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R14990:14993 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R15003:15004 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 14994:14995 <> η:210
+binder 14997:14998 <> μ:211
+binder 15000:15000 <> r:212
+binder 15002:15002 <> t:213
+R15020:15023 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15005:15016 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R15018:15019 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:210 var
+R15034:15037 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15024:15027 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual meth
+R15032:15033 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:210 var
+R15029:15030 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:211 var
+R15049:15052 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15039:15043 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R15046:15047 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R15038:15038 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:206 var
+R15044:15045 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:210 var
+R15048:15048 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:212 var
+R15054:15058 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R15061:15062 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R15053:15053 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:207 var
+R15059:15060 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> μ:211 var
+R15063:15063 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> t:213 var
+R15070:15073 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R15075:15076 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 15074:15074 <> r:214
+R15078:15082 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶'_x not
+R15077:15077 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:207 var
+R15083:15083 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:214 var
+R15226:15232 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R15226:15232 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R15324:15354 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_tau meth
+R15324:15354 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_tau meth
+R15569:15601 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R15569:15601 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R15819:15827 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::'blocking'_x not
+R15819:15827 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::'blocking'_x not
+R15857:15867 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual_blocks meth
+R15857:15867 TestingTheory.Labelled_Transition_System.Definitions.gLts <> dual_blocks meth
+R15892:15897 Corelib.Lists.ListDef <> Forall ind
+R15911:15918 stdpp.base <> elements def
+R15900:15904 TestingTheory.Coq_Helpers.ForAllHelper <> NotEq def
+R15892:15897 Corelib.Lists.ListDef <> Forall ind
+R15911:15918 stdpp.base <> elements def
+R15900:15904 TestingTheory.Coq_Helpers.ForAllHelper <> NotEq def
+R15953:15971 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> not_nb_with_strip_m thm
+R15953:15971 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> not_nb_with_strip_m thm
+R15995:16012 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> woutpout_delay_inp thm
+R15995:16012 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> woutpout_delay_inp thm
+prf 16054:16057 <> aux0
+R16061:16067 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 16069:16069 <> P:215
+binder 16071:16071 <> A:216
+binder 16061:16071 <> H0:219
+binder 16075:16075 <> e:220
+binder 16077:16078 <> e':221
+binder 16080:16080 <> m:222
+R16087:16090 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R16093:16094 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+binder 16091:16092 <> η:223
+R16103:16106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16097:16101 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R16095:16096 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:223 var
+R16102:16102 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:222 var
+R16118:16125 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16108:16112 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R16114:16115 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R16107:16107 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e:220 var
+R16113:16113 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:222 var
+R16116:16117 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e':221 var
+R16126:16129 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+R16132:16133 Stdlib.Unicode.Utf8_core <> ::type_scope:'∃'_x_'..'_x_','_x not
+binder 16130:16131 <> e':224
+R16135:16139 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R16142:16143 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R16134:16134 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e:220 var
+R16140:16141 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:223 var
+R16144:16145 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e':224 var
+R16230:16257 stdpp.gmultiset <> gmultiset_elem_of_disj_union thm
+R16230:16257 stdpp.gmultiset <> gmultiset_elem_of_disj_union thm
+R16298:16324 stdpp.gmultiset <> gmultiset_elem_of_singleton thm
+R16298:16324 stdpp.gmultiset <> gmultiset_elem_of_singleton thm
+R16409:16441 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+R16409:16441 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_delay meth
+prf 16489:16493 <> aux3_
+R16497:16503 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 16505:16505 <> P:225
+binder 16507:16507 <> A:226
+binder 16497:16507 <> H0:229
+binder 16511:16511 <> e:230
+binder 16513:16514 <> e':231
+binder 16516:16516 <> m:232
+binder 16518:16519 <> η:233
+R16552:16555 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16527:16531 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R16548:16549 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R16526:16526 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e:230 var
+R16542:16546 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R16532:16535 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16538:16541 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16536:16537 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:233 var
+R16547:16547 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:232 var
+R16550:16551 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e':231 var
+R16556:16559 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R16561:16562 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+binder 16560:16560 <> r:234
+R16574:16581 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16564:16568 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R16571:16572 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R16563:16563 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e:230 var
+R16569:16570 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:233 var
+R16573:16573 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:234 var
+R16583:16590 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R16592:16593 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿⋍{'_x_'}'_x not
+R16582:16582 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:234 var
+R16591:16591 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:232 var
+R16594:16595 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> e':231 var
+R16692:16697 stdpp.base <> decide def
+R16702:16704 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R16692:16697 stdpp.base <> decide def
+R16702:16704 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R16733:16738 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_rel meth
+R16757:16789 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_deter meth
+R16733:16738 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_rel meth
+R16757:16789 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_deter meth
+R16819:16844 stdpp.gmultiset <> gmultiset_disj_union_inj_1 inst
+R16819:16844 stdpp.gmultiset <> gmultiset_disj_union_inj_1 inst
+R16872:16879 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R16872:16879 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R16933:16935 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R16946:16950 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R16936:16939 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16942:16945 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16952:16956 stdpp.base <> ::stdpp_scope:x_'∖'_x not
+R16957:16960 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16964:16967 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16933:16935 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R16946:16950 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R16936:16939 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16942:16945 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16952:16956 stdpp.base <> ::stdpp_scope:x_'∖'_x not
+R16957:16960 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R16964:16967 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R17006:17010 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R17006:17010 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R17055:17092 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R17055:17092 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> lts_oba_non_blocking_action_confluence meth
+R17213:17217 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R17213:17217 stdpp.base <> ::stdpp_scope:x_'∈'_x not
+R17254:17285 stdpp.gmultiset <> gmultiset_disj_union_difference' thm
+R17254:17285 stdpp.gmultiset <> gmultiset_disj_union_difference' thm
+R17325:17332 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R17325:17332 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_eq thm
+R17400:17409 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+R17400:17409 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip_step constr
+prf 17490:17506 <> mo_stripped_equiv
+R17510:17516 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 17518:17518 <> P:235
+binder 17520:17520 <> A:236
+binder 17510:17520 <> H0:239
+binder 17523:17523 <> r:240
+binder 17525:17525 <> m:241
+binder 17527:17528 <> r':242
+binder 17530:17532 <> r'':243
+R17550:17553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17540:17544 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R17546:17547 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R17539:17539 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:240 var
+R17545:17545 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:241 var
+R17548:17549 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r':242 var
+R17564:17572 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17556:17560 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R17554:17555 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r':242 var
+R17561:17563 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r'':243 var
+R17574:17578 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R17580:17581 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R17573:17573 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:240 var
+R17579:17579 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:241 var
+R17582:17584 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r'':243 var
+prf 17750:17770 <> mo_stripped_equiv_rev
+R17774:17780 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 17782:17782 <> P:244
+binder 17784:17784 <> A:245
+binder 17774:17784 <> H0:248
+binder 17787:17787 <> r:249
+binder 17789:17789 <> m:250
+binder 17791:17792 <> r':251
+binder 17794:17796 <> r'':252
+R17814:17817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17804:17808 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R17810:17811 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R17803:17803 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:249 var
+R17809:17809 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:250 var
+R17812:17813 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r':251 var
+R17827:17835 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17819:17823 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> :::x_'⋍'_x not
+R17818:17818 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:249 var
+R17824:17826 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r'':252 var
+R17839:17843 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R17845:17846 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R17836:17838 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r'':252 var
+R17844:17844 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:250 var
+R17847:17848 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r':251 var
+R18053:18059 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R18053:18059 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+prf 18196:18206 <> strip_union
+R18210:18216 TestingTheory.Labelled_Transition_System.Definitions.Lts_OBA <> gLtsOba class
+binder 18218:18218 <> P:253
+binder 18220:18220 <> A:254
+binder 18210:18220 <> H0:257
+binder 18223:18224 <> p1:258
+binder 18226:18227 <> m1:259
+binder 18229:18230 <> p2:260
+binder 18232:18233 <> m2:261
+binder 18235:18236 <> p3:262
+R18256:18259 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18245:18249 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R18252:18253 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R18243:18244 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:258 var
+R18250:18251 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m1:259 var
+R18254:18255 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p2:260 var
+R18273:18281 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18262:18266 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R18269:18270 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R18260:18261 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p2:260 var
+R18267:18268 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m2:261 var
+R18271:18272 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p3:262 var
+R18284:18288 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R18298:18299 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R18282:18283 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p1:258 var
+R18291:18295 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18289:18290 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m1:259 var
+R18296:18297 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m2:261 var
+R18300:18301 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p3:262 var
+R18390:18392 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18383:18387 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18380:18382 stdpp.base <> ::stdpp_scope:'∅' not
+R18390:18392 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18383:18387 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18380:18382 stdpp.base <> ::stdpp_scope:'∅' not
+R18462:18482 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> mo_stripped_equiv_rev thm
+R18462:18482 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> mo_stripped_equiv_rev thm
+R18545:18547 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18538:18542 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18532:18536 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18522:18525 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R18528:18531 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R18558:18563 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18572:18572 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18548:18551 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R18554:18557 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R18565:18569 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18545:18547 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18538:18542 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18532:18536 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18522:18525 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R18528:18531 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R18558:18563 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18572:18572 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R18548:18551 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R18554:18557 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R18565:18569 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+prf 18648:18658 <> mo_stripped
+R18662:18685 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+binder 18687:18687 <> P:263
+binder 18689:18689 <> A:264
+binder 18662:18689 <> H0:268
+binder 18692:18692 <> r:269
+binder 18694:18694 <> m:270
+binder 18696:18697 <> r':271
+R18715:18718 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18705:18709 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R18711:18712 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R18704:18704 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:269 var
+R18710:18710 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:270 var
+R18713:18714 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r':271 var
+R18719:18719 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18761:18770 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18720:18723 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R18730:18731 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R18729:18729 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> A:264 var
+binder 18724:18725 <> η:272
+R18747:18750 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18732:18743 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R18745:18746 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:272 var
+R18753:18757 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R18760:18760 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R18751:18752 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r':271 var
+R18758:18759 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:272 var
+R18783:18785 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18771:18780 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R18782:18782 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r:269 var
+R18786:18786 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> m:270 var
+R18832:18844 stdpp.gmultiset <> gmultiset_ind thm
+R18832:18844 stdpp.gmultiset <> gmultiset_ind thm
+R18922:18927 stdpp.base <> decide def
+R18942:18944 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18930:18939 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R18945:18947 stdpp.base <> ::stdpp_scope:'∅' not
+R18922:18927 stdpp.base <> decide def
+R18942:18944 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18930:18939 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R18945:18947 stdpp.base <> ::stdpp_scope:'∅' not
+R19014:19029 stdpp.gmultiset <> gmultiset_choose thm
+R19014:19029 stdpp.gmultiset <> gmultiset_choose thm
+R19096:19115 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec_bis2 meth
+R19096:19115 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec_bis2 meth
+R19211:19217 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R19211:19217 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> eq_spec meth
+R19303:19305 Stdlib.Unicode.Utf8_core <> ::type_scope:'¬'_x not
+R19308:19312 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R19315:19315 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R19303:19305 Stdlib.Unicode.Utf8_core <> ::type_scope:'¬'_x not
+R19308:19312 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R19315:19315 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R19326:19342 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec2 meth
+R19326:19342 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec2 meth
+R19445:19451 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19455:19456 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 19452:19454 <> r'':273
+R19458:19462 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R19464:19465 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R19466:19468 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r'':273 var
+R19445:19451 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19455:19456 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 19452:19454 <> r'':274
+R19458:19462 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R19464:19465 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'⟶['_x_']'_x not
+R19466:19468 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> r'':274 var
+R19500:19503 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> aux0 thm
+R19500:19503 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> aux0 thm
+R19538:19542 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R19558:19559 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R19552:19556 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R19543:19546 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R19548:19551 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R19538:19542 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R19558:19559 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> :::x_'⟿{'_x_'}'_x not
+R19552:19556 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R19543:19546 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R19548:19551 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R19590:19594 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> aux3_ thm
+R19590:19594 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> aux3_ thm
+R19717:19732 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R19717:19732 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R19753:19765 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> nb_with_strip thm
+R19753:19765 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> nb_with_strip thm
+R19817:19839 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> refuses_preserved_by_eq thm
+R19817:19839 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> refuses_preserved_by_eq thm
+prf 19878:19901 <> lts_oba_mo_strip_refuses
+R19905:19928 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> FiniteOutputChain_LtsOba class
+binder 19930:19930 <> P:275
+binder 19932:19932 <> A:276
+binder 19905:19932 <> H0:280
+binder 19935:19935 <> p:281
+binder 19937:19937 <> q:282
+R19967:19973 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19943:19947 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> strip ind
+R19966:19966 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:282 var
+R19952:19961 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo meth
+R19963:19963 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:281 var
+R19949:19949 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> p:281 var
+R19974:19980 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R19983:19984 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 19981:19982 <> η:283
+R20000:20003 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19985:19996 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R19998:19999 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:283 var
+R20005:20009 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R20012:20012 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R20004:20004 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> q:282 var
+R20010:20011 TestingTheory.Labelled_Transition_System.Code_and_memory_separation.CodePurification <> η:283 var
+R20091:20096 stdpp.base <> decide def
+R20100:20104 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R20107:20107 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R20091:20096 stdpp.base <> decide def
+R20100:20104 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R20107:20107 TestingTheory.Labelled_Transition_System.Definitions.gLts <> :::x_'↛['_x_']' not
+R20148:20170 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> refuses_preserved_by_eq thm
+R20148:20170 TestingTheory.Labelled_Transition_System.Definitions.Bisimulation <> refuses_preserved_by_eq thm
+R20193:20209 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec1 meth
+R20193:20209 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec1 meth
+R20247:20266 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec_bis1 meth
+R20247:20266 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec_bis1 meth
+R20309:20324 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R20309:20324 TestingTheory.Labelled_Transition_System.Definitions.Lts_Finite_Output_Chain <> lts_oba_mo_spec2 meth
+R20364:20389 stdpp.gmultiset <> gmultiset_disj_union_inj_1 inst
+R20364:20389 stdpp.gmultiset <> gmultiset_disj_union_inj_1 inst

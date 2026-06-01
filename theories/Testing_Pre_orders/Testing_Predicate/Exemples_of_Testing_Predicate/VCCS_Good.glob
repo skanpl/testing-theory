@@ -1,0 +1,384 @@
+DIGEST ac8423e3eee62dd675aba453220c50df
+FTestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good
+R1335:1342 Stdlib.Program.Equality <> <> lib
+R1384:1396 Stdlib.Wellfounded.Inverse_Image <> <> lib
+R1425:1433 stdpp.decidable <> <> lib
+R1435:1443 stdpp.countable <> <> lib
+R1480:1483 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1485:1502 TestingTheory.Labelled_Transition_System.Actions.Exemples_of_Actions.InputOutputActions <> <> lib
+R1504:1507 TestingTheory.Testing_Pre_orders.Must.Must <> <> lib
+R1510:1526 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> <> lib
+R1528:1540 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance <> <> lib
+modtype 1557:1568 <> VCCS_Testing
+R1579:1582 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS <> mod
+ind 1632:1640 VCCS_Testing good_VCCS
+constr 1662:1673 VCCS_Testing good_success
+constr 1693:1700 VCCS_Testing good_par
+constr 1768:1778 VCCS_Testing good_choice
+constr 1852:1863 VCCS_Testing good_if_true
+constr 1954:1966 VCCS_Testing good_if_false
+constr 2058:2065 VCCS_Testing good_res
+R1648:1651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1644:1647 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing proc ind
+R1677:1685 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1687:1689 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::'①' not
+R1704:1710 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1714:1715 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1711:1711 <> p:3
+binder 1713:1713 <> q:4
+R1742:1745 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1727:1730 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1716:1724 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1726:1726 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:3 var
+R1731:1739 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1741:1741 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:4 var
+R1746:1754 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1758:1762 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::x_'‖'_x not
+R1757:1757 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:3 var
+R1763:1763 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:4 var
+R1782:1788 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1792:1793 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1789:1789 <> p:5
+binder 1791:1791 <> q:6
+R1828:1831 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1809:1812 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1794:1802 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1805:1805 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R1807:1807 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:5 var
+R1813:1821 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1824:1824 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R1826:1826 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:6 var
+R1832:1840 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1844:1846 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::x_'+'_x not
+R1843:1843 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:5 var
+R1847:1847 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:6 var
+R1867:1873 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1879:1880 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1874:1874 <> E:7
+binder 1876:1876 <> p:8
+binder 1878:1878 <> q:9
+R1892:1895 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1881:1889 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1891:1891 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:8 var
+R1917:1920 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1905:1907 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1896:1902 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing Eval_Eq def
+R1904:1904 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> E:7 var
+R1908:1911 Corelib.Init.Datatypes <> Some constr
+R1913:1916 Corelib.Init.Datatypes <> true constr
+R1921:1929 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1932:1934 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::'If'_x_'Then'_x_'Else'_x not
+R1936:1941 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::'If'_x_'Then'_x_'Else'_x not
+R1943:1948 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::'If'_x_'Then'_x_'Else'_x not
+R1935:1935 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> E:7 var
+R1942:1942 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:8 var
+R1949:1949 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:9 var
+R1970:1976 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R1982:1983 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 1977:1977 <> E:10
+binder 1979:1979 <> p:11
+binder 1981:1981 <> q:12
+R1995:1998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1984:1992 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R1994:1994 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:12 var
+R2021:2024 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2008:2010 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1999:2005 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing Eval_Eq def
+R2007:2007 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> E:10 var
+R2011:2014 Corelib.Init.Datatypes <> Some constr
+R2016:2020 Corelib.Init.Datatypes <> false constr
+R2025:2033 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R2036:2038 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::'If'_x_'Then'_x_'Else'_x not
+R2040:2045 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::'If'_x_'Then'_x_'Else'_x not
+R2047:2052 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::'If'_x_'Then'_x_'Else'_x not
+R2039:2039 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> E:10 var
+R2046:2046 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:11 var
+R2053:2053 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:12 var
+R2069:2075 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+R2077:2078 stdpp.base <> ::type_scope:'forall'_x_'..'_x_','_x not
+binder 2076:2076 <> p:13
+R2090:2093 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2079:2087 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R2089:2089 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:13 var
+R2094:2102 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS:1 ind
+R2105:2107 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::'ν'_x not
+R2108:2108 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:13 var
+scheme 1632:1640 VCCS_Testing good_VCCS_ind
+scheme 1632:1640 VCCS_Testing good_VCCS_sind
+R2141:2149 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> good_VCCS ind
+inst 2176:2189 VCCS_Testing good_decidable
+binder 2191:2191 <> e:14
+R2203:2205 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R2206:2214 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R2216:2216 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> e:14 var
+R2195:2202 stdpp.base <> Decision class
+R2398:2404 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing Eval_Eq def
+R2398:2404 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing Eval_Eq def
+R2816:2823 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R2816:2823 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+prf 3084:3104 VCCS_Testing VarSwap_respects_good
+binder 3106:3106 <> k:15
+binder 3108:3108 <> p:16
+R3123:3127 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3112:3120 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R3122:3122 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:16 var
+R3128:3136 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R3139:3153 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_in_proc def
+R3155:3155 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> k:15 var
+R3157:3157 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:16 var
+R3226:3247 Corelib.Init.Wf <> well_founded_induction thm
+R3250:3265 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R3280:3290 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R3275:3278 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing size def
+R3269:3271 Corelib.Init.Datatypes <> nat ind
+R3226:3247 Corelib.Init.Wf <> well_founded_induction thm
+R3250:3265 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R3280:3290 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R3275:3278 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing size def
+R3269:3271 Corelib.Init.Datatypes <> nat ind
+R3400:3407 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R3400:3407 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R3464:3471 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R3464:3471 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R3576:3587 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R3576:3587 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R3645:3657 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R3645:3657 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R3736:3743 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R3736:3743 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R3906:3916 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R3906:3916 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R3944:3952 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R3955:3969 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_in_proc def
+R3974:3974 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R3944:3952 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R3955:3969 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_in_proc def
+R3974:3974 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R4085:4095 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R4085:4095 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R4124:4132 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R4135:4149 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_in_proc def
+R4154:4154 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R4124:4132 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R4135:4149 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_in_proc def
+R4154:4154 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R4296:4317 Corelib.Init.Wf <> well_founded_induction thm
+R4320:4335 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R4350:4360 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R4345:4348 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing size def
+R4339:4341 Corelib.Init.Datatypes <> nat ind
+R4296:4317 Corelib.Init.Wf <> well_founded_induction thm
+R4320:4335 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R4350:4360 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R4345:4348 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing size def
+R4339:4341 Corelib.Init.Datatypes <> nat ind
+R4470:4477 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R4470:4477 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R4534:4541 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R4534:4541 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R4646:4657 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R4646:4657 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R4715:4727 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R4715:4727 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R4806:4813 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R4806:4813 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R4976:4986 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R4976:4986 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R5043:5053 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R5043:5053 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+prf 5105:5125 VCCS_Testing NewVarC_respects_good
+binder 5127:5127 <> k:17
+binder 5129:5129 <> p:18
+R5144:5148 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R5133:5141 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R5143:5143 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:18 var
+R5149:5157 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R5160:5166 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC def
+R5168:5168 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> k:17 var
+R5170:5170 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:18 var
+R5239:5260 Corelib.Init.Wf <> well_founded_induction thm
+R5263:5278 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R5293:5303 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R5288:5291 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing size def
+R5282:5284 Corelib.Init.Datatypes <> nat ind
+R5239:5260 Corelib.Init.Wf <> well_founded_induction thm
+R5263:5278 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R5293:5303 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R5288:5291 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing size def
+R5282:5284 Corelib.Init.Datatypes <> nat ind
+R5413:5420 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R5413:5420 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R5477:5484 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R5477:5484 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R5589:5600 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R5589:5600 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R5658:5670 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R5658:5670 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R5749:5756 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R5749:5756 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R5919:5929 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R5919:5929 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R5957:5965 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R5968:5974 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC def
+R5979:5979 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R5957:5965 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R5968:5974 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC def
+R5979:5979 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R6090:6100 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R6090:6100 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R6129:6137 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R6140:6146 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC def
+R6151:6151 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R6129:6137 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R6140:6146 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC def
+R6151:6151 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing g constr
+R6293:6314 Corelib.Init.Wf <> well_founded_induction thm
+R6317:6332 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R6347:6357 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R6342:6345 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing size def
+R6336:6338 Corelib.Init.Datatypes <> nat ind
+R6293:6314 Corelib.Init.Wf <> well_founded_induction thm
+R6317:6332 Stdlib.Wellfounded.Inverse_Image <> wf_inverse_image thm
+R6347:6357 Stdlib.Arith.PeanoNat Nat lt_wf_0 thm
+R6342:6345 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing size def
+R6336:6338 Corelib.Init.Datatypes <> nat ind
+R6467:6474 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R6467:6474 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R6531:6538 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R6531:6538 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R6643:6654 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R6643:6654 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R6712:6724 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R6712:6724 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R6803:6810 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R6803:6810 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R6973:6983 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R6973:6983 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R7040:7050 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R7040:7050 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+prf 7102:7127 VCCS_Testing good_preserved_by_cgr_step
+binder 7129:7129 <> p:19
+binder 7131:7131 <> q:20
+R7146:7149 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7135:7143 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R7145:7145 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:19 var
+R7157:7160 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7151:7155 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::x_'≡'_x not
+R7150:7150 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:19 var
+R7156:7156 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:20 var
+R7161:7169 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R7171:7171 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:20 var
+R7362:7373 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R7362:7373 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R7472:7484 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R7472:7484 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R7585:7592 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7585:7592 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7648:7655 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7648:7655 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7772:7779 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7772:7779 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7815:7822 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7815:7822 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7843:7850 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7843:7850 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7867:7874 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7867:7874 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7953:7960 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7953:7960 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7983:7990 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R7983:7990 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8036:8043 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8036:8043 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8078:8085 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8078:8085 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8182:8189 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8182:8189 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8199:8206 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8199:8206 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8216:8236 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_respects_good thm
+R8216:8236 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_respects_good thm
+R8342:8349 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8342:8349 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8359:8366 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8359:8366 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8376:8396 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_respects_good thm
+R8376:8396 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing VarSwap_respects_good thm
+R8521:8528 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8521:8528 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8544:8551 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8544:8551 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8575:8582 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8575:8582 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8599:8619 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC_respects_good thm
+R8599:8619 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC_respects_good thm
+R8727:8734 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8727:8734 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8744:8751 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8744:8751 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8781:8788 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8781:8788 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R8798:8805 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8798:8805 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R8822:8842 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC_respects_good thm
+R8822:8842 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing NewVarC_respects_good thm
+R8940:8950 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R8940:8950 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9013:9023 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9013:9023 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9160:9170 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9160:9170 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9216:9226 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9216:9226 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9243:9253 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9243:9253 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9277:9287 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9277:9287 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9380:9390 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9380:9390 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9413:9423 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9413:9423 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9476:9486 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9476:9486 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9531:9541 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9531:9541 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9603:9610 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R9603:9610 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R9637:9644 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R9637:9644 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_par constr
+R9672:9679 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R9672:9679 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_res constr
+R9768:9779 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R9768:9779 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R9800:9812 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R9800:9812 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R9862:9873 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R9862:9873 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_true constr
+R9894:9906 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R9894:9906 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_if_false constr
+R9968:9978 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R9968:9978 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R10005:10015 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+R10005:10015 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_choice constr
+prf 10044:10064 VCCS_Testing good_preserved_by_cgr
+binder 10066:10066 <> p:21
+binder 10068:10068 <> q:22
+R10083:10086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10072:10080 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R10082:10082 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:21 var
+R10095:10098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10088:10093 TestingTheory.Labelled_Transition_System.Examples_of_LTS.VCCS.VCCS_Instance VCCS :::x_'≡*'_x not
+R10087:10087 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> p:21 var
+R10094:10094 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:22 var
+R10099:10107 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R10109:10109 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good <> q:22 var
+R10173:10198 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_preserved_by_cgr_step thm
+R10173:10198 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_preserved_by_cgr_step thm
+inst 10243:10251 VCCS_Testing VCCS_Good
+R10255:10271 TestingTheory.Testing_Pre_orders.Testing_Predicate.Testing_Predicate <> Testing_Predicate class
+R10273:10281 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_VCCS ind
+R10320:10340 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_preserved_by_cgr thm
+R10320:10340 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing good_preserved_by_cgr thm
+R10394:10405 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R10477:10488 TestingTheory.Labelled_Transition_System.Definitions.gLts <> non_blocking meth
+R10532:10543 TestingTheory.Testing_Pre_orders.Testing_Predicate.Exemples_of_Testing_Predicate.VCCS_Good VCCS_Testing <> modtype

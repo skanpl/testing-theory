@@ -1,0 +1,559 @@
+DIGEST a63b74eccba37390333034ec1ec735bd
+FTestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems
+R1335:1338 Stdlib.Unicode.Utf8 <> <> lib
+R1367:1375 stdpp.countable <> <> lib
+R1412:1417 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> <> lib
+R1419:1422 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib
+R1424:1437 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> <> lib
+rec 1534:1536 <> Sts
+proj 1563:1570 <> sts_step
+proj 1595:1609 <> sts_state_eqdec
+proj 1630:1647 <> sts_step_decidable
+proj 1677:1687 <> sts_refuses
+proj 1706:1726 <> sts_refuses_decidable
+proj 1762:1778 <> sts_refuses_spec1
+proj 1831:1847 <> sts_refuses_spec2
+binder 1539:1539 <> P:1
+R1574:1578 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1573:1573 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:1 var
+R1580:1584 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1579:1579 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:1 var
+R1612:1621 stdpp.base <> EqDecision abbrev
+R1623:1623 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:1 var
+R1650:1660 stdpp.base <> RelDecision class
+R1662:1669 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step:3 meth
+R1691:1695 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1690:1690 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:1 var
+binder 1728:1728 <> p:7
+R1732:1739 stdpp.base <> Decision class
+R1742:1752 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_refuses:6 meth
+R1754:1754 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:7 var
+binder 1780:1780 <> p:9
+R1800:1804 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1784:1786 Stdlib.Unicode.Utf8_core <> ::type_scope:'¬'_x not
+R1787:1797 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_refuses:6 meth
+R1799:1799 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:9 var
+R1805:1806 Corelib.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+R1808:1810 Corelib.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+R1823:1824 Corelib.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+binder 1807:1807 <> q:10
+R1811:1818 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step:3 meth
+R1822:1822 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> q:10 var
+R1820:1820 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:9 var
+binder 1849:1849 <> p:12
+R1873:1877 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1853:1854 Corelib.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+R1856:1858 Corelib.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+R1871:1872 Corelib.Init.Specif <> ::type_scope:'{'_x_'|'_x_'}' not
+binder 1855:1855 <> q:13
+R1859:1866 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step:3 meth
+R1870:1870 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> q:13 var
+R1868:1868 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:12 var
+R1878:1880 Stdlib.Unicode.Utf8_core <> ::type_scope:'¬'_x not
+R1881:1891 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_refuses:6 meth
+R1893:1893 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:12 var
+R1927:1941 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_state_eqdec meth
+R1972:1989 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step_decidable meth
+R2020:2040 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_refuses_decidable meth
+def 2123:2127 <> istep
+R2131:2134 TestingTheory.Labelled_Transition_System.Definitions.gLts <> gLts class
+binder 2136:2136 <> A:15
+binder 2131:2136 <> H:18
+binder 2139:2139 <> p:19
+binder 2141:2141 <> q:20
+R2146:2153 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_step meth
+R2160:2160 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> q:20 var
+R2157:2158 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> τ constr
+R2155:2155 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:19 var
+inst 2191:2200 <> sts_of_lts
+binder 2203:2203 <> P:21
+R2211:2214 TestingTheory.Labelled_Transition_System.Definitions.gLts <> gLts class
+R2216:2216 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:21 var
+binder 2218:2218 <> H:22
+binder 2208:2208 <> M:24
+R2222:2224 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R2226:2226 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:21 var
+R2240:2247 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R2240:2247 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R2240:2247 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R2263:2273 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_refuses meth
+R2263:2273 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_refuses meth
+R2252:2256 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> istep def
+binder 2275:2275 <> s:25
+R2280:2290 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses meth
+R2294:2295 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> τ constr
+R2292:2292 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> s:25 var
+R2395:2411 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec1 meth
+R2395:2411 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec1 meth
+R2460:2476 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec2 meth
+R2460:2476 TestingTheory.Labelled_Transition_System.Definitions.gLts <> lts_refuses_spec2 meth
+sec 2493:2506 <> sts_executions
+R2521:2523 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+ind 2544:2556 <> max_exec_from
+constr 2577:2583 <> MExStop
+constr 2634:2640 <> MExStep
+R2560:2564 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2559:2559 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+binder 2585:2585 <> x:30
+R2598:2608 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_refuses meth
+R2610:2610 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:30 var
+binder 2588:2595 <> Hrefuses:31
+R2614:2626 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> max_exec_from:28 ind
+R2628:2628 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:30 var
+binder 2642:2642 <> x:32
+binder 2644:2645 <> x':33
+R2655:2662 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R2666:2667 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x':33 var
+R2664:2664 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:32 var
+binder 2648:2652 <> Hstep:34
+R2675:2687 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> max_exec_from:28 ind
+R2689:2690 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x':33 var
+binder 2671:2672 <> η:35
+R2694:2706 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> max_exec_from:28 ind
+R2708:2708 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:32 var
+ind 2726:2735 <> iexec_from
+constr 2756:2762 <> IExStep
+R2739:2743 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2738:2738 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+binder 2764:2764 <> x:38
+binder 2766:2767 <> x':39
+R2777:2784 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R2788:2789 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x':39 var
+R2786:2786 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:38 var
+binder 2770:2774 <> Hstep:40
+R2797:2806 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec_from:36 ind
+R2808:2809 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x':39 var
+binder 2793:2794 <> η:41
+R2813:2822 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec_from:36 ind
+R2824:2824 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:38 var
+ind 2840:2851 <> finexec_from
+constr 2872:2879 <> FExSingl
+constr 2904:2910 <> FExStep
+R2855:2859 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R2854:2854 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+binder 2881:2881 <> x:44
+R2885:2896 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from:42 ind
+R2898:2898 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:44 var
+binder 2912:2912 <> x:45
+binder 2914:2915 <> x':46
+R2925:2935 stdpp.decidable <> bool_decide def
+R2938:2945 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R2949:2950 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x':46 var
+R2947:2947 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:45 var
+binder 2918:2922 <> Hstep:47
+R2959:2970 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from:42 ind
+R2972:2973 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x':46 var
+binder 2955:2956 <> η:48
+R2977:2988 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from:42 ind
+R2990:2990 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:45 var
+scheme 2840:2851 <> finexec_from_rect
+scheme 2840:2851 <> finexec_from_ind
+scheme 2840:2851 <> finexec_from_rec
+scheme 2840:2851 <> finexec_from_sind
+def 3007:3022 <> iexec_from_first
+R3027:3027 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+binder 3025:3025 <> x:49
+R3035:3044 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec_from coind
+R3046:3046 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:49 var
+binder 3031:3032 <> η:50
+R3062:3063 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:50 var
+R3070:3076 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> IExStep constr
+R3089:3089 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:49 var
+rec 3106:3110 <> iexec
+proj 3128:3136 <> iex_start
+proj 3146:3148 <> iex
+R3139:3139 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+R3151:3160 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec_from coind
+R3162:3170 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_start:53 meth
+def 3192:3198 <> ex_cons
+binder 3200:3200 <> x:55
+binder 3202:3203 <> η:56
+R3213:3220 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R3228:3236 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_start proj
+R3224:3225 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:56 var
+R3222:3222 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:55 var
+binder 3206:3210 <> Hstep:57
+R3242:3246 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec rec
+R3255:3260 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> MkExec constr
+R3262:3262 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:55 var
+R3265:3271 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> IExStep constr
+R3277:3281 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Hstep:57 var
+R3287:3289 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex proj
+R3283:3284 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:56 var
+ind 3307:3313 <> finexec
+constr 3322:3329 <> FinExNil
+constr 3344:3354 <> FinExNonNil
+R3332:3338 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec:58 ind
+binder 3356:3356 <> x:60
+R3363:3374 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from ind
+R3376:3376 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:60 var
+binder 3359:3360 <> ρ:61
+R3380:3386 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec:58 ind
+scheme 3307:3313 <> finexec_rect
+scheme 3307:3313 <> finexec_ind
+scheme 3307:3313 <> finexec_rec
+scheme 3307:3313 <> finexec_sind
+def 3403:3410 <> fex_cons
+binder 3412:3412 <> x:62
+binder 3414:3414 <> p:63
+R3429:3429 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:63 var
+R3442:3449 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNil constr
+R3458:3460 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R3461:3471 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R3473:3473 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:62 var
+R3476:3483 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExSingl constr
+R3485:3485 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:62 var
+R3454:3457 Corelib.Init.Datatypes <> Some constr
+R3494:3504 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R3527:3532 stdpp.base <> decide def
+R3535:3542 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R3544:3544 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:62 var
+R3564:3568 Corelib.Init.Specif <> right constr
+R3575:3578 Corelib.Init.Datatypes <> None constr
+R3590:3593 Corelib.Init.Specif <> left constr
+R3608:3610 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R3624:3626 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R3627:3633 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExStep constr
+R3635:3635 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:62 var
+R3640:3655 stdpp.decidable <> bool_decide_pack thm
+R3666:3666 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:63 var
+R3611:3621 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R3604:3607 Corelib.Init.Datatypes <> Some constr
+def 3701:3713 <> iex_take_from
+R3719:3721 Corelib.Init.Datatypes <> nat ind
+binder 3716:3716 <> n:65
+binder 3725:3725 <> x:66
+R3733:3742 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec_from coind
+R3744:3744 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:66 var
+binder 3729:3730 <> η:67
+R3749:3760 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from ind
+R3762:3762 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:66 var
+R3777:3777 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:65 var
+R3795:3802 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExSingl constr
+R3804:3804 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:66 var
+R3812:3812 Corelib.Init.Datatypes <> S constr
+R3825:3826 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:67 var
+R3833:3839 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> IExStep constr
+R3882:3894 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_take_from:68 def
+R3896:3896 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:65 var
+binder 3876:3877 <> p':71
+R3918:3924 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExStep constr
+R3926:3926 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:66 var
+R3932:3947 stdpp.decidable <> bool_decide_pack thm
+R3958:3959 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p':71 var
+def 3998:4010 <> mex_take_from
+R4016:4018 Corelib.Init.Datatypes <> nat ind
+binder 4013:4013 <> n:72
+binder 4022:4022 <> x:73
+R4030:4042 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> max_exec_from coind
+R4044:4044 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:73 var
+binder 4026:4027 <> η:74
+R4049:4054 Corelib.Init.Datatypes <> option ind
+R4057:4068 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from ind
+R4070:4070 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:73 var
+R4086:4086 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:72 var
+R4108:4110 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R4111:4118 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExSingl constr
+R4120:4120 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:73 var
+R4104:4107 Corelib.Init.Datatypes <> Some constr
+R4128:4128 Corelib.Init.Datatypes <> S constr
+R4141:4142 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:74 var
+R4163:4169 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> MExStop constr
+R4185:4188 Corelib.Init.Datatypes <> None constr
+R4204:4210 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> MExStep constr
+R4256:4268 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> mex_take_from:75 def
+R4270:4270 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:72 var
+binder 4250:4251 <> p':78
+R4295:4295 stdpp.base <> ::stdpp_scope:x_'<$>'_x not
+R4345:4350 stdpp.base <> ::stdpp_scope:x_'<$>'_x not
+R4296:4298 Stdlib.Unicode.Utf8_core <> :::'λ'_x_'..'_x_','_x not
+R4301:4302 Stdlib.Unicode.Utf8_core <> :::'λ'_x_'..'_x_','_x not
+binder 4299:4300 <> p':79
+R4303:4309 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExStep constr
+R4311:4311 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:73 var
+R4317:4332 stdpp.decidable <> bool_decide_pack thm
+R4343:4344 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p':79 var
+R4351:4352 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p':78 var
+def 4393:4400 <> iex_take
+R4406:4408 Corelib.Init.Datatypes <> nat ind
+binder 4403:4403 <> n:80
+R4416:4420 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec rec
+binder 4412:4413 <> η:81
+R4425:4431 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec ind
+R4446:4446 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:80 var
+R4464:4471 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNil constr
+R4479:4479 Corelib.Init.Datatypes <> S constr
+R4486:4496 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R4502:4510 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_start proj
+R4498:4499 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:81 var
+R4514:4526 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_take_from def
+R4534:4536 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex proj
+R4530:4531 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:81 var
+R4528:4528 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:80 var
+prf 4558:4574 <> iex_fex_take_from
+binder 4576:4576 <> n:83
+binder 4579:4579 <> x:84
+binder 4581:4581 <> y:85
+binder 4583:4584 <> η:86
+binder 4587:4591 <> Hstep:87
+R4640:4642 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4598:4610 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_take_from def
+R4619:4625 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> IExStep constr
+R4627:4627 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:84 var
+R4629:4629 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> y:85 var
+R4631:4635 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Hstep:87 var
+R4637:4638 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:86 var
+R4614:4614 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4615:4615 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:83 var
+R4643:4649 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExStep constr
+R4651:4651 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:84 var
+R4653:4653 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> y:85 var
+R4656:4671 stdpp.decidable <> bool_decide_pack thm
+R4675:4679 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Hstep:87 var
+R4683:4695 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_take_from def
+R4699:4700 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:86 var
+R4697:4697 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:83 var
+prf 4800:4811 <> iex_fex_take
+binder 4813:4813 <> n:88
+binder 4816:4816 <> x:89
+binder 4818:4819 <> η:90
+binder 4822:4826 <> Hstep:91
+R4875:4877 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4837:4839 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R4840:4847 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_take def
+R4851:4851 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4852:4852 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:88 var
+R4856:4862 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> ex_cons def
+R4864:4864 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:89 var
+R4866:4867 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:90 var
+R4869:4873 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Hstep:91 var
+R4833:4836 Corelib.Init.Datatypes <> Some constr
+R4878:4885 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_cons def
+R4887:4887 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:89 var
+R4890:4897 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_take def
+R4899:4899 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> n:88 var
+R4901:4902 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:90 var
+R4967:4972 stdpp.base <> decide def
+R4975:4982 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R4987:4995 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_start proj
+R4967:4972 stdpp.base <> decide def
+R4975:4982 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R4987:4995 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_start proj
+R5049:5051 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R5052:5062 stdpp.decidable <> bool_decide def
+R5065:5072 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R5077:5085 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_start proj
+R5039:5048 stdpp.base <> ProofIrrel class
+R5049:5051 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R5052:5062 stdpp.decidable <> bool_decide def
+R5065:5072 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R5077:5085 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_start proj
+R5039:5048 stdpp.base <> ProofIrrel class
+def 5138:5150 <> iex_snoc_from
+binder 5152:5152 <> x:92
+R5160:5171 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from ind
+R5173:5173 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:92 var
+binder 5155:5157 <> ex1:93
+R5180:5180 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+binder 5177:5177 <> a:94
+R5185:5190 Corelib.Init.Datatypes <> option ind
+R5193:5204 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from ind
+R5206:5206 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:92 var
+R5222:5224 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> ex1:93 var
+R5237:5244 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExSingl constr
+R5262:5267 stdpp.base <> decide def
+R5270:5277 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R5281:5281 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> a:94 var
+R5279:5279 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:92 var
+R5355:5358 Corelib.Init.Datatypes <> None constr
+R5297:5300 Corelib.Init.Datatypes <> Some constr
+R5303:5309 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExStep constr
+R5311:5311 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:92 var
+R5329:5336 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExSingl constr
+R5338:5338 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> a:94 var
+R5366:5372 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExStep constr
+R5405:5417 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_snoc_from:95 def
+R5425:5425 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> a:94 var
+R5442:5445 Corelib.Init.Datatypes <> None constr
+R5450:5453 Corelib.Init.Datatypes <> None constr
+R5465:5468 Corelib.Init.Datatypes <> Some constr
+R5475:5478 Corelib.Init.Datatypes <> Some constr
+R5480:5486 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExStep constr
+R5488:5488 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:92 var
+def 5537:5544 <> iex_snoc
+R5552:5558 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec ind
+binder 5547:5549 <> ex1:97
+R5565:5565 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+binder 5562:5562 <> a:98
+R5570:5575 Corelib.Init.Datatypes <> option ind
+R5577:5583 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec ind
+R5598:5600 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> ex1:97 var
+R5613:5620 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNil constr
+R5625:5628 Corelib.Init.Datatypes <> Some constr
+R5631:5641 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R5646:5653 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExSingl constr
+R5655:5655 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> a:98 var
+R5665:5675 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R5699:5711 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_snoc_from def
+R5718:5718 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> a:98 var
+R5735:5738 Corelib.Init.Datatypes <> None constr
+R5743:5746 Corelib.Init.Datatypes <> None constr
+R5758:5761 Corelib.Init.Datatypes <> Some constr
+R5769:5772 Corelib.Init.Datatypes <> Some constr
+R5775:5785 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+def 5826:5838 <> fex_from_last
+binder 5841:5841 <> x:100
+R5848:5859 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec_from ind
+R5861:5861 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:100 var
+binder 5845:5845 <> p:101
+R5866:5866 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+R5881:5881 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:101 var
+R5894:5901 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExSingl constr
+R5916:5922 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExStep constr
+R5936:5948 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last:102 def
+def 5976:5983 <> fex_last
+R5989:5995 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec ind
+binder 5986:5986 <> p:104
+R6000:6005 Corelib.Init.Datatypes <> option ind
+R6007:6007 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+R6022:6022 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:104 var
+R6035:6042 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNil constr
+R6047:6050 Corelib.Init.Datatypes <> None constr
+R6058:6068 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R6082:6084 stdpp.base <> ::stdpp_scope:x_'$'_x not
+R6085:6097 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R6078:6081 Corelib.Init.Datatypes <> Some constr
+def 6125:6133 <> fex_first
+R6139:6145 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> finexec ind
+binder 6136:6136 <> p:106
+R6150:6155 Corelib.Init.Datatypes <> option ind
+R6157:6157 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+R6172:6172 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> p:106 var
+R6185:6192 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNil constr
+R6197:6200 Corelib.Init.Datatypes <> None constr
+R6208:6218 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R6227:6230 Corelib.Init.Datatypes <> Some constr
+prf 6252:6275 <> fex_snoc_from_valid_last
+binder 6277:6277 <> x:108
+binder 6279:6279 <> z:109
+binder 6281:6282 <> ρ:110
+R6318:6326 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R6289:6296 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R6317:6317 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> z:109 var
+R6299:6311 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R6313:6314 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> ρ:110 var
+R6327:6333 stdpp.base <> is_Some def
+R6336:6348 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_snoc_from def
+R6350:6350 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:108 var
+R6352:6353 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> ρ:110 var
+R6355:6355 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> z:109 var
+R6467:6472 stdpp.base <> decide def
+R6475:6482 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R6467:6472 stdpp.base <> decide def
+R6475:6482 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+prf 6549:6567 <> fex_snoc_valid_last
+binder 6569:6570 <> ex:111
+binder 6572:6572 <> y:112
+binder 6574:6574 <> z:113
+R6601:6609 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R6592:6594 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6581:6588 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_last def
+R6590:6591 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> ex:111 var
+R6595:6598 Corelib.Init.Datatypes <> Some constr
+R6600:6600 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> y:112 var
+R6622:6630 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R6610:6617 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R6621:6621 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> z:113 var
+R6619:6619 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> y:112 var
+R6631:6637 stdpp.base <> is_Some def
+R6640:6647 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_snoc def
+R6649:6650 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> ex:111 var
+R6652:6652 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> z:113 var
+R6742:6765 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_snoc_from_valid_last thm
+R6742:6765 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_snoc_from_valid_last thm
+def 6812:6822 <> finex_singl
+binder 6824:6824 <> x:114
+R6829:6839 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FinExNonNil constr
+R6841:6841 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:114 var
+R6844:6851 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> FExSingl constr
+R6853:6853 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:114 var
+def 6871:6885 <> iexec_from_tail
+R6890:6890 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_executions.P var
+binder 6888:6888 <> x:115
+R6898:6907 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec_from coind
+R6909:6909 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:115 var
+binder 6894:6895 <> η:116
+R6914:6918 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iexec rec
+R6933:6934 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:116 var
+R6941:6947 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> IExStep constr
+R6962:6967 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> MkExec constr
+R6972:6973 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η:116 var
+prf 6989:7001 <> iex_snoc_step
+binder 7003:7003 <> x:118
+binder 7005:7007 <> η1:119
+binder 7009:7011 <> η2:120
+binder 7013:7013 <> a:121
+R7052:7060 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R7041:7043 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7020:7032 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_snoc_from def
+R7034:7034 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:118 var
+R7036:7038 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η1:119 var
+R7040:7040 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> a:121 var
+R7044:7047 Corelib.Init.Datatypes <> Some constr
+R7049:7051 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η2:120 var
+R7082:7086 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'∧'_x not
+R7078:7080 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7061:7073 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R7075:7077 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η2:120 var
+R7081:7081 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> a:121 var
+R7087:7094 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R7117:7129 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R7131:7133 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η2:120 var
+R7097:7109 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> fex_from_last def
+R7111:7113 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> η1:119 var
+R7241:7246 stdpp.base <> decide def
+R7249:7256 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R7241:7246 stdpp.base <> decide def
+R7249:7256 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R7333:7345 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_snoc_from def
+R7333:7345 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> iex_snoc_from def
+R7484:7497 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems sts_executions <> sec
+rec 7508:7519 <> CountableSts
+proj 7548:7568 <> csts_states_countable
+proj 7588:7613 <> csts_next_states_countable
+binder 7521:7521 <> P:122
+R7525:7527 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> Sts class
+R7529:7529 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:122 var
+binder 7525:7529 <> H:123
+R7571:7579 stdpp.countable <> Countable class
+R7581:7581 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:122 var
+R7616:7619 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R7621:7622 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+binder 7620:7620 <> x:126
+R7623:7631 stdpp.countable <> Countable class
+R7634:7637 stdpp.decidable <> dsig def
+binder 7644:7644 <> y:127
+R7649:7656 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> sts_step meth
+R7660:7660 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> y:127 var
+R7658:7658 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> x:126 var
+R7696:7716 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> csts_states_countable meth
+R7747:7772 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> csts_next_states_countable meth
+inst 7795:7806 <> csts_of_clts
+binder 7809:7809 <> P:129
+binder 7811:7811 <> A:130
+R7816:7819 TestingTheory.Labelled_Transition_System.Definitions.gLts <> gLts class
+R7821:7821 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:129 var
+R7823:7823 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> A:130 var
+binder 7816:7823 <> H:132
+R7830:7842 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> CountablegLts class
+R7846:7846 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> A:130 var
+R7844:7844 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:129 var
+binder 7827:7827 <> M:133
+R7850:7861 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> CountableSts class
+R7863:7863 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> P:129 var
+R7881:7886 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> MkCsts constr
+R7881:7886 TestingTheory.State_Transition_Systems.Definitions.StateTransitionSystems <> MkCsts constr
+R7899:7919 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> clts_states_countable meth
+R7899:7919 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> clts_states_countable meth
+R7942:7967 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> clts_next_states_countable meth
+R7942:7967 TestingTheory.Labelled_Transition_System.Definitions.FiniteImageLTS <> clts_next_states_countable meth
