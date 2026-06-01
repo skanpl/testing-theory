@@ -1,0 +1,8 @@
+DIGEST c03e0cf1f7261628fbd36095b73f35c0
+FTestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.prelude
+R15:18 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.core <> <> lib
+R20:27 TestingTheory.Labelled_Transition_System.Examples_of_LTS.pi.signatures.unscoped <> <> lib
+R45:50 Corelib.Setoids.Setoid <> <> lib
+R52:60 Corelib.Classes.Morphisms <> <> lib
+R62:81 Corelib.Relations.Relation_Definitions <> <> lib
+ax 95:99 <> Value

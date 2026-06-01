@@ -5,6 +5,9 @@
  (package testing-theory)
  (synopsis "Testing theory for May and Must")
  (theories stdpp Stdlib Coinduction)
+<<<<<<< HEAD
+=======
+>>>>>>> BlockingActionReorganized
 )
 
 (documentation

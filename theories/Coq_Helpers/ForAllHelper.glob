@@ -1,0 +1,236 @@
+DIGEST 8b38e01073e7c3c2eaf50460cbc0a756
+FTestingTheory.Coq_Helpers.ForAllHelper
+R1335:1338 Stdlib.Unicode.Utf8 <> <> lib
+R1376:1383 Stdlib.Program.Equality <> <> lib
+R1412:1420 stdpp.countable <> <> lib
+R1422:1427 stdpp.finite <> <> lib
+R1429:1437 stdpp.gmultiset <> <> lib
+ind 1451:1457 <> Forall2
+constr 1540:1550 <> Forall2_nil
+constr 1577:1588 <> Forall2_cons
+binder 1460:1460 <> A:1
+binder 1471:1471 <> B:2
+R1487:1491 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1486:1486 TestingTheory.Coq_Helpers.ForAllHelper <> A:1 var
+R1493:1497 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1492:1492 TestingTheory.Coq_Helpers.ForAllHelper <> B:2 var
+binder 1482:1482 <> P:3
+R1512:1516 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1506:1509 Corelib.Init.Datatypes <> list ind
+R1523:1527 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1517:1520 Corelib.Init.Datatypes <> list ind
+R1554:1560 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2:4 ind
+R1567:1568 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1564:1565 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R1562:1562 TestingTheory.Coq_Helpers.ForAllHelper <> P:3 var
+R1592:1596 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R1638:1640 Stdlib.Unicode.Utf8_core <> ::type_scope:'∀'_x_'..'_x_','_x not
+R1601:1601 TestingTheory.Coq_Helpers.ForAllHelper <> A:1 var
+binder 1597:1597 <> x:6
+R1609:1609 TestingTheory.Coq_Helpers.ForAllHelper <> B:2 var
+binder 1605:1605 <> y:7
+R1618:1621 Corelib.Init.Datatypes <> list ind
+R1623:1623 TestingTheory.Coq_Helpers.ForAllHelper <> A:1 var
+binder 1613:1614 <> la:8
+R1632:1635 Corelib.Init.Datatypes <> list ind
+R1637:1637 TestingTheory.Coq_Helpers.ForAllHelper <> B:2 var
+binder 1627:1628 <> lb:9
+R1646:1650 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1641:1641 TestingTheory.Coq_Helpers.ForAllHelper <> P:3 var
+R1645:1645 TestingTheory.Coq_Helpers.ForAllHelper <> y:7 var
+R1643:1643 TestingTheory.Coq_Helpers.ForAllHelper <> x:6 var
+R1666:1670 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'→'_x not
+R1651:1657 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2:4 ind
+R1664:1665 TestingTheory.Coq_Helpers.ForAllHelper <> lb:9 var
+R1661:1662 TestingTheory.Coq_Helpers.ForAllHelper <> la:8 var
+R1659:1659 TestingTheory.Coq_Helpers.ForAllHelper <> P:3 var
+R1671:1677 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2:4 ind
+R1693:1696 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1692:1692 TestingTheory.Coq_Helpers.ForAllHelper <> y:7 var
+R1697:1698 TestingTheory.Coq_Helpers.ForAllHelper <> lb:9 var
+R1683:1686 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1682:1682 TestingTheory.Coq_Helpers.ForAllHelper <> x:6 var
+R1687:1688 TestingTheory.Coq_Helpers.ForAllHelper <> la:8 var
+R1679:1679 TestingTheory.Coq_Helpers.ForAllHelper <> P:3 var
+scheme 1451:1457 <> Forall2_ind
+scheme 1451:1457 <> Forall2_sind
+prf 1709:1719 <> Forall2_app
+binder 1722:1722 <> A:10
+binder 1724:1724 <> B:11
+binder 1734:1734 <> P:12
+R1745:1748 Corelib.Init.Datatypes <> list ind
+R1750:1750 TestingTheory.Coq_Helpers.ForAllHelper <> A:10 var
+binder 1737:1738 <> s1:13
+binder 1740:1741 <> s3:14
+R1762:1765 Corelib.Init.Datatypes <> list ind
+R1767:1767 TestingTheory.Coq_Helpers.ForAllHelper <> B:11 var
+binder 1754:1755 <> s2:15
+binder 1757:1758 <> s4:16
+R1790:1793 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1775:1781 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2 ind
+R1788:1789 TestingTheory.Coq_Helpers.ForAllHelper <> s2:15 var
+R1785:1786 TestingTheory.Coq_Helpers.ForAllHelper <> s1:13 var
+R1783:1783 TestingTheory.Coq_Helpers.ForAllHelper <> P:12 var
+R1809:1817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1794:1800 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2 ind
+R1807:1808 TestingTheory.Coq_Helpers.ForAllHelper <> s4:16 var
+R1804:1805 TestingTheory.Coq_Helpers.ForAllHelper <> s3:14 var
+R1802:1802 TestingTheory.Coq_Helpers.ForAllHelper <> P:12 var
+R1818:1824 TestingTheory.Coq_Helpers.ForAllHelper <> Forall2 ind
+R1842:1845 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1840:1841 TestingTheory.Coq_Helpers.ForAllHelper <> s2:15 var
+R1846:1847 TestingTheory.Coq_Helpers.ForAllHelper <> s4:16 var
+R1831:1834 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1829:1830 TestingTheory.Coq_Helpers.ForAllHelper <> s1:13 var
+R1835:1836 TestingTheory.Coq_Helpers.ForAllHelper <> s3:14 var
+R1826:1826 TestingTheory.Coq_Helpers.ForAllHelper <> P:12 var
+R2064:2072 Stdlib.Lists.List <> app_nil_r thm
+R2064:2072 Stdlib.Lists.List <> app_nil_r thm
+R2064:2072 Stdlib.Lists.List <> app_nil_r thm
+R2083:2091 Stdlib.Lists.List <> app_nil_r thm
+R2083:2091 Stdlib.Lists.List <> app_nil_r thm
+R2083:2091 Stdlib.Lists.List <> app_nil_r thm
+def 2226:2227 <> Eq
+binder 2230:2230 <> A:17
+R2246:2246 TestingTheory.Coq_Helpers.ForAllHelper <> A:17 var
+binder 2241:2242 <> s1:18
+R2255:2255 TestingTheory.Coq_Helpers.ForAllHelper <> A:17 var
+binder 2250:2251 <> s2:19
+R2263:2265 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2261:2262 TestingTheory.Coq_Helpers.ForAllHelper <> s1:18 var
+R2266:2267 TestingTheory.Coq_Helpers.ForAllHelper <> s2:19 var
+def 2281:2285 <> NotEq
+binder 2288:2288 <> A:20
+R2304:2304 TestingTheory.Coq_Helpers.ForAllHelper <> A:20 var
+binder 2299:2300 <> s1:21
+R2313:2313 TestingTheory.Coq_Helpers.ForAllHelper <> A:20 var
+binder 2308:2309 <> s2:22
+R2321:2325 Stdlib.Unicode.Utf8_core <> ::type_scope:x_'≠'_x not
+R2319:2320 TestingTheory.Coq_Helpers.ForAllHelper <> s1:21 var
+R2326:2327 TestingTheory.Coq_Helpers.ForAllHelper <> s2:22 var
+prf 2337:2365 <> are_actions_preserved_by_perm
+binder 2368:2368 <> A:23
+binder 2370:2371 <> Pp:24
+R2383:2386 Corelib.Init.Datatypes <> list ind
+R2388:2388 TestingTheory.Coq_Helpers.ForAllHelper <> A:23 var
+binder 2375:2376 <> s1:25
+binder 2378:2379 <> s2:26
+R2407:2410 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2397:2404 stdpp.list_relations list ::stdpp_scope:x_'≡ₚ'_x not
+R2395:2396 TestingTheory.Coq_Helpers.ForAllHelper <> s1:25 var
+R2405:2406 TestingTheory.Coq_Helpers.ForAllHelper <> s2:26 var
+R2423:2431 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2411:2416 Corelib.Lists.ListDef <> Forall ind
+R2421:2422 TestingTheory.Coq_Helpers.ForAllHelper <> s1:25 var
+R2418:2419 TestingTheory.Coq_Helpers.ForAllHelper <> Pp:24 var
+R2432:2437 Corelib.Lists.ListDef <> Forall ind
+R2442:2443 TestingTheory.Coq_Helpers.ForAllHelper <> s2:26 var
+R2439:2440 TestingTheory.Coq_Helpers.ForAllHelper <> Pp:24 var
+R2475:2492 Stdlib.Sorting.Permutation <> Permutation_Forall inst
+R2475:2492 Stdlib.Sorting.Permutation <> Permutation_Forall inst
+prf 2514:2525 <> simpl_P_in_l
+R2529:2538 stdpp.base <> EqDecision abbrev
+binder 2540:2540 <> A:27
+binder 2529:2540 <> EqDecision0:28
+R2545:2553 stdpp.countable <> Countable class
+R2555:2555 TestingTheory.Coq_Helpers.ForAllHelper <> A:27 var
+binder 2545:2555 <> H:30
+R2564:2567 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2563:2563 TestingTheory.Coq_Helpers.ForAllHelper <> A:27 var
+binder 2559:2559 <> P:31
+R2580:2580 TestingTheory.Coq_Helpers.ForAllHelper <> A:27 var
+binder 2575:2576 <> η:32
+R2588:2596 stdpp.gmultiset <> gmultiset rec
+R2598:2598 TestingTheory.Coq_Helpers.ForAllHelper <> A:27 var
+binder 2584:2584 <> m:33
+R2643:2647 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2605:2610 Corelib.Lists.ListDef <> Forall ind
+R2615:2622 stdpp.base <> elements def
+R2635:2639 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R2625:2628 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2631:2634 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2629:2630 TestingTheory.Coq_Helpers.ForAllHelper <> η:32 var
+R2640:2640 TestingTheory.Coq_Helpers.ForAllHelper <> m:33 var
+R2612:2612 TestingTheory.Coq_Helpers.ForAllHelper <> P:31 var
+R2652:2655 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2648:2648 TestingTheory.Coq_Helpers.ForAllHelper <> P:31 var
+R2650:2651 TestingTheory.Coq_Helpers.ForAllHelper <> η:32 var
+R2656:2661 Corelib.Lists.ListDef <> Forall ind
+R2666:2673 stdpp.base <> elements def
+R2675:2675 TestingTheory.Coq_Helpers.ForAllHelper <> m:33 var
+R2663:2663 TestingTheory.Coq_Helpers.ForAllHelper <> P:31 var
+R2707:2707 stdpp.list_relations list ::stdpp_scope:x_'≡ₚ'_x not
+R2735:2743 stdpp.list_relations list ::stdpp_scope:x_'≡ₚ'_x not
+R2708:2715 stdpp.base <> elements def
+R2728:2732 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R2718:2721 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2724:2727 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2779:2783 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2794:2794 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2744:2751 stdpp.base <> elements def
+R2767:2775 stdpp.gmultiset <> gmultiset rec
+R2754:2757 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2760:2763 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2784:2791 stdpp.base <> elements def
+R2707:2707 stdpp.list_relations list ::stdpp_scope:x_'≡ₚ'_x not
+R2735:2743 stdpp.list_relations list ::stdpp_scope:x_'≡ₚ'_x not
+R2708:2715 stdpp.base <> elements def
+R2728:2732 stdpp.base <> ::stdpp_scope:x_'⊎'_x not
+R2718:2721 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2724:2727 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2779:2783 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2794:2794 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2744:2751 stdpp.base <> elements def
+R2767:2775 stdpp.gmultiset <> gmultiset rec
+R2754:2757 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2760:2763 stdpp.base <> ::stdpp_scope:'{[+'_x_'+]}' not
+R2784:2791 stdpp.base <> elements def
+R2807:2835 stdpp.gmultiset <> gmultiset_elements_disj_union thm
+R2807:2835 stdpp.gmultiset <> gmultiset_elements_disj_union thm
+R2855:2860 Corelib.Lists.ListDef <> Forall ind
+R2898:2901 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2865:2872 stdpp.base <> elements def
+R2875:2893 stdpp.gmultiset <> gmultiset_singleton inst
+R2902:2909 stdpp.base <> elements def
+R2855:2860 Corelib.Lists.ListDef <> Forall ind
+R2898:2901 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2865:2872 stdpp.base <> elements def
+R2875:2893 stdpp.gmultiset <> gmultiset_singleton inst
+R2902:2909 stdpp.base <> elements def
+R2932:2960 TestingTheory.Coq_Helpers.ForAllHelper <> are_actions_preserved_by_perm thm
+R2932:2960 TestingTheory.Coq_Helpers.ForAllHelper <> are_actions_preserved_by_perm thm
+R3013:3015 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2980:2987 stdpp.base <> elements def
+R2990:3008 stdpp.gmultiset <> gmultiset_singleton inst
+R3016:3016 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3019:3019 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3013:3015 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2980:2987 stdpp.base <> elements def
+R2990:3008 stdpp.gmultiset <> gmultiset_singleton inst
+R3016:3016 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3019:3019 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3038:3065 stdpp.gmultiset <> gmultiset_elements_singleton thm
+R3038:3065 stdpp.gmultiset <> gmultiset_elements_singleton thm
+R3175:3180 Corelib.Lists.ListDef <> Forall ind
+R3187:3190 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3191:3198 stdpp.base <> elements def
+R3175:3180 Corelib.Lists.ListDef <> Forall ind
+R3187:3190 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3191:3198 stdpp.base <> elements def
+R3237:3265 TestingTheory.Coq_Helpers.ForAllHelper <> are_actions_preserved_by_perm thm
+R3237:3265 TestingTheory.Coq_Helpers.ForAllHelper <> are_actions_preserved_by_perm thm
+R3285:3313 stdpp.gmultiset <> gmultiset_elements_disj_union thm
+R3285:3313 stdpp.gmultiset <> gmultiset_elements_disj_union thm
+R3361:3363 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3328:3335 stdpp.base <> elements def
+R3338:3356 stdpp.gmultiset <> gmultiset_singleton inst
+R3364:3364 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3367:3367 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3361:3363 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3328:3335 stdpp.base <> elements def
+R3338:3356 stdpp.gmultiset <> gmultiset_singleton inst
+R3364:3364 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3367:3367 Stdlib.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3388:3415 stdpp.gmultiset <> gmultiset_elements_singleton thm
+R3388:3415 stdpp.gmultiset <> gmultiset_elements_singleton thm
+R3425:3435 stdpp.base <> singletonMS def

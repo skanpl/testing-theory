@@ -172,4 +172,6 @@ Next Obligation.
 Qed.
 
 
-
+<<<<<<< HEAD
+=======
+>>>>>>> BlockingActionReorganized
