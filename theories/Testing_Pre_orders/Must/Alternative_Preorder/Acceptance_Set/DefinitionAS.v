@@ -171,7 +171,3 @@ Next Obligation.
       eapply unique_nb in duo; eauto. subst. contradiction.
 Qed.
 
-
-<<<<<<< HEAD
-=======
->>>>>>> BlockingActionReorganized

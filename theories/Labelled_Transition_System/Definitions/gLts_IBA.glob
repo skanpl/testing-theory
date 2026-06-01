@@ -1,6 +1,0 @@
-DIGEST 2f118325eb74de54a5d52207d5d5717a
-FTestingTheory.Labelled_Transition_System.Definitions.gLts_IBA
-R1164:1167 Stdlib.Unicode.Utf8 <> <> lib
-R1196:1204 stdpp.countable <> <> lib
-R1241:1246 TestingTheory.Labelled_Transition_System.Actions.Definitions.ActTau <> <> lib
-R1248:1251 TestingTheory.Labelled_Transition_System.Definitions.gLts <> <> lib

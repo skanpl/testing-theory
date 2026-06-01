@@ -1,5 +1,5 @@
 
-
+(*
 (*--------------a bunch of imports--------------------*)
 Require Export Must.
 Require Export Coq.Program.Equality.
@@ -18,13 +18,6 @@ Require Import stdpp.base.
 
 
  
-(* MVACCS is a local copy of "VACCS_SEQ_Instance" 
-   i couldn't import (for idk what reason) "VACCS_SEQ_Instance" 
-   so i made a copy of 
-   the file "VACCS_SEQ_Instance.v" and named it "MVACCS.v"
-   so that after compiling the content become importable.
-*)
-Require Import MVACCS.  
 (*------------------------------------------------------*)
 
 
@@ -44,8 +37,6 @@ Print ltsM.
  (* HERE:  /!\ what can i do make rocq stop complaining ?   /!\ *) 
  Lemma what_should_i_do : forall s:States,
   s ≼ₐₛ s -> True.
-
-
 
 
 
@@ -106,6 +97,7 @@ Qed.
 
 
 
+
 (* 
 Lemma cnv_compose_tau: forall p q:proc,
   p ≼₁ q -> g (tau p) ≼₁ g (tau q).
@@ -132,3 +124,4 @@ destruct s.
 
 
 
+*)

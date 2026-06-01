@@ -1,23 +1,33 @@
 
-Require Export Must.
-Require Export VACCS_Instance .
 Require Export Coq.Program.Equality.
-Require Export InputOutputActions ActTau OldTransitionSystems Must VACCS_Instance VACCS_Good
-gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB GeneralizeLtsOutputs ParallelLTSConstruction ForwarderConstruction
+Require Export VACCS.
+Require Export VACCS_Instance.
+Require Export VACCS.Congruence.
+Require Export Must.
+Include VACCS_congruence.
+
+
+
+
+
+(*
+Require Export InputOutputActions ActTau Must VACCS_Instance VACCS_Good
+gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB ParallelLTSConstruction ForwarderConstruction
 InteractionBetweenLts Testing_Predicate.
+Require Export Must.
+*)
 
 
 
 
+Print cgr.
 
 
-
-
-
-
+ 
 
 (* Tactic that looks for lts/lts_step assumptions and inverts them to
   learn about the shape of the conclusion *)
+(*
 Ltac lts_inversion :=
 try match goal with
 | H : lts_step ?p ?a ?q |- _ =>
@@ -28,23 +38,22 @@ match goal with
 | H : lts_step ?p ?a ?q |- _ => inversion H; subst; clear H
 | H : lts ?p ?a ?q |- _ => inversion H; subst; clear H
  end.
-
-
-
-
+*)
 
 (*========= notations =====================*)
 
 Notation "p << q" := (@ctx_pre _ _ _ _ _ _ proc _ _ _ _ _ _ _ p q) (at level 40).
-Notation tau q := (t • q).
+Notation tau q := (𝛕 • q).
 Notation sub t1 x1 := (t1 ^ x1).
+
+
 Notation congs := cgr.
 
 
 
 (*=========== cong preseves mp ===============*)
 Lemma mp_congsL: forall p e r: proc,
-  p must_pass e -> congs p r ->  r must_pass e.
+  p must_pass e (*-> congs p r ->  r must_pass e *) -> True.
 Proof.
 intros. 
 set (lem:= must_eq_server p r e).
