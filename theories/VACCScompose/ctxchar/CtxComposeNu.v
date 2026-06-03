@@ -12,49 +12,39 @@ Fixpoint shift (p:proc) : proc. Admitted.
 Notation ash mu :=  (VarC_action_add 1 mu).
 
 (*--------shift on lts -----------------*)
-Lemma lts_shift_mu: forall (p q:proc) (mu:ExtAct TypeOfActions),
+
+Lemma lts_shift_mu: forall (p q:proc) mu,
   lts p (ActExt mu) q -> lts (shift p) (ActExt ( ash mu)) (shift q).
-
-
-Proof. 
-Admitted.
+Proof.  Admitted.
 
 Lemma lts_shift_tau: forall (p q:proc),
   lts p τ q -> lts (shift p) τ (shift q).
-
-
-Proof. 
-Admitted.
+Proof. Admitted.
 
 Lemma lts_shift_inv_tau: forall (p q:proc), lts (shift p) τ q -> 
   exists p', lts p τ p' /\ q = shift p'.
-
-Proof. 
-Admitted.
+Proof. Admitted.
 
  
-Lemma lts_shift_inv_mu: forall (p q:proc) (mu:ExtAct TypeOfActions), 
+Lemma lts_shift_inv_mu: forall (p q:proc) mu, 
   lts (shift p) (ActExt mu) q -> 
   exists p' mu0, lts p (ActExt mu0) p' /\ q = shift p' /\ mu= ash mu0.
-
-Proof. 
-Admitted.
+Proof. Admitted.
 
 (*---------- shift  on dual predicate  --------------------*)
-Lemma dual_shift: forall (mu1 mu2:ExtAct TypeOfActions),
-  parallel_inter mu1 mu2 ->
-  parallel_inter (ash mu1) (ash mu2).
-
+Lemma dual_shift: forall mu1 mu2,
+  dual mu1 mu2 ->
+  dual (ash mu1) (ash mu2).
 Proof. 
 intros; cbv in H.
 destruct mu1,mu2,a0; try (exfalso; apply H); subst; cbn; auto.
 Qed.
 
-Lemma dual_shift_inv: forall mu1 mu2, parallel_inter mu1 (ash mu2) ->
-  exists mu0, mu1 = ash mu0 /\ parallel_inter mu0 mu2.
-
+Lemma dual_shift_inv: forall mu1 mu2, dual mu1 (ash mu2) ->
+  exists mu0, mu1 = ash mu0 /\ dual mu0 mu2.
 Proof.
-intros. assert (parallel_inter mu1 (ash mu2)); auto; cbn in H.
+(*
+intros. assert (dual mu1 (ash mu2)); auto; cbn in H.
 unfold ext_act_match in H.
 destruct mu1,mu2.
 -  assert (exists a', ash (ActIn a0) = ActIn a' ).
@@ -71,12 +61,12 @@ destruct mu1,mu2.
 - assert (exists a', ash (ActOut a0) = ActOut a' ). 
    unfold ash; destruct a0; eauto.
    destruct H1; rewrite H1 in H; exfalso; auto.
+*)
 Admitted.
 (*------------- other stuff --------------------------*)
 	
-Lemma ash_inj: forall (mu1 mu2:ExtAct TypeOfActions), 
+Lemma ash_inj: forall mu1 mu2, 
   ash mu1 = ash mu2 -> mu1=mu2.
-
 Proof.
 intros; unfold ash in H.
 destruct mu1,mu2,a,a0; inversion H; subst.
@@ -88,7 +78,6 @@ Qed.
 
 Lemma good_shift: forall (e:proc), 
   good_VACCS e <-> good_VACCS (shift e).
-
 Proof. 
 (*NB to prove this you need to generalize from shift to an 
   arbitrary substitution sigma because of lifting.
@@ -138,9 +127,9 @@ Lemma mp_fromnu: forall (p e: proc),
 Proof.
 intros.
 dependent induction H; eauto with mdb.
-- eapply m_now; destruct (good_shift e); firstorder.
+- eapply m_now; destruct (good_shift t); firstorder.
 - eapply m_step.
-  * destruct (good_shift e); clear pt H et H0 com H1 ex; firstorder.
+  * destruct (good_shift t); clear pt H et H0 com H1 ex; firstorder.
   * destruct ex as [r trans]; inversion trans; subst.
     + inversion l; subst; eexists; constructor; eauto.
     + eexists; eapply ParRight; set (lem:= lts_shift_tau _ _ l); eauto.

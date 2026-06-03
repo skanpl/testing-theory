@@ -41,7 +41,7 @@ Admitted.
 (*========== lemmas on tau-trans ===============================*)
 
 Lemma tau_on_3par: forall p q e:proc, 
- (exists r, (p‖q, e) ⟶ r) -> exists r, (p, q‖e) ⟶ r.
+ (exists r, (p‖q▷ e) ⟶ r) -> exists r, (p▷ q‖e) ⟶ r.
 Proof.
 intros ? ? ? ex.
 destruct ex as [r trans]; inversion trans; subst.
@@ -60,7 +60,7 @@ destruct ex as [r trans]; inversion trans; subst.
 Qed.
 
 Lemma tau_on_3par_rev: forall p q e:proc, 
-  (exists r, (p, q‖e) ⟶ r) ->  exists r, (p‖q, e) ⟶ r.
+  (exists r, (p▷ q‖e) ⟶ r) ->  exists r, (p‖q▷ e) ⟶ r.
 Proof.
 intros ? ? ? ex.
 destruct ex as [r trans]; inversion trans; subst.
@@ -80,6 +80,8 @@ destruct ex as [r trans]; inversion trans; subst.
   * eexists; eapply ParSync; try eapply lts_parL; eauto.   
 Qed.
 
+
+  
 (*================= no properties ===================*)
 Lemma no_impl_nogood: forall p,  no p -> ~ good_VACCS p.
 Proof.
@@ -112,10 +114,27 @@ Proof.
 intros.
 dependent induction H; eauto with mdb.
 - apply m_now; constructor; auto.
-- set (lem:= good_decidable (q‖ e)); destruct lem.
+- set (lem:= good_decidable (q‖ t)); destruct lem.
   * apply m_now; auto.
   * eapply m_step; eauto with mdb.
-   + eauto using tau_on_3par.
+
+   + (*set (lem := tau_on_3par _ _ _ ex).   it used to work fine ....*)
+     (*-----------copier/coller-------------------------*)
+     destruct ex as [r trans]; inversion trans; subst.
+     -- inversion l; subst; eexists.
+        **  eapply ParSync; try constructor; eauto; cbv; auto.
+        **  eapply ParSync; try eapply lts_parL; eauto; cbv; auto.
+        **  constructor; eauto.
+        **  eapply ParRight; eapply lts_parL; eauto.
+     -- eexists; eapply ParRight; eapply lts_parR; eauto.
+     -- inversion l1; subst.
+        ** eexists; eapply ParSync; eauto; eapply lts_parR; eauto.
+        ** cbv in eq; destruct μ1,μ2,a0; try (exfalso; apply eq); subst;
+           eexists; eapply ParRight; eauto. 
+           ++ eapply lts_comR; eauto.
+           ++ eapply lts_comL; eauto.
+   (*--------------------------------------*)
+
    + intros; eapply H; try constructor; eauto with ccs.
    + intros E Hqe.
      inversion Hqe; subst.
@@ -142,7 +161,26 @@ dependent induction Hfoc.
   set (lem:= no_impl_nogood _ Hnoq); exfalso; auto.
 - eapply m_step.
   * intro; apply nh; eauto with ccs.
-  * eauto using tau_on_3par_rev.
+  * (*set (lem := tau_on_3par_rev  _ _ _ ex).   it used to work fine ....*)
+    clear nh pt H et H0 com H1 Hnoq.  
+  (*----------copier/coller-----------------------*)
+   destruct ex as [e trans]; inversion trans; subst.
+   -- eexists; do 2 constructor; eauto.
+   -- inversion l; subst.
+     ** eexists; eapply ParSync; eauto; try eapply lts_parR; 
+       try eapply H1; cbv; auto.
+     ** eexists; eapply ParSync; eauto; try eapply lts_parR; 
+      try eapply H2; cbv; auto.
+     ** eexists; eapply ParLeft; eapply lts_parR; eauto.
+     ** eexists; eapply ParRight; try eapply lts_parR; eauto.
+   -- inversion l2; subst. 
+     ** destruct μ1,μ2,a0; cbv in eq; subst; 
+       try (exfalso; apply eq); eexists; eapply ParLeft. 
+        ++ eapply lts_comR; eauto.
+        ++ eapply lts_comL; eauto.   
+     ** eexists; eapply ParSync; try eapply lts_parL; eauto.   
+ (*-----------------------------------------------*)
+
   * intros P Hpq; inversion Hpq; subst.
     + eapply H1; try eapply lts_parL; eauto; cbv; auto.
       eauto using lts_preserve_no.

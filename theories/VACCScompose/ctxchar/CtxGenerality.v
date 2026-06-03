@@ -1,33 +1,9 @@
 
-Require Export Coq.Program.Equality.
-Require Export VACCS.
-Require Export VACCS_Instance.
-Require Export VACCS.Congruence.
-Require Export Must.
-Include VACCS_congruence.
 
+From Stdlib Require Export Program.Equality.
+From TestingTheory Require Export Must VACCS_Good gLts InteractionBetweenLts ActTau.
+Include VACCS_Testing.
 
-
-
-(*
-Require Export InputOutputActions ActTau Must VACCS_Instance VACCS_Good
-gLts Bisimulation Lts_OBA Lts_FW Lts_OBA_FB ParallelLTSConstruction ForwarderConstruction
-InteractionBetweenLts Testing_Predicate.
-*)
-
-
-
-
-
-(*================================================================================*)
-(*/!\/!\/!\/!\/!\  How can i make this work???   /!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\*)
-
-Locate proc.  (*what???*)
-Lemma why: forall p e: proc,
-  p must_pass e  -> True.
-Proof.
-(*/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\*)
-(*================================================================================*)
 
 
 
@@ -81,9 +57,13 @@ match goal with
 
 
 (*========= notations =====================*)
-
-Notation "p << q" := (@ctx_pre _ _ _ _ _ _ proc _ _ _ _ _ _ _ p q) (at level 40).
+Notation "p << q" := (ctx_pre p q) (at level 40).
 Notation tau q := (𝛕 • q).
+Notation Linp c v :=  ( ActTau.ActExt (InputOutputActions.ActIn (c ⋉ v)) ).
+Notation Lout c v := ( ActTau.ActExt (InputOutputActions.ActOut (c ⋉ v))  ).
+Notation Ltau := ActTau.τ.
+
+
 Notation sub t1 x1 := (t1 ^ x1).
 
 
@@ -93,7 +73,7 @@ Notation congs := cgr.
 
 (*=========== cong preseves mp ===============*)
 Lemma mp_congsL: forall p e r: proc,
-  p must_pass e (*-> congs p r ->  r must_pass e *) -> True.
+  p must_pass e -> congs p r ->  r must_pass e .
 Proof.
 intros. 
 set (lem:= must_eq_server p r e).
@@ -109,9 +89,12 @@ specialize (lem H0); auto.
 Qed. 
 (*========== other cong and << stuff  ============*)
 
+
+
+
 Lemma mpless_congs: forall p q r: proc,
-  p << q -> congs q r ->  
-    p << r.
+  ( p << q) -> (congs q r) ->  
+    (p << r).
 Proof.
 unfold "<<"; intros.
 specialize (H _ H1).
@@ -125,3 +108,6 @@ Proof.
 unfold "<<"; auto.
 Qed.
 
+
+
+Hint Constructors lts :mdb.

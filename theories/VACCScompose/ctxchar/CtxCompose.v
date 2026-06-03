@@ -1,6 +1,6 @@
  
 
-Require Export CtxGenerality.
+Require Import CtxGenerality.
 
 
 
@@ -24,16 +24,15 @@ inversion trans;subst.
 - inversion l. subst.
   apply m_step; eauto with mdb.
   * eexists. do 2 constructor.
-  * intros p' Hq. lts_inversion. eauto with mdb. 
-  * intros. lts_inversion.
+  * intros p' Hq. inversion Hq; subst; eauto with mdb. 
+  * intros. inversion H3; eauto with mdb.
 - eapply m_step; eauto with mdb.
   * eexists. do 2 constructor.
-  * intros p' Hq. lts_inversion.
-    clear H1 com H.
-    assert (p must_pass e). eapply pt. constructor.
-    eapply Hmust. auto. (* Hmust utilisé ici*)
-  * intros. lts_inversion.
-- lts_inversion. 
+  * intros p' Hq. inversion Hq; subst.
+    assert (p must_pass t). eapply pt.  constructor.
+    eapply Hmust. auto. 
+  * intros; inversion H3.
+- inversion l1. 
 Qed.
 
 (*================ input ==========================*)
@@ -53,7 +52,7 @@ inversion trans;subst.
   * intros p' Hq. inversion Hq.
   * intros p' e' μ1 μ2 Hpi Hq He.
     inversion Hq. subst.
-    specialize (com (sub p v) e'(ActIn (c ⋉ v)) μ2 Hpi) .
+    specialize (com (sub p v) e' _ μ2 Hpi) .
     apply Hmust.
     eapply com; [constructor | auto].
 - inversion l1; subst. destruct μ2 as [|c']; inversion eq. subst c'.
@@ -125,13 +124,13 @@ Qed.
 Lemma isuml: forall (p q:proc),  g (isum p q)  ⟶  p.
 Proof.
 intros; unfold isum. 
-constructor; eauto with ccs.
+constructor; eauto with mdb.
 Qed.
 
 Lemma isumr: forall (p q:proc),  g (isum p q)  ⟶  q.
 Proof.
 intros; unfold isum. 
-eapply lts_choiceR; eauto with ccs.
+eapply lts_choiceR; eauto with mdb.
 Qed.
  
 

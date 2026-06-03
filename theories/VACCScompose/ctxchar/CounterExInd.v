@@ -4,9 +4,10 @@
 Require Import CtxGenerality.
 
 
-Lemma inp_nil: forall c v, lts (gpr_input c 𝟘) ((c ⋉ v) ?) (sub  (g 𝟘) v) .
+
+Lemma inp_nil: forall c v, lts (gpr_input c 𝟘) (Linp c v) (sub  (g 𝟘) v) .
 Proof.
-intros; cbv; eauto with ccs.
+intros; cbv; eauto with mdb.
 Qed.  
 
 
@@ -21,7 +22,7 @@ eapply m_step.
 intro.
 inversion H; subst.
 - destruct H1; inversion H0.
-- eexists. eapply ParRight;  eapply lts_choiceL; eauto with ccs.
+- eexists; eapply ParRight;  eapply lts_choiceL; eauto with mdb.
 - intros; inversion H.
 - intros; inversion H; subst; inversion H4; subst; 
   apply m_now; eauto with ccs.
@@ -44,7 +45,7 @@ inversion H.
   Focus 2. 
   eapply lts_choiceR.         
   eapply inp_nil.
-  unfold parallel_inter, dual; simpl; eauto.
+  unfold  dual; simpl; eauto.
   inversion H0; try inversion H1.
   destruct ex0 as [r trans]; inversion trans; subst; 
   try inversion l; try inversion l1.
@@ -67,7 +68,7 @@ Proof.
 intros.
 eapply m_step.
 - intro; inversion H; subst; destruct H1; inversion H0.
-- eexists; eapply ParRight; econstructor; eauto with ccs.
+- eexists; eapply ParRight; econstructor; eauto with mdb.
 - intros; inversion H.
 - intros; inversion H; subst; try inversion H2; try inversion H3; 
   subst; try inversion H4.
@@ -83,7 +84,7 @@ intros. intro.
 inversion H.
 - inversion H0; subst; destruct H2; inversion H1.
 - assert ((g 𝟘) must_pass  (g 𝟘)‖ g (gpr_input c ①)). 
-  eapply com; try eapply inp_nil; try econstructor; eauto with ccs; cbv; eauto.
+  eapply com; try eapply inp_nil; try econstructor; eauto with mdb; cbv; eauto.
   inversion H0.  
   * inversion H1; subst; destruct H3; inversion H2. 
   * destruct ex0 as [r trans]; inversion trans; subst.
@@ -112,7 +113,7 @@ intros.
 apply m_step.
 - intro; inversion H.
 - eexists; constructor. 
-  eapply lts_choiceR; eauto with ccs.
+  eapply lts_choiceR; eauto with mdb.
 - intros; inversion H; inversion H4; subst; eapply m_step.
   * intro; inversion H0.
   * eexists; eapply ParSync; try econstructor; cbv; eauto.
