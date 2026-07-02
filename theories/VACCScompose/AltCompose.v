@@ -377,3 +377,120 @@ exists (ν p0); repeat split.
   econstructor; split; eauto.
   admit.
 Admitted.
+
+
+
+(*=================   sum   ======================*)
+
+Notation sum p q := (gpr_choice p q).
+
+(* ----  weak transitions ----------*)
+Lemma wt_sum: forall p q r mu s, 
+  wt (g (sum p q)) (mu::s) r -> 
+  wt (g p) (mu::s) r \/ wt (g q) (mu::s) r.
+Proof.
+intros ? ? ? ? ? Hwt. 
+inversion Hwt; inversion l; eauto with mdb.
+Qed.
+
+Lemma wt_sumL_rev: forall p q r mu s,
+  wt (g p) (mu::s) r -> wt (g (sum p q)) (mu::s) r.
+Proof.
+intros ? ? ? ? ? Hwt; inversion Hwt; subst.
+- econstructor. econstructor. apply l. apply w.
+- eapply WeakTransitions.wt_act; eauto.
+  constructor; auto.
+Qed.
+
+
+Lemma wt_sumR_rev: forall p q r mu s,
+  wt (g q) (mu::s) r -> wt (g (sum p q)) (mu::s) r.
+Proof.
+intros ? ? ? ? ? Hwt; inversion Hwt; subst.
+- econstructor. apply lts_choiceR. apply l. apply w.
+- eapply WeakTransitions.wt_act; eauto.
+  apply lts_choiceR; auto.
+Qed.
+
+
+Lemma wt_summu: forall p q r mu, 
+  wt (g (sum p q)) [mu] r -> 
+  wt (g p) [mu] r \/ wt (g q) [mu] r.
+Proof.
+auto using wt_sum.
+Qed.
+
+Lemma wt_summuL_rev: forall p q r mu,
+  wt (g p) [mu] r -> wt (g (sum p q)) [mu] r.
+Proof.
+auto using wt_sumL_rev.
+Qed.
+
+
+Lemma wt_summuR_rev: forall p q r mu,
+  wt (g q) [mu] r -> wt (g (sum p q)) [mu] r.
+Proof.
+auto using wt_sumR_rev.
+Qed.
+
+
+
+Lemma wt_sumnil: forall p q r, 
+  wt (g (sum p q)) nil r -> 
+  r = sum p q  \/  wt (g p) nil r \/ wt (g q) nil r.
+Proof.
+intros ? ? ? Hwt.
+inversion Hwt; try inversion l; eauto with mdb.
+Qed.
+
+(*------ convergence ----------*)
+
+Lemma term_sum: forall p q,
+  (g (sum p q)) ⤓ ->  (g p)⤓ /\ (g q)⤓. 
+Proof.
+intros ? ? Hsum; inversion Hsum.
+ split; constructor; intros ? Hlt; apply H. 
+- apply lts_choiceL; auto. 
+- apply lts_choiceR; auto. 
+Qed.
+
+Lemma term_sum_rev: forall p q,
+  (g p)⤓ -> (g q)⤓ -> (g (sum p q)) ⤓ . 
+Proof.
+intros ? ? Hp Hq.
+constructor; intros ? Hsum; inversion Hsum; 
+try inversion l; auto.
+- apply Hp; auto.
+- apply Hq; auto.
+Qed.
+
+Lemma cnv_sum: forall p q s,
+  (g (sum p q))⇓s ->  (g p)⇓s /\ (g q)⇓s .
+Proof.
+intros ? ? ? Hcnv.
+destruct s; inversion Hcnv; split; constructor; subst;  
+try ( first 
+  [set (lem:= term_sum p q H)| 
+   set (lem:= term_sum p q H2)]; 
+destruct lem); auto; intros ? Hwt; inversion Hcnv; apply H7. 
+- apply wt_summuL_rev; auto.
+- apply wt_summuR_rev; auto.
+Qed.
+
+Lemma cnv_sum_rev: forall p q s,
+  (g p)⇓s -> (g q)⇓s -> (g (sum p q))⇓s.
+Proof.
+intros ? ? ? Hpcnv Hcnvq; destruct s; constructor; 
+inversion Hpcnv; inversion Hcnvq; auto using term_sum_rev.
+intros ? Hwt; apply wt_summu in Hwt; destruct Hwt; auto.
+Qed.
+
+Lemma lcnv_comp_sum: forall p q,
+  g p ≼₁ g q ->  (g (sum p q))  ≼₁ (g (sum p q)) . 
+Proof.
+unfold "≼₁"; intros ? ? Hplq ? Hsum.
+apply cnv_sum in Hsum; destruct Hsum; 
+apply cnv_sum_rev; auto.
+Qed.
+
+
