@@ -16,7 +16,7 @@ Inductive no: proc -> Prop :=
 with no_g: gproc -> Prop :=
 | nog_nil: no_g 𝟘
 | nog_inp: forall c p,    no p -> no_g (gpr_input c p)
-| nog_tau: forall p,      no p -> no_g (tau p)
+| nog_tau: forall p,      no p -> no_g (gpr_tau p)
 | nog_sum: forall G1 G2,  no_g G1 -> no_g G2 -> no_g (G1+G2)
 .
 Hint Constructors lts no no_g proc gproc : noh.

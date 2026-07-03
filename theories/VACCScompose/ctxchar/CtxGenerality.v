@@ -58,15 +58,25 @@ match goal with
 
 (*========= notations =====================*)
 Notation "p << q" := (ctx_pre p q) (at level 40).
-Notation tau q := (𝛕 • q).
+
+Notation tau q := (g (𝛕 • q)).
+Notation out x v := (x ! v • 𝟘).
+Notation inp x p := (g (x ? p)).
+Notation sum p q := (g (p+q)).
+Notation gsum p q := (p+q).
+Notation gtau p  := (gpr_tau p).
+Notation ginp x p := (gpr_input x p).
+
+
+
+
+
 Notation Linp c v :=  ( ActTau.ActExt (InputOutputActions.ActIn (c ⋉ v)) ).
 Notation Lout c v := ( ActTau.ActExt (InputOutputActions.ActOut (c ⋉ v))  ).
 Notation Ltau := ActTau.τ.
 
 
 Notation sub t1 x1 := (t1 ^ x1).
-
-
 Notation congs := cgr.
 
 

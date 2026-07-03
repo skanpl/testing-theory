@@ -14,7 +14,7 @@ Require Import CtxGenerality.
 
 (*================= tau ==============================*)
 Proposition ctx_compose_tau: forall p q, p << q -> 
-  (g (gpr_tau p)) << (g (gpr_tau q)).
+  tau p << tau q.
 Proof.
 unfold ctx_pre.
 intros p q Hmust e Hfoc.
@@ -39,7 +39,7 @@ Qed.
 
 Proposition ctx_compose_inp: forall c p q,
   (forall v, sub p v << sub q v) ->
-  g (gpr_input c p)  << g (gpr_input c q).
+  inp c p  << inp c q.
 Proof. 
 unfold ctx_pre.
 intros c p q Hmust e Hfoc.
@@ -66,10 +66,11 @@ inversion trans;subst.
 Qed.
 
 (*================ isum =================================*)
-Definition isum (p q: proc) := (tau p) + (tau q).
+
+Definition isum (p q: proc) :=  g ((gpr_tau p) + (gpr_tau q)).
 
 Lemma mp_tau: forall (p e: proc),
-  p must_pass e ->  g (tau p) must_pass e.
+  p must_pass e ->  tau p must_pass e.
 Proof.
 intros p e Hmust.
 induction Hmust; eauto with mdb.
@@ -82,7 +83,7 @@ Qed.
 
 Lemma mp_sum: forall (p q: gproc) (e:proc),
   (g p) must_pass e -> (g q) must_pass e -> 
-  (g (p+q)) must_pass e.
+  (sum p q) must_pass e.
 Proof.
 intros p q e Hmpp.
 dependent induction Hmpp; intros; eauto with mdb.
@@ -110,7 +111,7 @@ Qed.
 
 Lemma mp_isum: forall (p q e: proc),
   p must_pass e -> q must_pass e -> 
-  g (isum p q) must_pass e.
+  isum p q must_pass e.
 Proof.
 intros ? ? ? Hp Hq.
 set (lemp:= mp_tau _ _ Hp).
@@ -121,13 +122,13 @@ Qed.
 
 
 
-Lemma isuml: forall (p q:proc),  g (isum p q)  ⟶  p.
+Lemma isuml: forall (p q:proc),  (isum p q)  ⟶  p.
 Proof.
 intros; unfold isum. 
 constructor; eauto with mdb.
 Qed.
 
-Lemma isumr: forall (p q:proc),  g (isum p q)  ⟶  q.
+Lemma isumr: forall (p q:proc),  (isum p q)  ⟶  q.
 Proof.
 intros; unfold isum. 
 eapply lts_choiceR; eauto with mdb.
@@ -136,7 +137,7 @@ Qed.
 
 
 Lemma mp_isum_rev: forall (p q e: proc),
- g (isum p q) must_pass e -> 
+ (isum p q) must_pass e -> 
  p must_pass e  /\ q must_pass e.
 Proof.
 intros ? ? ? Hisum.
@@ -146,7 +147,7 @@ try inversion l; subst; split; apply pt; eauto using isuml, isumr.
 Qed.
 
 
-Lemma isum_invert: forall (p q r: proc), g (isum p q)  ⟶  r -> 
+Lemma isum_invert: forall (p q r: proc), (isum p q)  ⟶  r -> 
   r= p \/ r=q.
 Proof.
 intros ? ? ? Hisum.
@@ -156,7 +157,7 @@ inversion Hisum; subst; inversion H3; subst.
 Qed.
  
 Proposition ctx_compose_isum: forall (p1 p2 q:proc),
-  p1 << p2  -> g (isum p1 q) << g (isum p2 q).
+  p1 << p2  -> (isum p1 q) << (isum p2 q).
 Proof.
 unfold ctx_pre. 
 intros ? ? ? Hmust ? Hfoc.

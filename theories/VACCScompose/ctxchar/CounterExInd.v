@@ -5,7 +5,7 @@ Require Import CtxGenerality.
 
 
 
-Lemma inp_nil: forall c v, lts (gpr_input c 𝟘) (Linp c v) (sub  (g 𝟘) v) .
+Lemma inp_nil: forall c v, lts (inp c 𝟘) (Linp c v) (sub  (g 𝟘) v) .
 Proof.
 intros; cbv; eauto with mdb.
 Qed.  
@@ -15,7 +15,7 @@ Qed.
 
 (*============== ~(0 <<c!v) =============*)
 Lemma cep1: forall (c : ChannelData),
-  (g 𝟘) must_pass g ((tau ①)+ (gpr_input c 𝟘)). 
+  (g 𝟘) must_pass   sum (gtau ①) (ginp c 𝟘). 
 Proof.
 intro.
 eapply m_step.
@@ -32,7 +32,7 @@ Qed.
 
 
 Lemma cep2: forall (c : ChannelData) (v:Data),
-  ~ (pr_output c v) must_pass g ((tau ①)+ (gpr_input c 𝟘)). 
+  ~ (out c v) must_pass   sum (gtau ①) (ginp c 𝟘). 
 Proof.
 intros. intro.
 inversion H.
@@ -53,7 +53,7 @@ Qed.
 
 
 Proposition ce: forall (c : ChannelData) (v:Data),
-  ~ (g 𝟘) << pr_output c v.
+  ~ (g 𝟘) << out c v.
 Proof.
 intros. intro.
 unfold "<<" in H.
@@ -63,7 +63,7 @@ Qed.
 
 (*=================  ~(0 << c?(x).𝟘)  =================================*)  
 Lemma ce2p1: forall (c : ChannelData) v,
-  (g 𝟘) must_pass pr_output c v‖ g (gpr_input c ①). 
+  (g 𝟘) must_pass (out c v)‖ (inp c ①). 
 Proof.
 intros.
 eapply m_step.
@@ -78,7 +78,7 @@ Qed.
     
 
 Lemma ce2p2: forall (c : ChannelData) v,
- ~ g (gpr_input c 𝟘) must_pass pr_output c v‖ g (gpr_input c ①). 
+ ~ inp c 𝟘 must_pass  (out c v)‖ (inp c ①). 
 Proof.
 intros. intro.
 inversion H.
@@ -95,7 +95,7 @@ inversion H.
 Qed.
     
 Proposition ce2: forall (c : ChannelData) (v:Data),
-  ~  (g 𝟘) << g (gpr_input c 𝟘) .
+  ~  (g 𝟘) << inp c 𝟘 .
 Proof.
 intros. intro.
 unfold "<<" in H.
@@ -107,7 +107,7 @@ Qed.
 
 
 Lemma ce3p1: forall (c : ChannelData) v,
-  g (𝟘+ tau (pr_output c v) ) must_pass g (gpr_input c ①). 
+  sum 𝟘 (gtau (out c v))  must_pass inp c ①. 
 Proof.
 intros.
 apply m_step.
@@ -126,7 +126,7 @@ apply m_step.
 Qed.
 
 Lemma ce3p2: forall (c : ChannelData),
-  ~ (g 𝟘) must_pass g (gpr_input c ①). 
+  ~ (g 𝟘) must_pass   inp c ①. 
 Proof.
 repeat intro. 
 inversion H.
@@ -136,25 +136,59 @@ inversion H.
 Qed.
 
 Lemma ce3: forall c v, 
-  ~ g (𝟘+ tau (pr_output c v) ) << g 𝟘 .
+  ~ sum 𝟘 (gtau (out c v))  << g 𝟘 .
 Proof.
 unfold "<<"; repeat intro.
 specialize (H _ (ce3p1 c v)).
 eapply ce3p2; eauto.
 Qed.
 
+(*===================== + does not compose ================================*)
 
 
 
+Lemma part1: forall x v, 
+  sum 𝟘 (gtau (out x v))  must_pass   inp x ①.  
+Proof.
+intros; apply m_step.
+- intro; inversion H.
+- eexists; constructor; apply lts_choiceR; constructor.
+- intros; inversion H; inversion H4; subst; apply m_step.
+  * intro Hg; inversion Hg.
+  * eexists; eapply ParSync; try constructor; cbv; auto.
+  * intros ? Hout; inversion Hout.
+  * intros ? Hinp; inversion Hinp.
+  * intros ? ? ? ? ? ? Hinp; inversion Hinp; 
+    cbn; do 2 constructor.
+- intros ? Hinp; inversion Hinp.
+- intros ? ? ? ? ? ? Hinp; inversion Hinp; 
+  cbn; do 2 constructor.
+Qed.
+
+
+Lemma part2: forall x v, 
+  ~  sum (gtau (g 𝟘)) (gtau (out x v))  must_pass   inp x ①.  
+Proof.
+intros ? ? Hmp; inversion Hmp; try inversion H.
+assert (sum (gtau 𝟘) (gtau (out x v)) ⟶ 𝟘); try do 2 constructor.
+specialize (pt _ H); inversion pt; try inversion H0.
+destruct ex0 as [t Htrans]; inversion Htrans; try inversion l.
+inversion l1.
+Qed.
 
 
 
+Require Import CtxCompose.
+Lemma nil_less_taunil: (g 𝟘) << tau (g 𝟘).
+Proof.
+intro; auto using mp_tau.
+Qed.  
 
-
-
-
-
-
-
-
-
+Lemma compose_fail: forall x v,
+  ~ sum 𝟘 (gtau (out x v)) << sum (gtau (g 𝟘)) (gtau (out x v)).
+Proof.
+intros ? ? Hmust.
+unfold "<<" in Hmust.
+specialize (Hmust _ (part1 x v)).
+eapply part2, Hmust.
+Qed.
