@@ -178,11 +178,11 @@ Qed.
 
 
 
-Notation sum p q := (gpr_choice p q).
+Notation sum p q := (g (gpr_choice p q)).
 
 (* ----  weak transitions ----------*)
 Lemma wt_sum: forall p q r mu s, 
-  wt (g (sum p q)) (mu::s) r -> 
+  wt (sum p q) (mu::s) r -> 
   wt (g p) (mu::s) r \/ wt (g q) (mu::s) r.
 Proof.
 intros ? ? ? ? ? Hwt. 
@@ -190,7 +190,7 @@ inversion Hwt; inversion l; eauto with mdb.
 Qed.
 
 Lemma wt_sumL_rev: forall p q r mu s,
-  wt (g p) (mu::s) r -> wt (g (sum p q)) (mu::s) r.
+  wt (g p) (mu::s) r -> wt (sum p q) (mu::s) r.
 Proof.
 intros ? ? ? ? ? Hwt; inversion Hwt; subst.
 - econstructor. econstructor. apply l. apply w.
@@ -200,7 +200,7 @@ Qed.
 
 
 Lemma wt_sumR_rev: forall p q r mu s,
-  wt (g q) (mu::s) r -> wt (g (sum p q)) (mu::s) r.
+  wt (g q) (mu::s) r -> wt (sum p q) (mu::s) r.
 Proof.
 intros ? ? ? ? ? Hwt; inversion Hwt; subst.
 - econstructor. apply lts_choiceR. apply l. apply w.
@@ -210,21 +210,21 @@ Qed.
 
 
 Lemma wt_summu: forall p q r mu, 
-  wt (g (sum p q)) [mu] r -> 
+  wt (sum p q) [mu] r -> 
   wt (g p) [mu] r \/ wt (g q) [mu] r.
 Proof.
 auto using wt_sum.
 Qed.
 
 Lemma wt_summuL_rev: forall p q r mu,
-  wt (g p) [mu] r -> wt (g (sum p q)) [mu] r.
+  wt (g p) [mu] r -> wt (sum p q) [mu] r.
 Proof.
 auto using wt_sumL_rev.
 Qed.
 
 
 Lemma wt_summuR_rev: forall p q r mu,
-  wt (g q) [mu] r -> wt (g (sum p q)) [mu] r.
+  wt (g q) [mu] r -> wt (sum p q) [mu] r.
 Proof.
 auto using wt_sumR_rev.
 Qed.
@@ -232,7 +232,7 @@ Qed.
 
 
 Lemma wt_sumnil: forall p q r, 
-  wt (g (sum p q)) nil r -> 
+  wt (sum p q) nil r -> 
   r = sum p q  \/  wt (g p) nil r \/ wt (g q) nil r.
 Proof.
 intros ? ? ? Hwt.
@@ -242,7 +242,7 @@ Qed.
 (*------ convergence ----------*)
 
 Lemma term_sum: forall p q,
-  (g (sum p q)) ⤓ ->  (g p)⤓ /\ (g q)⤓. 
+  (sum p q) ⤓ ->  (g p)⤓ /\ (g q)⤓. 
 Proof.
 intros ? ? Hsum; inversion Hsum.
  split; constructor; intros ? Hlt; apply H. 
@@ -251,7 +251,7 @@ intros ? ? Hsum; inversion Hsum.
 Qed.
 
 Lemma term_sum_rev: forall p q,
-  (g p)⤓ -> (g q)⤓ -> (g (sum p q)) ⤓ . 
+  (g p)⤓ -> (g q)⤓ -> (sum p q) ⤓ . 
 Proof.
 intros ? ? Hp Hq.
 constructor; intros ? Hsum; inversion Hsum; 
@@ -261,7 +261,7 @@ try inversion l; auto.
 Qed.
 
 Lemma cnv_sum: forall p q s,
-  (g (sum p q))⇓s ->  (g p)⇓s /\ (g q)⇓s .
+  (sum p q)⇓s ->  (g p)⇓s /\ (g q)⇓s .
 Proof.
 intros ? ? ? Hcnv.
 destruct s; inversion Hcnv; split; constructor; subst;  
@@ -274,7 +274,7 @@ destruct lem); auto; intros ? Hwt; inversion Hcnv; apply H7.
 Qed.
 
 Lemma cnv_sum_rev: forall p q s,
-  (g p)⇓s -> (g q)⇓s -> (g (sum p q))⇓s.
+  (g p)⇓s -> (g q)⇓s -> (sum p q)⇓s.
 Proof.
 intros ? ? ? Hpcnv Hcnvq; destruct s; constructor; 
 inversion Hpcnv; inversion Hcnvq; auto using term_sum_rev.
@@ -282,7 +282,7 @@ intros ? Hwt; apply wt_summu in Hwt; destruct Hwt; auto.
 Qed.
 
 Lemma lcnv_comp_sum: forall p q,
-  g p ≼₁ g q ->  (g (sum p q))  ≼₁ (g (sum p q)) . 
+  g p ≼₁ g q ->  (sum p q)  ≼₁ (sum p q) . 
 Proof.
 unfold "≼₁"; intros ? ? Hplq ? Hsum.
 apply cnv_sum in Hsum; destruct Hsum; 
@@ -292,14 +292,88 @@ Qed.
 
 
 
-(*
-Lemma blah: forall p a,
-  lts_set p a ≠ ∅ -> exists p', lts p a p'.
+
+Lemma acep1: (g 𝟘) ≼ₐₛ tau (g 𝟘). 
 Proof.
-intros.
-destruct a.
-Focus 2.
-cbn in H.
-*)
+split.
+- intros ? Hcnv.
+  destruct s; try do 2 econstructor.
+  * intros ? H; inversion H; constructor; 
+    intros ? Hexf; inversion Hexf.
+  * econstructor. 
+    econstructor; intros ? H; inversion H; constructor; 
+    intros ? Hexf; inversion Hexf.
+    intros ? Hwt; inversion Hwt; inversion l; subst; 
+    inversion w; subst; inversion l0.
+- intros ? Q Hcnv Hwt Href.
+  destruct s.
+  * exists (g 𝟘); repeat split; eauto with mdb.
+    intro amu. intro H.
+    destruct H as [mu [H1 H2]]; destruct H1 as [mu0 [G1 [G2 G3]]].    
+    apply inv_nonmublock in G1; destruct G1 as [q Hexf]; inversion Hexf.
+  * inversion Hwt; inversion l; subst; inversion w; inversion l0.
+Qed.
 
 
+Notation gtau p := (gpr_tau p).
+Notation out c v := (c ! v • 𝟘).
+
+
+Lemma inv_nonblock_rev: forall p,
+  (exists q, lts p Ltau q)  -> ¬ (p ↛)  .
+Proof.
+intros ? H0 H. 
+destruct H0 as [q Hlt].
+eapply lts_set_tau_spec1 in Hlt; set_solver.
+Qed.
+
+
+
+
+
+Lemma acep2: forall x v,
+  ~ sum 𝟘 (gtau (out x v)) ≼₂ sum (gtau (g 𝟘)) (gtau (out x v)). 
+Proof.
+intros ? ? Hlac. 
+unfold "≼₂" in Hlac.
+specialize (Hlac nil). 
+specialize (Hlac (g 𝟘)). 
+ 
+assert (sum 𝟘 (gtau (out x v)) ⇓ []).
+do 2 constructor; intros ? Hlt; inversion Hlt; inversion H3.
+constructor. intros ? Hexf; inversion Hexf.
+ 
+assert (wt (sum (gtau 𝟘) (gtau (out x v))) [] 𝟘).
+do 3 econstructor.
+ 
+assert ((g 𝟘) ↛); try set_solver. 
+specialize (Hlac H H0 H1).
+clear H H0 H1.
+destruct Hlac as [P [Hwt [Href Hsub]]].
+inversion Hwt; subst.
++ assert (exists Q, lts (sum 𝟘 (gtau (out x v))) Ltau  Q).
+  eauto with mdb.
+  apply inv_nonblock_rev in H; set_solver.
++ inversion l; inversion H3; subst.
+  inversion w; try inversion l0; subst.
+  
+  assert ((exists mu, mu∈(Subset_Act.coR (g 𝟘)) )-> False).
+  intro Hexf; destruct Hexf as [mu Hexf]; destruct Hexf as [mu0 [G _]].
+  apply inv_nonmublock in G; destruct G as [q Hexf]; inversion Hexf.
+  
+  assert ( (exists pmu, pmu∈Alpha (Subset_Act.coR (g 𝟘)) )-> False).
+  intro Hexf; destruct Hexf as [pmu Hexf]; destruct Hexf as [mu [Hexf _]]; eauto.
+  
+   
+  assert (( (InputOutputActions.ActIn (x ⋉ v)))∈ (Subset_Act.coR (out x v))).
+  eexists ( (InputOutputActions.ActOut (x ⋉ v))); repeat split; eauto.   
+  apply inv_nonmublock_rev; eauto with mdb.
+  cbn. intro.
+  inversion H1; inversion H2.
+   
+  
+ 
+  assert (alpha (InputOutputActions.ActIn (x ⋉ v)) ∈ Alpha (Subset_Act.coR (out x v))).
+  eexists; split; eauto. 
+  set_solver.
+Qed.
