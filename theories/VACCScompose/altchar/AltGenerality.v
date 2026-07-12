@@ -98,3 +98,10 @@ destruct lem as [x [v [Hmueq|Hmueq]]]; inversion Hmueq; subst.
 - eapply lts_set_output_spec1 in Hlt; set_solver.
 Qed.
 
+
+
+Lemma delta_id: forall pmu,
+  𝝳ᴠᴀᴄᴄꜱ pmu = pmu.
+Proof.
+intro; destruct pmu,c; cbv; auto.
+Qed.

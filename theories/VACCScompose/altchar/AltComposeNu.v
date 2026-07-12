@@ -33,40 +33,53 @@ end.
 
 
 
-(*================ admitted stuff ================================*)
+(*==== a factoriser (existe aussi dans ctxchar) =======*)
 Lemma dual_shift: forall mu1 mu2,
   dual mu1 mu2 ->
   dual (ash mu1) (ash mu2).
-Proof. Admitted.
-
-Lemma blocking_shift: forall mu,
-  blocking mu -> blocking (ash mu).
-Proof. Admitted. 
-
-Lemma blocking_shift_rev: forall mu,
-  blocking (ash mu) -> blocking mu.
-Proof. Admitted. 
-
-
-Lemma shift_procstable_inv: forall p mu, 
-  proc_stable p (ActExt (ash mu)) ->
-  proc_stable p (ActExt mu) .
-Proof. Admitted. 
+Proof. 
+intros; cbv in H.
+destruct mu1,mu2,a0; try (exfalso; apply H); subst; cbn; auto.
+Qed.
 
 
 Lemma dual_shift_inv: forall mu1 mu2, dual mu1 (ash mu2) ->
   exists mu0, mu1 = ash mu0 /\ dual mu0 mu2.
-Proof. Admitted.
+Proof.
+intros ? ? Hdual.
+destruct (inv_mu mu1) as [x [vx lem1]].
+destruct (inv_mu mu2) as [y [vy lem2]].
+destruct lem1,lem2; inversion H; inversion H0; subst;
+cbn in *; try (exfalso; apply Hdual); subst.
+- exists ( InputOutputActions.ActIn (y ⋉ vy)); 
+  split; cbn; try rewrite Hdual; auto.
+- exists ( InputOutputActions.ActOut (y ⋉ vy)); 
+  split; cbn; try rewrite Hdual; auto.
+Qed.
+(*=====================================================*)
 
-Lemma inv_alpha: forall mu1 mu2,
-  alpha (ash mu1) = alpha mu2 -> 
-  exists mu0, mu2 = ash mu0 /\ alpha mu1 = alpha mu0 .
-Proof. Admitted. 
- 
-(*=========================================================*)
+
+
+
 
 
 (*-----------misc----------------------*)
+Lemma inv_alpha: forall mu1 mu2,
+  alpha (ash mu1) = alpha mu2 -> 
+  exists mu0, mu2 = ash mu0 /\ alpha mu1 = alpha mu0 .
+Proof.
+intros ? ? Halph.
+destruct (inv_mu mu1) as [x [vx lem1]].
+destruct (inv_mu mu2) as [y [vy lem2]].
+destruct lem1,lem2; inversion H; inversion H0; subst; cbn in *; inversion Halph; subst
+; eexists; erewrite delta_id. 
+- instantiate (1:= InputOutputActions.ActIn (x ⋉ vy)); split; cbn; auto. 
+- instantiate (1:= InputOutputActions.ActOut (x ⋉ vy)); split; cbn; auto. 
+- instantiate (1:= InputOutputActions.ActIn (x ⋉ vy)); split; cbn; auto.
+- instantiate (1:= InputOutputActions.ActOut (x ⋉ vy)); split; cbn; auto.
+Qed.
+ 
+
 Lemma nonref_nu: forall p mu, 
   ¬ (ν p) ↛[mu]  ->  ¬ p ↛[ash mu] .
 Proof.
@@ -87,6 +100,29 @@ apply lts_res_ext in Hlt.
 eauto using inv_nonmublock_rev.
 Qed.
 
+Lemma blocking_shift: forall mu,
+  blocking mu -> blocking (ash mu).
+Proof.
+intros ? Hblock. 
+destruct (inv_mu mu) as [x [v lem]].
+destruct lem; inversion H; subst; cbn in *; intro; 
+inversion H0; inversion H1; subst.
+assert (non_blocking_output (InputOutputActions.ActOut (x ⋉ v))). 
+cbv; eexists; reflexivity.
+auto.
+Qed.
+
+Lemma blocking_shift_rev: forall mu,
+  blocking (ash mu) -> blocking mu.
+Proof.
+intros ? Hblock. 
+destruct (inv_mu mu) as [x [v lem]].
+destruct lem; inversion H; subst; cbn in *; intro; 
+inversion H0; inversion H1; subst.
+assert (non_blocking_output (InputOutputActions.ActOut (VarC_add 1 x ⋉ v))). 
+cbv; eexists; reflexivity.
+auto.
+Qed.
 
 
 (*----------------trace------------------------*)

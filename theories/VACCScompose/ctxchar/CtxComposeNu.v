@@ -3,15 +3,44 @@ Require Import CtxGenerality.
 
 
 
+Notation ash mu :=  (VarC_action_add 1 mu).
 
 
 
+(*==== a factoriser (existe aussi dans altchar) =======*)
+Lemma inv_mu: forall mu:InputOutputActions.ExtAct TypeOfActions,
+  exists x v, ( ActExt mu = Linp x v) \/  
+              (ActExt mu = Lout x v)   .
+Proof.
+intros; destruct mu,a; eauto.
+Qed.
+
+Lemma dual_shift: forall mu1 mu2,
+  dual mu1 mu2 ->
+  dual (ash mu1) (ash mu2).
+Proof. 
+intros; cbv in H.
+destruct mu1,mu2,a0; try (exfalso; apply H); subst; cbn; auto.
+Qed.
+
+
+Lemma dual_shift_inv: forall mu1 mu2, dual mu1 (ash mu2) ->
+  exists mu0, mu1 = ash mu0 /\ dual mu0 mu2.
+Proof.
+intros ? ? Hdual.
+destruct (inv_mu mu1) as [x [vx lem1]].
+destruct (inv_mu mu2) as [y [vy lem2]].
+destruct lem1,lem2; inversion H; inversion H0; subst;
+cbn in *; try (exfalso; apply Hdual); subst.
+- exists ( InputOutputActions.ActIn (y ⋉ vy)); 
+  split; cbn; try rewrite Hdual; auto.
+- exists ( InputOutputActions.ActOut (y ⋉ vy)); 
+  split; cbn; try rewrite Hdual; auto.
+Qed.
 (*============== admitted properties ================*)
 
 Fixpoint shift (p:proc) : proc. Admitted.
-Notation ash mu :=  (VarC_action_add 1 mu).
 
-(*--------shift on lts -----------------*)
 
 Lemma lts_shift_mu: forall (p q:proc) mu,
   lts p (ActExt mu) q -> lts (shift p) (ActExt ( ash mu)) (shift q).
@@ -31,51 +60,6 @@ Lemma lts_shift_inv_mu: forall (p q:proc) mu,
   exists p' mu0, lts p (ActExt mu0) p' /\ q = shift p' /\ mu= ash mu0.
 Proof. Admitted.
 
-(*---------- shift  on dual predicate  --------------------*)
-Lemma dual_shift: forall mu1 mu2,
-  dual mu1 mu2 ->
-  dual (ash mu1) (ash mu2).
-Proof. 
-intros; cbv in H.
-destruct mu1,mu2,a0; try (exfalso; apply H); subst; cbn; auto.
-Qed.
-
-Lemma dual_shift_inv: forall mu1 mu2, dual mu1 (ash mu2) ->
-  exists mu0, mu1 = ash mu0 /\ dual mu0 mu2.
-Proof.
-(*
-intros. assert (dual mu1 (ash mu2)); auto; cbn in H.
-unfold ext_act_match in H.
-destruct mu1,mu2.
--  assert (exists a', ash (ActIn a0) = ActIn a' ).
-   unfold ash; destruct a0; eauto.
-  destruct H1. rewrite H1 in H. exfalso; auto.  
-- assert (exists a', ash (ActOut a0) = ActOut a' ).
-   unfold ash; destruct a0; eauto.
-   destruct H1. rewrite H1 in H; simpl in H.
-   subst.
-   rewrite H1 in H0.
-   exists (ActIn a0).
-   admit.
-- admit.
-- assert (exists a', ash (ActOut a0) = ActOut a' ). 
-   unfold ash; destruct a0; eauto.
-   destruct H1; rewrite H1 in H; exfalso; auto.
-*)
-Admitted.
-(*------------- other stuff --------------------------*)
-	
-Lemma ash_inj: forall mu1 mu2, 
-  ash mu1 = ash mu2 -> mu1=mu2.
-Proof.
-intros; unfold ash in H.
-destruct mu1,mu2,a,a0; inversion H; subst.
-cbv in H1; destruct c,c0; inversion H ; auto.
-unfold VarC_add in H1; destruct c,c0; inversion H; auto.
-Qed.
-
-
-
 Lemma good_shift: forall (e:proc), 
   good_VACCS e <-> good_VACCS (shift e).
 Proof. 
@@ -84,11 +68,19 @@ Proof.
 *) 
 Admitted.
 
-
-
-
 (*=========== new compose tentatives   ====================*)
  
+
+
+Lemma ash_inj: forall mu1 mu2,  (* maybe useless lemma *)
+  ash mu1 = ash mu2 -> mu1=mu2.
+Proof.
+intros; unfold ash in H.
+destruct mu1,mu2,a,a0; inversion H; subst.
+cbv in H1; destruct c,c0; inversion H ; auto.
+unfold VarC_add in H1; destruct c,c0; inversion H; auto.
+Qed.
+
 
 
 Lemma mp_tonu: forall (p e: proc),
