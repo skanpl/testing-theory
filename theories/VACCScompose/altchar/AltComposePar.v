@@ -4,10 +4,29 @@ Require Import AltGenerality.
 
 
 
+Notation Aout c v := (InputOutputActions.ActOut (c ⋉ v)).
+Notation Ainp c v := (InputOutputActions.ActIn (c ⋉ v)).
+Notation vact := (InputOutputActions.ExtAct TypeOfActions).
 
 
 
-(*------------weak transitions -------------*)
+
+(*============ weak transitions ==============*)
+
+Lemma lts_com: forall p p' q q' mup muq, 
+  lts p (ActExt mup) p' -> lts q (ActExt muq) q' -> 
+  dual mup muq ->
+  lts (p‖q) Ltau (p'‖q').
+Proof.
+intros ? ? ? ? ? ? Hp Hq Hdual.
+set (lemp:= inv_mu mup); set (lemq:= inv_mu muq).
+destruct lemp as [x [vx lemp]]. 
+destruct lemq as [y [vy lemq]].
+destruct lemp,lemq; inversion H0; inversion H; subst; 
+cbn in *; try (exfalso; apply Hdual); 
+inversion Hdual; subst; eauto with mdb.
+Qed.
+
 Lemma wt_parL: forall p p' q s, 
   wt p s p' -> wt (p ‖ q) s (p' ‖ q).
 Proof.
@@ -32,7 +51,63 @@ Proof.
 intros ? ? ? ? Hwt; dependent induction Hwt; eauto;
 inversion l; subst; eapply IHHwt; eauto.
 Qed.
-(*-------------- convergence ------------------*)
+
+Lemma wt_parmerge: forall p q p' q' sp sq,
+  wt p sp p' -> wt q sq q' -> 
+  wt (p‖q) (sp++sq) (p'‖q').
+Proof.
+intros ? ? ? ? ? ? Hp.
+dependent induction Hp; intros Hq; 
+cbn in *; try specialize (IHHp Hq). 
+- eauto using wt_parR.
+- eapply WeakTransitions.wt_tau; 
+  try eapply lts_parL; eauto.
+- eapply WeakTransitions.wt_act; 
+  try eapply lts_parL; eauto.
+Qed.
+ 
+Lemma wt_eventually: forall p p' mu,
+ wt p [mu] p' ->  exists p1 p2,
+ wt p [] p1  /\ lts p1 (ActExt mu) p2 /\ wt p2 [] p'.
+Proof.
+intros.
+dependent induction H.
+- specialize (IHwt _ JMeq_refl).
+  destruct IHwt as [p1 [p2 [Hq [Hlt Hp2]]]].
+  exists p1,p2; repeat split; auto.
+  eapply WeakTransitions.wt_tau; eauto.
+- exists p,q; eauto with mdb.
+Qed.
+
+
+
+
+Lemma wt_cancel: forall p q p' q' mup muq sp sq,
+  wt p (mup::sp) p' -> wt q (muq::sq) q' -> 
+  dual mup muq -> 
+  wt (p‖q) (sp++sq) (p'‖q').
+Proof. 
+intros ? ? ? ? ? ? ? ? Hwtp Hwtq Hdual.
+replace (mup::sp) with ([mup]++sp) in Hwtp; auto.
+replace (muq::sq) with ([muq]++sq) in Hwtq; auto.
+apply WeakTransitions.wt_split in Hwtp, Hwtq.
+destruct Hwtp as [p0 [Hwtp Hwtp0]].
+destruct Hwtq as [q0 [Hwtq Hwtq0]].
+apply wt_eventually in Hwtp, Hwtq.
+destruct Hwtp as [a [b [Hwtp [Hltp Hwtp2]]]].
+destruct Hwtq as [c [d [Hwtq [Hltq Hwtq2]]]].
+assert (lts (a‖c) Ltau (b‖d)) by (eapply lts_com; eauto).
+assert (wt (a‖c) [] (b‖d)) by eauto with mdb.
+assert (wt (p‖q) [] (a‖c)) by 
+  (apply (wt_parmerge _ _ _ _ [] []); eauto). 
+set (lem:=  WeakTransitions.wt_concat _ _ _ _ _ H1 H0); cbn in lem.
+assert (wt (b‖d) [] (p0‖q0)) by 
+  (apply (wt_parmerge _ _ _ _ [] []); eauto).
+set (lem2:=  WeakTransitions.wt_concat _ _ _ _ _ lem H2); cbn in lem2.
+set (finmerge:= wt_parmerge _ _ _ _ _ _ Hwtp0 Hwtq0).
+apply (WeakTransitions.wt_concat _ _ _ _ _ lem2 finmerge).
+Qed.
+(*============== convergence ===================*)
 Lemma term_parL: forall p q,  (p‖q)⤓ -> p⤓ .
 Proof.
 intros ? ? H.
@@ -66,23 +141,9 @@ intros q' Hwt.
 eapply H1; eauto with mdb.
 eauto using wt_parR.
 Qed.
-(*-------------------------------------------*)
+(*=================  zipping ===================*)
 
-Notation vact := (InputOutputActions.ExtAct TypeOfActions).
-
-(*
-Inductive zip: trace vact -> trace vact -> trace vact -> Prop :=
-| zip_nil: zip [] [] []
-| zip_consL: forall s s1 s2 mu,
-    zip s s1 s2 -> zip (mu::s) (mu::s1) s2 
-| zip_consR: forall s s1 s2 mu,
-    zip s s1 s2 -> zip (mu::s) s1 (mu::s2) 
-| zip_consLR: forall s s1 s2 mu1 mu2,
-    zip s s1 s2 -> dual mu1 mu2 -> 
-    zip s (mu1::s1) (mu2::s2) 
-.
-*)
-
+ 
 Inductive zip: trace vact -> trace vact -> trace vact -> Prop :=
 | zip_nil: zip [] [] []
 | zip_consL: forall s s1 s2 mu,
@@ -97,7 +158,7 @@ Inductive zip: trace vact -> trace vact -> trace vact -> Prop :=
 Hint Constructors zip:mdb.
 
 
-
+(*----- basic zipping properties ------*)
 Lemma zip_idL: forall s, zip s s [].
 Proof. 
 induction s; eauto with mdb.
@@ -114,21 +175,17 @@ intros.
 destruct mu1,mu2,a,a0; cbn; eauto with mdb.
 Qed.
 
-
 Lemma zip_commut: forall s s1 s2, 
   zip s s1 s2 -> zip s s2 s1.
 Proof.
 intros ? ? ? Hzip; induction Hzip; eauto with mdb.
 apply zip_consLR; eauto using dual_commut.
 Qed.
+(*----- lemmes fondamentaux du zipping  -----*)
 
-
-Notation Aout c v := (InputOutputActions.ActOut (c ⋉ v)).
-Notation Ainp c v := (InputOutputActions.ActIn (c ⋉ v)).
-
-
-Lemma zip_wt: forall (p q p' q':proc) s,
-  wt (p‖q) s (p'‖q')  -> exists s1 s2, 
+Lemma unzip_wt: forall (p q p' q':proc) s,
+  wt (p‖q) s (p'‖q')  -> 
+  exists s1 s2, 
   zip s s1 s2 /\ wt p s1 p' /\  wt q s2 q'. 
 Proof.
 intros ? ? ? ? ? Hwt. 
@@ -154,235 +211,227 @@ dependent induction Hwt.
   + exists s1,(μ::s2); eauto with mdb.
 Qed.
 
-
-Lemma wt_compose_par: forall p q p' q',
-  wt p [] p' -> wt q [] q' -> 
-  wt (p‖q) [] (p'‖q').
-Proof.
-intros ? ? ? ? Hp.
-dependent induction Hp; intros Hq; inversion Hq; 
-eauto with mdb; subst.
-eauto using wt_parR. 
-eapply WeakTransitions.wt_tau; try eapply lts_parL; eauto.
-eapply WeakTransitions.wt_tau; try eapply lts_parL; eauto.
-Qed.
-
-
-Lemma lts_com: forall p p' q q' mup muq, 
-  lts p (ActExt mup) p' -> lts q (ActExt muq) q' -> 
-  dual mup muq ->
-  lts (p‖q) Ltau (p'‖q').
-Proof.
-intros ? ? ? ? ? ? Hp Hq Hdual.
-set (lemp:= inv_mu mup); set (lemq:= inv_mu muq).
-destruct lemp as [x [vx lemp]]. 
-destruct lemq as [y [vy lemq]].
-destruct lemp,lemq; inversion H0; inversion H; subst; 
-cbn in *; try (exfalso; apply Hdual); 
-inversion Hdual; subst; eauto with mdb.
-Qed.
-(*
-Lemma wt_cancel: forall p q p' q' mup muq sp sq,
-  wt p (mup::sp) p' -> wt q (muq::sq) q' -> 
-  dual mup muq -> 
-  wt (p‖q) (sp++sq) (p'‖q').
-Proof.
-intros ? ? ? ? ? ? ? ? Hp Hq Hdual.
-inversion Hp; inversion Hq; subst. 
-- admit.
-- admit.
-- admit.
-- set (lem:= lts_com _ _ _ _ _ _ l l0 Hdual).
-*) 
-
-
-
-Lemma wt_parmerge: forall p q p' q' sp sq,
-  wt p sp p' -> wt q sq q' -> 
-  wt (p‖q) (sp++sq) (p'‖q').
-Proof.
-intros ? ? ? ? ? ? Hp.
-dependent induction Hp; intros Hq; 
-cbn in *; try specialize (IHHp Hq). 
-- eauto using wt_parR.
-- eapply WeakTransitions.wt_tau; 
-  try eapply lts_parL; eauto.
-- eapply WeakTransitions.wt_act; 
-  try eapply lts_parL; eauto.
-Qed.
  
-
-
-Lemma wt_cancel_later: forall q q' p p' mup muq s,
-  lts p (ActExt mup) p' -> wt q (muq:: s) q'-> 
-  dual mup muq ->
-  wt (p‖q) s (p'‖q').
-Proof.
-intros ? ? ? ? ? ? ? Hlt Hwt Hdual.
-dependent induction Hwt.
-- eapply WeakTransitions.wt_tau; 
-  try eapply lts_parR; eauto.
-- set (lem1:= lts_com _ _ _ _ _ _ Hlt l Hdual).
-  set (lem2:= wt_parR p' _ _ _ Hwt).
-  eauto with mdb.
-Qed.
-
- 
-
-
-Lemma wt_eventually: forall p p' mu,
- wt p [mu] p' ->  exists p1 p2,
- wt p [] p1  /\ lts p1 (ActExt mu) p2 /\ wt p2 [] p'.
-Proof.
-intros.
-dependent induction H.
-- specialize (IHwt _ JMeq_refl).
-  destruct IHwt as [p1 [p2 [Hq [Hlt Hp2]]]].
-  exists p1,p2; repeat split; auto.
-  eapply WeakTransitions.wt_tau; eauto.
-- exists p,q; eauto with mdb.
-Qed.
-
-Lemma wt_cancel: forall p q p' q' mup muq sp sq,
-  wt p (mup::sp) p' -> wt q (muq::sq) q' -> 
-  dual mup muq -> 
-  wt (p‖q) (sp++sq) (p'‖q').
-Proof.
-induction sp.
-- intros; cbn.
-  inversion H; subst.
-  + set (lem:= wt_eventually _ _ _ H).
-    destruct lem as [p1 [p2 [Hp [Hlt Hp2]]]].
-    set (lem:= wt_cancel_later _ _ _ _ _ _ _ Hlt H0 H1).
-    set (lempar:= wt_parL _ _ q _ Hp).
-    set (lempar2:= wt_parL _ _ q' _ Hp2). 
-    set (lemconc:=  WeakTransitions.wt_concat  _ _ _ _ _ lempar lem).
-    cbn in *.
-    set (lemconc2:=  WeakTransitions.wt_concat  _ _ _ _ _ lemconc lempar2).
-    replace (sq ++ []) with sq in lemconc2; try rewrite app_nil_r; auto. 
-  + set (lem:= wt_cancel_later _ _ _ _ _ _ _ l H0 H1).
-    set (lempar:= wt_parL _ _ q' _ w).  
-    set (lemconc:= WeakTransitions.wt_concat _ _ _ _ _ lem lempar).
-    replace (sq ++ []) with sq in lemconc; try rewrite app_nil_r; auto.
-- intros ? Hp Hq Hdual; cbn.
- Admitted.
-
-
-
-
-Lemma zip_wt_rev: forall (p q p' q':proc) s s1 s2,
+Lemma zip_wt: forall (p q p' q':proc) s s1 s2,
   zip s s1 s2 -> wt p s1 p' ->  wt q s2 q' ->
   wt (p‖q) s (p'‖q'). 
 Proof.
-induction s; intros ? ? Hzip Hp Hq.
-- inversion Hzip; subst.
-  + inversion Hp; inversion Hq; subst;
-    eauto using wt_parR; eauto using wt_parL;
-    eauto using wt_compose_par.
-  + 
+intros ? ? ? ? ? ? ? Hzip. 
+revert p q p' q'.
+dependent induction Hzip; intros ? ? ? ?  Hp Hq.
+- eapply (wt_parmerge _ _ _ _ _ _ Hp Hq).
+- replace (mu::s1) with ([mu]++s1) in Hp; auto.
+  apply WeakTransitions.wt_split in Hp.
+  destruct Hp as [a [Hp Ha]].
+  specialize (IHHzip _ _ _ _ Ha Hq).
+  assert (wt q [] q) by eauto with mdb.
+  set (lem:= wt_parmerge _ _ _ _ _ _ Hp H); cbn in lem.
+  apply (WeakTransitions.wt_concat _ _ _ _ _ lem IHHzip).
+- replace (mu::s2) with ([mu]++s2) in Hq; auto.
+  apply WeakTransitions.wt_split in Hq.
+  destruct Hq as [a [Hq Ha]].
+  specialize (IHHzip _ _ _ _ Hp Ha).
+  assert (wt p [] p) by eauto with mdb.
+  set (lem:= wt_parmerge _ _ _ _ _ _ H Hq); cbn in lem.
+  apply (WeakTransitions.wt_concat _ _ _ _ _ lem IHHzip). 
+- replace (mu1::s1) with ([mu1]++s1) in Hp; auto.
+  replace (mu2::s2) with ([mu2]++s2) in Hq; auto.
+  apply WeakTransitions.wt_split in Hp, Hq.
+  destruct Hp as [p0 [Hp Hp0]].
+  destruct Hq as [q0 [Hq Hq0]].
+  specialize (IHHzip _ _ _ _ Hp0 Hq0).
+  set (lem:= wt_cancel _ _ _ _ _ _ _ _ Hp Hq H); cbn in lem. 
+  apply (WeakTransitions.wt_concat _ _ _ _ _ lem IHHzip).
+Qed.
+(*============= tentative avec nocom ========================*)
+
+Definition ewt p s := exists q, wt p s q.
+
+Definition nocom p q := forall s1 s2 s1' s2' mup muq,
+  ewt p (s1++[mup]++s2) -> ewt q (s1'++[muq]++s2') ->
+   ~ dual mup muq . 
 
 
-- 
-
-
-
-
-
-
-Lemma zip_wt_rev: forall (p q p' q':proc) s s1 s2,
-  zip s s1 s2 -> wt p s1 p' ->  wt q s2 q' ->
-  wt (p‖q) s (p'‖q'). 
+Lemma exitst_wt: forall p p' mu,
+  lts p (ActExt mu) p' -> ewt p [mu] .
 Proof.
-intros ? ? ? ? ? ? ? Hzip.
-dependent induction Hzip; intros Hp Hq.
-- inversion Hp; inversion Hq; subst; 
-  eauto using wt_parR; eauto using wt_parL;
-  eauto using wt_compose_par.
-- 
+unfold ewt; eauto with mdb.
+Qed.
 
-  (*
-  apply (wt_parL _ _ q) in Hp.
-  apply (wt_parR p') in Hq.
-  set (lem := WeakTransitions.wt_concat).
-  specialize (lem _ _ _ _ _ Hp Hq); cbn in lem. 
-  *)
+Lemma ewt_later: forall p p' s,
+  lts p Ltau p' -> ewt p' s -> ewt p s.
+unfold ewt; intros ? ? ? ? Hew.
+destruct Hew; eauto with mdb.
+Qed.
+
  
-destruct Hex as [s1 [s2 [Hzip [Hwtp Hwtq]]]].
+Lemma nocom_ltL: forall p p' q, nocom p q -> 
+  lts p Ltau p'  -> nocom p' q.
+Proof.
+unfold nocom; intros ? ? ? Hnc Hlt.
+intros ? ? ? ? ? ? Hewp Hewq.
+set (lem:= ewt_later _ _ _ Hlt Hewp); eauto.
+Qed.
+
+Lemma nocom_ltR: forall p q q', nocom p q -> 
+  lts q Ltau q'  -> nocom p q'.
+Proof.
+unfold nocom; intros ? ? ? Hnc Hlt.
+intros ? ? ? ? ? ? Hewp Hewq.
+set (lem:= ewt_later _ _ _ Hlt Hewq); eauto.
+Qed.
+
+
+
+Lemma nocom_lt: forall p q P, 
+  lts (p‖q) Ltau P -> nocom p q ->
+  (exists p', lts p Ltau p' /\ P=p'‖q) \/ 
+  (exists q', lts q Ltau q'/\ P=p‖q')  .
+Proof.
+intros ? ? ? Hlt Hnc.
+inversion Hlt; subst; eauto; 
+assert (dual (Aout c v) (Ainp c v)) by (cbv; auto);  
+apply exitst_wt in H1, H2;
+replace [Aout c v] with ([]++[Aout c v]++[]) in H1 by auto; 
+replace [Ainp c v] with ([]++[Ainp c v]++[]) in H2 by auto; 
+try specialize (Hnc _ _ _ _ _ _ H1 H2); 
+try specialize (Hnc _ _ _ _ _ _ H2 H1); exfalso; eauto.
+Qed.
+
+
+
+ 
 
 
 
 
 
-    
+
 (*
-Lemma term_zip: forall p s1 s2,
-  p⤓ -> zip [] s1 s2 -> p⇓s1.
+Lemma forced_term: forall p q,  
+  p⤓ -> q⤓ -> nocom p q -> 
+  (p‖q)⤓.
 Proof.
-intros ? ? ? Hterm; induction Hterm.
-intro Hzip; induction Hzip; eauto with mdb.
-- destruct s1.
-- 
+intros ? ?  Hterp Hterq Hnc. 
+dependent induction Hterp.
+constructor; intros ? Hlt; inversion Hlt; subst.
+- unfold nocom in Hnc. 
+  apply exitst_wt in H3, H4.
+  replace [Aout c v] with ([]++[Aout c v]++[]) in H3; auto.
+  replace [Ainp c v] with ([]++[Ainp c v]++[]) in H4; auto.
+  assert (dual (Aout c v) (Ainp c v)) by (cbv; auto). 
+  specialize (Hnc _ _ _ _ _ _ H3 H4).
+  exfalso; auto.
+- unfold nocom in Hnc. 
+  apply exitst_wt in H3, H4.
+  replace [Aout c v] with ([]++[Aout c v]++[]) in H3; auto.
+  replace [Ainp c v] with ([]++[Ainp c v]++[]) in H4; auto.
+  assert (dual (Aout c v) (Ainp c v)) by (cbv; auto). 
+  specialize (Hnc _ _ _ _ _ _ H4 H3).
+  exfalso; auto.
+- constructor; intros P Hlt2.
+  set (lem:= nocom_ltL _ _ _ Hnc H5).
+  specialize (H0 _ H5 Hterq lem); inversion H0.
+  apply H1; eauto.
+ 
+
+Lemma forced_cnv: forall p q s,
+  p⇓s -> q⇓s -> nocom p q -> 
+  (p‖q)⇓s.
+Proof.
+dependent induction s; intros Hcnvp Hcnvq Hnc.
+- inversion Hcnvq.
+
+*)
+(*=====================================================*)
 
 
-Lemma cnv_zip: forall p s s1 s2, 
-  p⇓s -> zip s s1 s2 -> p⇓s1.
+
+
+ 
+
+
+
+ 
+(*
+Lemma cnv_zip: forall p q s s1 s2,
+   (p‖q)⇓s -> zip s s1 s2 -> p⇓s1 .
 Proof.
-intros ? ? ? ? Hcnv Hzip; induction Hcnv; eauto with mdb.
-- destruct s1,s2; inversion Hzip; subst; eauto with mdb.
-  constructor; auto.
+intros ? ? ? ? ? Hcnv Hzip.
+dependent induction Hzip; inversion Hcnv; subst.
+- apply term_parL in H; eauto with mdb.
+- constructor; apply term_parL in H2; eauto with mdb.
   intros p' Hwt. 
-*)  
+  apply (wt_parL _ _ q _ ) in Hwt.  
+  specialize (H3 _ Hwt).
+
+
+Lemma cnv_zip: forall p q s s1 s2,
+   (p‖q)⇓s -> zip s s1 s2 -> p⇓s1 .
+Proof.
+intros ? ? ? ? ? Hcnv Hzip.
+dependent induction Hcnv.
+- inversion Hzip; apply term_parL in H; 
+  try econstructor; eauto with mdb.
+  intros p' Hwt; subst.
+*)
+ 
+(*==================================================*)
 
 
 
-
-
-
-
-(*
-(* gtrace= generalized trace *)
 CoInductive gtrace {A:Type} :=
 | gnil
 | gcons (x:A) (xs:gtrace)  .
-
-(* vact= visible action *)
-Notation vact := (InputOutputActions.ExtAct TypeOfActions).
 Notation "x :: xs" := (gcons x xs).        
 Notation "[]" := gnil.        
 
 
-(* tts= trace transition system *)
-CoInductive tts: proc -> gtrace -> Prop :=
-| tts_nil: forall p, tts p gnil
-| tts_cons: forall p p' mu s, 
-    lts p mu p' -> tts p' s -> tts p' (mu::s). 
 
-CoInductive zip: gtrace -> gtrace -> gtrace -> Prop :=
-| zip_nil: zip [] [] []
-| zip_consL: forall s s1 s2 mu,
-    zip s s1 s2 -> zip (mu::s) (mu::s1) s2 
-| zip_consR: forall s s1 s2 mu,
-    zip s s1 s2 -> zip (mu::s) s1 (mu::s2) 
-| zip_consLR: forall s s1 s2 mu1 mu2,
-    zip s s1 s2 -> dual mu1 mu2 -> 
-    zip s (mu1::s1) (mu2::s2) 
+CoInductive tts: proc -> gtrace -> Prop :=
+| tts_cons: forall p p' mu s, 
+    lts p (ActExt mu) p' -> tts p' s -> tts p (mu:: s). 
+
+CoInductive div: proc -> Prop :=
+| div_gen: forall p p',
+   lts p Ltau p' -> div p -> div p'
+| div_parL: forall p q,
+   div p -> div (p‖q)
+| div_parR: forall p q,
+   div q -> div (p‖q).
+ 
+
+CoInductive cozip: gtrace -> gtrace -> gtrace -> Prop :=
+| cozip_nil: cozip [] [] []
+| cozip_consL: forall s s1 s2 mu,
+    cozip s s1 s2 -> cozip (mu::s) (mu::s1) s2 
+| cozip_consR: forall s s1 s2 mu,
+    cozip s s1 s2 -> cozip (mu::s) s1 (mu::s2) 
+| cozip_consLR: forall s s1 s2 mu1 mu2,
+    cozip s s1 s2 -> dual mu1 mu2 -> 
+    cozip s (mu1::s1) (mu2::s2) 
 .
 
-(*
-(* basically the definition of cnv but declared as coinductive*)
-CoInductive gcnv: proc -> gtrace -> Prop :=
-| cnv_nil : forall p,  p ⤓ -> gcnv p []
-| cnv_act : forall p mu s,
-    p ⤓ -> (forall q, wt p [mu] q -> gcnv q s) -> 
-    gcnv p (mu::s).
-Notation "p ⇓ s" := (cocnv p s).
-*)
-Hint Constructors  zip tts gtrace: mdb.
+ 
 
 
-Lemma cocnv_parL: forall p q (s:gtrace), (p‖q)⇓s -> p⇓s.
+Lemma zip_lt: forall p q s1 s2, 
+  cozip [] s1 s2 -> tts p s1 -> tts q s2 ->
+  exists Q, lts (p‖q) Ltau Q.
 Proof.
-intros ? ? ? Hcocnv.
+intros ? ? ? ? Hcoz Hp Hq.
+inversion Hp; inversion Hq; inversion Hcoz; subst.
+- inversion H8.
+- inversion H10; inversion H11; subst.
+  clear H10 H11. clear Hcoz.
+  set (lem:= lts_com _ _ _ _ _ _ H H3 H8). 
+  eexists. apply lem.
+Qed.
 
-*)
+
+
+
+ 
+
+
 

@@ -105,3 +105,42 @@ Lemma delta_id: forall pmu,
 Proof.
 intro; destruct pmu,c; cbv; auto.
 Qed.
+
+
+
+Lemma extend_to_stable: forall p,
+  p⤓ -> exists p', 
+  wt p [] p' /\  (forall q, lts p' Ltau q -> False).  
+Proof.
+intros ? Hter.
+dependent induction Hter.
+set (decp:= proc_stable_dec p Ltau).
+destruct decp as [decp| decp];
+unfold proc_stable in decp; cbn in decp.
+- exists p; split; eauto with mdb.
+  intros p' Hlt. 
+  set (lem:= lts_set_tau_spec1 _ _ Hlt).
+  set_solver.
+- set (empdec:= set_choose_or_empty (lts_set_tau p)).
+  destruct empdec as [empdec|empdec]; try set_solver.
+  destruct empdec as [p' Hlt].
+  apply lts_set_tau_spec0 in Hlt.
+  specialize (H0 _ Hlt). 
+  destruct H0 as [q [Hwt Href]].
+  eauto with mdb.
+Qed.
+
+
+Lemma extend_to_stable_trace: forall p p0 s,
+  p⇓s -> wt p s p0 -> exists p', 
+  wt p s p' /\  (forall q, lts p' Ltau q -> False).  
+Proof.
+intros ? ? ? Hcnv.
+dependent induction Hcnv; eauto using extend_to_stable. 
+intro Hwt; replace (μ :: s) with ([μ]++s) in Hwt; auto.
+apply WeakTransitions.wt_split in Hwt.
+destruct Hwt as [q [Hp Hq]].
+specialize (H1 _ Hp Hq); destruct H1 as [p' [Hq2 Href]].
+set (lem:= WeakTransitions.wt_concat _ _ _ _ _ Hp Hq2); 
+eauto.
+Qed.
