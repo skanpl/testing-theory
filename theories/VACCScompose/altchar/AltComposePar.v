@@ -298,51 +298,112 @@ try specialize (Hnc _ _ _ _ _ _ H1 H2);
 try specialize (Hnc _ _ _ _ _ _ H2 H1); exfalso; eauto.
 Qed.
 
-
-
- 
-
+  
 
 
 
+Lemma ltau_dec: forall p,
+  (exists p', lts p Ltau p') \/ 
+  (forall p', lts p Ltau p' -> False).
+Proof.
+intros; set (decp:= proc_stable_dec p Ltau); 
+destruct decp as [decp| decp];
+unfold proc_stable in decp; cbn in decp.
+- right; intros ? H; set (lem:= lts_set_tau_spec1 _ _ H); set_solver.
+- left; set (empdec:= set_choose_or_empty (lts_set_tau p)).
+  destruct empdec as [empdec|empdec]; try set_solver.
+  set (lem:= lts_set_tau_spec0); set_solver.
+Qed.
+
+Lemma ref_exf: forall p p', 
+  p ↛ -> lts p Ltau p' -> False.
+Proof.
+intros; inversion H.
+eapply lts_set_tau_spec1 in H0; set_solver.
+Qed.
 
 
-(*
-Lemma forced_term: forall p q,  
-  p⤓ -> q⤓ -> nocom p q -> 
+
+Lemma one_sided_cnv: forall p q,  
+  q ⤓ -> p ↛ -> nocom p q -> (p‖q)⤓.
+Proof.
+intros ? ? Hqter; revert p.
+dependent induction Hqter.
+intros; constructor; intros ? Hlt.
+set (lem:= nocom_lt _ _ _ Hlt H2).
+destruct lem as [lem|lem].
+- destruct lem as [p' [Hlt2 Heq]]; subst.
+  exfalso; apply (ref_exf _ p') in H1; auto.
+- destruct lem as [p' [Hlt2 Heq]]; subst. 
+  specialize (H0 _ Hlt2 _ H1).
+  eapply H0, nocom_ltR; eauto.
+Qed.
+
+
+
+(* this lemma was a lot of frustration *)
+Lemma forced_termi: forall p q,   
+  terminate_i p -> q⤓ -> nocom p q -> 
   (p‖q)⤓.
 Proof.
-intros ? ?  Hterp Hterq Hnc. 
+intros ? ? Hterp. 
+generalize dependent q. 
 dependent induction Hterp.
-constructor; intros ? Hlt; inversion Hlt; subst.
-- unfold nocom in Hnc. 
-  apply exitst_wt in H3, H4.
-  replace [Aout c v] with ([]++[Aout c v]++[]) in H3; auto.
-  replace [Ainp c v] with ([]++[Ainp c v]++[]) in H4; auto.
-  assert (dual (Aout c v) (Ainp c v)) by (cbv; auto). 
-  specialize (Hnc _ _ _ _ _ _ H3 H4).
-  exfalso; auto.
-- unfold nocom in Hnc. 
-  apply exitst_wt in H3, H4.
-  replace [Aout c v] with ([]++[Aout c v]++[]) in H3; auto.
-  replace [Ainp c v] with ([]++[Ainp c v]++[]) in H4; auto.
-  assert (dual (Aout c v) (Ainp c v)) by (cbv; auto). 
-  specialize (Hnc _ _ _ _ _ _ H4 H3).
-  exfalso; auto.
-- constructor; intros P Hlt2.
-  set (lem:= nocom_ltL _ _ _ Hnc H5).
-  specialize (H0 _ H5 Hterq lem); inversion H0.
-  apply H1; eauto.
- 
+- eauto using one_sided_cnv.
+- destruct H as [p' Hp]. 
+  intros ? Hterq Hnc.
+  constructor. intros P Hlt.
+  destruct (nocom_lt _ _ _ Hlt Hnc) as 
+   [ [p2 [Hlt0 Heq]]| [q' [Hlt0 Heq]]]; subst.
+  + specialize (H1 _ Hlt0 _ Hterq (nocom_ltL _ _ _ Hnc Hlt0)); auto.
+  + dependent induction Hterq.
+    constructor. intros ? Hlt2.
+    set (lem:= nocom_ltR _ _ _  Hnc Hlt0).
+    destruct (nocom_lt _ _ _ Hlt2 lem). 
+    * destruct H3 as [pp [Hpp Heq]]; subst.
+      assert (q' ⤓); eauto with mdb.
+      specialize (H1 _ Hpp _ H3).
+      apply H1.
+      set (lemm:= nocom_ltL _ _ _  Hnc Hpp).
+      set (lemmm:= nocom_ltR _ _ _  lemm Hlt0).
+      auto.
+    * destruct H3 as [pp [Hpp Heq]]; subst.
+      specialize (H2 _ Hlt0).
+      set (lemm:= nocom_ltR _ _ _  Hnc Hlt0).
+      specialize (H2 lemm pp).
+      assert (lts (p ‖ q') Ltau (p ‖ pp)); eauto with mdb.
+Qed.
+Lemma forced_term: forall p q,   
+  p⤓ -> q⤓ -> nocom p q -> 
+  (p‖q)⤓.
+intros.
+apply terminate_to_terminate_i in H.
+eauto using forced_termi.
+Qed.
 
+
+ 
 Lemma forced_cnv: forall p q s,
   p⇓s -> q⇓s -> nocom p q -> 
   (p‖q)⇓s.
 Proof.
-dependent induction s; intros Hcnvp Hcnvq Hnc.
-- inversion Hcnvq.
+intros ? ? ?. revert p q.
+dependent induction s; intros ? ? Hcnvp Hcnvq Hnc.
+- inversion Hcnvp; inversion Hcnvq; 
+  constructor; eauto using forced_term.
+- specialize (IHs _ eq_refl JMeq_refl); constructor.
+  + inversion Hcnvp; inversion Hcnvq;
+    eauto using forced_term.
+  + intros P Hwt.
+    set (leminv:= wt_invpar _ _ _ _ Hwt). 
+    destruct leminv as [p' [q' Heq]]; subst.
+    apply unzip_wt in Hwt.
+    destruct Hwt as [sp [sq [Hzip [Hp Hq]]]].
+    inversion Hzip; subst.
+Admitted.
 
-*)
+
+
 (*=====================================================*)
 
 
