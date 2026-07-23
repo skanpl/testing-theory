@@ -383,6 +383,8 @@ Qed.
 
 
  
+
+(*it's actually false'
 Lemma forced_cnv: forall p q s,
   p⇓s -> q⇓s -> nocom p q -> 
   (p‖q)⇓s.
@@ -400,8 +402,31 @@ dependent induction s; intros ? ? Hcnvp Hcnvq Hnc.
     apply unzip_wt in Hwt.
     destruct Hwt as [sp [sq [Hzip [Hp Hq]]]].
     inversion Hzip; subst.
-Admitted.
+    * (*__________________________________________________*)
+      inversion H3; subst.
+      ** assert (p'⇓s); inversion Hcnvp; auto; subst.
+         clear H4 H5.
+         
+        
 
+
+(*__________________________________________________*)      
+      ** unfold nocom in Hnc; exfalso; eapply Hnc; try eexists; 
+         replace (wt p (a::mu1 :: s2) p') with 
+           (wt p ([a]++[mu1]++ s2) p') in Hp; 
+         replace (wt q (mu2 :: s3) q') with 
+           (wt q ([]++[mu2]++ s3) q') in Hq; eauto.
+   
+    * admit.
+    * unfold nocom in Hnc; exfalso; eapply Hnc; try eexists; 
+      replace (wt p (mu1 :: s1) p') with 
+        (wt p ([]++[mu1]++ s1) p') in Hp; 
+      replace (wt q (mu2 :: s2) q') with 
+        (wt q ([]++[mu2]++ s2) q') in Hq; eauto.
+       
+
+Admitted.
+*)
 
 
 (*=====================================================*)
