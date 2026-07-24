@@ -281,7 +281,35 @@ intros ? ? ? ? ? ? Hewp Hewq.
 set (lem:= ewt_later _ _ _ Hlt Hewq); eauto.
 Qed.
 
+Lemma nocom_wtL: forall p p' q s, nocom p q ->
+  wt p s p' -> nocom p' q.
+Proof.
+unfold nocom; intros ? ? ? ? Hnc Hwt.
+intros ? ? ? ? ? ? Hewp Hewq.
+unfold ewt in Hewp.
+destruct Hewp as [p'' Hp'].
+set (lem:= WeakTransitions.wt_concat _ _ _ _ _ Hwt Hp'). 
+replace (s ++ s1 ++ [mup] ++ s2) with 
+  ((s ++ s1) ++ [mup] ++ s2) in lem by 
+  (cbn; rewrite app_assoc; auto).
+assert (ewt p ((s ++ s1) ++ [mup] ++ s2)) by (eexists; eauto).
+eapply Hnc; eauto.
+Qed.
 
+Lemma nocom_wtR: forall p q q' s, nocom p q ->
+  wt q s q' -> nocom p q'.
+Proof.
+unfold nocom; intros ? ? ? ? Hnc Hwt.
+intros ? ? ? ? ? ? Hewp Hewq.
+unfold ewt in Hewq.
+destruct Hewq as [q'' Hq'].
+set (lem:= WeakTransitions.wt_concat _ _ _ _ _ Hwt Hq'). 
+replace (s ++ s1' ++ [muq] ++ s2') with 
+  ((s ++ s1') ++ [muq] ++ s2') in lem by 
+  (cbn; rewrite app_assoc; auto).
+assert (ewt q ((s ++ s1') ++ [muq] ++ s2')) by (eexists; eauto).
+eapply Hnc; eauto.
+Qed.
 
 Lemma nocom_lt: forall p q P, 
   lts (p‖q) Ltau P -> nocom p q ->
@@ -373,61 +401,146 @@ dependent induction Hterp.
       specialize (H2 lemm pp).
       assert (lts (p ‖ q') Ltau (p ‖ pp)); eauto with mdb.
 Qed.
+
 Lemma forced_term: forall p q,   
   p⤓ -> q⤓ -> nocom p q -> 
   (p‖q)⤓.
+Proof.
 intros.
 apply terminate_to_terminate_i in H.
 eauto using forced_termi.
 Qed.
 
+Lemma cnv_impl_ter: forall p s,
+  p⇓s -> p⤓.
+Proof.
+intros; induction s; 
+inversion H; eauto with mdb.
+Qed.
+
+Lemma zip_cons: forall a s,
+  zip (a::s) [a] s.
+Proof.
+intros; eapply zip_consL; 
+eauto using zip_idR.
+Qed.
 
  
 
-(*it's actually false'
-Lemma forced_cnv: forall p q s,
-  p⇓s -> q⇓s -> nocom p q -> 
-  (p‖q)⇓s.
+Lemma forced_cnv: forall s p q,
+  (forall s1 s2, zip s s1 s2 -> p⇓s1 /\ q⇓s2) -> 
+  nocom p q -> (p‖q)⇓s.
 Proof.
-intros ? ? ?. revert p q.
-dependent induction s; intros ? ? Hcnvp Hcnvq Hnc.
-- inversion Hcnvp; inversion Hcnvq; 
-  constructor; eauto using forced_term.
-- specialize (IHs _ eq_refl JMeq_refl); constructor.
-  + inversion Hcnvp; inversion Hcnvq;
+intro s.
+dependent induction s; intros ? ? Hzc Hnc.
+- constructor; assert (zip [] [] []) by constructor.
+  destruct (Hzc _ _ H) as [Hp Hq]; 
+  inversion Hp; inversion Hq; 
+  eauto using forced_term.
+- specialize (IHs _ eq_refl JMeq_refl).
+  constructor.
+  + set (lem:= zip_cons a s); 
+    specialize (Hzc _ _ lem); 
+    destruct Hzc as [Hp Hq].
+    apply cnv_impl_ter in Hp,Hq; 
     eauto using forced_term.
   + intros P Hwt.
-    set (leminv:= wt_invpar _ _ _ _ Hwt). 
-    destruct leminv as [p' [q' Heq]]; subst.
+    set (lem:= wt_invpar _ _ _ _ Hwt).
+    destruct lem as [p' [q' Heq]]; subst.
+     
+    assert (forall s1 s2, zip s s1 s2 → p⇓s1 ∧ q⇓s2).
+    apply unzip_wt in Hwt.
+    destruct Hwt as [s1 [s2 [Hzip [Hp Hq]]]].
+    intros se sf Hzef.
+    assert (p⇓a::se ∧ q⇓sf) by (apply Hzc; constructor; auto).
+    assert (p⇓se ∧ q⇓a::sf) by (apply Hzc; constructor; auto).
+    destruct H as [pase qsf]; destruct H0 as [pse qasf]; eauto.
+    set (lem:= IHs _ _ H Hnc).
     apply unzip_wt in Hwt.
     destruct Hwt as [sp [sq [Hzip [Hp Hq]]]].
     inversion Hzip; subst.
-    * (*__________________________________________________*)
-      inversion H3; subst.
-      ** assert (p'⇓s); inversion Hcnvp; auto; subst.
-         clear H4 H5.
-         
-        
+    * assert (s1=[]). 
+      inversion H4; subst; auto; unfold nocom in Hnc.
+      exfalso; eapply Hnc; unfold ewt; try eexists; 
+      replace (a :: mu1 :: s2) with ([a]++[mu1]++s2) in Hp;
+      replace (mu2::s3) with ([]++[mu2]++s3) in Hq; eauto. 
+      subst; inversion H4; subst.
 
+      assert (forall s1 s2, zip s s1 s2 → p'⇓s1 ∧ q'⇓s2).
+      intros se sf Hzef.
+      assert (p⇓a::se ∧ q⇓sf) by (apply Hzc; constructor; auto).
+      destruct H0 as [Hpase Hqsf]; split.
+      eauto using cnv_preserved_by_wt_act.
+      eauto using cnv_preserved_by_wt_nil.
+      set (lem0:= nocom_wtL _ _ _ _ Hnc Hp). 
+      set (lemm:= nocom_wtR _ _ _ _ lem0 Hq); auto.
+    *  assert (s2=[]). 
+      inversion H4; subst; auto; unfold nocom in Hnc.
+      exfalso; eapply Hnc; unfold ewt; try eexists; 
+      replace (mu1 :: s1) with ([]++[mu1]++s1) in Hp;
+      replace (a::mu2::s3) with ([a]++[mu2]++s3) in Hq; eauto. 
+      subst; inversion H4; subst.
 
-(*__________________________________________________*)      
-      ** unfold nocom in Hnc; exfalso; eapply Hnc; try eexists; 
-         replace (wt p (a::mu1 :: s2) p') with 
-           (wt p ([a]++[mu1]++ s2) p') in Hp; 
-         replace (wt q (mu2 :: s3) q') with 
-           (wt q ([]++[mu2]++ s3) q') in Hq; eauto.
-   
-    * admit.
+      assert (forall s1 s2, zip s s1 s2 → p'⇓s1 ∧ q'⇓s2).
+      intros se sf Hzef.
+      assert (p⇓se ∧ q⇓a::sf) by (apply Hzc; constructor; auto).
+      destruct H0 as [Hpse Hqasf]; split.
+      eauto using cnv_preserved_by_wt_nil.
+      eauto using cnv_preserved_by_wt_act.
+      set (lem0:= nocom_wtL _ _ _ _ Hnc Hp). 
+      set (lemm:= nocom_wtR _ _ _ _ lem0 Hq); auto.
     * unfold nocom in Hnc; exfalso; eapply Hnc; try eexists; 
-      replace (wt p (mu1 :: s1) p') with 
-        (wt p ([]++[mu1]++ s1) p') in Hp; 
-      replace (wt q (mu2 :: s2) q') with 
-        (wt q ([]++[mu2]++ s2) q') in Hq; eauto.
+         replace (wt p (mu1 :: s1) p') with 
+           (wt p ([]++[mu1]++ s1) p') in Hp; 
+         replace (wt q (mu2 :: s2) q') with 
+           (wt q ([]++[mu2]++ s2) q') in Hq; eauto.
+Qed.
+
        
 
-Admitted.
+
+Lemma cnv_zip: forall p q s,
+  (p‖q)⇓s -> nocom p q -> forall s1 s2, zip s s1 s2 ->  
+  p⇓s1 /\ q⇓s2 .
+Proof.
+intros ? ? ?; revert p q.
+dependent induction s; intros ? ? Hcnv Hnc ? ? Hzip.
+- inversion Hzip; subst.
+  + split; inversion Hcnv; constructor; 
+    eauto using term_parL; eauto using term_parR.
+  + split.
+    unfold nocom in Hnc.
+
+
+
+(* false: take p=x?(_).Omega,q=0,s=epsilon 
+          and zip epsilon (x?v) (x!v) 
+Lemma cnv_zip: forall p q s,
+  (p‖q)⇓s -> forall s1 s2, zip s s1 s2 ->  
+  p⇓s1 /\ q⇓s2 .
 *)
 
+
+(*
+Lemma cnv_zip: forall p q s,
+  (p‖q)⇓s -> exists s1 s2,
+  zip s s1 s2 /\ p⇓s1 /\ q⇓s2 .
+Proof.
+intros ? ? ?; revert p q.
+dependent induction s; intros ? ? Hcnv.
+- inversion Hcnv; subst.
+  exists [],[]; repeat split; 
+  eauto using cnv_parL; eauto using cnv_parR; 
+  constructor.
+- 
+*)
+
+
+
+
+
+ 
+ 
 
 (*=====================================================*)
 
